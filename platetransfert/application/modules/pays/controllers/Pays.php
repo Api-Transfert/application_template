@@ -7,7 +7,7 @@ Created on 20/1/2017
 Company Parexons
 */
 
-class Structure extends MY_Controller 
+class Pays extends MY_Controller 
 {
 	public function __construct()
 	{
@@ -33,7 +33,7 @@ class Structure extends MY_Controller
 
 	public function dashboard($value='')
 	{
-		$data['page'] = "transfert/structure/accueil";
+		$data['page'] = "pays/pays/accueil";
 		$this->layout->template_view($data);
 	}
 

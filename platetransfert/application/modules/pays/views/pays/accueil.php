@@ -1,7 +1,5 @@
-
-
-    <!-- START CONTENT -->
-    <section id="main-content" class=" ">
+<!-- START CONTENT -->
+<section id="main-content" class=" ">
         <div class="wrapper main-wrapper row" style=''>
 
             <div class='col-xs-12'>
@@ -9,7 +7,7 @@
 
                     <div class="pull-left">
                         <!-- PAGE HEADING TAG - START -->
-                        <h1 class="title">Structures</h1>
+                        <h1 class="title">Pays</h1>
                         <!-- PAGE HEADING TAG - END -->
                     </div>
 
@@ -49,26 +47,22 @@
                         </tr> -->
                         <tr>
                             <th data-field="id" data-sortable="true" data-switchable="true">Nom</th>
-                            <th data-field="item" data-sortable="true" data-switchable="true">Type</th>
-                            <th data-field="item" data-sortable="true" data-switchable="true">Solde</th>
-                            <th data-field="monnaie" data-sortable="true">Pays</th>
-                            <th data-field="destination" data-sortable="true">Statut</th>
+                            <th data-field="item" data-sortable="true" data-switchable="true">Code ISO2</th>
+                            <th data-field="item" data-sortable="true" data-switchable="true">Code ISO3</th>
+                            <th data-field="monnaie" data-sortable="true">Monnaies</th>
+                            <th data-field="destination" data-sortable="true">Destination</th>
                             <th data-field="actions" data-sortable="true">Actions</th>
                         </tr>
                         </thead>
                         <tbody>
                         <tr>
+                            <td>Côte d'Ivoire</td>
+                            <td>CI</td>
+                            <td>CIV</td>
                             <td>
-                                QC-YAMOUSSOUKRO
+                                <button class="btn btn-success"><i class="fa fa-money"></i> CFA</button>
                             </td>
-                            <td>Distributer</td>
-                            <td>150000</td>
-                            <td>
-                                Côte d'Ivoire
-                            </td>
-                            <td>
-                                <button class="btn btn-success"><i class="fa fa-check-square"></i></button>
-                            </td>
+                            <td>Oui</td>
                             <td>
                                 <button class="btn btn-success"><i class="fa fa-eye"></i></button>
                                 <button class="btn btn-primary"><i class="fa fa-edit"></i></button>
@@ -76,17 +70,13 @@
                             </td>
                         </tr>
                         <tr>
+                            <td>Côte d'Ivoire</td>
+                            <td>CI</td>
+                            <td>CIV</td>
                             <td>
-                                QC-YAMOUSSOUKRO
+                                <button class="btn btn-success"><i class="fa fa-money"></i> CFA</button>
                             </td>
-                            <td>Distributer</td>
-                            <td>150000</td>
-                            <td>
-                                Côte d'Ivoire
-                            </td>
-                            <td>
-                                <button class="btn btn-primary"><i class="fa fa-check-square"></i></button>
-                            </td>
+                            <td>Oui</td>
                             <td>
                                 <button class="btn btn-success"><i class="fa fa-eye"></i></button>
                                 <button class="btn btn-primary"><i class="fa fa-edit"></i></button>
@@ -94,17 +84,13 @@
                             </td>
                         </tr>
                         <tr>
+                            <td>Côte d'Ivoire</td>
+                            <td>CI</td>
+                            <td>CIV</td>
                             <td>
-                                QC-YAMOUSSOUKRO
+                                <button class="btn btn-success"><i class="fa fa-money"></i> CFA</button>
                             </td>
-                            <td>Distributer</td>
-                            <td>150000</td>
-                            <td>
-                                Côte d'Ivoire
-                            </td>
-                            <td>
-                                <button class="btn btn-success"><i class="fa fa-check-square"></i></button>
-                            </td>
+                            <td>Oui</td>
                             <td>
                                 <button class="btn btn-success"><i class="fa fa-eye"></i></button>
                                 <button class="btn btn-primary"><i class="fa fa-edit"></i></button>
@@ -112,17 +98,13 @@
                             </td>
                         </tr>
                         <tr>
+                            <td>Côte d'Ivoire</td>
+                            <td>CI</td>
+                            <td>CIV</td>
                             <td>
-                                QC-YAMOUSSOUKRO
+                                <button class="btn btn-success"><i class="fa fa-money"></i> CFA</button>
                             </td>
-                            <td>Distributer</td>
-                            <td>150000</td>
-                            <td>
-                                Côte d'Ivoire
-                            </td>
-                            <td>
-                                <button class="btn btn-primary"><i class="fa fa-check-square"></i></button>
-                            </td>
+                            <td>Oui</td>
                             <td>
                                 <button class="btn btn-success"><i class="fa fa-eye"></i></button>
                                 <button class="btn btn-primary"><i class="fa fa-edit"></i></button>
@@ -130,17 +112,13 @@
                             </td>
                         </tr>
                         <tr>
+                            <td>Côte d'Ivoire</td>
+                            <td>CI</td>
+                            <td>CIV</td>
                             <td>
-                                QC-YAMOUSSOUKRO
+                                <button class="btn btn-success"><i class="fa fa-money"></i> CFA</button>
                             </td>
-                            <td>Distributer</td>
-                            <td>150000</td>
-                            <td>
-                                Côte d'Ivoire
-                            </td>
-                            <td>
-                                <button class="btn btn-success"><i class="fa fa-check-square"></i></button>
-                            </td>
+                            <td>Oui</td>
                             <td>
                                 <button class="btn btn-success"><i class="fa fa-eye"></i></button>
                                 <button class="btn btn-primary"><i class="fa fa-edit"></i></button>
@@ -148,17 +126,13 @@
                             </td>
                         </tr>
                         <tr>
+                            <td>Côte d'Ivoire</td>
+                            <td>CI</td>
+                            <td>CIV</td>
                             <td>
-                                QC-YAMOUSSOUKRO
+                                <button class="btn btn-success"><i class="fa fa-money"></i> CFA</button>
                             </td>
-                            <td>Distributer</td>
-                            <td>150000</td>
-                            <td>
-                                Côte d'Ivoire
-                            </td>
-                            <td>
-                                <button class="btn btn-primary"><i class="fa fa-check-square"></i></button>
-                            </td>
+                            <td>Oui</td>
                             <td>
                                 <button class="btn btn-success"><i class="fa fa-eye"></i></button>
                                 <button class="btn btn-primary"><i class="fa fa-edit"></i></button>
@@ -166,17 +140,13 @@
                             </td>
                         </tr>
                         <tr>
+                            <td>Côte d'Ivoire</td>
+                            <td>CI</td>
+                            <td>CIV</td>
                             <td>
-                                QC-YAMOUSSOUKRO
+                                <button class="btn btn-success"><i class="fa fa-money"></i> CFA</button>
                             </td>
-                            <td>Distributer</td>
-                            <td>150000</td>
-                            <td>
-                                Côte d'Ivoire
-                            </td>
-                            <td>
-                                <button class="btn btn-success"><i class="fa fa-check-square"></i></button>
-                            </td>
+                            <td>Oui</td>
                             <td>
                                 <button class="btn btn-success"><i class="fa fa-eye"></i></button>
                                 <button class="btn btn-primary"><i class="fa fa-edit"></i></button>
@@ -184,17 +154,13 @@
                             </td>
                         </tr>
                         <tr>
+                            <td>Côte d'Ivoire</td>
+                            <td>CI</td>
+                            <td>CIV</td>
                             <td>
-                                QC-YAMOUSSOUKRO
+                                <button class="btn btn-success"><i class="fa fa-money"></i> CFA</button>
                             </td>
-                            <td>Distributer</td>
-                            <td>150000</td>
-                            <td>
-                                Côte d'Ivoire
-                            </td>
-                            <td>
-                                <button class="btn btn-primary"><i class="fa fa-check-square"></i></button>
-                            </td>
+                            <td>Oui</td>
                             <td>
                                 <button class="btn btn-success"><i class="fa fa-eye"></i></button>
                                 <button class="btn btn-primary"><i class="fa fa-edit"></i></button>
@@ -202,17 +168,13 @@
                             </td>
                         </tr>
                         <tr>
+                            <td>Côte d'Ivoire</td>
+                            <td>CI</td>
+                            <td>CIV</td>
                             <td>
-                                QC-YAMOUSSOUKRO
+                                <button class="btn btn-success"><i class="fa fa-money"></i> CFA</button>
                             </td>
-                            <td>Distributer</td>
-                            <td>150000</td>
-                            <td>
-                                Côte d'Ivoire
-                            </td>
-                            <td>
-                                <button class="btn btn-success"><i class="fa fa-check-square"></i></button>
-                            </td>
+                            <td>Oui</td>
                             <td>
                                 <button class="btn btn-success"><i class="fa fa-eye"></i></button>
                                 <button class="btn btn-primary"><i class="fa fa-edit"></i></button>
@@ -220,17 +182,13 @@
                             </td>
                         </tr>
                         <tr>
+                            <td>Côte d'Ivoire</td>
+                            <td>CI</td>
+                            <td>CIV</td>
                             <td>
-                                QC-YAMOUSSOUKRO
+                                <button class="btn btn-success"><i class="fa fa-money"></i> CFA</button>
                             </td>
-                            <td>Distributer</td>
-                            <td>150000</td>
-                            <td>
-                                Côte d'Ivoire
-                            </td>
-                            <td>
-                                <button class="btn btn-primary"><i class="fa fa-check-square"></i></button>
-                            </td>
+                            <td>Oui</td>
                             <td>
                                 <button class="btn btn-success"><i class="fa fa-eye"></i></button>
                                 <button class="btn btn-primary"><i class="fa fa-edit"></i></button>
@@ -238,17 +196,13 @@
                             </td>
                         </tr>
                         <tr>
+                            <td>Côte d'Ivoire</td>
+                            <td>CI</td>
+                            <td>CIV</td>
                             <td>
-                                QC-YAMOUSSOUKRO
+                                <button class="btn btn-success"><i class="fa fa-money"></i> CFA</button>
                             </td>
-                            <td>Distributer</td>
-                            <td>150000</td>
-                            <td>
-                                Côte d'Ivoire
-                            </td>
-                            <td>
-                                <button class="btn btn-success"><i class="fa fa-check-square"></i></button>
-                            </td>
+                            <td>Oui</td>
                             <td>
                                 <button class="btn btn-success"><i class="fa fa-eye"></i></button>
                                 <button class="btn btn-primary"><i class="fa fa-edit"></i></button>
@@ -256,17 +210,13 @@
                             </td>
                         </tr>
                         <tr>
+                            <td>Côte d'Ivoire</td>
+                            <td>CI</td>
+                            <td>CIV</td>
                             <td>
-                                QC-YAMOUSSOUKRO
+                                <button class="btn btn-success"><i class="fa fa-money"></i> CFA</button>
                             </td>
-                            <td>Distributer</td>
-                            <td>150000</td>
-                            <td>
-                                Côte d'Ivoire
-                            </td>
-                            <td>
-                                <button class="btn btn-primary"><i class="fa fa-check-square"></i></button>
-                            </td>
+                            <td>Oui</td>
                             <td>
                                 <button class="btn btn-success"><i class="fa fa-eye"></i></button>
                                 <button class="btn btn-primary"><i class="fa fa-edit"></i></button>
@@ -274,150 +224,19 @@
                             </td>
                         </tr>
                         <tr>
+                            <td>Côte d'Ivoire</td>
+                            <td>CI</td>
+                            <td>CIV</td>
                             <td>
-                                QC-YAMOUSSOUKRO
+                                <button class="btn btn-success"><i class="fa fa-money"></i> CFA</button>
                             </td>
-                            <td>Distributer</td>
-                            <td>150000</td>
-                            <td>
-                                Côte d'Ivoire
-                            </td>
-                            <td>
-                                <button class="btn btn-success"><i class="fa fa-check-square"></i></button>
-                            </td>
+                            <td>Oui</td>
                             <td>
                                 <button class="btn btn-success"><i class="fa fa-eye"></i></button>
                                 <button class="btn btn-primary"><i class="fa fa-edit"></i></button>
                                 <button class="btn btn-danger"><i class="fa fa-trash"></i></button>
                             </td>
                         </tr>
-                        <tr>
-                            <td>
-                                QC-YAMOUSSOUKRO
-                            </td>
-                            <td>Distributer</td>
-                            <td>150000</td>
-                            <td>
-                                Côte d'Ivoire
-                            </td>
-                            <td>
-                                <button class="btn btn-primary"><i class="fa fa-check-square"></i></button>
-                            </td>
-                            <td>
-                                <button class="btn btn-success"><i class="fa fa-eye"></i></button>
-                                <button class="btn btn-primary"><i class="fa fa-edit"></i></button>
-                                <button class="btn btn-danger"><i class="fa fa-trash"></i></button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                QC-YAMOUSSOUKRO
-                            </td>
-                            <td>Distributer</td>
-                            <td>150000</td>
-                            <td>
-                                Côte d'Ivoire
-                            </td>
-                            <td>
-                                <button class="btn btn-success"><i class="fa fa-check-square"></i></button>
-                            </td>
-                            <td>
-                                <button class="btn btn-success"><i class="fa fa-eye"></i></button>
-                                <button class="btn btn-primary"><i class="fa fa-edit"></i></button>
-                                <button class="btn btn-danger"><i class="fa fa-trash"></i></button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                QC-YAMOUSSOUKRO
-                            </td>
-                            <td>Distributer</td>
-                            <td>150000</td>
-                            <td>
-                                Côte d'Ivoire
-                            </td>
-                            <td>
-                                <button class="btn btn-primary"><i class="fa fa-check-square"></i></button>
-                            </td>
-                            <td>
-                                <button class="btn btn-success"><i class="fa fa-eye"></i></button>
-                                <button class="btn btn-primary"><i class="fa fa-edit"></i></button>
-                                <button class="btn btn-danger"><i class="fa fa-trash"></i></button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                QC-YAMOUSSOUKRO
-                            </td>
-                            <td>Distributer</td>
-                            <td>150000</td>
-                            <td>
-                                Côte d'Ivoire
-                            </td>
-                            <td>
-                                <button class="btn btn-success"><i class="fa fa-check-square"></i></button>
-                            </td>
-                            <td>
-                                <button class="btn btn-success"><i class="fa fa-eye"></i></button>
-                                <button class="btn btn-primary"><i class="fa fa-edit"></i></button>
-                                <button class="btn btn-danger"><i class="fa fa-trash"></i></button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                QC-YAMOUSSOUKRO
-                            </td>
-                            <td>Distributer</td>
-                            <td>150000</td>
-                            <td>
-                                Côte d'Ivoire
-                            </td>
-                            <td>
-                                <button class="btn btn-primary"><i class="fa fa-check-square"></i></button>
-                            </td>
-                            <td>
-                                <button class="btn btn-success"><i class="fa fa-eye"></i></button>
-                                <button class="btn btn-primary"><i class="fa fa-edit"></i></button>
-                                <button class="btn btn-danger"><i class="fa fa-trash"></i></button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                QC-YAMOUSSOUKRO
-                            </td>
-                            <td>Distributer</td>
-                            <td>150000</td>
-                            <td>
-                                Côte d'Ivoire
-                            </td>
-                            <td>
-                                <button class="btn btn-success"><i class="fa fa-check-square"></i></button>
-                            </td>
-                            <td>
-                                <button class="btn btn-success"><i class="fa fa-eye"></i></button>
-                                <button class="btn btn-primary"><i class="fa fa-edit"></i></button>
-                                <button class="btn btn-danger"><i class="fa fa-trash"></i></button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                QC-YAMOUSSOUKRO
-                            </td>
-                            <td>Distributer</td>
-                            <td>150000</td>
-                            <td>
-                                Côte d'Ivoire
-                            </td>
-                            <td>
-                                <button class="btn btn-primary"><i class="fa fa-check-square"></i></button>
-                            </td>
-                            <td>
-                                <button class="btn btn-success"><i class="fa fa-eye"></i></button>
-                                <button class="btn btn-primary"><i class="fa fa-edit"></i></button>
-                                <button class="btn btn-danger"><i class="fa fa-trash"></i></button>
-                            </td>
-                        </tr>
-
                         </tbody>
                     </table>
                 </section>
@@ -441,7 +260,7 @@
 
                 <li class="user-row " id='chat_user_1' data-user-id='1'>
                     <div class="user-img">
-                        <a href="#"><img src="<?php bs()?>assets/data/profile/avatar-1.png" alt=""></a>
+                        <a href="#"><img src="../data/profile/avatar-1.png" alt=""></a>
                     </div>
                     <div class="user-info">
                         <h4><a href="#">Joge Lucky</a></h4>
@@ -453,7 +272,7 @@
                 </li>
                 <li class="user-row " id='chat_user_2' data-user-id='2'>
                     <div class="user-img">
-                        <a href="#"><img src="<?php bs()?>assets/data/profile/avatar-2.png" alt=""></a>
+                        <a href="#"><img src="../data/profile/avatar-2.png" alt=""></a>
                     </div>
                     <div class="user-info">
                         <h4><a href="#">Folisise Chosiel</a></h4>
@@ -465,7 +284,7 @@
                 </li>
                 <li class="user-row " id='chat_user_3' data-user-id='3'>
                     <div class="user-img">
-                        <a href="#"><img src="<?php bs()?>assets/data/profile/avatar-3.png" alt=""></a>
+                        <a href="#"><img src="../data/profile/avatar-3.png" alt=""></a>
                     </div>
                     <div class="user-info">
                         <h4><a href="#">Aron Gonzalez</a></h4>
@@ -483,7 +302,7 @@
 
                 <li class="user-row " id='chat_user_4' data-user-id='4'>
                     <div class="user-img">
-                        <a href="#"><img src="<?php bs()?>assets/data/profile/avatar-4.png" alt=""></a>
+                        <a href="#"><img src="../data/profile/avatar-4.png" alt=""></a>
                     </div>
                     <div class="user-info">
                         <h4><a href="#">Chris Fox</a></h4>
@@ -495,7 +314,7 @@
                 </li>
                 <li class="user-row " id='chat_user_5' data-user-id='5'>
                     <div class="user-img">
-                        <a href="#"><img src="<?php bs()?>assets/data/profile/avatar-5.png" alt=""></a>
+                        <a href="#"><img src="../data/profile/avatar-5.png" alt=""></a>
                     </div>
                     <div class="user-info">
                         <h4><a href="#">Mogen Polish</a></h4>
@@ -507,7 +326,7 @@
                 </li>
                 <li class="user-row " id='chat_user_6' data-user-id='6'>
                     <div class="user-img">
-                        <a href="#"><img src="<?php bs()?>assets/data/profile/avatar-1.png" alt=""></a>
+                        <a href="#"><img src="../data/profile/avatar-1.png" alt=""></a>
                     </div>
                     <div class="user-info">
                         <h4><a href="#">Smith Carter</a></h4>
@@ -519,7 +338,7 @@
                 </li>
                 <li class="user-row " id='chat_user_7' data-user-id='7'>
                     <div class="user-img">
-                        <a href="#"><img src="<?php bs()?>assets/data/profile/avatar-2.png" alt=""></a>
+                        <a href="#"><img src="../data/profile/avatar-2.png" alt=""></a>
                     </div>
                     <div class="user-info">
                         <h4><a href="#">Amilia Gozenal</a></h4>
@@ -531,7 +350,7 @@
                 </li>
                 <li class="user-row " id='chat_user_8' data-user-id='8'>
                     <div class="user-img">
-                        <a href="#"><img src="<?php bs()?>assets/data/profile/avatar-3.png" alt=""></a>
+                        <a href="#"><img src="../data/profile/avatar-3.png" alt=""></a>
                     </div>
                     <div class="user-info">
                         <h4><a href="#">Tahir Jemyship</a></h4>
@@ -543,7 +362,7 @@
                 </li>
                 <li class="user-row " id='chat_user_9' data-user-id='9'>
                     <div class="user-img">
-                        <a href="#"><img src="<?php bs()?>assets/data/profile/avatar-4.png" alt=""></a>
+                        <a href="#"><img src="../data/profile/avatar-4.png" alt=""></a>
                     </div>
                     <div class="user-info">
                         <h4><a href="#">Johanson Wright</a></h4>
@@ -555,7 +374,7 @@
                 </li>
                 <li class="user-row " id='chat_user_10' data-user-id='10'>
                     <div class="user-img">
-                        <a href="#"><img src="<?php bs()?>assets/data/profile/avatar-5.png" alt=""></a>
+                        <a href="#"><img src="../data/profile/avatar-5.png" alt=""></a>
                     </div>
                     <div class="user-info">
                         <h4><a href="#">Loni Tindall</a></h4>
@@ -567,7 +386,7 @@
                 </li>
                 <li class="user-row " id='chat_user_11' data-user-id='11'>
                     <div class="user-img">
-                        <a href="#"><img src="<?php bs()?>assets/data/profile/avatar-1.png" alt=""></a>
+                        <a href="#"><img src="../data/profile/avatar-1.png" alt=""></a>
                     </div>
                     <div class="user-info">
                         <h4><a href="#">Natcho Herlaey</a></h4>
@@ -579,7 +398,7 @@
                 </li>
                 <li class="user-row " id='chat_user_12' data-user-id='12'>
                     <div class="user-img">
-                        <a href="#"><img src="<?php bs()?>assets/data/profile/avatar-2.png" alt=""></a>
+                        <a href="#"><img src="../data/profile/avatar-2.png" alt=""></a>
                     </div>
                     <div class="user-info">
                         <h4><a href="#">Shakira Swedan</a></h4>

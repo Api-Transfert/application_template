@@ -20,7 +20,7 @@
                 <li class="">
                     <a href="javascript:;">
                         <i class="fa fa-gear"></i>
-                        <span class="title">Gestions utilisateur</span>
+                        <span class="title">Gestions agents</span>
                         <span class="arrow "></span>
                     </a>
                     <ul class="sub-menu">
@@ -51,7 +51,7 @@
                     </ul>
                 </li>
                 <li class="">
-                    <a href="pays.html">
+                    <a href="<?php bs()?>Pays">
                         <i class="fa fa-gear"></i>
                         <span class="title">Pays</span>
                     </a>
@@ -74,12 +74,7 @@
                         <span class="title">Agences</span>
                     </a>
                 </li>
-                <li class="">
-                    <a href="agent.html">
-                        <i class="fa fa-gear"></i>
-                        <span class="title">Agents</span>
-                    </a>
-                </li>
+               
                 <li class="">
                     <a href="sous_distributeurs.html">
                         <i class="fa fa-gear"></i>
@@ -87,19 +82,19 @@
                     </a>
                 </li>
                 <li class="">
-                    <a href="">
+                    <a href="<?php bs()?>Master">
                         <i class="fa fa-gear"></i>
                         <span class="title">Master</span>
                     </a>
                 </li>
                 <li class="">
-                    <a href="">
+                    <a href="<?php bs()?>Quota">
                         <i class="fa fa-gear"></i>
                         <span class="title">Quota</span>
                     </a>
                 </li>
                 <li class="">
-                    <a href="">
+                    <a href="<?php bs()?>Commission">
                         <i class="fa fa-gear"></i>
                         <span class="title">Commission</span>
                     </a>
