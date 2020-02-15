@@ -15,7 +15,7 @@ class Auth extends MY_Controller {
 		$this->load->model(array('Users_modal','Users_groups','common_model','Ion_auth_model'));
 
 		$this->load->module('template');
-
+		$this->load->module('layout');
 		// Include the google api php libraries
 		include_once APPPATH."libraries/google-api-php-client/Google_Client.php";
 		include_once APPPATH."libraries/google-api-php-client/contrib/Google_Oauth2Service.php";
@@ -37,18 +37,13 @@ class Auth extends MY_Controller {
 		}
 		else
 		{
-
 			//Count all users
 			$data['total_users'] = $this->Users_modal->count_users();
-
 			// set the flash data error message if there is one
 			$data['message'] = (validation_errors()) ? validation_errors() : $this->session->flashdata('message');
-
 			//get all users
 			$data['all_users'] = $this->Users_modal->all_users();
-
 			$data['today_users'] = $this->Users_modal->recent_users();
-
 			$data['weekly'] = $this->Users_modal->weekly_data();
 
 			//list the users
@@ -57,8 +52,13 @@ class Auth extends MY_Controller {
 			// {
 			// 	$data['users'][$k]->groups = $this->ion_auth->get_users_groups($user->id)->result();
 			// }
-			$data['page'] = "users/auth/index";
- 			$this->template->template_view($data);
+			//$data['page'] = "users/auth/index";
+			// $this->template->template_view($data);
+			 
+
+
+			 $data['page'] = "transfert/dashboard/accueil";
+			 $this->layout->template_view($data);
 		}
 	}
 
