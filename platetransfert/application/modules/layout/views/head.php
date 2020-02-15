@@ -47,4 +47,12 @@
     <link href="<?php bs()?>assets/css/responsive.css" rel="stylesheet" type="text/css" />
     <!-- CORE CSS TEMPLATE - END -->
 
+    <!-- LIBS CSS TEMPLATE - START -->
+    <link href="<?php bs()?>assets/libs/tooltip/tooltip.css" rel="stylesheet" type="text/css" />
+    <script>
+        var base_url = '<?=base_url()?>';
+        const router_class = 'admin/<?=$this->router->fetch_class();?>';
+        const router_method = '<?=$this->router->fetch_method();?>';
+    </script>
+    <!-- LIBS CSS TEMPLATE - END -->
 </head>
