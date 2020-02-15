@@ -1,0 +1,1192 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>User Guide</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css"
+		media="screen, projection">
+
+	<link rel="stylesheet" href="assets/blueprint-css/mystyle.css">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<style type="text/css" media="screen">
+		p,
+		table,
+		hr,
+		.box {
+			margin-bottom: 25px;
+		}
+
+		.box p {
+			margin-bottom: 10px;
+		}
+
+		.topright {
+			margin: -82% 0% 60% 60%;
+		}
+	</style>
+</head>
+
+
+<body>
+	<div class="container">
+
+		<h3 class="center alt">&ldquo;CI Login
+			Docs&rdquo; Documentation by &ldquo;Salman Iqbal&rdquo; v1.4
+		</h3>
+
+		<hr>
+
+		<h1 class="center">&ldquo;CI Login
+			Docs&rdquo;</h1>
+
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+						Updated: 8/10/2019<br>
+						By: Salman Iqbal<br>
+						Email: <a href="mailto:salmaniqbal937@gmail.com">salmaniqbal937@gmail.com</a>
+					</strong>
+				</p>
+			</div><!-- end div .span-6 -->
+
+			<div class="span-11 last">
+				<p class="prepend-top append-0">Thank you for purchasing my product. If you have any questions that are
+					beyond the scope of this help file, please feel free to email via my user page contact form <a
+						href="https://codecanyon.net/user/code_master11">here</a>. Thanks so much!</p>
+			</div>
+			<div class="span-11 last">
+				<p class="prepend-top append-0 style">
+					<i class="fa fa-bullhorn fa-2x" aria-hidden="true"></i>
+					Please
+					Don't forget review, Your Review is our reward.
+					<br>
+					Thank you very much!
+				</p>
+			</div>
+		</div><!-- end div .borderTop -->
+
+		<hr>
+
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+			<li><a href="#about">About</a></li>
+			<li><a href="#features">Features</a></li>
+			<li><a href="#Requirements">System Requirements</a></li>
+			<li><a href="#Security">Security</a></li>
+			<li><a href="#Installation">Installation</a></li>
+			<li><a href="#mpdf">Use of Mpdf</a></li>
+			<li><a href="#dompdf">Use of Dompdf</a></li>
+			<li><a href="#rbac">Role-based access control (RBAC)</a></li>
+		</ol>
+
+		<ol class="alpha" style="margin: -21% 0% 20% 50%">
+			<li>
+				<a href="#">Social Login</a>
+				<ol>
+					<li><a href="#twitter">Twitter API</a></li>
+					<li><a href="#facebook">Facebook API</a></li>
+					<li><a href="#google">Google API</a></li>
+					<li><a href="#instagram">Instagram API</a></li>
+					<li><a href="#linkedin">Linkedin API</a></li>
+				</ol>
+			</li>
+			<li><a href="#hmvc" title="">HMVC</a> </li>
+			<li><a href="#cap" title="">Google Captcha</a> </li>
+		</ol>
+
+		<ol class="alpha" style="margin: -39% 0% 30% 85%">
+			<li><a href="#use">How to Use</a></li>
+		</ol>
+
+		<hr>
+
+		<h3 id="about"><strong>A) About </strong> - <a href="#toc">top</a></h3>
+
+		<div class="step-1">
+
+			<p>CodeIgniter Login with ion auth Library is a CodeIgniter based login and backend application to use as a
+				starter kit for new projects. The login and registration system is completely taken care of members can
+				get authorization rapidly with social accounts OR creating their own account.</p>
+
+			<p>The development is ongoing and improving. New features will continue to be added to this application.</p>
+		</div>
+
+		<br><br>
+		<hr>
+
+		<h3 id="features"><strong>B) Features</strong> - <a href="#toc">top</a></h3>
+
+		<div class="step-1" style="height:55em">
+
+			<ul>
+				<li>Built with latest version of <a href="https://www.codeigniter.com/"> Code Igniter 3.1.11.</a></li>
+				<li>Built with latest version of CI login library <a href="http://benedmunds.com/ion_auth/">ion auth
+						3.</a></li>
+				<li>HMVC Ready</li>
+				<li>Social Login (Facebook,Twitter,Google,Instagram,Linkedin).</li>
+				<li>Role-based access control (<b>RBAC</b>), Roles and Permissions.</li>
+				<li>User Profile (Edit User Profile,Change Avatar,Change password).</li>
+				<li>New User Registration Enable/Disable.</li>
+				<li>Print pages with Dompdf.</li>
+				<li>Print pages with Mpdf.</li>
+				<li>Ion Auth is extremely configurable.</li>
+				<li>Multiple language ingeration in Ion Auth.</li>
+				<li>Secure user registration and login.</li>
+				<li>Lost Password page, to allow users to reset their password.</li>
+				<li>Secure password algorithm using Bcrypt.</li>
+				<li>Enable or Disable Remember Me feature on login.</li>
+				<li>Login with email or username.</li>
+				<li>Google reCAPTCHA on registration.</li>
+				<li>Enable or Disable Email Activation for new user's registration.</li>
+				<li>Create Groups / Roles.</li>
+				<li>Assign groups to users.</li>
+				<li>Client side and server side form validation.</li>
+				<li>Create Users.</li>
+				<li>Admin & other User's have their own access.</li>
+				<li>Activate & Deactivate Users.</li>
+				<li>Maximum Login Attempts.</li>
+				<li>Is max login attempts exceeded.</li>
+				<li>Increase Login Attempts.</li>
+				<li>Account Lock Time.</li>
+				<li>User cookies Extend on Login.</li>
+				<li>Extend User Expiry Time.</li>
+				<li>Track login attempts.</li>
+				<li>Clear login attempts.</li>
+				<li>Get login attempts num.</li>
+			</ul>
+
+			<ul class="topright">
+				<li>Layout (<b> Grid System,Static Sidebar,Boxed</b> ).</li>
+				<li>Forms (<b> Form Layout, Form Components, Form Pickers, Form Wizard, Form validation, Form Masks,
+						Dropzone Uploader, Summernote, Markdown Editor, Inline Editor, Grid Forms</b> ).</li>
+				<li>Button varieties.</li>
+				<li>Email Template</li>
+				<li>Login & SignUp Forms</li>
+				<li>A lot of static stuff available.</li>
+				<h2 style="padding-top: 1em">Manage Tasks</h2>
+				<li>
+					Create New Task
+				</li>
+				<li>
+					Complete Task
+				</li>
+				<li>
+					Search Tasks
+				</li>
+				<li>
+					Task Status
+				</li>
+				<li>
+					Edit Task
+				</li>
+				<li>
+					Delete
+				</li>
+			</ul>
+
+		</div>
+
+		<br><br>
+		<hr>
+
+		<h3 id="Requirements"><strong>C) System Requirements</strong> - <a href="#toc">top</a></h3>
+
+		<div class="step-1">
+
+			<ul>
+				<li>PHP>=5.6</li>
+				<li>MySQL (5.1+)</a></li>
+			</ul>
+
+		</div>
+
+		<br><br>
+		<hr>
+
+		<h3 id="Security"><strong>D) Security</strong> - <a href="#toc">top</a></h3>
+
+		<div class="step-1">
+
+			<ul>
+				<li>XSS Filtering</li>
+				<li>CSRF protection</a></li>
+				<li>Password hashing</li>
+				<li>Validate input data</li>
+			</ul>
+
+		</div>
+
+		<br><br>
+		<hr>
+
+		<h3 id="Installation"><strong>D) Installation</strong> - <a href="#toc">top</a></h3>
+
+		<h3 class="method-one-label"><i class="fa fa-bullhorn"></i> Method One</h3>
+
+		<div class="step-1">
+
+			<h4 class="callout-title">Please follow the steps:</h4>
+			<ul>
+				<li>Upload Zip File in your server</li>
+				<li>Extract the Zip file that you uploaded</li>
+				<li>Now Go to your Browser and Check http://www.yourdomain.com/install</li>
+				<li>Give your Host Name (Ex: localhost), Database Name (Your Choice), Username and Password (That’s
+					given by your Domain & Hosting Provider).</li>
+				<li>Base Url will be automatic set, don't change it and click on Install button.</li>
+			</ul>
+			<img src="assets/images/install.png" alt="" width="100%">
+
+		</div>
+
+		<h3 class="method-two-label"><i class="fa fa-bullhorn"></i> Method Two(Manuel installation)</h3>
+
+		<div class="step-1">
+
+			<h4 class="callout-title">Please follow the steps:</h4>
+			<ul>
+				<li>Upload and Unzip files in your web server</li>
+				<li>Open Your Php-Myadmin and create new database with the name of yours choice</li>
+				<li>Execute the sql file located in root dir database/login_db.sql it will create tables in the database
+					which you have created</li>
+				<li>open the application/config/database.php file with a text editor and set your database setting</li>
+				<li>open the application/config/config.php file with a text editor and set your Base Url</li>
+
+			</ul><br><br>
+			<p>
+				When Installation Completed Successfully two users will be created. <br>
+				1) Admin (Have full rights of system).<br>
+				Email : admin@admin.com <br>
+				password: password <br><br>
+
+				2) Member (A genral user).<br>
+
+				Email : codemaster@gmail.com <br>
+				password: password
+			</p>
+
+		</div>
+
+		<br><br>
+		<hr>
+
+		<h3 id="mpdf"><strong>D) Mpdf</strong> - <a href="#toc">top</a></h3>
+
+		<div class="step-1">
+
+			<p>Mpdf library is already integrated.You have only add this code for basic usage.For further information
+				visit official <a href="http://www.mpdf1.com/mpdf/index.php">Mpdf </a> site.</p>
+
+			<p><b>You can convert a view into a PDF by using the following code.</b></p>
+
+			<ul>
+				<div class="code-style">
+					<pre>
+
+			$this->load->library('pdf');
+			$this->pdf->load_view('welcome');
+			$this->pdf->Output();
+			</pre>
+
+				</div>
+
+			</ul>
+			<p><b>You can also pass data to the function by using</b></p>
+
+			<ul>
+				<div class="code-style">
+
+					<pre>
+	    		$this->pdf->load_view('welcome', $data);
+				</pre>
+
+				</div>
+
+			</ul>
+
+			<p><b>Note:</b>Mpdf is used for large scale</p>
+
+		</div>
+
+		<br><br>
+		<hr>
+
+		<h3 id="dompdf"><strong>D) Dompdf</strong> - <a href="#toc">top</a></h3>
+
+		<div class="step-1">
+
+			<p>Dompdf library is already integrated.You have only add this code for basic usage.For further information
+				visit official <a href="https://github.com/dompdf/dompdf/wiki/Usage">Dompdf </a> site.</p>
+
+			<ul>
+				<div class="code-style">
+
+					<pre>
+		// Load all views as normal 
+        $this->load->view('print/print_with_Dom-pdf',$this->data); 
+        
+        // Get output html 
+        $html = $this->output->get_output(); 
+        
+        // Load library
+        $this->load->library('dompdf_gen');
+        
+        // Convert to PDF 
+        $this->dompdf->load_html($html);
+        $this->dompdf->render();
+        $this->dompdf->stream("welcome.pdf",array("Attachment" => false));
+		</pre>
+
+				</div>
+
+			</ul>
+
+			<p><b>Note:</b>Dompdf is used for Small scale</p>
+
+		</div>
+
+		<br><br>
+		<hr>
+
+		<h3 id="rbac"><strong>D) Role based access control (RBAC)</strong> - <a href="#toc">top</a></h3>
+
+		<div class="step-1">
+
+			<p>
+				<h3>Click Roles & Permissions in sidebar and then click create groups. Here You Can create groups</h3>
+			</p>
+			<img src="assets/screenshots/11_preview11.png" alt="" width="98%">
+
+			<p>
+				<h3>Click <b>Roles & Permissions</b> in sidebar and then click <b>Permissions</b>. Here you can create
+					Permissions</h3>
+			</p>
+			<img src="assets/screenshots/13_preview13.png" alt="" width="98%">
+			<p>
+				<h3>Click <b> Roles & Permissions </b> in sidebar and the click on <b>Veiw Groups/Edit</b>. Here you can assign Permissions to a group.</h3>
+			</p>
+			<img src="assets/screenshots/10_preview10.png" alt="" width="98%">
+
+			<p>
+				<h3> If You want to get <b>Permissions or priviliges array</b>  then just call </h3>
+			</p>
+			<p>
+				<div class="code-style">
+
+					<pre>
+			$users = group_priviliges();
+
+			print_r($users);
+					</pre>
+
+				</div>
+
+			</p>
+
+
+
+		</div>
+
+		<br><br>
+		<hr>
+
+		<h3 id="twitter"><strong>C) Twitter API</strong> - <a href="#toc">top</a></h3>
+
+		<div class="step-1">
+			<p>
+				I have done all the setup for social login on localhost No need to more configuration.If you want to
+				make your own API's then follow the following steps.
+			</p>
+
+			<p><b>Note:</b>For twitter login you must have to set Internet connection.If doing work without internet
+				connection it will show This error on login page "Undefined index: oauth_token" and "Undefined index:
+				oauth_token_secret".</p>
+
+
+			<h3><b>Twitter API Configuration</b></h3>
+
+
+			<p>
+				click on this link and follow the following steps.
+				<a href="https://dev.twitter.com/rest/tools/console">Twitter Api</a>
+			</p>
+			<p>
+				<b>step 1:</b> After click on the above link this page will open,Click on My apps. <br><br>
+				<img src="assets/social-api-images/twitter1.png" alt="" width="90%">
+			</p>
+			<p>
+				<b>step 2:</b> Click on Create New App. <br><br>
+				<img src="assets/social-api-images/twitter2.png" alt="" width="90%">
+			</p>
+			<p>
+				<b>step 3:</b> After click on Create New App, This Form will open fill all the required fields.In the
+				Website Field if you have created folder for your project then write
+				http://www.domain-name.com/folder-name and click on Create your Twitter Application button. <br><br>
+				<img src="assets/social-api-images/twitter3.png" alt="" width="90%">
+			</p>
+			<p>
+				<b>step 4:</b> Click on Kyes and Access Token. <br><br>
+				<img src="assets/social-api-images/twitter4.png" alt="" width="90%">
+			</p>
+			<p>
+				<b>step 5:</b> Copy the Consumer key and Consumer Secret Key Paste it in
+				application/config/social_auth_config.php <br><br>
+				<img src="assets/social-api-images/twitter5.png" alt="" width="90%">
+			</p>
+
+		</div>
+
+		<br><br>
+		<hr>
+
+		<h3 id="facebook"><strong>C) Facebook API</strong> - <a href="#toc">top</a></h3>
+
+		<div class="step-1">
+
+			<h3><b>Facebook API Configuration</b></h3>
+
+
+			<p>
+				click on this link and follow the following steps.
+				<a href="https://developers.facebook.com/">Facebook Api</a>
+			</p>
+			<p>
+				<b>step 1:</b> After click on the above link this page will open,Click on My apps and select Add new
+				app. <br><br>
+				<img src="assets/social-api-images/fb1.png" alt="" width="90%">
+			</p>
+			<p>
+				<b>step 2:</b>Add app name and Click on Create New App. <br><br>
+				<img src="assets/social-api-images/fb2.png" alt="" width="90%">
+			</p>
+			<p>
+				<b>step 3:</b> When name created this page will open, Click on settings <br><br>
+				<img src="assets/social-api-images/fb3.png" alt="" width="90%">
+			</p>
+			<p>
+				<b>step 4:</b> Add App domain name in field then choose category "Apps for pages". <br><br>
+				<img src="assets/social-api-images/fb4.png" alt="" width="90%">
+			</p>
+			<p>
+				<b>step 5:</b> Then click on Add Platform and select website<br><br>
+				<img src="assets/social-api-images/fb5.png" alt="" width="90%">
+			</p>
+			<p>
+				<b>step 6:</b> And write your full website url with call back url. <br><br>
+				<img src="assets/social-api-images/fb6.png" alt="" width="90%">
+			</p>
+			<p>
+				<b>step 7:</b> In sidebar click on App Preview and click on "NO" <br><br>
+				<img src="assets/social-api-images/fb7.png" alt="" width="90%">
+			</p>
+			<p>
+				<b>step 8:</b> Copy App ID and Secret ID and paste it in config/social_auth_config.php <br><br>
+				<img src="assets/social-api-images/fb8.png" alt="" width="90%">
+			</p>
+
+		</div>
+
+		<br><br>
+		<hr>
+
+		<h3 id="google"><strong>C) Google API</strong> - <a href="#toc">top</a></h3>
+
+		<div class="step-1">
+
+			<h3><b>Google API Configuration</b></h3>
+
+
+			<p>
+				click on this link and follow the following steps.
+				<a href="https://console.developers.google.com/apis/dashboard?project=weblogin-167914&duration=PT1H">Google
+					Api</a>
+			</p>
+			<p>
+				<b>step 1:</b> After click on the above link this page will open,Click on this link where red circle is
+				rounded. <br><br>
+				<img src="assets/social-api-images/google1.png" alt="" width="90%">
+			</p>
+			<p>
+				<b>step 2:</b> Click on Plus button. <br><br>
+				<img src="assets/social-api-images/google2.png" alt="" width="90%">
+			</p>
+			<p>
+				<b>step 3:</b> Write the name of your choice and click on create button<br>
+				<img src="assets/social-api-images/google3.png" alt="" width="90%">
+			</p>
+			<p>
+				<b>step 4:</b> Again click on the step 1 link this pop box will open and select the project which you
+				have created. <br><br>
+				<img src="assets/social-api-images/google.png" alt="" width="90%">
+			</p>
+			<p>
+				<b>step 5:</b> click on Enable API <br><br>
+				<img src="assets/social-api-images/google4.png" alt="" width="90%">
+			</p>
+			<p>
+				<b>step 6:</b> Select Google + API in social APIS <br><br>
+				<img src="assets/social-api-images/google5.png" alt="" width="90%">
+			</p>
+			<p>
+				<b>step 7:</b> Click to enable API<br>
+				<img src="assets/social-api-images/google6.png" alt="" width="90%">
+			</p>
+			<p>
+				<b>step 8:</b> After click Enable API, click credentials from the sidebar this page will open click on
+				create credentials. <br><br>
+				<img src="assets/social-api-images/google7.png" alt="" width="90%">
+			</p>
+			<p>
+				<b>step 9:</b> Select the OAuth Client ID <br>
+				<img src="assets/social-api-images/google9.png" alt="" width="90%">
+			</p>
+			<p>
+				<b>step 10:</b> This page will open and click on the configre button where red circle is rounded. <br>
+				<img src="assets/social-api-images/google10.png" alt="" width="90%">
+			</p>
+			<p>
+				<b>step 11:</b> Give your choice Name for user which see users and give home page URL, click on save
+				button. <br><br>
+				<img src="assets/social-api-images/google11.png" alt="" width="90%">
+			</p>
+			<p>
+				<b>step 12:</b> Select Web Application <br><br>
+				<img src="assets/social-api-images/google12.png" alt="" width="90%">
+			</p>
+			<p>
+				<b>step 5:</b> Give redirect URL.Ex: http://www.domain-name.com/login/social_login/google_login. It Must
+				be accurate. <br><br>
+				<img src="assets/social-api-images/google13.png" alt="" width="90%">
+			</p>
+
+		</div>
+
+		<br><br>
+		<hr>
+
+		<h3 id="instagram"><strong>C) Instagram API</strong> - <a href="#toc">top</a></h3>
+
+		<div class="step-1">
+
+			<h3><b>Instagram API Configuration</b></h3>
+
+
+			<p>
+				click on this link and follow the following steps.
+				<a href="https://www.instagram.com/developer/">Instagram Api</a>
+			</p>
+			<p>
+				<b>step 1:</b> After click the above link this page will open,click on the Manage Client Link <br><br>
+				<img src="assets/social-api-images/insta1.png" alt="" width="90%">
+			</p>
+			<p>
+				<b>step 2:</b> Click on Register New Client <br><br>
+				<img src="assets/social-api-images/insta2.png" alt="" width="90%">
+			</p>
+			<p>
+				<b>step 3:</b> This form will open fill the inputs where red circle is rounded.Please make sure the
+				redirect url. write the captcha and click to register. <br><br>
+				<img src="assets/social-api-images/insta3.png" alt="" width="90%">
+			</p>
+			<p>
+				<b>step 4:</b> When application registered successfull then this page will open click on manage button.
+				<br><br>
+				<img src="assets/social-api-images/insta4.png" alt="" width="90%">
+			</p>
+			<p>
+				<b>step 5:</b> Copy client ID and Secret ID and use it config file and also in login page in link.
+				<br><br>
+				<img src="assets/social-api-images/insta5.png" alt="" width="90%">
+			</p>
+
+
+		</div>
+
+		<br><br>
+		<hr>
+
+		<h3 id="linkedin"><strong>C) LinkedIn API</strong> - <a href="#toc">top</a></h3>
+
+		<div class="step-1">
+
+			<h3><b>LinkedIn API Configuration</b></h3>
+
+
+			<p>
+				click on this link and follow the following steps.
+				<a href="https://developer.linkedin.com/#">LinkedIn Api</a>
+			</p>
+			<p>
+				<b>step 1:</b> After click the above link this page will open click on the My apps link <br><br>
+				<img src="assets/social-api-images/linkedin2.png" alt="" width="90%">
+			</p>
+			<p>
+				<b>step 2:</b> Click on Register Application <br><br>
+				<img src="assets/social-api-images/linkedin1.png" alt="" width="90%">
+			</p>
+			<p>
+				<b>step 3:</b> This form will open fill all the input with red staric.Make a logo 80*80 it's required.
+				Click on submit button.<br><br>
+				<img src="assets/social-api-images/linkedin3.png" alt="" width="90%">
+			</p>
+			<p>
+				<b>step 3:</b> After submit the form this page will open add redirect url and click on add button after
+				added URL just click on Update button below. <br><br>
+				<img src="assets/social-api-images/linkedin4.png" alt="" width="90%">
+			</p>
+
+
+		</div>
+
+		<br><br>
+		<hr>
+
+		<h3 id="hmvc"><strong>C) Modular Extensions - HMVC</strong> - <a href="#toc">top</a></h3>
+
+		<div class="step-1">
+
+			<h4><b>Modular Extensions - HMVC</b></h4>
+
+
+			<p>
+				Modular Extensions makes the CodeIgniter PHP framework modular. Modules are groups of independent
+				components, typically model, controller and view, arranged in an application modules sub-directory that
+				can be dropped into other CodeIgniter applications.
+			</p>
+			<p>
+				HMVC stands for Hierarchical Model View Controller.
+			</p>
+			<p>
+				Module Controllers can be used as normal Controllers or HMVC Controllers and they can be used as widgets
+				to help you build view partials.
+			</p>
+			<h4><b>Features:</b></h4>
+			<p>
+				All controllers can contain an $autoload class variable, which holds an array of items to load prior to
+				running the constructor. This can be used together with module/config/autoload.php, however using the
+				$autoload variable only works for that specific controller.
+
+			</p>
+
+			<p>
+				<div class="code-style">
+					<pre>
+			class Xyz extends MX_Controller 
+			{
+			    $autoload = array(
+			        'helper'    => array('url', 'form'),
+			        'libraries' => array('email'),
+			    );
+			}   
+		</pre>
+
+				</div>
+			</p>
+
+			<p>
+				The Modules::$locations array may be set in the application/config.php file. ie:
+			</p>
+
+			<p>
+				<div class="code-style">
+					<pre>
+			$config['modules_locations'] = array(
+			    APPPATH.'modules/' => '<?php bs() ?>modules/',
+			);   
+		</pre>
+
+				</div>
+			</p>
+
+			<p>
+				Modules::run() output is buffered, so any data returned or output directly from the controller is caught
+				and returned to the caller. In particular, $this->load->view() can be used as you would in a normal
+				controller, without the need for return.
+			</p>
+			<p>
+				Controllers can be loaded as class variables of other controllers using
+				$this->load->module('module/controller'); or simply $this->load->module('module'); if the controller
+				name matches the module name.
+			</p>
+			<p>
+				Any loaded module controller can then be used like a library, ie: $this->controller->method(), but it
+				has access to its own models and libraries independently from the caller.
+			</p>
+			<p>
+				All module controllers are accessible from the URL via module/controller/method or simply module/method
+				if the module and controller names match. If you add the _remap() method to your controllers you can
+				prevent unwanted access to them from the URL and redirect or flag an error as you like.
+			</p>
+
+			<h4><b>Notes:</b></h4>
+
+			<p>
+				To use HMVC functionality, such as Modules::run(), controllers must extend the MX_Controller class.
+			</p>
+			<p>
+				To use Modular Separation only, without HMVC, controllers will extend the CodeIgniter Controller class.
+			</p>
+			<p>
+				You must use PHP5 style constructors in your controllers. ie:
+			</p>
+
+			<p>
+				<div class="code-style">
+					<pre>
+			class Xyz extends MX_Controller 
+			{
+			    function __construct()
+			    {
+			        parent::__construct();
+			    }
+			}   
+		</pre>
+
+				</div>
+			</p>
+			<p>
+				Constructors are not required unless you need to load or process something when the controller is first
+				created.
+			</p>
+			<p>
+				All MY_ extension libraries should include (require) their equivalent MX library file and extend their
+				equivalent MX_ class
+			</p>
+			<p>
+				Each module may contain a config/routes.php file where routing and a default controller can be defined
+				for that module using:
+			</p>
+
+			<p>
+				<div class="code-style">
+					<pre>
+			$route['module_name'] = 'controller_name';  
+		</pre>
+
+				</div>
+			</p>
+			<p>
+				Controllers may be loaded from application/controllers sub-directories.
+			</p>
+			<p>
+				Controllers may also be loaded from module/controllers sub-directories.
+			</p>
+			<p>
+				Resources may be cross loaded between modules. ie: $this->load->model('module/model');
+			</p>
+			<p>
+				Modules::run() is designed for returning view partials, and it will return buffered output (a view) from
+				a controller. The syntax for using modules::run is a URI style segmented string and unlimited variables.
+			</p>
+
+			<p>
+				<div class="code-style">
+					<pre>
+	/** module and controller names are different, you must include 
+	the method name also, including 'index' **/
+	modules::run('module/controller/method', $params, $...);
+
+	/** module and controller names are the same but the method is not 'index' **/
+	modules::run('module/method', $params, $...);
+
+	/** module and controller names are the same and the method is 'index' **/
+	modules::run('module', $params, $...);
+
+	/** Parameters are optional, You may pass any number of parameters. **/  
+</pre>
+
+				</div>
+			</p>
+
+			<p>
+				To call a module controller from within a controller you can use $this->load->module() or
+				Modules::load() and PHP5 method chaining is available for any object loaded by MX. ie:
+				$this->load->library(‘validation’)->run().
+			</p>
+			<p>
+				To load languages for modules it is recommended to use the Loader method which will pass the active
+				module name to the Lang instance; ie: $this->load->language('language_file');
+			</p>
+			<p>
+				The PHP5 spl_autoload feature allows you to freely extend your controllers, models and libraries from
+				application/core or application/libraries base classes without the need to specifically include or
+				require them.
+			</p>
+			<p>
+				The library loader has also been updated to accommodate some CI 1.7 features: ie Library aliases are
+				accepted in the same fashion as model aliases, and loading config files from the module config directory
+				as library parameters (re: form_validation.php) have beed added.
+			</p>
+			<p>
+				$config = $this->load->config(‘config_file’), Returns the loaded config array to your variable.
+			</p>
+			<p>
+				Models and libraries can also be loaded from sub-directories in their respective application
+				directories.
+			</p>
+			<p>
+				When using form validation with MX you will need to extend the CI_Form_validation class as shown below,
+			</p>
+
+			<p>
+				<div class="code-style">
+					<pre>
+			/** application/libraries/MY_Form_validation **/ 
+			class MY_Form_validation extends CI_Form_validation 
+			{
+			    public $CI;
+			}  
+		</pre>
+
+				</div>
+			</p>
+			<p>
+				before assigning the current controller as the $CI variable to the form_validation library. This will
+				allow your callback methods to function properly. (This has been discussed on the CI forums also).
+			</p>
+			<p>
+				<div class="code-style">
+					<pre>
+			class Xyz extends MX_Controller 
+			{
+			    function __construct()
+			    {
+			        parent::__construct();
+
+			        $this->load->library('form_validation');
+			        $this->form_validation->CI =& $this;
+			    }
+			}  
+		</pre>
+
+				</div>
+			</p>
+
+			<h4><b>View Partials:</b></h4>
+
+			<p>
+				Using a Module as a view partial from within a view is as easy as writing:
+			</p>
+
+			<p>
+				<div class="code-style">
+					<pre>
+			echo Modules::run('module/controller/method', $param, $...); 
+		</pre>
+
+				</div>
+			</p>
+			<p>
+				Parameters are optional, You may pass any number of parameters.
+			</p>
+
+			<h4><b>Modular Extensions installation:</b></h4>
+
+			<ol>
+				<li>Start with a clean CI install</li>
+				<li>Set $config[‘base_url’] correctly for your installation</li>
+				<li>Access the URL /index.php/welcome => shows Welcome to CodeIgniter</li>
+				<li>Drop Modular Extensions third_party files into the application/third_party directory</li>
+				<li>Drop Modular Extensions core files into application/core, the MY_Controller.php file is not required
+					unless
+					you wish to create your own controller extension</li>
+				<li>Access the URL /index.php/welcome => shows Welcome to CodeIgniter</li>
+				<li>Create module directory structure application/modules/welcome/controllers</li>
+				<li>Move controller application/controllers/welcome.php to
+					application/modules/welcome/controllers/welcome.php</li>
+				<li>Access the URL /index.php/welcome => shows Welcome to CodeIgniter</li>
+				<li>Create directory application/modules/welcome/views</li>
+				<li>Move view application/views/welcome_message.php to
+					application/modules/welcome/views/welcome_message.php</li>
+				<li>Access the URL /index.php/welcome => shows Welcome to CodeIgnite
+				</li>
+			</ol>
+
+			<p>
+				you should now have a running Modular Extensions installation.
+			</p>
+		</div>
+
+		<br><br>
+		<hr>
+
+		<h3 id="cap"><strong>C) Google Captcha</strong> - <a href="#toc">top</a></h3>
+
+		<div class="step-1">
+
+			<a href="https://www.google.com/recaptcha/admin#list" title="">Google Captcha</a>
+			Click to this link google captcha will be open. <br><br>
+
+			<img src="assets/images/captcha_reg.png" alt="" width="80%">
+
+			<br><br>
+			<ol>
+				<li>In the label Field write your Domain name.If you are with localhost then wirte localhost or
+					example.com.</li>
+				<li>Choose your own type of captcha I have choosed the Invisible reCaptcha.</li>
+				<li>Wirte your domain name if you are using localhost then wirte localhost or example.com.</li>
+				<li>Click to checkbox and Accept the terms and conditions and click to register</li>
+			</ol>
+
+			After Complete the registeration then this page will open.<br><br>
+
+			<img src="assets/images/captcha_seting.png" alt="" width="80%">
+			<br><br>
+			<ol>
+				<li>Paste this script tag at end of your HTML template with JS links:</li>
+				<li>Paste this snippet at the end of the < /form> to create a button protected by the Invisible
+						reCAPTCHA. You will need to create a callback function to handle the result.</li> </ol> Now your
+						google captach is ready.<br><br>
+		</div>
+
+
+		<br><br>
+		<hr>
+
+		<h3 id="use"><strong>C) How To Use</strong> - <a href="#toc">top</a></h3>
+
+		<h3 class="method-one-label"> <i class="fa fa-sign-in"></i> Login form</h3>
+
+		<div class="step-1">
+
+			<p>
+				After instillation completed goto http://yourdomain.com/, you will get login up form.Admin can direct
+				login with default email and password.
+
+			</p>
+			<p>
+				<b>Admin Login</b><br>
+
+				Email:admin@admin.com <br>
+				Pass :password
+			</p>
+			<p>
+				<b>Genral User Login</b><br>
+
+				Email:codemaster@gmail.com <br>
+				Pass :password
+			</p>
+			<img src="assets/screenshots/01_preview1.png" alt="" width="80%">
+
+		</div>
+
+
+		<br><br>
+		<hr>
+
+		<h3 class="method-one-label"><i class="fa fa-user-plus"></i> Sign Up</h3>
+
+		<div class="step-1">
+			<p>
+				New user will sign up first, Below the login button, click on register button, the sign up form will
+				open.
+			</p>
+			<img src="assets/screenshots/02_preview2.png" alt="" width="80%">
+		</div>
+
+		<br><br>
+		<hr>
+
+		<h3 class="method-one-label"> <i class="fa fa-unlock"></i> Forgot Password</h3>
+
+		<div class="step-1">
+
+			<p>
+				If a user forgot password, then click on the link below login button "Lost password".
+				Forgot password page will open, put email in the form the activation link will be send to user email.
+			</p>
+			<img src="assets/screenshots/03_preview3.png" alt="" width="80%">
+		</div>
+
+		<br><br>
+		<hr>
+
+
+		<h3 class="method-one-label"> <i class="fa fa-tachometer"></i> Dashboard</h3>
+
+		<div class="step-1">
+
+			<p>
+				We Have Two Dashboards, One when user login the user will see and the second is dashboard with stuff.
+			</p>
+			<img src="assets/screenshots/04_preview4.png" alt="" width="50%">
+			<img src="assets/screenshots/23_preview23.png" alt="" width="50%" class="dashboard">
+
+		</div>
+
+		<br><br>
+		<hr>
+
+		<h3 class="method-one-label"> <i class="fa fa-users"></i> Users</h3>
+
+		<div class="step-1">
+
+			<p>
+				Admin can see users role/groups, Activate or Deactivate users, Edit the users information and he/she can
+				assign group to users, delete users.
+			</p>
+			<img src="assets/screenshots/05_preview5.png" alt="" width="100%">
+		</div>
+
+		<br><br>
+		<hr>
+
+		<h3 class="method-two-label"> <i class="fa fa-user-times"></i> Activate/Deactivate User</h3>
+
+		<div class="step-1">
+
+			<p>
+				In status column click on active button the deactivate page will open, if you are sure to deactivate a
+				user then select on one of them.
+			</p>
+			<p>
+				If admin want to Activate a user, then just click on Active button in status column.
+			</p>
+			<img src="assets/screenshots/06_preview6.png" alt="" width="100%">
+		</div>
+
+		<br><br>
+		<hr>
+
+		<h3 class="method-one-label"> <i class="fa fa-pencil-square"></i> Update User</h3>
+
+		<div class="step-1">
+
+			<p>
+				Only admin can update the user information when click on the edit button.Admin can also assign group to
+				user during updation.
+			</p>
+			<img src="assets/screenshots/07_preview7.png" alt="" width="100%">
+		</div>
+
+		<br><br>
+		<hr>
+
+		<h3 class="method-one-label"> <i class="fa fa-user-plus"></i> Add User</h3>
+
+		<div class="step-1">
+
+			<p>
+				To Add new user click on the sidebar users->add users.
+			</p>
+			<img src="assets/screenshots/08_preview8.png" alt="" width="100%">
+		</div>
+
+		<br><br>
+		<hr>
+
+		<h3 class="method-one-label"> <i class="fa fa-eye"></i> View Groups</h3>
+
+		<div class="step-1">
+
+			<p>
+				Only admin can update and delete user groups
+			</p>
+			<img src="assets/screenshots/09_preview9.png" alt="" width="100%">
+		</div>
+
+		<br><br>
+		<hr>
+
+		<h3 class="method-one-label"> <i class="fa fa-user-plus"></i> Create Groups</h3>
+
+		<div class="step-1">
+
+			<p>
+				By default there are two groups admin and members, The admin have full access to create as much as......
+				There are two steps to create group in first step write down the group name and description.In the step
+				two assign privilegs to group.
+			</p>
+			<img src="assets/screenshots/11_preview11.png" alt="" width="100%">
+			<img src="assets/screenshots/12_preview12.png" alt="" width="100%">
+		</div>
+
+		<br><br>
+		<hr>
+
+		<h3 class="method-one-label"> <i class="fa fa-pencil"></i> Update Group</h3>
+
+		<div class="step-1">
+
+			<p>
+				To Upddate User group privileges click on Edit button here You can Update user group privilegs.
+			</p>
+			<img src="assets/screenshots/10_preview10.png" alt="" width="100%">
+		</div>
+
+		<br><br>
+		<hr>
+
+		<h3 class="method-one-label"> <i class="f"></i> Create Permissions</h3>
+
+		<div class="step-1">
+			<p>
+				Admin can create persmissions,update and delete.
+			</p>
+			<img src="assets/screenshots/13_preview13.png" alt="" width="100%">
+		</div>
+
+		<br><br>
+		<hr>
+
+		<h3 class="method-one-label"> <i class="fa fa-cogs"></i> Configuration</h3>
+
+		<div class="step-1">
+
+			<p>
+				There are pre setup configuration done,if you want to change then you can update.
+			</p>
+			<p>
+				If you want you to change it manually then goto config->ion_auth
+			</p>
+			<img src="assets/screenshots/14_preview14.png" alt="" width="100%">
+		</div>
+
+		<br><br>
+		<hr>
+
+		<h3 class="method-two-label"> <i class="fa fa-key"></i> Change password</h3>
+
+		<div class="step-1">
+
+			<p>
+				User can change password,click on the sidebar link change password the password change page will open.
+			</p>
+			<img src="assets/screenshots/15_preview15.png" alt="" width="100%">
+		</div>
+
+		<br><br>
+		<hr>
+
+		<h3 class="method-two-label"> <i class="fa fa-database"></i> Backup & Export</h3>
+
+		<div class="step-1">
+
+			<p>
+				Admin can take backup of database and also Export user list.
+			</p>
+			<img src="assets/screenshots/16_preview16.png" alt="" width="100%">
+		</div>
+
+		<br><br>
+		<hr>
+
+		<p>Once again, thank you so much for purchasing this product. As I said at the beginning, I'd be glad to help
+			you if you have any questions relating to this product. No guarantees, but I'll do my best to assist. If you
+			have a more general question relating to the product on CodeCanyon, you might consider visiting the forums
+			and asking your question in the "Item Discussion" section.</p>
+
+		<p class="append-bottom alt large"><strong>Salman Iqbal</strong></p>
+		<p><a href="#toc">Go To Table of Contents</a></p>
+
+		<hr class="space">
+	</div><!-- end div .container -->
+</body>
+
+</html>

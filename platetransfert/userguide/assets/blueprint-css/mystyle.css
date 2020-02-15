@@ -1,0 +1,49 @@
+.method-one-label
+{
+	background-color: brown;
+	color: white;
+	width: 20%;
+	height: 30px;
+	text-align: center;
+	padding-top: 15px;
+	margin-left: 3%;
+}
+.step-1
+{
+	background-color: #e9e9e9;
+	width: 100%;
+	margin-left: 3%;
+	height: 100%;
+	padding-top: 2%;
+	padding-left: 2%;
+}
+.method-two-label
+{
+	background-color: brown;
+	color: white;
+	width: 50%;
+	height: 30px;
+	text-align: center;
+	padding-top: 15px;
+	margin-left: 3%;
+	margin-top: 3%;
+}
+.style
+{
+	width: 100%;
+	height: 80px;
+	text-align: center;
+	background-color:red;
+	color: white;
+	font-weight: bold;
+	padding-top: 20px;
+}
+.code-style
+{
+	border:2px solid grey;
+	background: black;
+	color: white;
+	width: 90%;
+	/*height: 10em;*/
+
+}
