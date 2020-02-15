@@ -15,6 +15,7 @@ class Pays extends MY_Controller
 		//Do your magic here
 
 		$this->load->module('layout');
+		$this->load->model(array('pays_model'));
 
 		if (!$this->ion_auth->logged_in())
 		{
@@ -33,6 +34,8 @@ class Pays extends MY_Controller
 
 	public function dashboard($value='')
 	{
+
+		$data['pays']=$this->pays_model->get_all_pays();
 		$data['page'] = "pays/pays/accueil";
 		$this->layout->template_view($data);
 	}
