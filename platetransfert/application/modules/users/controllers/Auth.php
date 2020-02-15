@@ -14,7 +14,7 @@ class Auth extends MY_Controller {
 		$this->lang->load('auth');
 		$this->load->model(array('Users_modal','Users_groups','common_model','Ion_auth_model'));
 
-		$this->load->module('template');
+		//$this->load->module('template');
 		$this->load->module('layout');
 		// Include the google api php libraries
 		include_once APPPATH."libraries/google-api-php-client/Google_Client.php";
@@ -61,6 +61,46 @@ class Auth extends MY_Controller {
 			 $this->layout->template_view($data);
 		}
 	}
+
+
+
+	public function liste()
+	{
+
+		if (!$this->ion_auth->logged_in())
+		{
+			// redirect them to the login page
+			redirect('users/auth/login', 'refresh');
+		}
+		else
+		{
+			//Count all users
+			$data['total_users'] = $this->Users_modal->count_users();
+			// set the flash data error message if there is one
+			$data['message'] = (validation_errors()) ? validation_errors() : $this->session->flashdata('message');
+			//get all users
+			$data['all_users'] = $this->Users_modal->all_users();
+			$data['today_users'] = $this->Users_modal->recent_users();
+			$data['weekly'] = $this->Users_modal->weekly_data();
+
+			//list the users
+			// $data['users'] = $this->ion_auth->users()->result();
+			// foreach ($data['users'] as $k => $user)
+			// {
+			// 	$data['users'][$k]->groups = $this->ion_auth->get_users_groups($user->id)->result();
+			// }
+			//$data['page'] = "users/auth/index";
+			// $this->template->template_view($data);
+			 
+
+
+			 $data['page'] = "users/users/user_liste";
+			 $this->layout->template_view($data);
+		}
+	}
+
+
+
 
 	// log the user in
 	public function login()

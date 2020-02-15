@@ -25,7 +25,7 @@
                     </a>
                     <ul class="sub-menu">
                         <li>
-                            <a class="" href="utilisateurs.html">Liste utilisateur</a>
+                            <a class="" href="<?php bs()?>users/Auth/liste">Liste utilisateur</a>
                         </li>
                         <li>
                             <a class="" href="add_user.html">Ajouter un utilisateur</a>
