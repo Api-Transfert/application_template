@@ -92,11 +92,17 @@
                         <i class="fa fa-gear"></i>
                         <span class="title">Quota</span>
                     </a>
-                </li>
-                <li class="">
+				</li>
+				<li class="">
                     <a href="<?php bs()?>Commission">
                         <i class="fa fa-gear"></i>
                         <span class="title">Commission</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="<?php bs()?>Reseau">
+                        <i class="fa fa-gear"></i>
+                        <span class="title">Réseau</span>
                     </a>
                 </li>
             </ul>
