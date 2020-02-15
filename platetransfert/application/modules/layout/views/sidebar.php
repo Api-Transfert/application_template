@@ -104,6 +104,63 @@
                         <i class="fa fa-gear"></i>
                         <span class="title">Réseau</span>
                     </a>
+				</li>
+				
+
+				<li class="">
+                        <a href="javascript:;"> <i class="fa fa-folder-open"></i> <span class="title">Tarification</span> <span class="arrow "></span> </a>
+                        <ul class="sub-menu">
+                            
+							<li>
+                                <a href="#"> <span class="title">Grilles</span> </a>
+                            </li>
+                            <li class="">
+                                <a href="javascript:;"><span class="title">Zones</span> <span class="arrow "></span> </a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a class="" href="#">Emission</a>
+                                    </li>
+                                    <li>
+                                        <a class="" href="#">Destination</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#"> <span class="title">Taxe</span> </a>
+                            </li>
+                            <li>
+                                <a href="#"> <span class="title">Tarifs</span> </a>
+                            </li>
+                            
+                        </ul>
+				</li>
+				
+				<li class="">
+                        <a href="javascript:;"> <i class="fa fa-folder-open"></i> <span class="title">Emissions</span> <span class="arrow "></span> </a>
+                        <ul class="sub-menu">
+                            
+							<li>
+                                <a href="#"> <span class="title">Cash &agrave; cash</span> </a>
+							</li>
+							
+							<li>
+                                <a href="#"> <span class="title">Cash &agrave; compte</span> </a>
+							</li>
+							
+							
+
+							<li>
+                                <a href="#"> <span class="title">Cash &agrave; Wallet</span> </a>
+							</li>
+
+							<li>
+                                <a href="#"> <span class="title">Cash &agrave; carte</span> </a>
+							</li>
+							
+                            
+                            
+                            
+                        </ul>
                 </li>
             </ul>
 
