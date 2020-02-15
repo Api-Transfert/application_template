@@ -63,7 +63,7 @@
                     </a>
                 </li>
                 <li class="">
-                    <a href="zones.html">
+                    <a href="<?php bs()?>Zone">
                         <i class="fa fa-gear"></i>
                         <span class="title">Zones</span>
                     </a>
