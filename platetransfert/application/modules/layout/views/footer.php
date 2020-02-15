@@ -35,7 +35,15 @@
     <script src="<?php bs()?>assets/js/jspdf.min.js"></script>
     <script src="<?php bs()?>assets/js/bootstrap-table-export.js"></script>
     <script src="<?php bs()?>assets/js/jspdf.plugin.autotable.js"></script>
+    <script src="<?php bs()?>assets/libs/tooltip/popper.min.js"></script>
+    <script src="<?php bs()?>assets/libs/tooltip/custom.min.js"></script>
+    <script src="<?php bs()?>assets/libs/custom/dp.min.js"></script>
 
+<script>
+    $(document).ready(function () {
+        $('.fixed-table-loading.table.table-bordered.table-hover').hide();
+    });
+</script>
 </body>
 
 </html>
