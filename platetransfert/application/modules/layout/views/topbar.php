@@ -294,7 +294,7 @@
                                 </a>
                             </li>
                             <li class="last">
-                                <a href="ui-login.html">
+                                <a href="<?php bs() ?>users/Auth/logout">
                                     <i class="fa fa-lock"></i> Deconnexion
                                 </a>
                             </li>
