@@ -20,12 +20,12 @@
                 <li class="">
                     <a href="javascript:;">
                         <i class="fa fa-gear"></i>
-                        <span class="title">Gestions utilisateur</span>
+                        <span class="title">Gestions agents</span>
                         <span class="arrow "></span>
                     </a>
                     <ul class="sub-menu">
                         <li>
-                            <a class="" href="utilisateurs.html">Liste utilisateur</a>
+                            <a class="" href="<?php bs()?>users/Auth/liste">Liste utilisateur</a>
                         </li>
                         <li>
                             <a class="" href="add_user.html">Ajouter un utilisateur</a>
@@ -51,7 +51,7 @@
                     </ul>
                 </li>
                 <li class="">
-                    <a href="pays.html">
+                    <a href="<?php bs()?>Pays">
                         <i class="fa fa-gear"></i>
                         <span class="title">Pays</span>
                     </a>
@@ -63,7 +63,7 @@
                     </a>
                 </li>
                 <li class="">
-                    <a href="zones.html">
+                    <a href="<?php bs()?>Zone">
                         <i class="fa fa-gear"></i>
                         <span class="title">Zones</span>
                     </a>
@@ -74,12 +74,7 @@
                         <span class="title">Agences</span>
                     </a>
                 </li>
-                <li class="">
-                    <a href="agent.html">
-                        <i class="fa fa-gear"></i>
-                        <span class="title">Agents</span>
-                    </a>
-                </li>
+               
                 <li class="">
                     <a href="sous_distributeurs.html">
                         <i class="fa fa-gear"></i>
@@ -87,22 +82,85 @@
                     </a>
                 </li>
                 <li class="">
-                    <a href="">
+                    <a href="<?php bs()?>Master">
                         <i class="fa fa-gear"></i>
                         <span class="title">Master</span>
                     </a>
                 </li>
                 <li class="">
-                    <a href="">
+                    <a href="<?php bs()?>Quota">
                         <i class="fa fa-gear"></i>
                         <span class="title">Quota</span>
                     </a>
-                </li>
-                <li class="">
-                    <a href="">
+				</li>
+				<li class="">
+                    <a href="<?php bs()?>Commission">
                         <i class="fa fa-gear"></i>
                         <span class="title">Commission</span>
                     </a>
+                </li>
+                <li class="">
+                    <a href="<?php bs()?>Reseau">
+                        <i class="fa fa-gear"></i>
+                        <span class="title">Réseau</span>
+                    </a>
+				</li>
+				
+
+				<li class="">
+                        <a href="javascript:;"> <i class="fa fa-folder-open"></i> <span class="title">Tarification</span> <span class="arrow "></span> </a>
+                        <ul class="sub-menu">
+                            
+							<li>
+                                <a href="#"> <span class="title">Grilles</span> </a>
+                            </li>
+                            <li class="">
+                                <a href="javascript:;"><span class="title">Zones</span> <span class="arrow "></span> </a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a class="" href="#">Emission</a>
+                                    </li>
+                                    <li>
+                                        <a class="" href="#">Destination</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#"> <span class="title">Taxe</span> </a>
+                            </li>
+                            <li>
+                                <a href="#"> <span class="title">Tarifs</span> </a>
+                            </li>
+                            
+                        </ul>
+				</li>
+				
+				<li class="">
+                        <a href="javascript:;"> <i class="fa fa-folder-open"></i> <span class="title">Emissions</span> <span class="arrow "></span> </a>
+                        <ul class="sub-menu">
+                            
+							<li>
+                                <a href="#"> <span class="title">Cash &agrave; cash</span> </a>
+							</li>
+							
+							<li>
+                                <a href="#"> <span class="title">Cash &agrave; compte</span> </a>
+							</li>
+							
+							
+
+							<li>
+                                <a href="#"> <span class="title">Cash &agrave; Wallet</span> </a>
+							</li>
+
+							<li>
+                                <a href="#"> <span class="title">Cash &agrave; carte</span> </a>
+							</li>
+							
+                            
+                            
+                            
+                        </ul>
                 </li>
             </ul>
 
