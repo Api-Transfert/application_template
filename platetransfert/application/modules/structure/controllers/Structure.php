@@ -33,7 +33,12 @@ class Structure extends MY_Controller
 
 	public function dashboard($value='')
 	{
-		$data['page'] = "transfert/structure/accueil";
+		$data['page'] = "structure/structure/accueil";
+		$data['stucture_data'] = $this->db->select('structureId,structureName , typeName, structureSoldeQuota , paysName , structureActive')
+                                          ->join('pays','pays.paysId = structure.structurePaysId')
+                                          ->join('type_structure','type_structure.idtypeStructure = structure.structureType')
+                                          ->get('structure')
+                                          ->result();
 		$this->layout->template_view($data);
 	}
 
