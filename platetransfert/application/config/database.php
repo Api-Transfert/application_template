@@ -75,10 +75,10 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => 'root',
-	'password' => '',
-	'database' => 'platetransfert',
+	'hostname' => '2asoft.net',
+	'username' => 'money_transfert',
+	'password' => 'money_transfert',
+	'database' => 'money_transfert',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
