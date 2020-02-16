@@ -66,9 +66,9 @@
                             <td><?=$stuc->paysName?></td>
                             <td>
                                 <?php if($stuc->structureActive == '1'):; $check='checked'?>
-                                    <button class="btn-link text-success"><i class="fa fa-check"></i></button>
+                                    <button id="struc_st_<?=$stuc->structureId;?>" class="btn-link"><i class="fa fa-check text-success"></i></button>
                                 <?php else : $check = '';?>
-                                    <button class="btn-link text-danger"><i class="fa fa-times"></i></button>
+                                    <button id="struc_st_<?=$stuc->structureId;?>" class="btn-link"><i class="fa fa-times text-danger"></i></button>
                                 <?php endif;?>
                             </td>
                             <td>
@@ -84,7 +84,7 @@
                                                 <span>Status</span>
                                                 <div class="custom-switch custom-switch-xs pl-0 dis-inline-block t-middle pull-right">
                                                     <input class="custom-switch-input" id="swtich_struc_<?=$stuc->structureId;?>" type="checkbox" <?=$check?>>
-                                                    <label class="custom-switch-btn" for="swtich_struc_<?=$stuc->structureId;?>"></label>
+                                                    <label class="custom-switch-btn" data-id="<?=$stuc->structureId?>" data-st-tag="#struc_st_<?=$stuc->structureId;?>" for="swtich_struc_<?=$stuc->structureId;?>"></label>
                                                 </div>
                                             </div>
                                         </li>
@@ -275,3 +275,30 @@
 </div>
 </div>
 <!-- END CONTAINER -->
+<script>
+  $(document).on('click','.custom-switch-btn',{passive:true},function () {
+      const structure_id = $(this).attr('data-id');
+      const switch_init_state = $('#'+$(this).attr('for')).prop('checked');
+      const switch_final_state = !switch_init_state;
+      const new_value = (switch_final_state === true)?'1':'0';
+      const st_tag = $($(this).attr('data-st-tag'));
+      var msg = ((switch_final_state === false)?'Confirmez-vous la désactivation de cette structure ?' : 'Confirmez-vous l’activation de cette structure ?');
+
+      function update_structure_status(){
+          $.post(base_url+'structure/update_stucture_status',{'structure_id':structure_id , 'new_status':new_value},function () {
+              if(switch_final_state === false){
+                  showSuccess('Structure désactivé avec succès');
+                  $(st_tag).html('<i class="fa fa-times text-danger"></i>');
+              }
+              else{
+                  showSuccess('Structure activé avec succès');
+                  $(st_tag).html('<i class="fa fa-check text-success"></i>');
+              }
+          });
+      }
+
+      swal_confirm('Attention',msg,{yes : update_structure_status});
+
+  });
+  
+</script>

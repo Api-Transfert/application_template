@@ -10,6 +10,7 @@ function hide_loader(){
 
 function swal_confirm(title , message ,callback , btn_options){
     var btn_opt = {};
+    btn_options = btn_options || {};
     btn_opt.showCancelButton = btn_options.showCancelButton || true;
     btn_opt.confirmButtonText = btn_options.confirmButtonText || 'Oui';
     btn_opt.cancelButtonText = btn_options.cancelButtonText || 'Non';

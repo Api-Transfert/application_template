@@ -38,6 +38,13 @@ class Structure extends MY_Controller
 		$this->layout->template_view($data);
 	}
 
+    public function update_stucture_status(){
+	    if(!empty($_POST['structure_id'])){
+	        $this->structure_model->update_structure_status();
+        }
+    }
+
+//======================================================================================================================
 	public function layout_boxed()
 	{
 		// $data['sidebar'] = $this->template->load_sidebar();
@@ -59,9 +66,6 @@ class Structure extends MY_Controller
 		$data['page'] = "extras/layout/layout-sidebar-scroll";
 		$this->template->template_view($data);
 	}
-
-
-
 
 	public function structure($value='')
 	{
@@ -93,10 +97,6 @@ class Structure extends MY_Controller
 		$this->template->template_view($data);
 	}
 
-	public function userguide()
-	{
-		view('userguide/index');
-	}
 }
 
 /* End of file Extras.php */

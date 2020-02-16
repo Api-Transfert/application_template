@@ -57,6 +57,9 @@
     <link href="<?php bs()?>assets/plugins/messenger/css/messenger-theme-future.css" rel="stylesheet" type="text/css" media="screen" />
     <link href="<?php bs()?>assets/plugins/messenger/css/messenger-theme-flat.css" rel="stylesheet" type="text/css" media="screen" />
 
+    <script src="<?php bs()?>assets/js/jquery-1.11.2.min.js"></script>
+
+
     <script>
         var base_url = '<?=base_url()?>';
         const router_class = 'admin/<?=$this->router->fetch_class();?>';

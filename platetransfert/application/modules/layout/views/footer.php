@@ -2,7 +2,6 @@
     <!-- LOAD FILES AT PAGE END FOR FASTER LOADING -->
 
     <!-- CORE JS FRAMEWORK - START -->
-    <script src="<?php bs()?>assets/js/jquery-1.11.2.min.js"></script>
     <script src="<?php bs()?>assets/js/jquery.easing.min.js"></script>
     <script src="<?php bs()?>assets/plugins/bootstrap/js/bootstrap.min.js"></script>
     <script src="<?php bs()?>assets/plugins/pace/pace.min.js"></script>
@@ -52,6 +51,28 @@
     $(document).ready(function () {
         $('.fixed-table-loading.table.table-bordered.table-hover').hide();
     });
+
+    $(document).on('click','.custom-switch-btn',function(){
+        custom_btn_by_id = $('#'+$(this).attr('for'));
+        switch_init_state = custom_btn_by_id.prop('checked'); //('get the state of the switch before the switch changes')
+        switch_final_state = !switch_init_state;
+
+        if(has_attr(this,'input-target')){
+            $('#'+$(this).attr('input-target')).attr('value',(switch_final_state === true)?'1':'0');
+        }
+        else if(has_attr(this,'value-target')){
+            $('#'+$(this).attr('value-target')).attr('value',(switch_final_state === true)?'1':'0');
+        }
+        console.log('switch clicked');
+    });
+
+    $(document).on('click','.swal2-container',{passive:true},function () {
+        //reset switch state if no choise is made
+        if(typeof custom_btn_by_id !== 'undefined'){
+            reset_btn_state();
+        }
+    });
+
 </script>
 </body>
 
