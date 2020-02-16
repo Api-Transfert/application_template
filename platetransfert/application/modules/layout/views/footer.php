@@ -46,10 +46,23 @@
     <script src="<?php bs()?>assets/libs/js/is_mobile.js"></script>
     <script src="<?php bs()?>assets/libs/sweetalert2/dist/sweetalert2.all.js"></script>
     <script src="<?php bs()?>assets/libs/custom/swal.js"></script>
-
+	<script src="<?php bs()?>assets/plugins/icheck/icheck.min.js"></script>
 <script>
     $(document).ready(function () {
         $('.fixed-table-loading.table.table-bordered.table-hover').hide();
+
+        <?php $this->session->set_flashdata('warning_message','test');
+        if(!empty($this->session->flashdata('message'))) { ?> show_message('success' , '<?=$this->session->flashdata('message')?>'); <?php }
+
+        if(!empty($this->session->flashdata('success_message'))) { ?> show_message('success' , '<?=$this->session->flashdata('success_message')?>'); <?php }
+
+        if(!empty($this->session->flashdata('error_message'))) { ?> show_message('error' , '<?=$this->session->flashdata('error_message')?>'); <?php }
+
+        if(!empty($this->session->flashdata('info_message'))) { ?>  show_message('info' , '<?=$this->session->flashdata('info_message')?>'); <?php }
+
+        if(!empty($this->session->flashdata('warning_message'))) { ?> show_message('warning' , '<?=$this->session->flashdata('warning_message')?>'); <?php }
+
+        ?>
     });
 
     $(document).on('click','.custom-switch-btn',function(){
@@ -72,7 +85,6 @@
             reset_btn_state();
         }
     });
-
 </script>
 </body>
 

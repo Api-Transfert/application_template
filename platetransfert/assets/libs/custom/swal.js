@@ -46,3 +46,15 @@ function swal_message(title , message , icon , timer){
         timer: timer || 2000
     })
 }
+
+function show_message(notif_type , message) {
+    message = message || 'message';
+    notif_type = notif_type || 'success';
+    Swal.fire({
+        position: 'top-end',
+        icon: notif_type,
+        title: message,
+        showConfirmButton: false,
+        timer: 1500
+    })
+}
