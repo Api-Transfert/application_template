@@ -51,13 +51,15 @@
     $(document).ready(function () {
         $('.fixed-table-loading.table.table-bordered.table-hover').hide();
 
-        <?php
+        <?php $this->session->set_flashdata('warning_message','test');
         if(!empty($this->session->flashdata('message'))) { ?> show_message('success' , '<?=$this->session->flashdata('message')?>'); <?php }
 
-        if(!empty($this->session->flashdata('error_message'))) { ?> show_message('danger' , '<?=$this->session->flashdata('error_message')?>'); <?php }
+        if(!empty($this->session->flashdata('success_message'))) { ?> show_message('success' , '<?=$this->session->flashdata('success_message')?>'); <?php }
 
-        if(!empty($this->session->flashdata('info_message'))) { ?>  show_message('success' , '<?=$this->session->flashdata('info_message')?>'); <?php }
-            
+        if(!empty($this->session->flashdata('error_message'))) { ?> show_message('error' , '<?=$this->session->flashdata('error_message')?>'); <?php }
+
+        if(!empty($this->session->flashdata('info_message'))) { ?>  show_message('info' , '<?=$this->session->flashdata('info_message')?>'); <?php }
+
         if(!empty($this->session->flashdata('warning_message'))) { ?> show_message('warning' , '<?=$this->session->flashdata('warning_message')?>'); <?php }
 
         ?>
@@ -83,18 +85,6 @@
             reset_btn_state();
         }
     });
-
-    function show_message(notif_type , message) {
-        message = message || 'message';
-        notif_type = notif_type || 'success';
-        Swal.fire({
-            position: 'top-end',
-            icon: notif_type,
-            title: message,
-            showConfirmButton: false,
-            timer: 1500
-        })
-    }
 </script>
 </body>
 
