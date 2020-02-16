@@ -140,7 +140,7 @@
                         <ul class="sub-menu">
                             
 							<li>
-                                <a href="#"> <span class="title">Cash &agrave; cash</span> </a>
+                                <a href="<?php bs()?>emission/cashacash"> <span class="title">Cash &agrave; cash</span> </a>
 							</li>
 							
 							<li>
