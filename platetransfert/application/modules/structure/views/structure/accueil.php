@@ -298,7 +298,5 @@
       }
 
       swal_confirm('Attention',msg,{yes : update_structure_status});
-
   });
-  
 </script>
