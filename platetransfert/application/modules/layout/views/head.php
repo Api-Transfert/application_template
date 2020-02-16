@@ -11,7 +11,6 @@
     <title>Cash to Cash</title>
     <meta content="" name="description" />
     <meta content="" name="author" />
-
     <!-- Favicon -->
     <link rel="shortcut icon" href="<?php bs()?>assets/images/favicon.png" type="image/x-icon" />
     <!-- For iPhone -->
@@ -22,7 +21,6 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php bs()?>assets/images/apple-touch-icon-72-precomposed.png">
     <!-- For iPad Retina display -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="<?php bs()?>assets/images/apple-touch-icon-144-precomposed.png">
-
     <!-- CORE CSS FRAMEWORK - START -->
     <link href="<?php bs()?>assets/css/add_custom.css" rel="stylesheet" type="text/css" media="screen" />
     <link href="<?php bs()?>assets/plugins/pace/pace-theme-flash.css" rel="stylesheet" type="text/css" media="screen" />
@@ -34,32 +32,24 @@
     <link href="<?php bs()?>assets/plugins/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.15.5/dist/bootstrap-table.min.css">
     <!-- CORE CSS FRAMEWORK - END -->
-
     <!-- HEADER SCRIPTS INCLUDED ON THIS PAGE - START -->
-
     <link href="<?php bs()?>assets/plugins/jvectormap/jquery-jvectormap-2.0.1.css" rel="stylesheet" type="text/css" media="screen" />
     <link href="<?php bs()?>assets/plugins/morris-chart/css/morris.css" rel="stylesheet" type="text/css" media="screen" />
-
     <!-- HEADER SCRIPTS INCLUDED ON THIS PAGE - END -->
-
     <!-- CORE CSS TEMPLATE - START -->
     <link href="<?php bs()?>assets/css/style.css" rel="stylesheet" type="text/css" />
     <link href="<?php bs()?>assets/css/responsive.css" rel="stylesheet" type="text/css" />
     <!-- CORE CSS TEMPLATE - END -->
-
     <!-- LIBS CSS TEMPLATE - START -->
     <link href="<?php bs()?>assets/libs/tooltip/tooltip.css" rel="stylesheet" type="text/css" />
     <link href="<?php bs()?>assets/libs/css/util.css" rel="stylesheet" type="text/css" />
     <link href="<?php bs()?>assets/libs/sweetalert2/dist/sweetalert2.css" rel="stylesheet" type="text/css" />
     <link href="<?php bs()?>assets/libs/custom_switch/component-custom-switch.min.css" rel="stylesheet" type="text/css" />
-
     <link href="<?php bs()?>assets/plugins/messenger/css/messenger.css" rel="stylesheet" type="text/css" media="screen" />
     <link href="<?php bs()?>assets/plugins/messenger/css/messenger-theme-future.css" rel="stylesheet" type="text/css" media="screen" />
     <link href="<?php bs()?>assets/plugins/messenger/css/messenger-theme-flat.css" rel="stylesheet" type="text/css" media="screen" />
 	<link href="<?php bs()?>assets/plugins/icheck/skins/all.css" rel="stylesheet" type="text/css" media="screen" />
     <script src="<?php bs()?>assets/js/jquery-1.11.2.min.js"></script>
-
-
     <script>
         var base_url = '<?=base_url()?>';
         const router_class = 'admin/<?=$this->router->fetch_class();?>';

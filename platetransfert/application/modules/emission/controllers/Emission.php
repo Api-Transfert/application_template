@@ -38,6 +38,22 @@ class Emission extends MY_Controller
 		$this->layout->template_view($data);
 	}
 
+	public function cashacompte($value='')
+	{
+		$data['page'] = "emission/cashacompte/accueil";
+		$data['stucture_data'] = $this->structure_model->get_structure();
+		$this->layout->template_view($data);
+	}
+
+
+	public function cashawallet($value='')
+	{
+		$data['page'] = "emission/cashawallet/accueil";
+		$data['stucture_data'] = $this->structure_model->get_structure();
+		$this->layout->template_view($data);
+	}
+
+
     public function update_stucture_status(){
 	    if(!empty($_POST['structure_id'])){
 	        $this->structure_model->update_structure_status();
