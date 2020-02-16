@@ -56,7 +56,7 @@
     <link href="<?php bs()?>assets/plugins/messenger/css/messenger.css" rel="stylesheet" type="text/css" media="screen" />
     <link href="<?php bs()?>assets/plugins/messenger/css/messenger-theme-future.css" rel="stylesheet" type="text/css" media="screen" />
     <link href="<?php bs()?>assets/plugins/messenger/css/messenger-theme-flat.css" rel="stylesheet" type="text/css" media="screen" />
-
+	<link href="<?php bs()?>assets/plugins/icheck/skins/all.css" rel="stylesheet" type="text/css" media="screen" />
     <script src="<?php bs()?>assets/js/jquery-1.11.2.min.js"></script>
 
 

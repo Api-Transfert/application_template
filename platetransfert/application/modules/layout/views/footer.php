@@ -46,7 +46,7 @@
     <script src="<?php bs()?>assets/libs/js/is_mobile.js"></script>
     <script src="<?php bs()?>assets/libs/sweetalert2/dist/sweetalert2.all.js"></script>
     <script src="<?php bs()?>assets/libs/custom/swal.js"></script>
-
+	<script src="<?php bs()?>assets/plugins/icheck/icheck.min.js"></script>
 <script>
     $(document).ready(function () {
         $('.fixed-table-loading.table.table-bordered.table-hover').hide();
