@@ -51,6 +51,7 @@
     $(document).ready(function () {
         $('.fixed-table-loading.table.table-bordered.table-hover').hide();
 
+        <?php
         if(!empty($this->session->flashdata('message'))) { ?> show_message('success' , '<?=$this->session->flashdata('message')?>'); <?php }
 
         if(!empty($this->session->flashdata('success_message'))) { ?> show_message('success' , '<?=$this->session->flashdata('success_message')?>'); <?php }
