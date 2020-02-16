@@ -22,23 +22,19 @@ class Structure extends MY_Controller
 			redirect('users/auth/login', 'refresh');
 		}
 		$this->ion_auth->get_user_group();
+		$this->load->model('structure_model');
 	}
 
 	public function index($value='')
 	{
 		$this->dashboard();
-		
 	}
 
 
 	public function dashboard($value='')
 	{
 		$data['page'] = "structure/structure/accueil";
-		$data['stucture_data'] = $this->db->select('structureId,structureName , typeName, structureSoldeQuota , paysName , structureActive')
-                                          ->join('pays','pays.paysId = structure.structurePaysId')
-                                          ->join('type_structure','type_structure.idtypeStructure = structure.structureType')
-                                          ->get('structure')
-                                          ->result();
+		$data['stucture_data'] = $this->structure_model->get_structure();
 		$this->layout->template_view($data);
 	}
 
