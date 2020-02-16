@@ -52,6 +52,7 @@
                     </tr>
                     </thead>
                     <tbody>
+					<?php if (count($pays) > 0) : ?>
                     <?php foreach($pays as $country):?>
                         <tr>
                             <td><?=$country->paysName?></td>
@@ -73,7 +74,17 @@
                                 <button class="btn-link text-danger"><i class="fa fa-trash" data-toggle="tooltip" data-placement="top" title="Supprimer"></i></button>
                             </td>
                         </tr>
-                    <?php endforeach;?>
+						<?php endforeach; ?>
+
+						<?php else : ?>
+
+							<tr>
+								<td>
+									No Pays Added Yet
+								</td>
+							</tr>
+
+						<?php endif; ?>
                     </tbody>
                 </table>
             </section>

@@ -4,6 +4,11 @@
 <section id="main-content" class=" ">
     <div class="wrapper main-wrapper row" style=''>
 
+        <div class="container">
+            <button class="btn btn-primary"><i class="fa fa-plus"></i> crée </button>
+
+        </div>
+
         <div class='col-xs-12'>
             <div class="page-title">
 
@@ -60,16 +65,32 @@
                             <td><?=$stuc->structureSoldeQuota?></td>
                             <td><?=$stuc->paysName?></td>
                             <td>
-                                <?php if($stuc->structureActive == '1'):;?>
-                                    <button class="btn-link text-success"><i class="fa fa-check"></i></button>
-                                <?php else : ;?>
-                                    <button class="btn-link text-danger"><i class="fa fa-times"></i></button>
+                                <?php if($stuc->structureActive == '1'):; $check='checked'?>
+                                    <button id="struc_st_<?=$stuc->structureId;?>" class="btn-link"><i class="fa fa-check text-success"></i></button>
+                                <?php else : $check = '';?>
+                                    <button id="struc_st_<?=$stuc->structureId;?>" class="btn-link"><i class="fa fa-times text-danger"></i></button>
                                 <?php endif;?>
                             </td>
                             <td>
-                                <button class="btn-link text-success" data-toggle="tooltip" data-placement="top" title="Voir"><i class="fa fa-eye"></i></button>
-                                <button class="btn-link text-warning" data-toggle="tooltip" data-placement="top" title="Modifier"><i class="fa fa-edit"></i></button>
-                                <button class="btn-link text-danger"><i class="fa fa-trash" data-toggle="tooltip" data-placement="top" title="Supprimer"></i></button>
+                                <div class="btn-group">
+                                    <button class="btn btn-primary">Actions</button> <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false"> <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a data-id="<?=$stuc->structureId?>" href="##"><i class="fa fa-eye"></i> Voir</a></li>
+                                        <li><a data-id="<?=$stuc->structureId?>" href="##"><i class="fa fa-edit"></i> Modifier</a></li>
+                                        <li><a data-id="<?=$stuc->structureId?>" href="##"><i class="fa fa-trash"></i> Supprimer</a></li>
+                                        <li class="divider"></li>
+                                        <li>
+                                            <div class="p-t-3 p-b-3 p-l-20 p-r-20">
+                                                <span>Status</span>
+                                                <div class="custom-switch custom-switch-xs pl-0 dis-inline-block t-middle pull-right">
+                                                    <input class="custom-switch-input" id="swtich_struc_<?=$stuc->structureId;?>" type="checkbox" <?=$check?>>
+                                                    <label class="custom-switch-btn" data-id="<?=$stuc->structureId?>" data-st-tag="#struc_st_<?=$stuc->structureId;?>" for="swtich_struc_<?=$stuc->structureId;?>"></label>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                    </ul>
+                                </div>
                             </td>
                         </tr>
                     <?php endforeach;?>
@@ -254,3 +275,30 @@
 </div>
 </div>
 <!-- END CONTAINER -->
+<script>
+  $(document).on('click','.custom-switch-btn',{passive:true},function () {
+      const structure_id = $(this).attr('data-id');
+      const switch_init_state = $('#'+$(this).attr('for')).prop('checked');
+      const switch_final_state = !switch_init_state;
+      const new_value = (switch_final_state === true)?'1':'0';
+      const st_tag = $($(this).attr('data-st-tag'));
+      var msg = ((switch_final_state === false)?'Confirmez-vous la désactivation de cette structure ?' : 'Confirmez-vous l’activation de cette structure ?');
+
+      function update_structure_status(){
+          $.post(base_url+'structure/update_stucture_status',{'structure_id':structure_id , 'new_status':new_value},function () {
+              if(switch_final_state === false){
+                  showSuccess('Structure désactivé avec succès');
+                  $(st_tag).html('<i class="fa fa-times text-danger"></i>');
+              }
+              else{
+                  showSuccess('Structure activé avec succès');
+                  $(st_tag).html('<i class="fa fa-check text-success"></i>');
+              }
+          });
+      }
+
+      swal_confirm('Attention',msg,{yes : update_structure_status});
+
+  });
+  
+</script>

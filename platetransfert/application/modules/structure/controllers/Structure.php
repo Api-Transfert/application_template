@@ -22,26 +22,29 @@ class Structure extends MY_Controller
 			redirect('users/auth/login', 'refresh');
 		}
 		$this->ion_auth->get_user_group();
+		$this->load->model('structure_model');
 	}
 
 	public function index($value='')
 	{
 		$this->dashboard();
-		
 	}
 
 
 	public function dashboard($value='')
 	{
 		$data['page'] = "structure/structure/accueil";
-		$data['stucture_data'] = $this->db->select('structureId,structureName , typeName, structureSoldeQuota , paysName , structureActive')
-                                          ->join('pays','pays.paysId = structure.structurePaysId')
-                                          ->join('type_structure','type_structure.idtypeStructure = structure.structureType')
-                                          ->get('structure')
-                                          ->result();
+		$data['stucture_data'] = $this->structure_model->get_structure();
 		$this->layout->template_view($data);
 	}
 
+    public function update_stucture_status(){
+	    if(!empty($_POST['structure_id'])){
+	        $this->structure_model->update_structure_status();
+        }
+    }
+
+//======================================================================================================================
 	public function layout_boxed()
 	{
 		// $data['sidebar'] = $this->template->load_sidebar();
@@ -63,9 +66,6 @@ class Structure extends MY_Controller
 		$data['page'] = "extras/layout/layout-sidebar-scroll";
 		$this->template->template_view($data);
 	}
-
-
-
 
 	public function structure($value='')
 	{
@@ -97,10 +97,6 @@ class Structure extends MY_Controller
 		$this->template->template_view($data);
 	}
 
-	public function userguide()
-	{
-		view('userguide/index');
-	}
 }
 
 /* End of file Extras.php */

@@ -13,7 +13,7 @@ class Zone extends MY_Controller
 	{
 		parent::__construct();
 		//Do your magic here
-
+		$this->load->model(array('zone_model'));
 		$this->load->module('layout');
 
 		if (!$this->ion_auth->logged_in())
@@ -33,6 +33,8 @@ class Zone extends MY_Controller
 
 	public function dashboard($value='')
 	{
+
+		$data['zones']=$this->zone_model->get_all_pays();
 		$data['page'] = "zone/zone/accueil";
 		$this->layout->template_view($data);
 	}

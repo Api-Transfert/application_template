@@ -101,6 +101,8 @@
     });
 </script>
 
+
+
  <!--  <script>
 
       //owl carousel
@@ -270,5 +272,5 @@
       });
     <?php
       }
-    ?> 
+    ?>
 </script>   

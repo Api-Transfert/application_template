@@ -15,7 +15,7 @@
 
                     <div class="pull-left">
                         <!-- PAGE HEADING TAG - START -->
-                        <h1 class="title">Zones</h1>
+						<h1 class="title">Zones</h1>
                         <!-- PAGE HEADING TAG - END -->
                     </div>
 
@@ -61,187 +61,32 @@
                         </tr>
                         </thead>
                         <tbody>
-                        <tr>
-                            <td>
-                                03-04-2019
-                            </td>
-                            <td>ZONE SAN-PEDRO Guessabo</td>
-                            <td>
-                                Agnibilekrou ; Abengourou ; Akoupé ; rubino ; Adzopé ; Yakassé Attobrou ; Bettie ; Abgoville ; Azaguié ; Alepe ; Ayamé Aboisso ; Adiaké Bonoua ; Tiapoum ; Anyama ; Songon ; Dabou ; Jacqueville ; Grand Lahou ; Sikensi ; N?douci
-                            </td>
 
-                            <td>
-                                <button class="btn btn-success"><i class="fa fa-eye"></i></button>
-                                <button class="btn btn-primary"><i class="fa fa-edit"></i></button>
-                                <button class="btn btn-danger"><i class="fa fa-trash"></i></button>
+						<?php if (count($zones) > 0) : ?>
+                    <?php foreach($zones as $zone):?>
+                        <tr>
+							<td><?=$zone->reseauDate?></td>
+                            <td><?=$zone->reseauName?></td>
+                            <td><?=substr("$zone->reseauDescription" ,0,50);?>  </td>
+
+							<td>
+                                <button class="btn-link text-success" data-toggle="tooltip" data-placement="top" title="Voir"><i class="fa fa-eye"></i></button>
+                                <button class="btn-link text-warning" data-toggle="tooltip" data-placement="top" title="Modifier"><i class="fa fa-edit"></i></button>
+                                <button class="btn-link text-danger"><i class="fa fa-trash" data-toggle="tooltip" data-placement="top" title="Supprimer"></i></button>
                             </td>
                         </tr>
-                        <tr>
-                            <td>
-                                03-04-2019
-                            </td>
-                            <td>ZONE SAN-PEDRO Guessabo</td>
-                            <td>
-                                Agnibilekrou ; Abengourou ; Akoupé ; rubino ; Adzopé ; Yakassé Attobrou ; Bettie ; Abgoville ; Azaguié ; Alepe ; Ayamé Aboisso ; Adiaké Bonoua ; Tiapoum ; Anyama ; Songon ; Dabou ; Jacqueville ; Grand Lahou ; Sikensi ; N?douci
-                            </td>
+                       
+						<?php endforeach; ?>
 
-                            <td>
-                                <button class="btn btn-success"><i class="fa fa-eye"></i></button>
-                                <button class="btn btn-primary"><i class="fa fa-edit"></i></button>
-                                <button class="btn btn-danger"><i class="fa fa-trash"></i></button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                03-04-2019
-                            </td>
-                            <td>ZONE SAN-PEDRO Guessabo</td>
-                            <td>
-                                Agnibilekrou ; Abengourou ; Akoupé ; rubino ; Adzopé ; Yakassé Attobrou ; Bettie ; Abgoville ; Azaguié ; Alepe ; Ayamé Aboisso ; Adiaké Bonoua ; Tiapoum ; Anyama ; Songon ; Dabou ; Jacqueville ; Grand Lahou ; Sikensi ; N?douci
-                            </td>
+						<?php else : ?>
 
-                            <td>
-                                <button class="btn btn-success"><i class="fa fa-eye"></i></button>
-                                <button class="btn btn-primary"><i class="fa fa-edit"></i></button>
-                                <button class="btn btn-danger"><i class="fa fa-trash"></i></button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                03-04-2019
-                            </td>
-                            <td>ZONE SAN-PEDRO Guessabo</td>
-                            <td>
-                                Agnibilekrou ; Abengourou ; Akoupé ; rubino ; Adzopé ; Yakassé Attobrou ; Bettie ; Abgoville ; Azaguié ; Alepe ; Ayamé Aboisso ; Adiaké Bonoua ; Tiapoum ; Anyama ; Songon ; Dabou ; Jacqueville ; Grand Lahou ; Sikensi ; N?douci
-                            </td>
+							<tr>
+								<td>
+									No Zones Added Yet
+								</td>
+							</tr>
 
-                            <td>
-                                <button class="btn btn-success"><i class="fa fa-eye"></i></button>
-                                <button class="btn btn-primary"><i class="fa fa-edit"></i></button>
-                                <button class="btn btn-danger"><i class="fa fa-trash"></i></button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                03-04-2019
-                            </td>
-                            <td>ZONE SAN-PEDRO Guessabo</td>
-                            <td>
-                                Agnibilekrou ; Abengourou ; Akoupé ; rubino ; Adzopé ; Yakassé Attobrou ; Bettie ; Abgoville ; Azaguié ; Alepe ; Ayamé Aboisso ; Adiaké Bonoua ; Tiapoum ; Anyama ; Songon ; Dabou ; Jacqueville ; Grand Lahou ; Sikensi ; N?douci
-                            </td>
-
-                            <td>
-                                <button class="btn btn-success"><i class="fa fa-eye"></i></button>
-                                <button class="btn btn-primary"><i class="fa fa-edit"></i></button>
-                                <button class="btn btn-danger"><i class="fa fa-trash"></i></button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                03-04-2019
-                            </td>
-                            <td>ZONE SAN-PEDRO Guessabo</td>
-                            <td>
-                                Agnibilekrou ; Abengourou ; Akoupé ; rubino ; Adzopé ; Yakassé Attobrou ; Bettie ; Abgoville ; Azaguié ; Alepe ; Ayamé Aboisso ; Adiaké Bonoua ; Tiapoum ; Anyama ; Songon ; Dabou ; Jacqueville ; Grand Lahou ; Sikensi ; N?douci
-                            </td>
-
-                            <td>
-                                <button class="btn btn-success"><i class="fa fa-eye"></i></button>
-                                <button class="btn btn-primary"><i class="fa fa-edit"></i></button>
-                                <button class="btn btn-danger"><i class="fa fa-trash"></i></button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                03-04-2019
-                            </td>
-                            <td>ZONE SAN-PEDRO Guessabo</td>
-                            <td>
-                                Agnibilekrou ; Abengourou ; Akoupé ; rubino ; Adzopé ; Yakassé Attobrou ; Bettie ; Abgoville ; Azaguié ; Alepe ; Ayamé Aboisso ; Adiaké Bonoua ; Tiapoum ; Anyama ; Songon ; Dabou ; Jacqueville ; Grand Lahou ; Sikensi ; N?douci
-                            </td>
-
-                            <td>
-                                <button class="btn btn-success"><i class="fa fa-eye"></i></button>
-                                <button class="btn btn-primary"><i class="fa fa-edit"></i></button>
-                                <button class="btn btn-danger"><i class="fa fa-trash"></i></button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                03-04-2019
-                            </td>
-                            <td>ZONE SAN-PEDRO Guessabo</td>
-                            <td>
-                                Agnibilekrou ; Abengourou ; Akoupé ; rubino ; Adzopé ; Yakassé Attobrou ; Bettie ; Abgoville ; Azaguié ; Alepe ; Ayamé Aboisso ; Adiaké Bonoua ; Tiapoum ; Anyama ; Songon ; Dabou ; Jacqueville ; Grand Lahou ; Sikensi ; N?douci
-                            </td>
-
-                            <td>
-                                <button class="btn btn-success"><i class="fa fa-eye"></i></button>
-                                <button class="btn btn-primary"><i class="fa fa-edit"></i></button>
-                                <button class="btn btn-danger"><i class="fa fa-trash"></i></button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                03-04-2019
-                            </td>
-                            <td>ZONE SAN-PEDRO Guessabo</td>
-                            <td>
-                                Agnibilekrou ; Abengourou ; Akoupé ; rubino ; Adzopé ; Yakassé Attobrou ; Bettie ; Abgoville ; Azaguié ; Alepe ; Ayamé Aboisso ; Adiaké Bonoua ; Tiapoum ; Anyama ; Songon ; Dabou ; Jacqueville ; Grand Lahou ; Sikensi ; N?douci
-                            </td>
-
-                            <td>
-                                <button class="btn btn-success"><i class="fa fa-eye"></i></button>
-                                <button class="btn btn-primary"><i class="fa fa-edit"></i></button>
-                                <button class="btn btn-danger"><i class="fa fa-trash"></i></button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                03-04-2019
-                            </td>
-                            <td>ZONE SAN-PEDRO Guessabo</td>
-                            <td>
-                                Agnibilekrou ; Abengourou ; Akoupé ; rubino ; Adzopé ; Yakassé Attobrou ; Bettie ; Abgoville ; Azaguié ; Alepe ; Ayamé Aboisso ; Adiaké Bonoua ; Tiapoum ; Anyama ; Songon ; Dabou ; Jacqueville ; Grand Lahou ; Sikensi ; N?douci
-                            </td>
-
-                            <td>
-                                <button class="btn btn-success"><i class="fa fa-eye"></i></button>
-                                <button class="btn btn-primary"><i class="fa fa-edit"></i></button>
-                                <button class="btn btn-danger"><i class="fa fa-trash"></i></button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                03-04-2019
-                            </td>
-                            <td>ZONE SAN-PEDRO Guessabo</td>
-                            <td>
-                                Agnibilekrou ; Abengourou ; Akoupé ; rubino ; Adzopé ; Yakassé Attobrou ; Bettie ; Abgoville ; Azaguié ; Alepe ; Ayamé Aboisso ; Adiaké Bonoua ; Tiapoum ; Anyama ; Songon ; Dabou ; Jacqueville ; Grand Lahou ; Sikensi ; N?douci
-                            </td>
-
-                            <td>
-                                <button class="btn btn-success"><i class="fa fa-eye"></i></button>
-                                <button class="btn btn-primary"><i class="fa fa-edit"></i></button>
-                                <button class="btn btn-danger"><i class="fa fa-trash"></i></button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                03-04-2019
-                            </td>
-                            <td>ZONE SAN-PEDRO Guessabo</td>
-                            <td>
-                                Agnibilekrou ; Abengourou ; Akoupé ; rubino ; Adzopé ; Yakassé Attobrou ; Bettie ; Abgoville ; Azaguié ; Alepe ; Ayamé Aboisso ; Adiaké Bonoua ; Tiapoum ; Anyama ; Songon ; Dabou ; Jacqueville ; Grand Lahou ; Sikensi ; N?douci
-                            </td>
-
-                            <td>
-                                <button class="btn btn-success"><i class="fa fa-eye"></i></button>
-                                <button class="btn btn-primary"><i class="fa fa-edit"></i></button>
-                                <button class="btn btn-danger"><i class="fa fa-trash"></i></button>
-                            </td>
-                        </tr>
-
+						<?php endif; ?>
                         </tbody>
                     </table>
                 </section>
