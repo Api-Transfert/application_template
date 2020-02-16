@@ -49,6 +49,7 @@
 
     <!-- LIBS CSS TEMPLATE - START -->
     <link href="<?php bs()?>assets/libs/tooltip/tooltip.css" rel="stylesheet" type="text/css" />
+    <link href="<?php bs()?>assets/libs/css/fix.css" rel="stylesheet" type="text/css" />
     <link href="<?php bs()?>assets/libs/css/util.css" rel="stylesheet" type="text/css" />
     <link href="<?php bs()?>assets/libs/sweetalert2/dist/sweetalert2.css" rel="stylesheet" type="text/css" />
     <link href="<?php bs()?>assets/libs/custom_switch/component-custom-switch.min.css" rel="stylesheet" type="text/css" />

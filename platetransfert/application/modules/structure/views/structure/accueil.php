@@ -6,7 +6,6 @@
 
         <div class="container">
             <button class="btn btn-primary"><i class="fa fa-plus"></i> crée </button>
-
         </div>
 
         <div class='col-xs-12'>
@@ -75,19 +74,24 @@
                                 <div class="btn-group">
                                     <button class="btn btn-primary">Actions</button> <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false"> <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
                                     <ul class="dropdown-menu" role="menu">
-                                        <li><a data-id="<?=$stuc->structureId?>" href="##"><i class="fa fa-eye"></i> Voir</a></li>
-                                        <li><a data-id="<?=$stuc->structureId?>" href="##"><i class="fa fa-edit"></i> Modifier</a></li>
-                                        <li><a data-id="<?=$stuc->structureId?>" href="##"><i class="fa fa-trash"></i> Supprimer</a></li>
+                                        <li><a class="strc_view" data-id="<?=$stuc->structureId?>" href="##"><i class="fa fa-eye"></i> Voir</a></li>
+                                        <li><a class="strc_edit" data-id="<?=$stuc->structureId?>" href="##"><i class="fa fa-edit"></i> Modifier</a></li>
+                                        <li><a class="strc_delete" data-id="<?=$stuc->structureId?>" href="##"><i class="fa fa-trash"></i> Supprimer</a></li>
                                         <li class="divider"></li>
                                         <li>
                                             <div class="p-t-3 p-b-3 p-l-20 p-r-20">
                                                 <span>Status</span>
                                                 <div class="custom-switch custom-switch-xs pl-0 dis-inline-block t-middle pull-right">
                                                     <input class="custom-switch-input" id="swtich_struc_<?=$stuc->structureId;?>" type="checkbox" <?=$check?>>
-                                                    <label class="custom-switch-btn" data-id="<?=$stuc->structureId?>" data-st-tag="#struc_st_<?=$stuc->structureId;?>" for="swtich_struc_<?=$stuc->structureId;?>"></label>
+                                                    <label class="custom-switch-btn switch_structure_state" data-id="<?=$stuc->structureId?>" data-st-tag="#struc_st_<?=$stuc->structureId;?>" for="swtich_struc_<?=$stuc->structureId;?>"></label>
                                                 </div>
                                             </div>
                                         </li>
+                                        <li class="divider"></li>
+                                        <li><a class="strc_quota" data-id="<?=$stuc->structureId?>" href="##">Quota</a></li>
+                                        <li><a class="strc_debit_credit" data-id="<?=$stuc->structureId?>" href="##">Débit / crédit</a></li>
+                                        <li><a class="strc_seuil_alert" data-id="<?=$stuc->structureId?>" href="##">Seuils d’alerte</a></li>
+                                        <li><a class="strc_transfert" data-id="<?=$stuc->structureId?>" href="##">Transferts</a></li>
 
                                     </ul>
                                 </div>
@@ -276,9 +280,10 @@
 </div>
 <!-- END CONTAINER -->
 <script>
-  $(document).on('click','.custom-switch-btn',{passive:true},function () {
+  $(document).on('click','.switch_structure_state',{passive:true},function () {
       const structure_id = $(this).attr('data-id');
-      const switch_init_state = $('#'+$(this).attr('for')).prop('checked');
+      const inp_tag = $('#'+$(this).attr('for'));
+      const switch_init_state = $(inp_tag).prop('checked');
       const switch_final_state = !switch_init_state;
       const new_value = (switch_final_state === true)?'1':'0';
       const st_tag = $($(this).attr('data-st-tag'));
@@ -287,16 +292,25 @@
       function update_structure_status(){
           $.post(base_url+'structure/update_stucture_status',{'structure_id':structure_id , 'new_status':new_value},function () {
               if(switch_final_state === false){
-                  showSuccess('Structure désactivé avec succès');
+                  show_message('warning','Structure désactivé avec succès');
                   $(st_tag).html('<i class="fa fa-times text-danger"></i>');
               }
               else{
-                  showSuccess('Structure activé avec succès');
+                  show_message('success','Structure activé avec succès');
                   $(st_tag).html('<i class="fa fa-check text-success"></i>');
               }
+              $(inp_tag).prop('checked',switch_final_state);
           });
       }
 
       swal_confirm('Attention',msg,{yes : update_structure_status});
+  });
+
+  $(document).on('click','.strc_edit',{passive:true},function () {
+      const structure_id = $(this).attr('data-id');
+      show_loader();
+      $.post(base_url+'structure/edit_structure',{'structure_id':structure_id},function (edit_str_form) {
+          sweetDialog(edit_str_form,{size:'90%'});
+      })
   });
 </script>

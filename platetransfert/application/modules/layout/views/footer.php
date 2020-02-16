@@ -76,15 +76,28 @@
         else if(has_attr(this,'value-target')){
             $('#'+$(this).attr('value-target')).attr('value',(switch_final_state === true)?'1':'0');
         }
-        console.log('switch clicked');
     });
 
-    $(document).on('click','.swal2-container',{passive:true},function () {
-        //reset switch state if no choise is made
-        if(typeof custom_btn_by_id !== 'undefined'){
-            reset_btn_state();
-        }
-    });
+    function sweetDialog(html, params){
+        params = params || {};
+
+        var prm = {};
+        prm.title = params.title || '';
+        prm.size  = params.size  || 600;
+        prm.cancelButtonText = params.cancelButtonText || 'Fermer';
+
+        Swal.fire({
+            title: prm.title,
+            html : html,
+            width: prm.size,
+            showConfirmButton:false,
+            showCancelButton: true,
+            cancelButtonText: prm.cancelButtonText,
+            reverseButtons: true,
+            padding: '3em',
+            backdrop: 'rgba(0,0,123,0.4)'
+        })
+    }
 </script>
 </body>
 

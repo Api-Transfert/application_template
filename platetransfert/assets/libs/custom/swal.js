@@ -19,15 +19,22 @@ function swal_confirm(title , message ,callback , btn_options){
     callback = callback || {};
 
     cb.yes = callback.yes || function () { console.log('chosed yes')};
-    cb.no  = callback.no  || function () { console.log('chosed no')};
+    cb.no  = callback.no  || function () { console.log('chosed no') ;if(typeof custom_btn_by_id !== 'undefined'){ reset_btn_state(); swal.close(); } };
 
     Swal.fire({
         title: title,
         text: message,
-        icon: 'warning',
+        icon: 'question',
         showCancelButton: btn_opt.showCancelButton,
         confirmButtonText: btn_opt.confirmButtonText,
-        cancelButtonText: btn_opt.cancelButtonText
+        cancelButtonText: btn_opt.cancelButtonText,
+        allowOutsideClick:function () {
+            //reset switch state if no choise is made
+            if(typeof custom_btn_by_id !== 'undefined'){
+                reset_btn_state();
+                swal.close();
+            }
+        }
     }).then((result) => {
         if (result.value) {
             cb.yes();
@@ -50,11 +57,21 @@ function swal_message(title , message , icon , timer){
 function show_message(notif_type , message) {
     message = message || 'message';
     notif_type = notif_type || 'success';
-    Swal.fire({
+
+    const Toast = Swal.mixin({
+        toast: true,
         position: 'top-end',
-        icon: notif_type,
-        title: message,
         showConfirmButton: false,
-        timer: 1500
+        timer: 3000,
+        timerProgressBar: true,
+        onOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    })
+
+    Toast.fire({
+        icon: notif_type,
+        title: message
     })
 }

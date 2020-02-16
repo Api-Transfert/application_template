@@ -44,6 +44,16 @@ class Structure extends MY_Controller
         }
     }
 
+    public function edit_structure(){
+        if(!empty($_POST['structure_id'])){
+            $id = $_POST['structure_id'];
+            $data['stucture_data']  = $this->structure_model->get_structure(['structureId'=>$id]);
+            $data['pays']           = $this->common_model->select('pays');
+            $this->data['type']     = $this->common_model->select('type_structure');
+            $this->load->view('structure/structure/ajax/edit_structure',$data);
+        }
+    }
+
 //======================================================================================================================
 	public function layout_boxed()
 	{
