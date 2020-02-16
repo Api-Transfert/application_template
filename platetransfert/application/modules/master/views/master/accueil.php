@@ -62,8 +62,8 @@
                         </thead>
                         <tbody>
 
-						<?php if (count($zones) > 0) : ?>
-                    <?php foreach($zones as $zone):?>
+						<?php if (count($masters) > 0) : ?>
+                    <?php foreach($masters as $master):?>
                         <tr>
 							<td><?=$zone->reseauDate?></td>
                             <td><?=$zone->reseauName?></td>

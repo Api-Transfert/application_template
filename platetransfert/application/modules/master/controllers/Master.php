@@ -7,13 +7,13 @@ Created on 20/1/2017
 Company Parexons
 */
 
-class Zone extends MY_Controller 
+class Master extends MY_Controller 
 {
 	public function __construct()
 	{
 		parent::__construct();
 		//Do your magic here
-		$this->load->model(array('zone_model'));
+		$this->load->model(array('master_model'));
 		$this->load->module('layout');
 
 		if (!$this->ion_auth->logged_in())
@@ -34,8 +34,8 @@ class Zone extends MY_Controller
 	public function dashboard($value='')
 	{
 
-		$data['zones']=$this->zone_model->get_all_pays();
-		$data['page'] = "zone/zone/accueil";
+		$data['masters']=$this->master_model->get_all_master();
+		$data['page'] = "master/master/accueil";
 		$this->layout->template_view($data);
 	}
 
