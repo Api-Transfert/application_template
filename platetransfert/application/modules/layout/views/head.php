@@ -49,6 +49,14 @@
 
     <!-- LIBS CSS TEMPLATE - START -->
     <link href="<?php bs()?>assets/libs/tooltip/tooltip.css" rel="stylesheet" type="text/css" />
+    <link href="<?php bs()?>assets/libs/css/util.css" rel="stylesheet" type="text/css" />
+    <link href="<?php bs()?>assets/libs/sweetalert2/dist/sweetalert2.css" rel="stylesheet" type="text/css" />
+    <link href="<?php bs()?>assets/libs/custom_switch/component-custom-switch.min.css" rel="stylesheet" type="text/css" />
+
+    <link href="<?php bs()?>assets/plugins/messenger/css/messenger.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="<?php bs()?>assets/plugins/messenger/css/messenger-theme-future.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="<?php bs()?>assets/plugins/messenger/css/messenger-theme-flat.css" rel="stylesheet" type="text/css" media="screen" />
+
     <script>
         var base_url = '<?=base_url()?>';
         const router_class = 'admin/<?=$this->router->fetch_class();?>';

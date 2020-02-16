@@ -26,6 +26,12 @@
     <script src="<?php bs()?>assets/js/chart-morris.js"></script>
     <!-- OTHER SCRIPTS INCLUDED ON THIS PAGE - END -->
 
+    <!--MESSENGER-->
+<script src="<?php bs()?>assets/plugins/messenger/js/messenger.min.js"></script>
+<script src="<?php bs()?>assets/plugins/messenger/js/messenger-theme-future.js"></script>
+    <script src="<?php bs()?>assets/js/messenger.js"></script>
+
+
     <!-- CORE TEMPLATE JS - START -->
     <script src="<?php bs()?>assets/js/scripts.js"></script>
     <!-- END CORE TEMPLATE JS - END -->
@@ -38,6 +44,9 @@
     <script src="<?php bs()?>assets/libs/tooltip/popper.min.js"></script>
     <script src="<?php bs()?>assets/libs/tooltip/custom.min.js"></script>
     <script src="<?php bs()?>assets/libs/custom/dp.min.js"></script>
+    <script src="<?php bs()?>assets/libs/js/is_mobile.js"></script>
+    <script src="<?php bs()?>assets/libs/sweetalert2/dist/sweetalert2.all.js"></script>
+    <script src="<?php bs()?>assets/libs/custom/swal.js"></script>
 
 <script>
     $(document).ready(function () {

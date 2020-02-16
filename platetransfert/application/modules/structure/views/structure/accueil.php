@@ -4,6 +4,11 @@
 <section id="main-content" class=" ">
     <div class="wrapper main-wrapper row" style=''>
 
+        <div class="container">
+            <button class="btn btn-primary"><i class="fa fa-plus"></i> crée </button>
+
+        </div>
+
         <div class='col-xs-12'>
             <div class="page-title">
 
@@ -60,16 +65,32 @@
                             <td><?=$stuc->structureSoldeQuota?></td>
                             <td><?=$stuc->paysName?></td>
                             <td>
-                                <?php if($stuc->structureActive == '1'):;?>
+                                <?php if($stuc->structureActive == '1'):; $check='checked'?>
                                     <button class="btn-link text-success"><i class="fa fa-check"></i></button>
-                                <?php else : ;?>
+                                <?php else : $check = '';?>
                                     <button class="btn-link text-danger"><i class="fa fa-times"></i></button>
                                 <?php endif;?>
                             </td>
                             <td>
-                                <button class="btn-link text-success" data-toggle="tooltip" data-placement="top" title="Voir"><i class="fa fa-eye"></i></button>
-                                <button class="btn-link text-warning" data-toggle="tooltip" data-placement="top" title="Modifier"><i class="fa fa-edit"></i></button>
-                                <button class="btn-link text-danger"><i class="fa fa-trash" data-toggle="tooltip" data-placement="top" title="Supprimer"></i></button>
+                                <div class="btn-group">
+                                    <button class="btn btn-primary">Actions</button> <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false"> <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a data-id="<?=$stuc->structureId?>" href="##"><i class="fa fa-eye"></i> Voir</a></li>
+                                        <li><a data-id="<?=$stuc->structureId?>" href="##"><i class="fa fa-edit"></i> Modifier</a></li>
+                                        <li><a data-id="<?=$stuc->structureId?>" href="##"><i class="fa fa-trash"></i> Supprimer</a></li>
+                                        <li class="divider"></li>
+                                        <li>
+                                            <div class="p-t-3 p-b-3 p-l-20 p-r-20">
+                                                <span>Status</span>
+                                                <div class="custom-switch custom-switch-xs pl-0 dis-inline-block t-middle pull-right">
+                                                    <input class="custom-switch-input" id="swtich_struc_<?=$stuc->structureId;?>" type="checkbox" <?=$check?>>
+                                                    <label class="custom-switch-btn" for="swtich_struc_<?=$stuc->structureId;?>"></label>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                    </ul>
+                                </div>
                             </td>
                         </tr>
                     <?php endforeach;?>
