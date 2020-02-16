@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--
+        * @Package: Cryptonia - Bitcoin & Cryptocurrency trading Dashboard
+        * @Version: 1.0.0
+    -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Cash to Cash</title>
+    <meta content="" name="description" />
+    <meta content="" name="author" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/assets/images/favicon.png" type="image/x-icon" />
+    <!-- For iPhone -->
+    <link rel="apple-touch-icon-precomposed" href="/assets/images/apple-touch-icon-57-precomposed.png">
+    <!-- For iPhone 4 Retina display -->
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/images/apple-touch-icon-114-precomposed.png">
+    <!-- For iPad -->
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/images/apple-touch-icon-72-precomposed.png">
+    <!-- For iPad Retina display -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/images/apple-touch-icon-144-precomposed.png">
+
+    <!-- CORE CSS FRAMEWORK - START -->
+    <link href="assets/css/add_custom.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="assets/plugins/pace/pace-theme-flash.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/plugins/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/fonts/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css" />
+    <link href="assets/fonts/webfont/cryptocoins.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/animate.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/plugins/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.15.5/dist/bootstrap-table.min.css">
+    <!-- CORE CSS FRAMEWORK - END -->
+
+    <!-- HEADER SCRIPTS INCLUDED ON THIS PAGE - START -->
+
+    <link href="assets/plugins/jvectormap/jquery-jvectormap-2.0.1.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="assets/plugins/morris-chart/css/morris.css" rel="stylesheet" type="text/css" media="screen" />
+
+    <!-- HEADER SCRIPTS INCLUDED ON THIS PAGE - END -->
+
+    <!-- CORE CSS TEMPLATE - START -->
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/responsive.css" rel="stylesheet" type="text/css" />
+    <!-- CORE CSS TEMPLATE - END -->
+    <link href="assets/plugins/icheck/skins/all.css" rel="stylesheet" type="text/css" media="screen" />
+
+</head>
+<!-- END HEAD -->
+
+<!-- BEGIN BODY -->
+
+<body class=" ">
+<!-- START TOPBAR -->
+<div class='page-topbar '>
+    <div class='logo-area'>
+
+    </div>
+    <div class='quick-area'>
+        <div class='pull-left'>
+            <ul class="info-menu left-links list-inline list-unstyled">
+                <li class="sidebar-toggle-wrap">
+                    <a href="#" data-toggle="sidebar" class="sidebar_toggle">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </li>
+                <li class="message-toggle-wrapper">
+                    <a href="#" data-toggle="dropdown" class="toggle">
+                        <i class="fa fa-envelope"></i>
+                        <span class="badge badge-accent">7</span>
+                    </a>
+                    <ul class="dropdown-menu messages animated fadeIn">
+
+                        <li class="list">
+
+                            <ul class="dropdown-menu-list list-unstyled ps-scrollbar">
+                                <li class="unread status-available">
+                                    <a href="javascript:;">
+                                        <div class="user-img">
+                                            <img src="../data/profile/avatar-1.png" alt="user-image" class="img-circle img-inline">
+                                        </div>
+                                        <div>
+                                                <span class="name">
+                                                    <strong>Clarine Vassar</strong>
+                                                    <span class="time small">- 15 mins ago</span>
+                                                <span class="profile-status available pull-right"></span>
+                                                </span>
+                                            <span class="desc small">
+                                                    Lorem ipsum dolor sit elit fugiat molest.
+                                                </span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class=" status-away">
+                                    <a href="javascript:;">
+                                        <div class="user-img">
+                                            <img src="../data/profile/avatar-2.png" alt="user-image" class="img-circle img-inline">
+                                        </div>
+                                        <div>
+                                                <span class="name">
+                                                    <strong>Brooks Latshaw</strong>
+                                                    <span class="time small">- 45 mins ago</span>
+                                                <span class="profile-status away pull-right"></span>
+                                                </span>
+                                            <span class="desc small">
+                                                    Lorem ipsum dolor sit elit fugiat molest.
+                                                </span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class=" status-busy">
+                                    <a href="javascript:;">
+                                        <div class="user-img">
+                                            <img src="../data/profile/avatar-3.png" alt="user-image" class="img-circle img-inline">
+                                        </div>
+                                        <div>
+                                                <span class="name">
+                                                    <strong>Clementina Brodeur</strong>
+                                                    <span class="time small">- 1 hour ago</span>
+                                                <span class="profile-status busy pull-right"></span>
+                                                </span>
+                                            <span class="desc small">
+                                                    Lorem ipsum dolor sit elit fugiat molest.
+                                                </span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class=" status-offline">
+                                    <a href="javascript:;">
+                                        <div class="user-img">
+                                            <img src="../data/profile/avatar-4.png" alt="user-image" class="img-circle img-inline">
+                                        </div>
+                                        <div>
+                                                <span class="name">
+                                                    <strong>Carri Busey</strong>
+                                                    <span class="time small">- 5 hours ago</span>
+                                                <span class="profile-status offline pull-right"></span>
+                                                </span>
+                                            <span class="desc small">
+                                                    Lorem ipsum dolor sit elit fugiat molest.
+                                                </span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class=" status-offline">
+                                    <a href="javascript:;">
+                                        <div class="user-img">
+                                            <img src="../data/profile/avatar-5.png" alt="user-image" class="img-circle img-inline">
+                                        </div>
+                                        <div>
+                                                <span class="name">
+                                                    <strong>Melissa Dock</strong>
+                                                    <span class="time small">- Yesterday</span>
+                                                <span class="profile-status offline pull-right"></span>
+                                                </span>
+                                            <span class="desc small">
+                                                    Lorem ipsum dolor sit elit fugiat molest.
+                                                </span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class=" status-available">
+                                    <a href="javascript:;">
+                                        <div class="user-img">
+                                            <img src="../data/profile/avatar-1.png" alt="user-image" class="img-circle img-inline">
+                                        </div>
+                                        <div>
+                                                <span class="name">
+                                                    <strong>Verdell Rea</strong>
+                                                    <span class="time small">- 14th Mar</span>
+                                                <span class="profile-status available pull-right"></span>
+                                                </span>
+                                            <span class="desc small">
+                                                    Lorem ipsum dolor sit elit fugiat molest.
+                                                </span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class=" status-busy">
+                                    <a href="javascript:;">
+                                        <div class="user-img">
+                                            <img src="../data/profile/avatar-2.png" alt="user-image" class="img-circle img-inline">
+                                        </div>
+                                        <div>
+                                                <span class="name">
+                                                    <strong>Linette Lheureux</strong>
+                                                    <span class="time small">- 16th Mar</span>
+                                                <span class="profile-status busy pull-right"></span>
+                                                </span>
+                                            <span class="desc small">
+                                                    Lorem ipsum dolor sit elit fugiat molest.
+                                                </span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class=" status-away">
+                                    <a href="javascript:;">
+                                        <div class="user-img">
+                                            <img src="../data/profile/avatar-3.png" alt="user-image" class="img-circle img-inline">
+                                        </div>
+                                        <div>
+                                                <span class="name">
+                                                    <strong>Araceli Boatright</strong>
+                                                    <span class="time small">- 16th Mar</span>
+                                                <span class="profile-status away pull-right"></span>
+                                                </span>
+                                            <span class="desc small">
+                                                    Lorem ipsum dolor sit elit fugiat molest.
+                                                </span>
+                                        </div>
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                        </li>
+
+                        <li class="external">
+                            <a href="javascript:;">
+                                <span>Read All Messages</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                </li>
+                <li class="notify-toggle-wrapper">
+                    <a href="#" data-toggle="dropdown" class="toggle">
+                        <i class="fa fa-bell"></i>
+                        <span class="badge badge-accent">3</span>
+                    </a>
+                    <ul class="dropdown-menu notifications animated fadeIn">
+                        <li class="total">
+                                <span class="small">
+                                You have <strong>3</strong> new notifications.
+                                <a href="javascript:;" class="pull-right">Mark all as Read</a>
+                            </span>
+                        </li>
+                        <li class="list">
+
+                            <ul class="dropdown-menu-list list-unstyled ps-scrollbar">
+                                <li class="unread available">
+                                    <!-- available: success, warning, info, error -->
+                                    <a href="javascript:;">
+                                        <div class="notice-icon">
+                                            <i class="fa fa-check"></i>
+                                        </div>
+                                        <div>
+                                                <span class="name">
+                                                    <strong>Successful transaction of 0.01 BTC</strong>
+                                                    <span class="time small">15 mins ago</span>
+                                                </span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="unread away">
+                                    <!-- available: success, warning, info, error -->
+                                    <a href="javascript:;">
+                                        <div class="notice-icon">
+                                            <i class="fa fa-clock-o"></i>
+                                        </div>
+                                        <div>
+                                                <span class="name">
+                                                    <strong>4 of Pending Transactions!</strong>
+                                                    <span class="time small">45 mins ago</span>
+                                                </span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class=" busy">
+                                    <!-- available: success, warning, info, error -->
+                                    <a href="javascript:;">
+                                        <div class="notice-icon">
+                                            <i class="fa fa-times"></i>
+                                        </div>
+                                        <div>
+                                                <span class="name">
+                                                    <strong>Cancelled Order of 200 ICO</strong>
+                                                    <span class="time small">1 hour ago</span>
+                                                </span>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li class=" available">
+                                    <!-- available: success, warning, info, error -->
+                                    <a href="javascript:;">
+                                        <div class="notice-icon">
+                                            <i class="fa fa-check"></i>
+                                        </div>
+                                        <div>
+                                                <span class="name">
+                                                    <strong>Great Speed Notify of 1.34 LTC</strong>
+                                                    <span class="time small">14th Mar</span>
+                                                </span>
+                                        </div>
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                        </li>
+
+                        <li class="external">
+                            <a href="javascript:;">
+                                <span>Read All Notifications</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="hidden-sm hidden-xs searchform">
+                    <form action="#" method="post">
+                        <div class="input-group">
+                                <span class="input-group-addon">
+                                <i class="fa fa-search"></i>
+                            </span>
+                            <input type="text" class="form-control animated fadeIn" placeholder="Search & Enter">
+                        </div>
+                        <input type='submit' value="">
+                    </form>
+                </li>
+            </ul>
+        </div>
+        <div class='pull-right'>
+            <ul class="info-menu right-links list-inline list-unstyled">
+                <li class="profile">
+                    <a href="#" data-toggle="dropdown" class="toggle">
+                        <img src="data/profile/profile.jpg" alt="user-image" class="img-circle img-inline">
+                        <span>Coulibaly Tiorna <i class="fa fa-angle-down"></i></span>
+                    </a>
+                    <ul class="dropdown-menu profile animated fadeIn">
+                        <li>
+                            <a href="account-confirmation.html">
+                                <i class="fa fa-wrench"></i> Reglages
+                            </a>
+                        </li>
+                        <li>
+                            <a href="ui-profile.html">
+                                <i class="fa fa-user"></i> Profile
+                            </a>
+                        </li>
+                        <li>
+                            <a href="ui-support.html">
+                                <i class="fa fa-info"></i> Aides
+                            </a>
+                        </li>
+                        <li class="last">
+                            <a href="ui-login.html">
+                                <i class="fa fa-lock"></i> Deconnexion
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="chat-toggle-wrapper">
+                    <a href="#" data-toggle="chatbar" class="toggle_chat">
+                        <i class="fa fa-comments"></i>
+                        <span class="badge badge-accent">9</span>
+                        <i class="fa fa-times"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+<!-- END TOPBAR -->
+<!-- START CONTAINER -->
+<div class="page-container row-fluid container-fluid">
+
+    <!-- SIDEBAR - START -->
+
+    <div class="page-sidebar fixedscroll">
+
+        <!-- MAIN MENU - START -->
+        <div class="page-sidebar-wrapper" id="main-menu-wrapper">
+
+
+            <ul class='wraplist'>
+                <li class='menusection'>Main</li>
+                <li class="open">
+                    <a href="index-dashboard.html">
+                        <i class="fa fa-th-large"></i>
+                        <span class="title">Tableau de bord</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="javascript:;">
+                        <i class="fa fa-gear"></i>
+                        <span class="title">Gestions utilisateur</span>
+                        <span class="arrow "></span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a class="" href="utilisateurs.html">Liste utilisateur</a>
+                        </li>
+                        <li>
+                            <a class="" href="add_user.html">Ajouter un utilisateur</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="">
+                    <a href="javascript:;">
+                        <i class="fa fa-gear"></i>
+                        <span class="title">Gestions rôle</span>
+                        <span class="arrow "></span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a class="" href="roles.html">Liste rôle</a>
+                        </li>
+                        <li>
+                            <a class="" href="add_role.html">Ajouter un rôle</a>
+                        </li>
+                        <li>
+                            <a class="" href="add_user.html">Permissions</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="">
+                    <a href="pays.html">
+                        <i class="fa fa-gear"></i>
+                        <span class="title">Pays</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="structures.html">
+                        <i class="fa fa-gear"></i>
+                        <span class="title">Structure</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="zones.html">
+                        <i class="fa fa-gear"></i>
+                        <span class="title">Zones</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="agences.html">
+                        <i class="fa fa-gear"></i>
+                        <span class="title">Agences</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="agent.html">
+                        <i class="fa fa-gear"></i>
+                        <span class="title">Agents</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="sous_distributeurs.html">
+                        <i class="fa fa-gear"></i>
+                        <span class="title">Sous distribiteurs</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="">
+                        <i class="fa fa-gear"></i>
+                        <span class="title">Master</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="">
+                        <i class="fa fa-gear"></i>
+                        <span class="title">Quota</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="">
+                        <i class="fa fa-gear"></i>
+                        <span class="title">Commission</span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+        <!-- MAIN MENU - END -->
+
+    </div>
+    <!--  SIDEBAR - END -->
+
+    <!-- START CONTENT -->
+    <section id="main-content" class=" ">
+        <div class="wrapper main-wrapper row" style=''>
+
+            <div class='col-xs-12'>
+                <div class="page-title">
+
+                    <div class="pull-left">
+                        <!-- PAGE HEADING TAG - START -->
+                        <h1 class="title">Emission Cash à compte mobile money</h1>
+                        <!-- PAGE HEADING TAG - END -->
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="col-lg-12">
+                <section class="box has-border-left-3">
+                    <header class="panel_header">
+                        <h2 class="title pull-left">Informations Expéditeur</h2>
+                    </header>
+                    <div class="content-body">
+                        <div class="row">
+                            <div class="form-container">
+                                <form action="#">
+
+                                    <div class="row">
+                                        <div class="col-xs-12">
+
+                                            <div class="col-lg-6 no-pl">
+                                                <div class="form-group">
+                                                    <label class="form-label">Nom</label>
+<!--                                                    <span class="desc">"Entrer un nom"</span>-->
+                                                    <div class="controls">
+                                                        <i class=""></i>
+                                                        <input type="text" class="form-control" name="formfield1"  value="Smith Wright">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 no-pl">
+                                                <div class="form-group">
+                                                    <label class="form-label">Prénom</label>
+<!--                                                    <span class="desc">"Entrer un prenom"</span>-->
+                                                    <div class="controls">
+                                                        <i class=""></i>
+                                                        <input type="text" class="form-control" name="formfield1"  value="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 no-pl">
+                                                <div class="form-group">
+                                                    <label class="form-label">Adresse</label>
+<!--                                                    <span class="desc">"Entrer un adresse"</span>-->
+                                                    <div class="controls">
+                                                        <i class=""></i>
+                                                        <input type="text" class="form-control" name="formfield1"  value="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 no-pl">
+                                                <div class="form-group">
+                                                    <label class="form-label">Téléphone</label>
+                                                    <span class="desc">"Avec le préfixe international. Exemple: 22507070707"</span>
+                                                    <div class="controls">
+                                                        <i class=""></i>
+                                                        <input type="text" class="form-control" name="formfield1"  value="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 no-pl">
+                                                <div class="form-group">
+                                                    <label class="form-label">Nature de la pièce d'identité*:	</label>
+<!--                                                    <span class="desc">"e.g. :	"</span>-->
+                                                    <div class="controls">
+                                                        <i class=""></i>
+                                                        <input type="text" class="form-control" name="formfield1"  value="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 no-pl">
+                                                <div class="form-group">
+                                                    <label class="form-label">Numéro de la pièce d'identité*:</label>
+<!--                                                    <span class="desc">"Entrer un numéros"</span>-->
+                                                    <div class="controls">
+                                                        <i class=""></i>
+                                                        <input type="text" class="form-control" name="formfield1"  value="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 no-pl">
+                                                <div class="form-group">
+                                                    <label class="form-label">Etablie à*:</label>
+<!--                                                    <span class="desc">"Entrer un mot de passe"</span>-->
+                                                    <div class="controls">
+                                                        <i class=""></i>
+                                                        <input type="text" class="form-control" name="formfield1"  value="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 no-pl">
+                                                <div class="form-group">
+                                                    <label class="form-label">Etablie le*:	</label>
+<!--                                                    <span class="desc">"Confirmer le mot de passe"</span>-->
+                                                    <div class="controls">
+                                                        <i class=""></i>
+                                                        <input type="date" class="form-control" name="formfield1"  value="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 no-pl">
+                                                <div class="form-group">
+                                                    <label class="form-label">Pays d'émission de la pièce:
+                                                    </label>
+<!--                                                    <span class="desc">"Confirmer le mot de passe"</span>-->
+                                                    <div class="controls">
+                                                        <i class=""></i>
+                                                        <input type="text" class="form-control" name="formfield1"  value="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 no-pl">
+                                                <div class="form-group">
+                                                    <label class="form-label">Email:
+                                                    </label>
+<!--                                                    <span class="desc">"Confirmer le mot de passe"</span>-->
+                                                    <div class="controls">
+                                                        <i class=""></i>
+                                                        <input type="text" class="form-control" name="formfield1"  value="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 no-pl">
+                                                <div class="form-group">
+                                                    <label class="form-label">Bénéficiaires habituels:
+                                                    </label>
+                                                    <!--                                                    <span class="desc">"Confirmer le mot de passe"</span>-->
+                                                    <div class="controls">
+                                                        <i class=""></i>
+                                                        <input type="text" class="form-control" name="formfield1"  value="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 no-pl">
+                                                <div class="form-group">
+                                                    <label class="form-label">Alerte SMS / E-mail:
+                                                    </label>
+<!--                                                    <span class="desc">"Confirmer le mot de passe"</span>-->
+                                                    <div class="controls">
+                                                        <input name="sms" tabindex="5" type="radio" id="minimal-checkbox-1" class="icheck-minimal-green" checked>
+                                                        <label class="icheck-label form-label" for="minimal-checkbox-1">Oui</label>
+                                                        <input name="sms" tabindex="5" type="radio" id="minimal-checkbox-2" class="icheck-minimal-red">
+                                                        <label class="icheck-label form-label" for="minimal-checkbox-1">Non</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <header class="panel_header" style="border: none">
+                                                <h2 class="title pull-left">Informations Bénéficiaire
+                                                </h2>
+                                            </header>
+                                            <div class="col-lg-6 no-pl">
+                                                <div class="form-group">
+                                                    <label class="form-label">Nom*:
+                                                    </label>
+                                                    <!--                                                    <span class="desc">"Confirmer le mot de passe"</span>-->
+                                                    <div class="controls">
+                                                        <i class=""></i>
+                                                        <input type="text" class="form-control" name="formfield1"  value="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 no-pl">
+                                                <div class="form-group">
+                                                    <label class="form-label">Prénom*:
+                                                    </label>
+                                                    <!--                                                    <span class="desc">"Confirmer le mot de passe"</span>-->
+                                                    <div class="controls">
+                                                        <i class=""></i>
+                                                        <input type="text" class="form-control" name="formfield1"  value="">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-6 no-pl">
+                                                <div class="form-group">
+                                                    <label class="form-label">Adresse:*:
+                                                    </label>
+                                                    <!--                                                    <span class="desc">"Confirmer le mot de passe"</span>-->
+                                                    <div class="controls">
+                                                        <i class=""></i>
+                                                        <input type="text" class="form-control" name="formfield1"  value="">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="col-lg-6 no-pl">
+                                                <div class="form-group">
+                                                    <label class="form-label">Numéro de compte mobile:*:
+                                                    </label>
+                                                    <!--                                                    <span class="desc">"Confirmer le mot de passe"</span>-->
+                                                    <div class="controls">
+                                                        <i class=""></i>
+                                                        <input type="text" class="form-control" name="formfield1"  value="">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-6 no-pl">
+                                                <div class="form-group">
+                                                    <label class="form-label">Pays:</label>
+                                                    <!--                                                    <span class="desc">"Selectionner un rôle"</span>-->
+                                                    <div class="controls">
+                                                        <select class="form-control" name="group" id="" required="">
+                                                            <option value="">Selectionner un pays</option>
+                                                            <option value="1">Togo</option>
+                                                            <option value="2">Mali</option>
+                                                            <option value="61">Senegal</option>
+                                                            <option value="62">Niger</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <header class="panel_header" style="border: none">
+                                                <h2 class="title pull-left">
+                                                    Informations Montant (XOF)
+                                                </h2>
+                                            </header>
+                                            <div class="col-lg-6 no-pl">
+                                                <div class="form-group">
+                                                    <label class="form-label">Montant en lettres:
+                                                    </label>
+                                                    <!--                                                    <span class="desc">"Confirmer le mot de passe"</span>-->
+                                                    <div class="controls">
+                                                        <i class=""></i>
+                                                        <input type="text" class="form-control" name="formfield1"  value="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 no-pl">
+                                                <div class="form-group">
+                                                    <label class="form-label">Montant en chiffres*:
+                                                    </label>
+                                                    <!--                                                    <span class="desc">"Confirmer le mot de passe"</span>-->
+                                                    <div class="controls">
+                                                        <i class=""></i>
+                                                        <input type="text" class="form-control" name="formfield1"  value="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 no-pl">
+                                                <div class="form-group">
+                                                    <label class="form-label">
+                                                        Frais d'envoi HT: <strong>0</strong>
+                                                    </label>
+                                                    <!--                                                    <span class="desc">"Confirmer le mot de passe"</span>-->
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 no-pl">
+                                                <div class="form-group">
+                                                    <label class="form-label">
+                                                        Taxe: <strong>0</strong>
+                                                    </label>
+                                                    <!--                                                    <span class="desc">"Confirmer le mot de passe"</span>-->
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 no-pl">
+                                                <div class="form-group">
+                                                    <label class="form-label">
+                                                        CTHU: <strong>0</strong>
+                                                    </label>
+                                                    <!--                                                    <span class="desc">"Confirmer le mot de passe"</span>-->
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 no-pl">
+                                                <div class="form-group">
+                                                    <label class="form-label">
+                                                        Frais d'envoi TTC: <strong>0</strong>
+                                                    </label>
+                                                    <!--                                                    <span class="desc">"Confirmer le mot de passe"</span>-->
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 no-pl">
+                                                <div class="form-group">
+                                                    <label class="form-label">
+                                                        Montant en devise: <strong>0</strong>
+                                                    </label>
+                                                    <!--                                                    <span class="desc">"Confirmer le mot de passe"</span>-->
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12 no-pl">
+                                                <div class="form-group" style="font-size: 2rem; text-align: center">
+                                                    <label class="form-label">
+                                                        <strong>Montant à payer:</strong>
+                                                    </label>
+                                                    <div style="margin-top: 1rem">
+                                                        0 XOF
+                                                    </div>
+                                                    <!--                                                    <span class="desc">"Confirmer le mot de passe"</span>-->
+                                                </div>
+                                            </div>
+
+                                            <div class="" style="clear: both">
+                                                <button type="submit" class="btn btn-success btn-corner right15">
+                                                    <i class="fa fa-check"></i> Valider</button>
+                                                <button type="button" class="btn btn-danger btn-corner"><i class="fa fa-times"> Annuler</i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <!-- MAIN CONTENT AREA ENDS -->
+        </div>
+    </section>
+    <!-- END CONTENT -->
+    <div class="page-chatapi hideit">
+
+        <div class="search-bar">
+            <input type="text" placeholder="Search" class="form-control">
+        </div>
+
+        <div class="chat-wrapper">
+
+            <h4 class="group-head">Favourites</h4>
+            <ul class="contact-list">
+
+                <li class="user-row " id='chat_user_1' data-user-id='1'>
+                    <div class="user-img">
+                        <a href="#"><img src="../data/profile/avatar-1.png" alt=""></a>
+                    </div>
+                    <div class="user-info">
+                        <h4><a href="#">Joge Lucky</a></h4>
+                        <span class="status available" data-status="available"> Available</span>
+                    </div>
+                    <div class="user-status available">
+                        <i class="fa fa-circle"></i>
+                    </div>
+                </li>
+                <li class="user-row " id='chat_user_2' data-user-id='2'>
+                    <div class="user-img">
+                        <a href="#"><img src="../data/profile/avatar-2.png" alt=""></a>
+                    </div>
+                    <div class="user-info">
+                        <h4><a href="#">Folisise Chosiel</a></h4>
+                        <span class="status away" data-status="away"> Away</span>
+                    </div>
+                    <div class="user-status away">
+                        <i class="fa fa-circle"></i>
+                    </div>
+                </li>
+                <li class="user-row " id='chat_user_3' data-user-id='3'>
+                    <div class="user-img">
+                        <a href="#"><img src="../data/profile/avatar-3.png" alt=""></a>
+                    </div>
+                    <div class="user-info">
+                        <h4><a href="#">Aron Gonzalez</a></h4>
+                        <span class="status busy" data-status="busy"> Busy</span>
+                    </div>
+                    <div class="user-status busy">
+                        <i class="fa fa-circle"></i>
+                    </div>
+                </li>
+
+            </ul>
+
+            <h4 class="group-head">More Contacts</h4>
+            <ul class="contact-list">
+
+                <li class="user-row " id='chat_user_4' data-user-id='4'>
+                    <div class="user-img">
+                        <a href="#"><img src="../data/profile/avatar-4.png" alt=""></a>
+                    </div>
+                    <div class="user-info">
+                        <h4><a href="#">Chris Fox</a></h4>
+                        <span class="status offline" data-status="offline"> Offline</span>
+                    </div>
+                    <div class="user-status offline">
+                        <i class="fa fa-circle"></i>
+                    </div>
+                </li>
+                <li class="user-row " id='chat_user_5' data-user-id='5'>
+                    <div class="user-img">
+                        <a href="#"><img src="../data/profile/avatar-5.png" alt=""></a>
+                    </div>
+                    <div class="user-info">
+                        <h4><a href="#">Mogen Polish</a></h4>
+                        <span class="status offline" data-status="offline"> Offline</span>
+                    </div>
+                    <div class="user-status offline">
+                        <i class="fa fa-circle"></i>
+                    </div>
+                </li>
+                <li class="user-row " id='chat_user_6' data-user-id='6'>
+                    <div class="user-img">
+                        <a href="#"><img src="../data/profile/avatar-1.png" alt=""></a>
+                    </div>
+                    <div class="user-info">
+                        <h4><a href="#">Smith Carter</a></h4>
+                        <span class="status available" data-status="available"> Available</span>
+                    </div>
+                    <div class="user-status available">
+                        <i class="fa fa-circle"></i>
+                    </div>
+                </li>
+                <li class="user-row " id='chat_user_7' data-user-id='7'>
+                    <div class="user-img">
+                        <a href="#"><img src="../data/profile/avatar-2.png" alt=""></a>
+                    </div>
+                    <div class="user-info">
+                        <h4><a href="#">Amilia Gozenal</a></h4>
+                        <span class="status busy" data-status="busy"> Busy</span>
+                    </div>
+                    <div class="user-status busy">
+                        <i class="fa fa-circle"></i>
+                    </div>
+                </li>
+                <li class="user-row " id='chat_user_8' data-user-id='8'>
+                    <div class="user-img">
+                        <a href="#"><img src="../data/profile/avatar-3.png" alt=""></a>
+                    </div>
+                    <div class="user-info">
+                        <h4><a href="#">Tahir Jemyship</a></h4>
+                        <span class="status away" data-status="away"> Away</span>
+                    </div>
+                    <div class="user-status away">
+                        <i class="fa fa-circle"></i>
+                    </div>
+                </li>
+                <li class="user-row " id='chat_user_9' data-user-id='9'>
+                    <div class="user-img">
+                        <a href="#"><img src="../data/profile/avatar-4.png" alt=""></a>
+                    </div>
+                    <div class="user-info">
+                        <h4><a href="#">Johanson Wright</a></h4>
+                        <span class="status busy" data-status="busy"> Busy</span>
+                    </div>
+                    <div class="user-status busy">
+                        <i class="fa fa-circle"></i>
+                    </div>
+                </li>
+                <li class="user-row " id='chat_user_10' data-user-id='10'>
+                    <div class="user-img">
+                        <a href="#"><img src="../data/profile/avatar-5.png" alt=""></a>
+                    </div>
+                    <div class="user-info">
+                        <h4><a href="#">Loni Tindall</a></h4>
+                        <span class="status away" data-status="away"> Away</span>
+                    </div>
+                    <div class="user-status away">
+                        <i class="fa fa-circle"></i>
+                    </div>
+                </li>
+                <li class="user-row " id='chat_user_11' data-user-id='11'>
+                    <div class="user-img">
+                        <a href="#"><img src="../data/profile/avatar-1.png" alt=""></a>
+                    </div>
+                    <div class="user-info">
+                        <h4><a href="#">Natcho Herlaey</a></h4>
+                        <span class="status idle" data-status="idle"> Idle</span>
+                    </div>
+                    <div class="user-status idle">
+                        <i class="fa fa-circle"></i>
+                    </div>
+                </li>
+                <li class="user-row " id='chat_user_12' data-user-id='12'>
+                    <div class="user-img">
+                        <a href="#"><img src="../data/profile/avatar-2.png" alt=""></a>
+                    </div>
+                    <div class="user-info">
+                        <h4><a href="#">Shakira Swedan</a></h4>
+                        <span class="status idle" data-status="idle"> Idle</span>
+                    </div>
+                    <div class="user-status idle">
+                        <i class="fa fa-circle"></i>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="chatapi-windows ">
+
+    </div>
+</div>
+<!-- END CONTAINER -->
+<!-- LOAD FILES AT PAGE END FOR FASTER LOADING -->
+
+<!-- CORE JS FRAMEWORK - START -->
+<script src="assets/js/jquery-1.11.2.min.js"></script>
+<script src="assets/js/jquery.easing.min.js"></script>
+<script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/plugins/pace/pace.min.js"></script>
+<script src="assets/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+<script src="assets/plugins/viewport/viewportchecker.js"></script>
+<script>
+    window.jQuery || document.write('<script src="../assets/js/jquery-1.11.2.min.js"><\/script>');
+</script>
+<!-- CORE JS FRAMEWORK - END -->
+
+<!-- OTHER SCRIPTS INCLUDED ON THIS PAGE - START -->
+
+<script src="assets/plugins/echarts/echarts-custom-for-dashboard.js"></script>
+
+<script src="assets/plugins/flot-chart/jquery.flot.js"></script>
+<script src="assets/plugins/flot-chart/jquery.flot.time.js"></script>
+<script src="assets/js/chart-flot.js"></script>
+
+<script src="assets/plugins/morris-chart/js/raphael-min.js"></script>
+<script src="assets/plugins/morris-chart/js/morris.min.js"></script>
+<script src="assets/js/chart-morris.js"></script>
+<!-- OTHER SCRIPTS INCLUDED ON THIS PAGE - END -->
+
+<!-- CORE TEMPLATE JS - START -->
+<script src="assets/js/scripts.js"></script>
+<!-- END CORE TEMPLATE JS - END -->
+
+<script src="assets/js/bootstrap-table.min.js"></script>
+<script src="assets/js/tableExport.min.js"></script>
+<script src="assets/js/jspdf.min.js"></script>
+<script src="assets/js/bootstrap-table-export.js"></script>
+<script src="assets/js/jspdf.plugin.autotable.js"></script>
+<script src="assets/plugins/icheck/icheck.min.js"></script>
+
+</body>
+
+</html>

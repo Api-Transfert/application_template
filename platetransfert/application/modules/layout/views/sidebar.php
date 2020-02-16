@@ -144,13 +144,13 @@
 							</li>
 							
 							<li>
-                                <a href="#"> <span class="title">Cash &agrave; compte</span> </a>
+                                <a href="<?php bs()?>emission/cashacompte"> <span class="title">Cash &agrave; compte</span> </a>
 							</li>
 							
 							
 
 							<li>
-                                <a href="#"> <span class="title">Cash &agrave; Wallet</span> </a>
+                                <a href="<?php bs()?>emission/cashawallet"> <span class="title">Cash &agrave; Wallet</span> </a>
 							</li>
 
 							<li>
