@@ -112,7 +112,7 @@
                         <ul class="sub-menu">
                             
 							<li>
-                                <a href="#"> <span class="title">Grilles</span> </a>
+                                <a href="<?php bs()?>tarification/tarif"> <span class="title">Grilles</span> </a>
                             </li>
                             <li class="">
                                 <a href="javascript:;"><span class="title">Zones</span> <span class="arrow "></span> </a>
@@ -129,7 +129,7 @@
                                 <a href="#"> <span class="title">Taxe</span> </a>
                             </li>
                             <li>
-                                <a href="#"> <span class="title">Tarifs</span> </a>
+                                <a href="<?php bs()?>tarification/joinzonetarif"> <span class="title">Tarifs</span> </a>
                             </li>
                             
                         </ul>
