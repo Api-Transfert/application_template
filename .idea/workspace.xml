@@ -2,25 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2874ce28-c258-4896-aadf-63073e9dd720" name="Default Changelist" comment="Default Changelist">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platetransfert/application/models/Common_model.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platetransfert/application/modules/structure/views/structure/ajax/edit_structure.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platetransfert/assets/libs/css/fix.css" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/api_transfert_design.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/deployment.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platetransfert/application/config/autoload.php" afterPath="$PROJECT_DIR$/platetransfert/application/config/autoload.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platetransfert/application/config/config.php" afterPath="$PROJECT_DIR$/platetransfert/application/config/config.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platetransfert/application/config/database.php" afterPath="$PROJECT_DIR$/platetransfert/application/config/database.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platetransfert/application/models/Common_model.php" afterPath="$PROJECT_DIR$/platetransfert/application/models/Common_model.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platetransfert/application/modules/layout/views/footer.php" afterPath="$PROJECT_DIR$/platetransfert/application/modules/layout/views/footer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platetransfert/application/modules/layout/views/head.php" afterPath="$PROJECT_DIR$/platetransfert/application/modules/layout/views/head.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platetransfert/application/modules/structure/controllers/Structure.php" afterPath="$PROJECT_DIR$/platetransfert/application/modules/structure/controllers/Structure.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platetransfert/application/modules/structure/models/Structure_model.php" afterPath="$PROJECT_DIR$/platetransfert/application/modules/structure/models/Structure_model.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platetransfert/application/modules/structure/views/structure/accueil.php" afterPath="$PROJECT_DIR$/platetransfert/application/modules/structure/views/structure/accueil.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platetransfert/assets/libs/custom/dp.min.js" afterPath="$PROJECT_DIR$/platetransfert/assets/libs/custom/dp.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platetransfert/assets/libs/custom/swal.js" afterPath="$PROJECT_DIR$/platetransfert/assets/libs/custom/swal.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platetransfert/application/modules/structure/views/structure/ajax/edit_structure.php" afterPath="$PROJECT_DIR$/platetransfert/application/modules/structure/views/structure/ajax/edit_structure.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -74,19 +62,19 @@
       <file leaf-file-name="Structure.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/structure/controllers/Structure.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="49" column="38" lean-forward="false" selection-start-line="49" selection-start-column="38" selection-end-line="49" selection-end-column="38" />
+            <state relative-caret-position="-219">
+              <caret line="49" column="69" lean-forward="false" selection-start-line="49" selection-start-column="69" selection-end-line="49" selection-end-column="69" />
               <folding>
                 <element signature="e#178#501#0#PHP" expanded="true" />
                 <element signature="e#504#564#0#PHP" expanded="true" />
                 <element signature="e#568#766#0#PHP" expanded="true" />
-                <element signature="e#2506#2635#0#PHP" expanded="true" />
+                <element signature="e#2503#2632#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="autoload.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="autoload.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/platetransfert/application/config/autoload.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="407">
@@ -99,44 +87,17 @@
       <file leaf-file-name="edit_structure.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/structure/views/structure/ajax/edit_structure.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="2" column="2" lean-forward="false" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Structure_model.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/structure/models/Structure_model.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="16" column="52" lean-forward="false" selection-start-line="16" selection-start-column="52" selection-end-line="16" selection-end-column="52" />
+            <state relative-caret-position="442">
+              <caret line="132" column="26" lean-forward="false" selection-start-line="132" selection-start-column="20" selection-end-line="132" selection-end-column="26" />
               <folding>
-                <element signature="n#update_structure_status#0;n#Structure_model#0;n#!!top" expanded="true" />
+                <element signature="n#div#0;n#div#0;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="accueil.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/structure/views/structure/accueil.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="87">
-              <caret line="106" column="39" lean-forward="true" selection-start-line="106" selection-start-column="39" selection-end-line="106" selection-end-column="39" />
-              <folding>
-                <element signature="n#div#0;n#li#4;n#ul#0;n#div#0;n#td#5;n#tr#0;n#tbody#0;n#table#0;n#section#0;n#div#3;n#div#0;n#section#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#!!top" expanded="false" />
-                <element signature="e#14111#14731#0#HTML" expanded="true" />
-                <element signature="e#14241#14721#0#HTML" expanded="true" />
-                <element signature="e#14874#15118#0#HTML" expanded="true" />
-                <element signature="e#15053#15113#0#HTML" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="platetransfert.pays" pinned="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/21ca2d7a/77d277cf-ed66-4591-8f0d-db4cef752674/platetransfert.pays">
+      <file leaf-file-name="platetransfert.structure" pinned="false" current-in-tab="false">
+        <entry file="dbDummy://dbtable:/21ca2d7a/77d277cf-ed66-4591-8f0d-db4cef752674/platetransfert.structure">
           <provider editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -150,29 +111,44 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="footer.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/layout/views/footer.php">
+      <file leaf-file-name="Structure_model.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/structure/models/Structure_model.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="86" column="54" lean-forward="false" selection-start-line="86" selection-start-column="38" selection-end-line="86" selection-end-column="54" />
+            <state relative-caret-position="299">
+              <caret line="21" column="33" lean-forward="false" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="33" />
               <folding>
-                <element signature="e#2693#3561#0#HTML" expanded="true" />
-                <element signature="e#4436#4760#0#HTML" expanded="true" />
+                <element signature="n#update_structure_status#0;n#Structure_model#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dp.min.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/platetransfert/assets/libs/custom/dp.min.js">
+      <file leaf-file-name="accueil.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/structure/views/structure/accueil.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="439">
-              <caret line="448" column="1" lean-forward="false" selection-start-line="448" selection-start-column="1" selection-end-line="448" selection-end-column="1" />
-              <folding>
-                <element signature="e#106#6446#0" expanded="true" />
-                <marker date="1581886448302" expanded="true" signature="30507:30521" ph="..." />
-                <marker date="1581886448302" expanded="true" signature="30758:30772" ph="..." />
-              </folding>
+            <state relative-caret-position="371">
+              <caret line="313" column="44" lean-forward="false" selection-start-line="313" selection-start-column="44" selection-end-line="313" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="footer.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/layout/views/footer.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1008">
+              <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="head.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/layout/views/head.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="918">
+              <caret line="51" column="48" lean-forward="false" selection-start-line="51" selection-start-column="48" selection-end-line="51" selection-end-column="48" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -180,7 +156,7 @@
       <file leaf-file-name="swal.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/platetransfert/assets/libs/custom/swal.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
+            <state relative-caret-position="324">
               <caret line="64" column="16" lean-forward="false" selection-start-line="64" selection-start-column="16" selection-end-line="64" selection-end-column="16" />
               <folding>
                 <element signature="e#757#1233#0" expanded="true" />
@@ -206,7 +182,19 @@
     <findStrings>
       <find>show_messa</find>
       <find>sweetDia</find>
+      <find>icheck</find>
+      <find>type=&quot;radi</find>
+      <find>class=&quot;row&quot;</find>
+      <find>col-xs-6 mb-15</find>
+      <find>== 1)</find>
+      <find>col-sm</find>
     </findStrings>
+    <replaceStrings>
+      <replace>class=&quot;row mb-15&quot;</replace>
+      <replace>col-sm-6</replace>
+      <replace>== '1')</replace>
+      <replace>col-md</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -222,17 +210,24 @@
         <option value="$PROJECT_DIR$/platetransfert/assets/libs/css/fix.css" />
         <option value="$PROJECT_DIR$/platetransfert/assets/libs/custom/swal.js" />
         <option value="$PROJECT_DIR$/platetransfert/assets/libs/custom/dp.min.js" />
+        <option value="$PROJECT_DIR$/platetransfert/application/config/autoload.php" />
         <option value="$PROJECT_DIR$/platetransfert/application/modules/layout/views/footer.php" />
+        <option value="$PROJECT_DIR$/platetransfert/application/modules/structure/models/Structure_model.php" />
+        <option value="$PROJECT_DIR$/platetransfert/application/modules/structure/controllers/Structure.php" />
+        <option value="$PROJECT_DIR$/platetransfert/application/models/Common_model.php" />
         <option value="$PROJECT_DIR$/platetransfert/application/modules/structure/views/structure/ajax/edit_structure.php" />
         <option value="$PROJECT_DIR$/platetransfert/application/modules/structure/views/structure/accueil.php" />
-        <option value="$PROJECT_DIR$/platetransfert/application/modules/structure/models/Structure_model.php" />
-        <option value="$PROJECT_DIR$/platetransfert/application/config/autoload.php" />
-        <option value="$PROJECT_DIR$/platetransfert/application/modules/structure/controllers/Structure.php" />
       </list>
     </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsFlowSettings">
+    <service-enabled>false</service-enabled>
+    <exe-path />
+    <annotation-enable>false</annotation-enable>
+    <other-services-enabled>false</other-services-enabled>
+  </component>
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
@@ -280,8 +275,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -432,102 +425,14 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="structure" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application_template" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application_template" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="platetransfert" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="structure" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="structure" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application_template" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application_template" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="platetransfert" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="structure" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application_template" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application_template" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="platetransfert" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="models" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -540,7 +445,7 @@
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="node.js.detected.package.jscs" value="true" />
     <property name="node.js.selected.package.jscs" value="" />
-    <property name="settings.editor.selected.configurable" value="Settings.JavaScript.Linters.JSHint" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
@@ -610,6 +515,12 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -650,12 +561,21 @@
       <workItem from="1581816215022" duration="2717000" />
       <workItem from="1581836616512" duration="2052000" />
       <workItem from="1581839905938" duration="550000" />
-      <workItem from="1581840482681" duration="8965000" />
+      <workItem from="1581840482681" duration="15051000" />
+      <workItem from="1581894842495" duration="3445000" />
     </task>
+    <task id="LOCAL-00001" summary="Default Changelist">
+      <created>1581888602176</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1581888602176</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9699000" />
+    <option name="totallyTimeSpent" value="19230000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -667,28 +587,28 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2647504" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24054463" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -728,38 +648,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/platetransfert/assets/libs/custom/swal.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="12" column="36" lean-forward="false" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
-          <folding>
-            <element signature="e#757#1233#0" expanded="true" />
-            <element signature="e#1026#1227#0" expanded="true" />
-            <element signature="e#1939#2082#0" expanded="true" />
-            <element signature="e#2106#2162#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/platetransfert/assets/libs/sweetalert2/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SECOND">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding>
-              <marker date="499162500000" expanded="true" signature="3228:3290" ph="..." />
-              <marker date="499162500000" expanded="true" signature="3396:3482" ph="..." />
-              <marker date="499162500000" expanded="true" signature="3910:4122" ph="{&quot;title&quot;: 'Are you sure?'...}" />
-              <marker date="499162500000" expanded="false" signature="4141:4548" ph="{...}" />
-              <marker date="499162500000" expanded="true" signature="4163:4391" ph="{...}" />
-              <marker date="499162500000" expanded="true" signature="4269:4387" ph="//..." />
-              <marker date="499162500000" expanded="true" signature="4447:4546" ph="{...}" />
-            </folding>
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/layout/views/head.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1080">
@@ -772,10 +660,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1008">
           <caret line="75" column="4" lean-forward="false" selection-start-line="75" selection-start-column="4" selection-end-line="75" selection-end-column="4" />
-          <folding>
-            <element signature="e#2693#3561#0#HTML" expanded="true" />
-            <element signature="e#4436#4760#0#HTML" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -787,7 +672,7 @@
             <element signature="e#178#501#0#PHP" expanded="true" />
             <element signature="e#504#564#0#PHP" expanded="true" />
             <element signature="e#568#766#0#PHP" expanded="true" />
-            <element signature="e#2506#2635#0#PHP" expanded="true" />
+            <element signature="e#2503#2632#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -796,10 +681,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="684">
           <caret line="38" column="51" lean-forward="false" selection-start-line="38" selection-start-column="51" selection-end-line="38" selection-end-column="51" />
-          <folding>
-            <element signature="e#2693#3561#0#HTML" expanded="true" />
-            <element signature="e#4436#4760#0#HTML" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -829,14 +711,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1314">
           <caret line="73" column="29" lean-forward="true" selection-start-line="73" selection-start-column="29" selection-end-line="73" selection-end-column="29" />
-          <folding>
-            <element signature="n#div#0;n#li#4;n#ul#0;n#div#0;n#td#5;n#tr#0;n#tbody#0;n#table#0;n#section#0;n#div#3;n#div#0;n#section#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#!!top" expanded="false" />
-            <element signature="e#14111#14731#0#HTML" expanded="true" />
-            <element signature="e#14241#14721#0#HTML" expanded="true" />
-            <element signature="e#14874#15118#0#HTML" expanded="true" />
-            <element signature="e#15053#15113#0#HTML" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -954,15 +829,6 @@
         <state split_layout="SECOND">
           <first_editor relative-caret-position="0">
             <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding>
-              <marker date="499162500000" expanded="true" signature="3228:3290" ph="..." />
-              <marker date="499162500000" expanded="true" signature="3396:3482" ph="..." />
-              <marker date="499162500000" expanded="true" signature="3910:4122" ph="{&quot;title&quot;: 'Are you sure?'...}" />
-              <marker date="499162500000" expanded="false" signature="4141:4548" ph="{...}" />
-              <marker date="499162500000" expanded="true" signature="4163:4391" ph="{...}" />
-              <marker date="499162500000" expanded="true" signature="4269:4387" ph="//..." />
-              <marker date="499162500000" expanded="true" signature="4447:4546" ph="{...}" />
-            </folding>
           </first_editor>
           <second_editor />
         </state>
@@ -987,7 +853,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="497">
           <caret line="839" column="104" lean-forward="false" selection-start-line="839" selection-start-column="104" selection-end-line="839" selection-end-column="104" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -995,7 +860,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="25" column="80" lean-forward="false" selection-start-line="25" selection-start-column="45" selection-end-line="25" selection-end-column="80" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1003,7 +867,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1011,15 +874,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
           <caret line="1" column="30" lean-forward="false" selection-start-line="1" selection-start-column="30" selection-end-line="1" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/layout/views/head.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="51" column="48" lean-forward="false" selection-start-line="51" selection-start-column="48" selection-end-line="51" selection-end-column="48" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1027,13 +881,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="80" column="33" lean-forward="false" selection-start-line="80" selection-start-column="33" selection-end-line="80" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/platetransfert/assets/libs/custom/swal.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
+        <state relative-caret-position="324">
           <caret line="64" column="16" lean-forward="false" selection-start-line="64" selection-start-column="16" selection-end-line="64" selection-end-column="16" />
           <folding>
             <element signature="e#757#1233#0" expanded="true" />
@@ -1048,22 +901,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="439">
           <caret line="448" column="1" lean-forward="false" selection-start-line="448" selection-start-column="1" selection-end-line="448" selection-end-column="1" />
-          <folding>
-            <element signature="e#106#6446#0" expanded="true" />
-            <marker date="1581886448302" expanded="true" signature="30507:30521" ph="..." />
-            <marker date="1581886448302" expanded="true" signature="30758:30772" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/layout/views/footer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="86" column="54" lean-forward="false" selection-start-line="86" selection-start-column="38" selection-end-line="86" selection-end-column="54" />
-          <folding>
-            <element signature="e#2693#3561#0#HTML" expanded="true" />
-            <element signature="e#4436#4760#0#HTML" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1071,24 +908,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="12" column="47" lean-forward="true" selection-start-line="12" selection-start-column="47" selection-end-line="12" selection-end-column="47" />
-          <folding>
-            <element signature="e#197#286#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/structure/views/structure/accueil.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="106" column="39" lean-forward="true" selection-start-line="106" selection-start-column="39" selection-end-line="106" selection-end-column="39" />
-          <folding>
-            <element signature="n#div#0;n#li#4;n#ul#0;n#div#0;n#td#5;n#tr#0;n#tbody#0;n#table#0;n#section#0;n#div#3;n#div#0;n#section#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#!!top" expanded="false" />
-            <element signature="e#14111#14731#0#HTML" expanded="true" />
-            <element signature="e#14241#14721#0#HTML" expanded="true" />
-            <element signature="e#14874#15118#0#HTML" expanded="true" />
-            <element signature="e#15053#15113#0#HTML" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1096,7 +915,6 @@
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
@@ -1105,23 +923,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/structure/models/Structure_model.php">
+    <entry file="file://$USER_HOME$/Documents/DOWNLOADS/TEMPLATES/WEB/CMS/api_transfert/api_transfert/HTML-dashboard/form-elements.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="16" column="52" lean-forward="false" selection-start-line="16" selection-start-column="52" selection-end-line="16" selection-end-column="52" />
-          <folding>
-            <element signature="n#update_structure_status#0;n#Structure_model#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/layout/views/head.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="918">
+          <caret line="51" column="48" lean-forward="false" selection-start-line="51" selection-start-column="48" selection-end-line="51" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Documents/DOWNLOADS/TEMPLATES/WEB/CMS/api_transfert/api_transfert/HTML-dashboard/form-elements-icheck.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="1733" column="0" lean-forward="false" selection-start-line="1733" selection-start-column="0" selection-end-line="1734" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/layout/views/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1008">
+          <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/platetransfert/application/models/Common_model.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="15" column="34" lean-forward="true" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
-          <folding>
-            <element signature="n#select#0;n#Common_model#0;n#!!top" expanded="false" />
-          </folding>
+        <state relative-caret-position="270">
+          <caret line="19" column="30" lean-forward="false" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1138,31 +974,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/platetransfert/application/config/autoload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="134" column="45" lean-forward="false" selection-start-line="134" selection-start-column="45" selection-end-line="134" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/structure/controllers/Structure.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="49" column="38" lean-forward="false" selection-start-line="49" selection-start-column="38" selection-end-line="49" selection-end-column="38" />
+        <state relative-caret-position="-219">
+          <caret line="49" column="69" lean-forward="false" selection-start-line="49" selection-start-column="69" selection-end-line="49" selection-end-column="69" />
           <folding>
             <element signature="e#178#501#0#PHP" expanded="true" />
             <element signature="e#504#564#0#PHP" expanded="true" />
             <element signature="e#568#766#0#PHP" expanded="true" />
-            <element signature="e#2506#2635#0#PHP" expanded="true" />
+            <element signature="e#2503#2632#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/structure/models/Structure_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="21" column="33" lean-forward="false" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="33" />
+          <folding>
+            <element signature="n#update_structure_status#0;n#Structure_model#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/structure/views/structure/ajax/edit_structure.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="2" lean-forward="false" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
-          <folding />
+        <state relative-caret-position="442">
+          <caret line="132" column="26" lean-forward="false" selection-start-line="132" selection-start-column="20" selection-end-line="132" selection-end-column="26" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/platetransfert/application/config/autoload.php">
+    <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/structure/views/structure/accueil.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="134" column="45" lean-forward="false" selection-start-line="134" selection-start-column="45" selection-end-line="134" selection-end-column="45" />
+        <state relative-caret-position="371">
+          <caret line="313" column="44" lean-forward="false" selection-start-line="313" selection-start-column="44" selection-end-line="313" selection-end-column="44" />
           <folding />
         </state>
       </provider>

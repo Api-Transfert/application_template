@@ -13,10 +13,11 @@ class Common_model extends CI_Model
 		return TRUE;
 	}
 
-	public function select($table)
+	public function select($table , $where = [] , $output = 'result')
 	{
-		$query = $this->db->get($table);
-		return $query->result();
+        if(!empty($where)) $this->db->where($where);
+        $query = $this->db->get($table);
+		return $query->$output();
 	}
 
 	public function update_data($id,$table)

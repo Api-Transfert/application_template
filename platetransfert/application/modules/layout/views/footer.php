@@ -71,10 +71,13 @@
         switch_final_state = !switch_init_state;
 
         if(has_attr(this,'input-target')){
-            $('#'+$(this).attr('input-target')).attr('value',(switch_final_state === true)?'1':'0');
+            $($(this).attr('input-target')).attr('value',(switch_final_state === true)?'1':'0');
         }
         else if(has_attr(this,'value-target')){
-            $('#'+$(this).attr('value-target')).attr('value',(switch_final_state === true)?'1':'0');
+            $($(this).attr('value-target')).attr('value',(switch_final_state === true)?'1':'0');
+        }
+        else if(has_attr(this,'data-target')){
+            $($(this).attr('data-target')).attr('value',(switch_final_state === true)?'1':'0');
         }
     });
 
