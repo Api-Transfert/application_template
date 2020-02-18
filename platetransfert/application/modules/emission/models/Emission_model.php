@@ -6,7 +6,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  * Class Ion Auth Model
  * @property Ion_auth $ion_auth The Ion_auth library
  */
-class Structure_model extends CI_Model
+class Emission_model extends CI_Model
 {
     public function __construct()
     {

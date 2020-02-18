@@ -2,13 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2874ce28-c258-4896-aadf-63073e9dd720" name="Default Changelist" comment="Default Changelist">
+      <change type="MOVED" beforePath="$PROJECT_DIR$/platetransfert/application/modules/emission/models/Structure_model.php" afterPath="$PROJECT_DIR$/platetransfert/application/modules/emission/models/Emission_model.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platetransfert/application/models/Common_model.php" afterPath="$PROJECT_DIR$/platetransfert/application/models/Common_model.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platetransfert/application/modules/layout/views/footer.php" afterPath="$PROJECT_DIR$/platetransfert/application/modules/layout/views/footer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/style.css" afterPath="$PROJECT_DIR$/assets/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/plugins/jquery-validation/js/jquery.validate.min.js" afterPath="$PROJECT_DIR$/assets/plugins/jquery-validation/js/jquery.validate.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platetransfert/application/config/config.php" afterPath="$PROJECT_DIR$/platetransfert/application/config/config.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platetransfert/application/modules/emission/controllers/Emission.php" afterPath="$PROJECT_DIR$/platetransfert/application/modules/emission/controllers/Emission.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platetransfert/application/modules/emission/views/cashacash/accueil.php" afterPath="$PROJECT_DIR$/platetransfert/application/modules/emission/views/cashacash/accueil.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platetransfert/application/modules/structure/controllers/Structure.php" afterPath="$PROJECT_DIR$/platetransfert/application/modules/structure/controllers/Structure.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platetransfert/application/modules/structure/models/Structure_model.php" afterPath="$PROJECT_DIR$/platetransfert/application/modules/structure/models/Structure_model.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platetransfert/application/modules/structure/views/structure/accueil.php" afterPath="$PROJECT_DIR$/platetransfert/application/modules/structure/views/structure/accueil.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platetransfert/application/modules/structure/views/structure/ajax/edit_structure.php" afterPath="$PROJECT_DIR$/platetransfert/application/modules/structure/views/structure/ajax/edit_structure.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platetransfert/assets/assets/css/style.css" afterPath="$PROJECT_DIR$/platetransfert/assets/assets/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platetransfert/assets/assets/plugins/jquery-validation/js/jquery.validate.min.js" afterPath="$PROJECT_DIR$/platetransfert/assets/assets/plugins/jquery-validation/js/jquery.validate.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platetransfert/assets/css/style.css" afterPath="$PROJECT_DIR$/platetransfert/assets/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platetransfert/assets/libs/css/fix.css" afterPath="$PROJECT_DIR$/platetransfert/assets/libs/css/fix.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platetransfert/assets/libs/custom/dp.min.js" afterPath="$PROJECT_DIR$/platetransfert/assets/libs/custom/dp.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platetransfert/assets/plugins/jquery-validation/js/jquery.validate.min.js" afterPath="$PROJECT_DIR$/platetransfert/assets/plugins/jquery-validation/js/jquery.validate.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platetransfert/public/assets/fullcalendar/fullcalendar/bootstrap-fullcalendar.css" afterPath="$PROJECT_DIR$/platetransfert/public/assets/fullcalendar/fullcalendar/bootstrap-fullcalendar.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platetransfert/public/js/jquery.validate.min.js" afterPath="$PROJECT_DIR$/platetransfert/public/js/jquery.validate.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platetransfert/template/assets/css/style.css" afterPath="$PROJECT_DIR$/platetransfert/template/assets/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platetransfert/template/assets/plugins/jquery-validation/js/jquery.validate.min.js" afterPath="$PROJECT_DIR$/platetransfert/template/assets/plugins/jquery-validation/js/jquery.validate.min.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -52,6 +63,24 @@
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
     </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="@localhost" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="platetransfert" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="pays" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
@@ -59,111 +88,60 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Structure.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/structure/controllers/Structure.php">
+      <file leaf-file-name="Emission.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/emission/controllers/Emission.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-219">
-              <caret line="49" column="69" lean-forward="false" selection-start-line="49" selection-start-column="69" selection-end-line="49" selection-end-column="69" />
+            <state relative-caret-position="180">
+              <caret line="29" column="12" lean-forward="false" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="12" />
               <folding>
-                <element signature="e#178#501#0#PHP" expanded="true" />
-                <element signature="e#504#564#0#PHP" expanded="true" />
-                <element signature="e#568#766#0#PHP" expanded="true" />
-                <element signature="e#2503#2632#0#PHP" expanded="true" />
+                <element signature="e#112#434#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="autoload.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/platetransfert/application/config/autoload.php">
+      <file leaf-file-name="accueil.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/emission/views/cashacash/accueil.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="407">
-              <caret line="134" column="45" lean-forward="false" selection-start-line="134" selection-start-column="45" selection-end-line="134" selection-end-column="45" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="edit_structure.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/structure/views/structure/ajax/edit_structure.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="132" column="26" lean-forward="false" selection-start-line="132" selection-start-column="20" selection-end-line="132" selection-end-column="26" />
+            <state relative-caret-position="411">
+              <caret line="445" column="0" lean-forward="false" selection-start-line="445" selection-start-column="0" selection-end-line="445" selection-end-column="0" />
               <folding>
-                <element signature="n#div#0;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#style#0;n#header#1;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#1;n#div#0;n#section#0;n#div#0;n#body#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="platetransfert.structure" pinned="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/21ca2d7a/77d277cf-ed66-4591-8f0d-db4cef752674/platetransfert.structure">
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Structure_model.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/structure/models/Structure_model.php">
+      <file leaf-file-name="dp.min.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/platetransfert/assets/libs/custom/dp.min.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="21" column="33" lean-forward="false" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="33" />
+            <state relative-caret-position="162">
+              <caret line="156" column="63" lean-forward="true" selection-start-line="156" selection-start-column="63" selection-end-line="156" selection-end-column="63" />
               <folding>
-                <element signature="n#update_structure_status#0;n#Structure_model#0;n#!!top" expanded="true" />
+                <element signature="e#7516#8114#0" expanded="true" />
+                <marker date="1582029980868" expanded="true" signature="30509:30523" ph="..." />
+                <marker date="1582029980868" expanded="true" signature="30760:30774" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="accueil.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/structure/views/structure/accueil.php">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/platetransfert/assets/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="371">
-              <caret line="313" column="44" lean-forward="false" selection-start-line="313" selection-start-column="44" selection-end-line="313" selection-end-column="44" />
+            <state relative-caret-position="177">
+              <caret line="4757" column="102" lean-forward="false" selection-start-line="4757" selection-start-column="102" selection-end-line="4757" selection-end-column="102" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="footer.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/layout/views/footer.php">
+      <file leaf-file-name="fix.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/platetransfert/assets/libs/css/fix.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1008">
-              <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+            <state relative-caret-position="270">
+              <caret line="15" column="20" lean-forward="false" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="head.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/layout/views/head.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="918">
-              <caret line="51" column="48" lean-forward="false" selection-start-line="51" selection-start-column="48" selection-end-line="51" selection-end-column="48" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="swal.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/platetransfert/assets/libs/custom/swal.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="64" column="16" lean-forward="false" selection-start-line="64" selection-start-column="16" selection-end-line="64" selection-end-column="16" />
-              <folding>
-                <element signature="e#757#1233#0" expanded="true" />
-                <element signature="e#1026#1227#0" expanded="true" />
-                <element signature="e#1939#2082#0" expanded="true" />
-                <element signature="e#2106#2162#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -188,15 +166,25 @@
       <find>col-xs-6 mb-15</find>
       <find>== 1)</find>
       <find>col-sm</find>
+      <find>title</find>
+      <find>&gt;</find>
+      <find>h2</find>
+      <find>.form-control:focus, .has-focus .form-control</find>
+      <find>Ce champ est obligatoire</find>
+      <find>Ce champ est obligatoireThis field is required</find>
+      <find>This field is required</find>
     </findStrings>
     <replaceStrings>
       <replace>class=&quot;row mb-15&quot;</replace>
       <replace>col-sm-6</replace>
       <replace>== '1')</replace>
       <replace>col-md</replace>
+      <replace>&gt;</replace>
+      <replace>Ce champ est obligatoire</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
+    <option name="UPDATE_TYPE" value="MERGE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
@@ -207,16 +195,29 @@
       <list>
         <option value="$PROJECT_DIR$/platetransfert/application/config/database.php" />
         <option value="$PROJECT_DIR$/platetransfert/application/modules/layout/views/head.php" />
-        <option value="$PROJECT_DIR$/platetransfert/assets/libs/css/fix.css" />
         <option value="$PROJECT_DIR$/platetransfert/assets/libs/custom/swal.js" />
-        <option value="$PROJECT_DIR$/platetransfert/assets/libs/custom/dp.min.js" />
         <option value="$PROJECT_DIR$/platetransfert/application/config/autoload.php" />
         <option value="$PROJECT_DIR$/platetransfert/application/modules/layout/views/footer.php" />
         <option value="$PROJECT_DIR$/platetransfert/application/modules/structure/models/Structure_model.php" />
-        <option value="$PROJECT_DIR$/platetransfert/application/modules/structure/controllers/Structure.php" />
         <option value="$PROJECT_DIR$/platetransfert/application/models/Common_model.php" />
         <option value="$PROJECT_DIR$/platetransfert/application/modules/structure/views/structure/ajax/edit_structure.php" />
         <option value="$PROJECT_DIR$/platetransfert/application/modules/structure/views/structure/accueil.php" />
+        <option value="$PROJECT_DIR$/platetransfert/application/modules/users/views/user_groups/permissions.php" />
+        <option value="$PROJECT_DIR$/platetransfert/application/config/config.php" />
+        <option value="$PROJECT_DIR$/platetransfert/application/modules/emission/models/Structure_model.php" />
+        <option value="$PROJECT_DIR$/platetransfert/application/modules/structure/controllers/Structure.php" />
+        <option value="$PROJECT_DIR$/platetransfert/application/modules/emission/models/Emission_model.php" />
+        <option value="$PROJECT_DIR$/platetransfert/application/modules/emission/controllers/Emission.php" />
+        <option value="$PROJECT_DIR$/platetransfert/assets/libs/css/fix.css" />
+        <option value="$PROJECT_DIR$/platetransfert/public/assets/fullcalendar/fullcalendar/bootstrap-fullcalendar.css" />
+        <option value="$PROJECT_DIR$/platetransfert/application/modules/emission/views/cashacash/accueil.php" />
+        <option value="$PROJECT_DIR$/assets/plugins/jquery-validation/js/jquery.validate.min.js" />
+        <option value="$PROJECT_DIR$/platetransfert/assets/assets/plugins/jquery-validation/js/jquery.validate.min.js" />
+        <option value="$PROJECT_DIR$/platetransfert/assets/libs/custom/dp.min.js" />
+        <option value="$PROJECT_DIR$/platetransfert/assets/plugins/jquery-validation/js/jquery.validate.min.js" />
+        <option value="$PROJECT_DIR$/platetransfert/public/js/jquery.validate.min.js" />
+        <option value="$PROJECT_DIR$/platetransfert/template/assets/plugins/jquery-validation/js/jquery.validate.min.js" />
+        <option value="$PROJECT_DIR$/platetransfert/assets/css/style.css" />
       </list>
     </option>
   </component>
@@ -315,72 +316,6 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application_template" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application_template" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="platetransfert" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="libs" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application_template" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application_template" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="platetransfert" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="libs" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application_template" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application_template" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="platetransfert" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="application" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -425,6 +360,96 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="emission" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application_template" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application_template" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="platetransfert" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="emission" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cashacash" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application_template" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application_template" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="platetransfert" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="emission" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application_template" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application_template" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="platetransfert" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="models" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -440,12 +465,12 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="ignore_missing_gitignore" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../2asof/qc_source" />
     <property name="node.js.path.for.package.jscs" value="project" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="node.js.detected.package.jscs" value="true" />
     <property name="node.js.selected.package.jscs" value="" />
-    <property name="settings.editor.selected.configurable" value="editing.templates" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
@@ -462,6 +487,174 @@
       <recent name="C:\wamp64\www\application_template\platetransfert\application\models" />
       <recent name="C:\xampp\htdocs\api_transfert_design" />
     </key>
+  </component>
+  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
+    <UpdatedFiles>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Updated from server" />
+        <option name="myStatusName" value="Changed on server" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="CHANGED_ON_SERVER" />
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated" />
+          <option name="myStatusName" value="Changed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UPDATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/platetransfert/application/config/config.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/platetransfert/application/modules/layout/views/sidebar.php</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Created" />
+          <option name="myStatusName" value="Created" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CREATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/platetransfert/application/modules/commission/controllers/Commission.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/platetransfert/application/modules/commission/models/Commision_model.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/platetransfert/application/modules/commission/models/Ion_auth_model.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/platetransfert/application/modules/commission/views/Forms/form-components.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/platetransfert/application/modules/commission/views/Forms/form-dropzone.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/platetransfert/application/modules/commission/views/Forms/form-gridforms.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/platetransfert/application/modules/commission/views/Forms/form-markdown.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/platetransfert/application/modules/commission/views/Forms/form-masks.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/platetransfert/application/modules/commission/views/Forms/form-pickers.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/platetransfert/application/modules/commission/views/Forms/form-summernote.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/platetransfert/application/modules/commission/views/Forms/form-validation.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/platetransfert/application/modules/commission/views/Forms/form-wizard.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/platetransfert/application/modules/commission/views/Forms/form-xeditable.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/platetransfert/application/modules/commission/views/Forms/ui-forms.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/platetransfert/application/modules/commission/views/agence/accueil.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/platetransfert/application/modules/commission/views/commission/accueil.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/platetransfert/application/modules/commission/views/commission/ajax/edit_structure.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/platetransfert/application/modules/commission/views/dashboard/accueil.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/platetransfert/application/modules/commission/views/layout/email_template.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/platetransfert/application/modules/commission/views/layout/layout-boxed.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/platetransfert/application/modules/commission/views/layout/layout-horizontal.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/platetransfert/application/modules/commission/views/layout/mega_menu.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/platetransfert/application/modules/commission/views/transfert/app_inbox.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/platetransfert/application/modules/commission/views/transfert/buttons.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/platetransfert/application/modules/commission/views/transfert/dashboard.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/platetransfert/application/modules/commission/views/transfert/inbox_compose.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/platetransfert/application/modules/commission/views/transfert/login_and_signup.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/platetransfert/application/modules/tarification/controllers/Tarification.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/platetransfert/application/modules/tarification/models/Ion_auth_model.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/platetransfert/application/modules/tarification/models/Joinzonetarif_model.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/platetransfert/application/modules/tarification/models/Tarif_model.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/platetransfert/application/modules/tarification/views/Forms/form-components.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/platetransfert/application/modules/tarification/views/Forms/form-dropzone.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/platetransfert/application/modules/tarification/views/Forms/form-gridforms.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/platetransfert/application/modules/tarification/views/Forms/form-markdown.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/platetransfert/application/modules/tarification/views/Forms/form-masks.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/platetransfert/application/modules/tarification/views/Forms/form-pickers.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/platetransfert/application/modules/tarification/views/Forms/form-summernote.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/platetransfert/application/modules/tarification/views/Forms/form-validation.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/platetransfert/application/modules/tarification/views/Forms/form-wizard.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/platetransfert/application/modules/tarification/views/Forms/form-xeditable.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/platetransfert/application/modules/tarification/views/Forms/ui-forms.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/platetransfert/application/modules/tarification/views/agence/accueil.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/platetransfert/application/modules/tarification/views/dashboard/accueil.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/platetransfert/application/modules/tarification/views/joinzonetarif/accueil.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/platetransfert/application/modules/tarification/views/joinzonetarif/ajax/edit_structure.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/platetransfert/application/modules/tarification/views/layout/email_template.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/platetransfert/application/modules/tarification/views/layout/layout-boxed.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/platetransfert/application/modules/tarification/views/layout/layout-horizontal.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/platetransfert/application/modules/tarification/views/layout/mega_menu.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/platetransfert/application/modules/tarification/views/tarif/accueil.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/platetransfert/application/modules/tarification/views/tarif/ajax/edit_structure.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/platetransfert/application/modules/tarification/views/transfert/app_inbox.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/platetransfert/application/modules/tarification/views/transfert/buttons.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/platetransfert/application/modules/tarification/views/transfert/dashboard.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/platetransfert/application/modules/tarification/views/transfert/inbox_compose.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/platetransfert/application/modules/tarification/views/transfert/login_and_signup.php</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Deleted" />
+          <option name="myStatusName" value="Deleted" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="true" />
+          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Restored" />
+          <option name="myStatusName" value="Will be restored" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="RESTORED" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Modified" />
+        <option name="myStatusName" value="Modified" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MODIFIED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Skipped" />
+        <option name="myStatusName" value="Skipped" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SKIPPED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with conflicts" />
+        <option name="myStatusName" value="Will be merged with conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_CONFLICTS" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with tree conflicts" />
+        <option name="myStatusName" value="Merged with tree conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with property conflicts" />
+        <option name="myStatusName" value="Will be merged with property conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged" />
+        <option name="myStatusName" value="Will be merged" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Not in repository" />
+        <option name="myStatusName" value="Not in repository" />
+        <option name="mySupportsDeletion" value="true" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="UNKNOWN" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally added" />
+        <option name="myStatusName" value="Locally added" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_ADDED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally removed" />
+        <option name="myStatusName" value="Locally removed" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_REMOVED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Switched" />
+        <option name="myStatusName" value="Switched" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SWITCHED" />
+      </FILE-GROUP>
+    </UpdatedFiles>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -562,7 +755,8 @@
       <workItem from="1581836616512" duration="2052000" />
       <workItem from="1581839905938" duration="550000" />
       <workItem from="1581840482681" duration="15051000" />
-      <workItem from="1581894842495" duration="3445000" />
+      <workItem from="1581894842495" duration="5911000" />
+      <workItem from="1581940476473" duration="13345000" />
     </task>
     <task id="LOCAL-00001" summary="Default Changelist">
       <created>1581888602176</created>
@@ -571,11 +765,18 @@
       <option name="project" value="LOCAL" />
       <updated>1581888602176</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Default Changelist">
+      <created>1581898346518</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1581898346518</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19230000" />
+    <option name="totallyTimeSpent" value="35041000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -587,28 +788,28 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2647504" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5332829" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24054463" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.51111114" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2677761" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24054463" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -648,116 +849,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/layout/views/head.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1080">
-          <caret line="60" column="0" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/layout/views/footer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1008">
-          <caret line="75" column="4" lean-forward="false" selection-start-line="75" selection-start-column="4" selection-end-line="75" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/structure/controllers/Structure.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="36" column="109" lean-forward="false" selection-start-line="36" selection-start-column="109" selection-end-line="36" selection-end-column="109" />
-          <folding>
-            <element signature="e#178#501#0#PHP" expanded="true" />
-            <element signature="e#504#564#0#PHP" expanded="true" />
-            <element signature="e#568#766#0#PHP" expanded="true" />
-            <element signature="e#2503#2632#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/layout/views/footer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="684">
-          <caret line="38" column="51" lean-forward="false" selection-start-line="38" selection-start-column="51" selection-end-line="38" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/layout/views/head.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="900">
-          <caret line="50" column="55" lean-forward="false" selection-start-line="50" selection-start-column="55" selection-end-line="50" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_41.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="666">
-          <caret line="37" column="6" lean-forward="false" selection-start-line="37" selection-start-column="6" selection-end-line="37" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/transfert/views/structure/accueil.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="19" column="31" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="602" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/structure/views/structure/accueil.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1314">
-          <caret line="73" column="29" lean-forward="true" selection-start-line="73" selection-start-column="29" selection-end-line="73" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/46b706e6-ef79-49ab-bf89-aa98bc51869c/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/platetransfert/application/config/config_ion_auth.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="140" column="39" lean-forward="false" selection-start-line="140" selection-start-column="39" selection-end-line="140" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/platetransfert/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-72">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/template/controllers/Template.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/template/views/dashboard.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="5" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/21ca2d7a/46b706e6-ef79-49ab-bf89-aa98bc51869c/platetransfert.structure" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/d64cef2e-b6b9-4d21-9b52-b231602b08bc/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/transfert/views/structure/accueil.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
@@ -856,24 +947,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/platetransfert/application/config/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="25" column="80" lean-forward="false" selection-start-line="25" selection-start-column="45" selection-end-line="25" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/77d277cf-ed66-4591-8f0d-db4cef752674/console.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/platetransfert/assets/libs/css/fix.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="30" lean-forward="false" selection-start-line="1" selection-start-column="30" selection-end-line="1" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -889,18 +966,11 @@
         <state relative-caret-position="324">
           <caret line="64" column="16" lean-forward="false" selection-start-line="64" selection-start-column="16" selection-end-line="64" selection-end-column="16" />
           <folding>
-            <element signature="e#757#1233#0" expanded="true" />
-            <element signature="e#1026#1227#0" expanded="true" />
-            <element signature="e#1939#2082#0" expanded="true" />
-            <element signature="e#2106#2162#0" expanded="true" />
+            <element signature="e#757#1233#0" expanded="false" />
+            <element signature="e#1026#1227#0" expanded="false" />
+            <element signature="e#1939#2082#0" expanded="false" />
+            <element signature="e#2106#2162#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/platetransfert/assets/libs/custom/dp.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="439">
-          <caret line="448" column="1" lean-forward="false" selection-start-line="448" selection-start-column="1" selection-end-line="448" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -912,14 +982,14 @@
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/21ca2d7a/77d277cf-ed66-4591-8f0d-db4cef752674/platetransfert.pays">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -945,10 +1015,142 @@
         </state>
       </provider>
     </entry>
+    <entry file="dbDummy://dbtable:/21ca2d7a/77d277cf-ed66-4591-8f0d-db4cef752674/platetransfert.structure">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platetransfert/application/config/autoload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="134" column="45" lean-forward="false" selection-start-line="134" selection-start-column="45" selection-end-line="134" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/structure/views/structure/ajax/edit_structure.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="132" column="26" lean-forward="false" selection-start-line="132" selection-start-column="20" selection-end-line="132" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/layout/views/footer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1008">
-          <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+        <state relative-caret-position="281">
+          <caret line="80" column="9" lean-forward="false" selection-start-line="72" selection-start-column="8" selection-end-line="80" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/structure/views/dashboard/accueil.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/layout/views/dashboard.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/users/views/user_groups/permissions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="57" column="56" lean-forward="false" selection-start-line="23" selection-start-column="36" selection-end-line="57" selection-end-column="56" />
+          <folding>
+            <element signature="e#1259#4135#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/structure/views/structure/accueil.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="76" column="36" lean-forward="false" selection-start-line="76" selection-start-column="36" selection-end-line="76" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/layout/views/sidebar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="51" column="21" lean-forward="false" selection-start-line="34" selection-start-column="16" selection-end-line="51" selection-end-column="21" />
+          <folding>
+            <element signature="e#5965#5973#0#HTML" expanded="false" />
+            <element signature="e#6125#6133#0#HTML" expanded="false" />
+            <element signature="e#6296#6304#0#HTML" expanded="false" />
+            <element signature="e#6420#6428#0#HTML" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platetransfert/application/config/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="35" column="2" lean-forward="true" selection-start-line="35" selection-start-column="2" selection-end-line="35" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/structure/models/Structure_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="21" column="33" lean-forward="false" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/structure/controllers/Structure.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="412">
+          <caret line="68" column="37" lean-forward="false" selection-start-line="68" selection-start-column="20" selection-end-line="68" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/emission/models/Emission_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="20" lean-forward="false" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+          <folding>
+            <element signature="n#get_structure#0;n#Emission_model#0;n#!!top" expanded="false" />
+            <element signature="n#update_structure_status#0;n#Emission_model#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platetransfert/public/assets/fullcalendar/fullcalendar/bootstrap-fullcalendar.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="253" column="1" lean-forward="false" selection-start-line="253" selection-start-column="1" selection-end-line="253" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platetransfert/assets/css/add_custom.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platetransfert/assets/libs/css/fix.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="20" lean-forward="false" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
           <folding />
         </state>
       </provider>
@@ -961,64 +1163,82 @@
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/21ca2d7a/77d277cf-ed66-4591-8f0d-db4cef752674/platetransfert.structure">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+    <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/emission/controllers/Emission.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="29" column="12" lean-forward="false" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="12" />
+          <folding>
+            <element signature="e#112#434#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/plugins/jquery-validation/js/jquery.validate.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="3" column="4004" lean-forward="false" selection-start-line="3" selection-start-column="4004" selection-end-line="3" selection-end-column="4004" />
           <folding />
         </state>
       </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/platetransfert/application/config/autoload.php">
+    <entry file="file://$PROJECT_DIR$/platetransfert/assets/assets/plugins/jquery-validation/js/jquery.validate.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="134" column="45" lean-forward="false" selection-start-line="134" selection-start-column="45" selection-end-line="134" selection-end-column="45" />
+        <state relative-caret-position="122">
+          <caret line="3" column="4004" lean-forward="false" selection-start-line="3" selection-start-column="4004" selection-end-line="3" selection-end-column="4004" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/structure/controllers/Structure.php">
+    <entry file="file://$PROJECT_DIR$/platetransfert/public/js/jquery.validate.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-219">
-          <caret line="49" column="69" lean-forward="false" selection-start-line="49" selection-start-column="69" selection-end-line="49" selection-end-column="69" />
+        <state relative-caret-position="122">
+          <caret line="1" column="3836" lean-forward="false" selection-start-line="1" selection-start-column="3836" selection-end-line="1" selection-end-column="3836" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platetransfert/template/assets/plugins/jquery-validation/js/jquery.validate.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="3" column="4004" lean-forward="false" selection-start-line="3" selection-start-column="4004" selection-end-line="3" selection-end-column="4004" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platetransfert/assets/plugins/jquery-validation/js/jquery.validate.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="3" column="4004" lean-forward="false" selection-start-line="3" selection-start-column="4004" selection-end-line="3" selection-end-column="4004" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/emission/views/cashacash/accueil.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="411">
+          <caret line="445" column="0" lean-forward="false" selection-start-line="445" selection-start-column="0" selection-end-line="445" selection-end-column="0" />
           <folding>
-            <element signature="e#178#501#0#PHP" expanded="true" />
-            <element signature="e#504#564#0#PHP" expanded="true" />
-            <element signature="e#568#766#0#PHP" expanded="true" />
-            <element signature="e#2503#2632#0#PHP" expanded="true" />
+            <element signature="n#style#0;n#header#1;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#1;n#div#0;n#section#0;n#div#0;n#body#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/structure/models/Structure_model.php">
+    <entry file="file://$PROJECT_DIR$/platetransfert/assets/libs/custom/dp.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="21" column="33" lean-forward="false" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="33" />
+        <state relative-caret-position="162">
+          <caret line="156" column="63" lean-forward="true" selection-start-line="156" selection-start-column="63" selection-end-line="156" selection-end-column="63" />
           <folding>
-            <element signature="n#update_structure_status#0;n#Structure_model#0;n#!!top" expanded="true" />
+            <element signature="e#7516#8114#0" expanded="true" />
+            <marker date="1582029980868" expanded="true" signature="30509:30523" ph="..." />
+            <marker date="1582029980868" expanded="true" signature="30760:30774" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/structure/views/structure/ajax/edit_structure.php">
+    <entry file="file://$PROJECT_DIR$/platetransfert/assets/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="132" column="26" lean-forward="false" selection-start-line="132" selection-start-column="20" selection-end-line="132" selection-end-column="26" />
-          <folding>
-            <element signature="n#div#0;n#div#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/structure/views/structure/accueil.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="313" column="44" lean-forward="false" selection-start-line="313" selection-start-column="44" selection-end-line="313" selection-end-column="44" />
+        <state relative-caret-position="177">
+          <caret line="4757" column="102" lean-forward="false" selection-start-line="4757" selection-start-column="102" selection-end-line="4757" selection-end-column="102" />
           <folding />
         </state>
       </provider>

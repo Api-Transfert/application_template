@@ -47,7 +47,7 @@ class Structure extends MY_Controller
     public function edit_structure(){
         if(!empty($_POST['structure_id'])){
             $id = $_POST['structure_id'];
-            $data['struct']  = $this->common_model->select('structure',['structureId'=>$id] , 'row');
+            $data['struct']  = $this->common_model->select('structured',['structureId'=>$id] , 'row');
             $data['pays']           = $this->common_model->select('pays');
             $data['type']     = $this->common_model->select('type_structure');
             $this->load->view('structure/structure/ajax/edit_structure',$data);

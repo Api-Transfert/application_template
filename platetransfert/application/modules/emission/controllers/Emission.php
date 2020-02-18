@@ -1,12 +1,6 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-/*
-Author Salman Iqbal
-Created on 20/1/2017
-Company Parexons
-*/
-
 class Emission extends MY_Controller 
 {
 	public function __construct()
@@ -22,7 +16,7 @@ class Emission extends MY_Controller
 			redirect('users/auth/login', 'refresh');
 		}
 		$this->ion_auth->get_user_group();
-		$this->load->model('structure_model');
+		$this->load->model('emission_model');
 	}
 
 	public function index($value='')
@@ -34,7 +28,8 @@ class Emission extends MY_Controller
 	public function cashacash($value='')
 	{
 		$data['page'] = "emission/cashacash/accueil";
-		$data['stucture_data'] = $this->structure_model->get_structure();
+//		$data['stucture_data'] = $this->structure_model->get_structure();
+        $data['pays'] = $this->common_model->select("pays");
 		$this->layout->template_view($data);
 	}
 

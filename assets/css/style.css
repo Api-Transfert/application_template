@@ -1356,7 +1356,7 @@ input[type=checkbox], input[type=color], input[type=date], input[type=datetime-l
 }
 .form-control:focus, .has-focus .form-control {
     background: #f8f8f8;
-    border-color: #e77512;
+    border-color: #2196F3;
     outline: 0;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
