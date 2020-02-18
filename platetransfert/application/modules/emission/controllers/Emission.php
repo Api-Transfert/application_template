@@ -24,13 +24,23 @@ class Emission extends MY_Controller
 		$this->dashboard();
 	}
 
-
-	public function cashacash($value='')
+	public function cashacash($action = '')
 	{
-		$data['page'] = "emission/cashacash/accueil";
-//		$data['stucture_data'] = $this->structure_model->get_structure();
+	    if(!empty($action)){
+	        if($action == 'create'){
+	            if(!empty($_POST)){
+	                $this->emission_model->create_cashacash($_POST);
+	                $this->session->set_flashdata('success_message','Données enregistrer avec succès');
+	                redirect('emission/cashacash');
+                }
+            }
+        }
+
+        $data['page'] = "emission/cashacash/accueil";
         $data['pays'] = $this->common_model->select("pays");
-		$this->layout->template_view($data);
+        $this->layout->template_view($data);
+
+		
 	}
 
 	public function cashacompte($value='')
@@ -40,7 +50,6 @@ class Emission extends MY_Controller
 		$this->layout->template_view($data);
 	}
 
-
 	public function cashawallet($value='')
 	{
 		$data['page'] = "emission/cashawallet/accueil";
@@ -48,67 +57,10 @@ class Emission extends MY_Controller
 		$this->layout->template_view($data);
 	}
 
-
-    public function update_stucture_status(){
-	    if(!empty($_POST['structure_id'])){
-	        $this->structure_model->update_structure_status();
-        }
-    }
-
-//======================================================================================================================
-	public function layout_boxed()
-	{
-		// $data['sidebar'] = $this->template->load_sidebar();
-		view('transfert/layout/layout-boxed');
-	}
-
-	public function mega_menu($value='')
-	{
-		view("transfert/layout/mega_menu");
-	}
-
-	public function layout_horizontal($value='')
-	{
-		view("transfert/layout/layout-horizontal");
-	}
-
-	public function layout_sidebar_scroll($value='')
-	{
-		$data['page'] = "extras/layout/layout-sidebar-scroll";
-		$this->template->template_view($data);
-	}
-
-	public function structure($value='')
-	{
-		$data['page'] = "transfert/structure/accueil";
-		$this->layout->template_view($data);
-	}
-
-
 	public function agence($value='')
 	{
 		$data['page'] = "transfert/agence/accueil";
 		$this->layout->template_view($data);
 	}
 
-	public function layout_static_leftbar($value='')
-	{
-		$data['page'] = "transfert/layout/layout-static-leftbar";
-		$this->template->template_view($data);
-	}
-
-	public function app_inbox()
-	{
-		view("transfert/layout/email_template");
-	}
-
-	public function email_compose()
-	{
-		$data['page'] = "transfert/extra/inbox_compose";
-		$this->template->template_view($data);
-	}
-
 }
-
-/* End of file Extras.php */
-/* Location: ./application/controllers/Extras.php */
