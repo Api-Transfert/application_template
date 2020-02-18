@@ -19,7 +19,7 @@
                     <div class="content-body">
                         <div class="row">
                             <div class="form-container">
-                                <form action="#">
+                                <form id="cashacash_form" method="post" action="<?=base_url('emission/cashacash/create');?>">
 
                                     <div class="row">
                                         <div class="col-xs-12">
@@ -42,17 +42,17 @@
                                             </div>
                                             <div class="col-lg-6 no-pl">
                                                 <div class="form-group">
-                                                    <label class="form-label">Adresse*</label>
+                                                    <label class="form-label">Adresse</label>
                                                     <div class="controls">
-                                                        <input type="text" class="form-control" name="exp_addresse" required>
+                                                        <input type="text" class="form-control" name="exp_addresse">
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="col-lg-6 no-pl">
                                                 <div class="form-group">
-                                                    <label class="form-label">Téléphone*</label>
+                                                    <label class="form-label">Téléphone</label>
                                                     <div class="controls">
-                                                        <input type="text" class="form-control" name="exp_phone" required>
+                                                        <input type="text" class="form-control" name="exp_phone">
                                                     </div>
                                                 </div>
                                             </div>
@@ -120,7 +120,7 @@
                                                     <label class="form-label">Email:
                                                     </label>
                                                     <div class="controls">
-                                                        <input type="text" class="form-control" name="email">
+                                                        <input type="email" class="form-control" name="email">
                                                     </div>
                                                 </div>
                                             </div>
@@ -165,18 +165,18 @@
                                             </div>
                                             <div class="col-lg-6 no-pl">
                                                 <div class="form-group">
-                                                    <label class="form-label">Adresse*: </label>
+                                                    <label class="form-label">Adresse: </label>
                                                     <div class="controls">
-                                                        <input type="text" class="form-control" name="bene_addresse" required>
+                                                        <input type="text" class="form-control" name="bene_addresse">
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="col-lg-6 no-pl">
                                                 <div class="form-group">
-                                                    <label class="form-label">Téléphone*:
+                                                    <label class="form-label">Téléphone:
                                                     </label>
                                                     <div class="controls">
-                                                        <input type="text" class="form-control" name="bene_phone" required>
+                                                        <input type="number" class="form-control" name="bene_phone">
                                                     </div>
                                                 </div>
                                             </div>
@@ -201,7 +201,7 @@
                                                 <div class="form-group">
                                                     <label class="form-label">Montant en lettres: </label>
                                                     <div class="controls">
-                                                        <input type="text" class="form-control" name="montant_letre" required>
+                                                        <input type="text" class="form-control" name="montant_letre">
                                                     </div>
                                                 </div>
                                             </div>
@@ -209,7 +209,7 @@
                                                 <div class="form-group">
                                                     <label class="form-label">Montant en chiffres*: </label>
                                                     <div class="controls">
-                                                        <input type="text" class="form-control" name="montant_chiffre" required>
+                                                        <input type="number" class="form-control" name="montant_chiffre" required>
                                                     </div>
                                                 </div>
                                             </div>
@@ -254,7 +254,7 @@
                                             </div>
 
                                             <div class="pull-right">
-                                                <button type="submit" class="btn btn-primary btn-corner right15"><i class="fa fa-check"></i> Enrégistrer</button>
+                                                <button type="button" id="submit_form" class="btn btn-primary btn-corner right15"><i class="fa fa-check"></i> Enrégistrer</button>
                                             </div>
                                         </div>
                                     </div>
@@ -443,5 +443,9 @@
     </div>
 </div>
 <script>
-
+    $(document).on('click','#submit_form',{passive:true},function () {
+        if(validate_form('cashacash_form')){
+            $('#cashacash_form').submit();
+        }
+    });
 </script>

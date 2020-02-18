@@ -2,12 +2,10 @@
 
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-/**
- * Class Ion Auth Model
- * @property Ion_auth $ion_auth The Ion_auth library
- */
+
 class Emission_model extends CI_Model
 {
+    private $cashacash_table = 'emission__cashacash';
     public function __construct()
     {
         parent::__construct();
@@ -23,5 +21,11 @@ class Emission_model extends CI_Model
 
     public function update_structure_status(){
         $this->db->where(['structureId'=>$_POST['structure_id']])->update('structure',['structureActive'=>$_POST['new_status']]);
+    }
+
+    public function create_cashacash($data = []){
+        if(!empty($data)){
+            $this->db->insert($this->cashacash_table , $data);
+        }
     }
 }
