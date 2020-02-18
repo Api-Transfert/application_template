@@ -5,7 +5,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Emission_model extends CI_Model
 {
-    private $cashacash_table = 'emission__cashacash';
+    private $cashacash_table    = 'emission__cashacash';
+    private $cashawalet_table   = 'emission__cashawalet';
+
     public function __construct()
     {
         parent::__construct();
@@ -28,4 +30,12 @@ class Emission_model extends CI_Model
             $this->db->insert($this->cashacash_table , $data);
         }
     }
+
+   public function create_cashawalet($data = []){
+        if(!empty($data)){
+            $this->db->insert($this->cashawalet_table , $data);
+        }
+    }
+
+
 }

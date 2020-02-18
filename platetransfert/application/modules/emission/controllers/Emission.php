@@ -45,16 +45,35 @@ class Emission extends MY_Controller
 
 	public function cashacompte($value='')
 	{
+        if(!empty($action)){
+            if($action == 'create'){
+                if(!empty($_POST)){
+                    $this->emission_model->create_cashacompte($_POST);
+                    $this->session->set_flashdata('success_message','Données enregistrer avec succès');
+                    redirect('emission/cashacompte');
+                }
+            }
+        }
+
 		$data['page'] = "emission/cashacompte/accueil";
-		$data['stucture_data'] = $this->structure_model->get_structure();
-		$this->layout->template_view($data);
+        $data['pays'] = $this->common_model->select("pays");
+        $this->layout->template_view($data);
 	}
 
-	public function cashawallet($value='')
+	public function cashawallet($action='')
 	{
+        if(!empty($action)){
+            if($action == 'create'){
+                if(!empty($_POST)){
+                    $this->emission_model->create_cashawalet($_POST);
+                    $this->session->set_flashdata('success_message','Données enregistrer avec succès');
+                    redirect('emission/cashawallet');
+                }
+            }
+        }
 		$data['page'] = "emission/cashawallet/accueil";
-		$data['stucture_data'] = $this->structure_model->get_structure();
-		$this->layout->template_view($data);
+        $data['pays'] = $this->common_model->select("pays");
+        $this->layout->template_view($data);
 	}
 
 	public function agence($value='')
