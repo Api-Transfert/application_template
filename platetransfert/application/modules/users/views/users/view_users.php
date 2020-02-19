@@ -50,12 +50,12 @@
                             <thead>
                             <tr>
                                 <th data-field="picture" data-sortable="true" data-switchable="true">Picture</th>
-                                <th data-field="fname" data-sortable="true" data-switchable="true"><?php echo lang('users_firstname');?></th>
-                                <th data-field="lname" data-sortable="true" data-switchable="true"><?php echo lang('users_lastname');?></th>
-                                <th data-field="email" data-sortable="true" data-switchable="true"><?php echo lang('users_email');?></th>
-                                <th data-field="ugroup" data-sortable="true" data-switchable="true"><?php echo lang('users_groups');?></th>
-                                <th data-field="status" data-sortable="true" data-switchable="true"><?php echo lang('users_status');?></th>
-                                <th data-field="action" data-sortable="true" data-switchable="true"><?php echo lang('users_action');?></th>
+                                <th data-field="fname" data-sortable="true" data-switchable="true">Nom</th>
+                                <th data-field="lname" data-sortable="true" data-switchable="true">Pénom</th>
+                                <th data-field="email" data-sortable="true" data-switchable="true">Email</th>
+                                <th data-field="ugroup" data-sortable="true" data-switchable="true">Groupe</th>
+                                <th data-field="status" data-sortable="true" data-switchable="true">Status</th>
+                                <th data-field="action" data-sortable="true" data-switchable="true">Action</th>
                             </tr>
                             </thead>
                             <tbody>
@@ -66,7 +66,7 @@
                                     <td><a href="##"><img src="<?php echo base_url('uploads/avatar/'.$user->picture) ;?>" class="preview" alt="" width="40px" height="40px"></a></td>
                                     <td><?php echo htmlspecialchars($user->first_name, ENT_QUOTES, 'UTF-8'); ?></td>
                                     <td><?php echo htmlspecialchars($user->last_name, ENT_QUOTES, 'UTF-8'); ?></td>
-                                    <td><?php echo htmlspecialchars($user->email, ENT_QUOTES, 'UTF-8'); ?></td>
+                                    <td><?php echo limit_string(htmlspecialchars($user->email, ENT_QUOTES, 'UTF-8') , 15) ?></td>
                                     <td>
                                         <?php
 
@@ -86,7 +86,7 @@
                                     </td>
                                     <td>
                                         <div class="btn-group">
-                                            <button class="btn btn-primary">Actions</button> <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false"> <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
+                                            <button class="btn btn-primary dropdown-toggle p-r-10" data-toggle="dropdown" aria-expanded="false"><span class="m-r-10">Actions</span> <span class="caret m-l-10"></span></button>
                                             <ul class="dropdown-menu" role="menu">
                                                 <li><a href="<?=base_url('users/edit_user/'.$user->id);?>"><i class="fa fa-edit"></i> Modifier</a></li>
                                                 <li><a class="delete_user" data-row="#row_<?php echo $user->id?>" href="##" data-id="<?=$user->id;?>" <?=(($user->id == $this->session->userdata('user_id')) or $user->id == '1')?"disabled":null?>><i class="fa fa-trash"></i> Supprimer</a></li>
