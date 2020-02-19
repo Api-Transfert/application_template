@@ -11,41 +11,41 @@
   </section>
 
     <!-- js placed at the end of the document so the pages load faster -->
-    <script src="<?= bs('public/js/bootstrap.min.js') ?>"></script>
-    <script class="include" type="text/javascript" src="<?= bs('public/js/jquery.dcjqaccordion.2.7.js') ?>"></script>
-    <script src="<?= bs('public/js/jquery.scrollTo.min.js') ?>"></script>
-    <script src="<?= bs('public/js/jquery.nicescroll.js') ?>" type="text/javascript"></script>
-    <script src="<?= bs('public/js/jquery.sparkline.js') ?>" type="text/javascript"></script>
-    <script src="<?= bs('public/assets/jquery-easy-pie-chart/jquery.easy-pie-chart.js') ?>"></script>
-    <script src="<?= bs('public/js/owl.carousel.js') ?>" ></script>
-    <script src="<?= bs('public/js/jquery.customSelect.min.js') ?>" ></script>
-    <script type="text/javascript" language="javascript" src="<?php bs() ?>public/assets/advanced-datatable/media/js/jquery.dataTables.js"></script>
-    <script type="text/javascript" src="<?php bs() ?>public/assets/data-tables/DT_bootstrap.js"></script>
-    <script src="<?= bs('public/js/respond.min.js') ?>" ></script>
+    <script src="<?=bs('public/js/bootstrap.min.js') ?>"></script>
+    <script class="include" type="text/javascript" src="<?=bs('public/js/jquery.dcjqaccordion.2.7.js') ?>"></script>
+    <script src="<?=bs('public/js/jquery.scrollTo.min.js') ?>"></script>
+    <script src="<?=bs('public/js/jquery.nicescroll.js') ?>" type="text/javascript"></script>
+    <script src="<?=bs('public/js/jquery.sparkline.js') ?>" type="text/javascript"></script>
+    <script src="<?=bs('public/assets/jquery-easy-pie-chart/jquery.easy-pie-chart.js') ?>"></script>
+    <script src="<?=bs('public/js/owl.carousel.js') ?>" ></script>
+    <script src="<?=bs('public/js/jquery.customSelect.min.js') ?>" ></script>
+    <script type="text/javascript" language="javascript" src="<?=bs()?>public/assets/advanced-datatable/media/js/jquery.dataTables.js"></script>
+    <script type="text/javascript" src="<?=bs()?>public/assets/data-tables/DT_bootstrap.js"></script>
+    <script src="<?=bs('public/js/respond.min.js') ?>" ></script>
 
     <!--right slidebar-->
-    <script src="<?= bs('public/js/slidebars.min.js') ?>"></script>
+    <script src="<?=bs('public/js/slidebars.min.js') ?>"></script>
 
     <!--common script for all pages-->
-    <script src="<?= bs('public/js/common-scripts.js') ?>"></script>
+    <script src="<?=bs('public/js/common-scripts.js') ?>"></script>
 
     <!--dynamic table initialization -->
-    <script src="<?php bs() ?>public/js/dynamic_table_init.js"></script>
+    <script src="<?=bs()?>public/js/dynamic_table_init.js"></script>
 
     <script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.min.js"></script>
 
   <script src="<?= base_url('public/js/bootstrap-notify.js') ?>"></script>
 
     <!--Form Wizard-->
-  <script src="<?php bs() ?>public/js/jquery.steps.min.js" type="text/javascript"></script>
-  <script src="<?php bs() ?>public/js/jquery.validate.min.js" type="text/javascript"></script>
+  <script src="<?=bs()?>public/js/jquery.steps.min.js" type="text/javascript"></script>
+  <script src="<?=bs()?>public/js/jquery.validate.min.js" type="text/javascript"></script>
 
    <!--script for this page-->
-    <script src="<?php bs() ?>public/js/jquery.stepy.js"></script>
+    <script src="<?=bs()?>public/js/jquery.stepy.js"></script>
     
-    <script src="<?php bs() ?>public/assets/jquery-knob/js/jquery.knob.js"></script>
+    <script src="<?=bs()?>public/assets/jquery-knob/js/jquery.knob.js"></script>
 
-    <script src="<?php bs() ?>public/assets/nestable/jquery.nestable.js"></script>
+    <script src="<?=bs()?>public/assets/nestable/jquery.nestable.js"></script>
     <!--script for this page only-->
      <script>
 
@@ -79,7 +79,7 @@
               var data = $('.insert_data').serialize();
 
               $.ajax({
-                url : "<?php bs('users/User_groups/create_group')?>",
+                url : "<?=bs('users/User_groups/create_group')?>",
                 method :'POST',
                 data : data,
                 dataType : 'text',
@@ -87,7 +87,7 @@
                 {
                   
                   // similar behavior as clicking on a link
-                  window.location.href = "<?php bs('users/User_groups/create_group')?>";
+                  window.location.href = "<?=bs('users/User_groups/create_group')?>";
 
                     //reset the form after submit.
                     $(".insert_data")[0].reset();

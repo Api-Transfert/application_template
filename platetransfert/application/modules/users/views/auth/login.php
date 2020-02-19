@@ -11,13 +11,13 @@
     <title>Login System</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="<?php bs() ?>public/css/bootstrap.min.css" rel="stylesheet">
-    <link href="<?php bs() ?>public/css/bootstrap-reset.css" rel="stylesheet">
+    <link href="<?=bs()?>public/css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?=bs()?>public/css/bootstrap-reset.css" rel="stylesheet">
     <!--external css-->
-    <link href="<?php bs() ?>public/assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link href="<?=bs()?>public/assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
     <!-- Custom styles for this template -->
-    <link href="<?php bs() ?>public/css/style.css" rel="stylesheet">
-    <link href="<?php bs() ?>public/css/style-responsive.css" rel="stylesheet" />
+    <link href="<?=bs()?>public/css/style.css" rel="stylesheet">
+    <link href="<?=bs()?>public/css/style-responsive.css" rel="stylesheet" />
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 tooltipss and media queries -->
     <!--[if lt IE 9]>
@@ -92,7 +92,7 @@
             </div>
             <div class="registration">
                 Don't have an account yet?
-                <a href="<?php bs("users/Register") ?>"> 
+                <a href="<?=bs("users/Register") ?>"> 
                     Create an account
                 </a>
             </div>
@@ -117,7 +117,7 @@
 
 
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="<?php bs() ?>public/js/jquery.js"></script>
+  <script src="<?=bs()?>public/js/jquery.js"></script>
     
   <!-- Include all compiled plugins (below), or include individual files as needed -->    
   <script src="<?= base_url('public/js/bootstrap.min.js') ?>"></script> 

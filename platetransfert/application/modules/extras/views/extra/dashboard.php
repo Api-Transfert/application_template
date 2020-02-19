@@ -11,20 +11,20 @@
     <title>Login System</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="<?php bs() ?>public/css/bootstrap.min.css" rel="stylesheet">
-    <link href="<?php bs() ?>public/css/bootstrap-reset.css" rel="stylesheet">
+    <link href="<?=bs()?>public/css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?=bs()?>public/css/bootstrap-reset.css" rel="stylesheet">
     <!--external css-->
-    <link href="<?php bs() ?>public/assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
-    <link href="<?php bs() ?>public/assets/jquery-easy-pie-chart/jquery.easy-pie-chart.css" rel="stylesheet" type="text/css" media="screen"/>
-    <link rel="stylesheet" href="<?php bs() ?>public/css/owl.carousel.css" type="text/css">
+    <link href="<?=bs()?>public/assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link href="<?=bs()?>public/assets/jquery-easy-pie-chart/jquery.easy-pie-chart.css" rel="stylesheet" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="<?=bs()?>public/css/owl.carousel.css" type="text/css">
 
     <!--right slidebar-->
-    <link href="<?php bs() ?>public/css/slidebars.css" rel="stylesheet">
+    <link href="<?=bs()?>public/css/slidebars.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
 
-    <link href="<?php bs() ?>public/css/style.css" rel="stylesheet">
-    <link href="<?php bs() ?>public/css/style-responsive.css" rel="stylesheet" />
+    <link href="<?=bs()?>public/css/style.css" rel="stylesheet">
+    <link href="<?=bs()?>public/css/style-responsive.css" rel="stylesheet" />
 
 
 
@@ -1130,27 +1130,27 @@
   </section>
 
     <!-- js placed at the end of the document so the pages load faster -->
-    <script src="<?php bs() ?>public/js/jquery.js"></script>
-    <script src="<?php bs() ?>public/js/bootstrap.min.js"></script>
-    <script class="include" type="text/javascript" src="<?php bs() ?>public/js/jquery.dcjqaccordion.2.7.js"></script>
-    <script src="<?php bs() ?>public/js/jquery.scrollTo.min.js"></script>
-    <script src="<?php bs() ?>public/js/jquery.nicescroll.js" type="text/javascript"></script>
-    <script src="<?php bs() ?>public/js/jquery.sparkline.js" type="text/javascript"></script>
-    <script src="<?php bs() ?>public/assets/jquery-easy-pie-chart/jquery.easy-pie-chart.js"></script>
-    <script src="<?php bs() ?>public/js/owl.carousel.js" ></script>
-    <script src="<?php bs() ?>public/js/jquery.customSelect.min.js" ></script>
-    <script src="<?php bs() ?>public/js/respond.min.js" ></script>
+    <script src="<?=bs()?>public/js/jquery.js"></script>
+    <script src="<?=bs()?>public/js/bootstrap.min.js"></script>
+    <script class="include" type="text/javascript" src="<?=bs()?>public/js/jquery.dcjqaccordion.2.7.js"></script>
+    <script src="<?=bs()?>public/js/jquery.scrollTo.min.js"></script>
+    <script src="<?=bs()?>public/js/jquery.nicescroll.js" type="text/javascript"></script>
+    <script src="<?=bs()?>public/js/jquery.sparkline.js" type="text/javascript"></script>
+    <script src="<?=bs()?>public/assets/jquery-easy-pie-chart/jquery.easy-pie-chart.js"></script>
+    <script src="<?=bs()?>public/js/owl.carousel.js" ></script>
+    <script src="<?=bs()?>public/js/jquery.customSelect.min.js" ></script>
+    <script src="<?=bs()?>public/js/respond.min.js" ></script>
 
     <!--right slidebar-->
-    <script src="<?php bs() ?>public/js/slidebars.min.js"></script>
+    <script src="<?=bs()?>public/js/slidebars.min.js"></script>
 
     <!--common script for all pages-->
-    <script src="<?php bs() ?>public/js/common-scripts.js"></script>
+    <script src="<?=bs()?>public/js/common-scripts.js"></script>
 
     <!--script for this page-->
-    <script src="<?php bs() ?>public/js/sparkline-chart.js"></script>
-    <script src="<?php bs() ?>public/js/easy-pie-chart.js"></script>
-    <script src="<?php bs() ?>public/js/count.js"></script>
+    <script src="<?=bs()?>public/js/sparkline-chart.js"></script>
+    <script src="<?=bs()?>public/js/easy-pie-chart.js"></script>
+    <script src="<?=bs()?>public/js/count.js"></script>
 
   <script>
 

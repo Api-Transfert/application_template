@@ -13,38 +13,38 @@
     <meta content="" name="author" />
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="<?php bs()?>assets/images/favicon.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="<?=bs()?>assets/images/favicon.png" type="image/x-icon" />
     <!-- For iPhone -->
-    <link rel="apple-touch-icon-precomposed" href="<?php bs()?>assets/images/apple-touch-icon-57-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="<?=bs()?>assets/images/apple-touch-icon-57-precomposed.png">
     <!-- For iPhone 4 Retina display -->
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?php bs()?>assets/images/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?=bs()?>assets/images/apple-touch-icon-114-precomposed.png">
     <!-- For iPad -->
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php bs()?>assets/images/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?=bs()?>assets/images/apple-touch-icon-72-precomposed.png">
     <!-- For iPad Retina display -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="<?php bs()?>assets/images/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="<?=bs()?>assets/images/apple-touch-icon-144-precomposed.png">
 
     <!-- CORE CSS FRAMEWORK - START -->
-    <link href="<?php bs()?>assets/css/add_custom.css" rel="stylesheet" type="text/css" media="screen" />
-    <link href="<?php bs()?>assets/plugins/pace/pace-theme-flash.css" rel="stylesheet" type="text/css" media="screen" />
-    <link href="<?php bs()?>assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link href="<?php bs()?>assets/plugins/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" />
-    <link href="<?php bs()?>assets/fonts/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css" />
-    <link href="<?php bs()?>assets/fonts/webfont/cryptocoins.css" rel="stylesheet" type="text/css" />
-    <link href="<?php bs()?>assets/css/animate.min.css" rel="stylesheet" type="text/css" />
-    <link href="<?php bs()?>assets/plugins/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" type="text/css" />
+    <link href="<?=bs()?>assets/css/add_custom.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="<?=bs()?>assets/plugins/pace/pace-theme-flash.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="<?=bs()?>assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="<?=bs()?>assets/plugins/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" />
+    <link href="<?=bs()?>assets/fonts/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css" />
+    <link href="<?=bs()?>assets/fonts/webfont/cryptocoins.css" rel="stylesheet" type="text/css" />
+    <link href="<?=bs()?>assets/css/animate.min.css" rel="stylesheet" type="text/css" />
+    <link href="<?=bs()?>assets/plugins/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.15.5/dist/bootstrap-table.min.css">
     <!-- CORE CSS FRAMEWORK - END -->
 
     <!-- HEADER SCRIPTS INCLUDED ON THIS PAGE - START -->
 
-    <link href="<?php bs()?>assets/plugins/jvectormap/jquery-jvectormap-2.0.1.css" rel="stylesheet" type="text/css" media="screen" />
-    <link href="<?php bs()?>assets/plugins/morris-chart/css/morris.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="<?=bs()?>assets/plugins/jvectormap/jquery-jvectormap-2.0.1.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="<?=bs()?>assets/plugins/morris-chart/css/morris.css" rel="stylesheet" type="text/css" media="screen" />
 
     <!-- HEADER SCRIPTS INCLUDED ON THIS PAGE - END -->
 
     <!-- CORE CSS TEMPLATE - START -->
-    <link href="<?php bs()?>assets/css/style.css" rel="stylesheet" type="text/css" />
-    <link href="<?php bs()?>assets/css/responsive.css" rel="stylesheet" type="text/css" />
+    <link href="<?=bs()?>assets/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="<?=bs()?>assets/css/responsive.css" rel="stylesheet" type="text/css" />
     <!-- CORE CSS TEMPLATE - END -->
 
 </head>
@@ -79,7 +79,7 @@
                                     <li class="unread status-available">
                                         <a href="javascript:;">
                                             <div class="user-img">
-                                                <img src="<?php bs() ?>assets/data/profile/avatar-1.png" alt="user-image" class="img-circle img-inline">
+                                                <img src="<?=bs()?>assets/data/profile/avatar-1.png" alt="user-image" class="img-circle img-inline">
                                             </div>
                                             <div>
                                                 <span class="name">
@@ -96,7 +96,7 @@
                                     <li class=" status-away">
                                         <a href="javascript:;">
                                             <div class="user-img">
-                                                <img src="<?php bs() ?>assets/data/profile/avatar-2.png" alt="user-image" class="img-circle img-inline">
+                                                <img src="<?=bs()?>assets/data/profile/avatar-2.png" alt="user-image" class="img-circle img-inline">
                                             </div>
                                             <div>
                                                 <span class="name">
@@ -113,7 +113,7 @@
                                     <li class=" status-busy">
                                         <a href="javascript:;">
                                             <div class="user-img">
-                                                <img src="<?php bs() ?>assets/data/profile/avatar-3.png" alt="user-image" class="img-circle img-inline">
+                                                <img src="<?=bs()?>assets/data/profile/avatar-3.png" alt="user-image" class="img-circle img-inline">
                                             </div>
                                             <div>
                                                 <span class="name">
@@ -130,7 +130,7 @@
                                     <li class=" status-offline">
                                         <a href="javascript:;">
                                             <div class="user-img">
-                                                <img src="<?php bs() ?>assets/data/profile/avatar-4.png" alt="user-image" class="img-circle img-inline">
+                                                <img src="<?=bs()?>assets/data/profile/avatar-4.png" alt="user-image" class="img-circle img-inline">
                                             </div>
                                             <div>
                                                 <span class="name">
@@ -147,7 +147,7 @@
                                     <li class=" status-offline">
                                         <a href="javascript:;">
                                             <div class="user-img">
-                                                <img src="<?php bs() ?>assets/data/profile/avatar-5.png" alt="user-image" class="img-circle img-inline">
+                                                <img src="<?=bs()?>assets/data/profile/avatar-5.png" alt="user-image" class="img-circle img-inline">
                                             </div>
                                             <div>
                                                 <span class="name">
@@ -164,7 +164,7 @@
                                     <li class=" status-available">
                                         <a href="javascript:;">
                                             <div class="user-img">
-                                                <img src="<?php bs() ?>assets/data/profile/avatar-1.png" alt="user-image" class="img-circle img-inline">
+                                                <img src="<?=bs()?>assets/data/profile/avatar-1.png" alt="user-image" class="img-circle img-inline">
                                             </div>
                                             <div>
                                                 <span class="name">
@@ -181,7 +181,7 @@
                                     <li class=" status-busy">
                                         <a href="javascript:;">
                                             <div class="user-img">
-                                                <img src="<?php bs() ?>assets/data/profile/avatar-2.png" alt="user-image" class="img-circle img-inline">
+                                                <img src="<?=bs()?>assets/data/profile/avatar-2.png" alt="user-image" class="img-circle img-inline">
                                             </div>
                                             <div>
                                                 <span class="name">
@@ -198,7 +198,7 @@
                                     <li class=" status-away">
                                         <a href="javascript:;">
                                             <div class="user-img">
-                                                <img src="<?php bs() ?>assets/data/profile/avatar-3.png" alt="user-image" class="img-circle img-inline">
+                                                <img src="<?=bs()?>assets/data/profile/avatar-3.png" alt="user-image" class="img-circle img-inline">
                                             </div>
                                             <div>
                                                 <span class="name">
@@ -326,7 +326,7 @@
                 <ul class="info-menu right-links list-inline list-unstyled">
                     <li class="profile">
                         <a href="#" data-toggle="dropdown" class="toggle">
-                            <img src="<?php bs() ?>assets/data/profile/profile.jpg" alt="user-image" class="img-circle img-inline">
+                            <img src="<?=bs()?>assets/data/profile/profile.jpg" alt="user-image" class="img-circle img-inline">
                             <span>Coulibaly Tiorna <i class="fa fa-angle-down"></i></span>
                         </a>
                         <ul class="dropdown-menu profile animated fadeIn">
@@ -741,7 +741,7 @@
 
                     <li class="user-row " id='chat_user_1' data-user-id='1'>
                         <div class="user-img">
-                            <a href="#"><img src="<?php bs() ?>assets/data/profile/avatar-1.png" alt=""></a>
+                            <a href="#"><img src="<?=bs()?>assets/data/profile/avatar-1.png" alt=""></a>
                         </div>
                         <div class="user-info">
                             <h4><a href="#">Joge Lucky</a></h4>
@@ -753,7 +753,7 @@
                     </li>
                     <li class="user-row " id='chat_user_2' data-user-id='2'>
                         <div class="user-img">
-                            <a href="#"><img src="<?php bs() ?>assets/data/profile/avatar-2.png" alt=""></a>
+                            <a href="#"><img src="<?=bs()?>assets/data/profile/avatar-2.png" alt=""></a>
                         </div>
                         <div class="user-info">
                             <h4><a href="#">Folisise Chosiel</a></h4>
@@ -765,7 +765,7 @@
                     </li>
                     <li class="user-row " id='chat_user_3' data-user-id='3'>
                         <div class="user-img">
-                            <a href="#"><img src="<?php bs() ?>assets/data/profile/avatar-3.png" alt=""></a>
+                            <a href="#"><img src="<?=bs()?>assets/data/profile/avatar-3.png" alt=""></a>
                         </div>
                         <div class="user-info">
                             <h4><a href="#">Aron Gonzalez</a></h4>
@@ -783,7 +783,7 @@
 
                     <li class="user-row " id='chat_user_4' data-user-id='4'>
                         <div class="user-img">
-                            <a href="#"><img src="<?php bs() ?>assets/data/profile/avatar-4.png" alt=""></a>
+                            <a href="#"><img src="<?=bs()?>assets/data/profile/avatar-4.png" alt=""></a>
                         </div>
                         <div class="user-info">
                             <h4><a href="#">Chris Fox</a></h4>
@@ -795,7 +795,7 @@
                     </li>
                     <li class="user-row " id='chat_user_5' data-user-id='5'>
                         <div class="user-img">
-                            <a href="#"><img src="<?php bs() ?>assets/data/profile/avatar-5.png" alt=""></a>
+                            <a href="#"><img src="<?=bs()?>assets/data/profile/avatar-5.png" alt=""></a>
                         </div>
                         <div class="user-info">
                             <h4><a href="#">Mogen Polish</a></h4>
@@ -807,7 +807,7 @@
                     </li>
                     <li class="user-row " id='chat_user_6' data-user-id='6'>
                         <div class="user-img">
-                            <a href="#"><img src="<?php bs() ?>assets/data/profile/avatar-1.png" alt=""></a>
+                            <a href="#"><img src="<?=bs()?>assets/data/profile/avatar-1.png" alt=""></a>
                         </div>
                         <div class="user-info">
                             <h4><a href="#">Smith Carter</a></h4>
@@ -819,7 +819,7 @@
                     </li>
                     <li class="user-row " id='chat_user_7' data-user-id='7'>
                         <div class="user-img">
-                            <a href="#"><img src="<?php bs() ?>assets/data/profile/avatar-2.png" alt=""></a>
+                            <a href="#"><img src="<?=bs()?>assets/data/profile/avatar-2.png" alt=""></a>
                         </div>
                         <div class="user-info">
                             <h4><a href="#">Amilia Gozenal</a></h4>
@@ -831,7 +831,7 @@
                     </li>
                     <li class="user-row " id='chat_user_8' data-user-id='8'>
                         <div class="user-img">
-                            <a href="#"><img src="<?php bs() ?>assets/data/profile/avatar-3.png" alt=""></a>
+                            <a href="#"><img src="<?=bs()?>assets/data/profile/avatar-3.png" alt=""></a>
                         </div>
                         <div class="user-info">
                             <h4><a href="#">Tahir Jemyship</a></h4>
@@ -843,7 +843,7 @@
                     </li>
                     <li class="user-row " id='chat_user_9' data-user-id='9'>
                         <div class="user-img">
-                            <a href="#"><img src="<?php bs() ?>assets/data/profile/avatar-4.png" alt=""></a>
+                            <a href="#"><img src="<?=bs()?>assets/data/profile/avatar-4.png" alt=""></a>
                         </div>
                         <div class="user-info">
                             <h4><a href="#">Johanson Wright</a></h4>
@@ -855,7 +855,7 @@
                     </li>
                     <li class="user-row " id='chat_user_10' data-user-id='10'>
                         <div class="user-img">
-                            <a href="#"><img src="<?php bs() ?>assets/data/profile/avatar-5.png" alt=""></a>
+                            <a href="#"><img src="<?=bs()?>assets/data/profile/avatar-5.png" alt=""></a>
                         </div>
                         <div class="user-info">
                             <h4><a href="#">Loni Tindall</a></h4>
@@ -867,7 +867,7 @@
                     </li>
                     <li class="user-row " id='chat_user_11' data-user-id='11'>
                         <div class="user-img">
-                            <a href="#"><img src="<?php bs() ?>assets/data/profile/avatar-1.png" alt=""></a>
+                            <a href="#"><img src="<?=bs()?>assets/data/profile/avatar-1.png" alt=""></a>
                         </div>
                         <div class="user-info">
                             <h4><a href="#">Natcho Herlaey</a></h4>
@@ -879,7 +879,7 @@
                     </li>
                     <li class="user-row " id='chat_user_12' data-user-id='12'>
                         <div class="user-img">
-                            <a href="#"><img src="<?php bs() ?>assets/data/profile/avatar-2.png" alt=""></a>
+                            <a href="#"><img src="<?=bs()?>assets/data/profile/avatar-2.png" alt=""></a>
                         </div>
                         <div class="user-info">
                             <h4><a href="#">Shakira Swedan</a></h4>
@@ -903,39 +903,39 @@
     <!-- LOAD FILES AT PAGE END FOR FASTER LOADING -->
 
     <!-- CORE JS FRAMEWORK - START -->
-    <script src="<?php bs()?>assets/js/jquery-1.11.2.min.js"></script>
-    <script src="<?php bs()?>assets/js/jquery.easing.min.js"></script>
-    <script src="<?php bs()?>assets/plugins/bootstrap/js/bootstrap.min.js"></script>
-    <script src="<?php bs()?>assets/plugins/pace/pace.min.js"></script>
-    <script src="<?php bs()?>assets/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
-    <script src="<?php bs()?>assets/plugins/viewport/viewportchecker.js"></script>
+    <script src="<?=bs()?>assets/js/jquery-1.11.2.min.js"></script>
+    <script src="<?=bs()?>assets/js/jquery.easing.min.js"></script>
+    <script src="<?=bs()?>assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="<?=bs()?>assets/plugins/pace/pace.min.js"></script>
+    <script src="<?=bs()?>assets/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="<?=bs()?>assets/plugins/viewport/viewportchecker.js"></script>
     <script>
-        window.jQuery || document.write('<script src="<?php bs()?>assets/js/jquery-1.11.2.min.js"><\/script>');
+        window.jQuery || document.write('<script src="<?=bs()?>assets/js/jquery-1.11.2.min.js"><\/script>');
     </script>
     <!-- CORE JS FRAMEWORK - END -->
 
     <!-- OTHER SCRIPTS INCLUDED ON THIS PAGE - START -->
 
-    <script src="<?php bs()?>assets/plugins/echarts/echarts-custom-for-dashboard.js"></script>
+    <script src="<?=bs()?>assets/plugins/echarts/echarts-custom-for-dashboard.js"></script>
 
-    <script src="<?php bs()?>assets/plugins/flot-chart/jquery.flot.js"></script>
-    <script src="<?php bs()?>assets/plugins/flot-chart/jquery.flot.time.js"></script>
-    <script src="<?php bs()?>assets/js/chart-flot.js"></script>
+    <script src="<?=bs()?>assets/plugins/flot-chart/jquery.flot.js"></script>
+    <script src="<?=bs()?>assets/plugins/flot-chart/jquery.flot.time.js"></script>
+    <script src="<?=bs()?>assets/js/chart-flot.js"></script>
 
-    <script src="<?php bs()?>assets/plugins/morris-chart/js/raphael-min.js"></script>
-    <script src="<?php bs()?>assets/plugins/morris-chart/js/morris.min.js"></script>
-    <script src="<?php bs()?>assets/js/chart-morris.js"></script>
+    <script src="<?=bs()?>assets/plugins/morris-chart/js/raphael-min.js"></script>
+    <script src="<?=bs()?>assets/plugins/morris-chart/js/morris.min.js"></script>
+    <script src="<?=bs()?>assets/js/chart-morris.js"></script>
     <!-- OTHER SCRIPTS INCLUDED ON THIS PAGE - END -->
 
     <!-- CORE TEMPLATE JS - START -->
-    <script src="<?php bs()?>assets/js/scripts.js"></script>
+    <script src="<?=bs()?>assets/js/scripts.js"></script>
     <!-- END CORE TEMPLATE JS - END -->
 
-    <script src="<?php bs()?>assets/js/bootstrap-table.min.js"></script>
-    <script src="<?php bs()?>assets/js/tableExport.min.js"></script>
-    <script src="<?php bs()?>assets/js/jspdf.min.js"></script>
-    <script src="<?php bs()?>assets/js/bootstrap-table-export.js"></script>
-    <script src="<?php bs()?>assets/js/jspdf.plugin.autotable.js"></script>
+    <script src="<?=bs()?>assets/js/bootstrap-table.min.js"></script>
+    <script src="<?=bs()?>assets/js/tableExport.min.js"></script>
+    <script src="<?=bs()?>assets/js/jspdf.min.js"></script>
+    <script src="<?=bs()?>assets/js/bootstrap-table-export.js"></script>
+    <script src="<?=bs()?>assets/js/jspdf.plugin.autotable.js"></script>
 
 </body>
 

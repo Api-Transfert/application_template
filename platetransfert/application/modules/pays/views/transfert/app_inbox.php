@@ -12,7 +12,7 @@
                                  
 <div class="row">
 	<div class="col-sm-3">
-				<a class="btn btn-lg btn-indigo btn-block mb-xl" href="<?php bs('extras/email_compose') ?>">Compose</a>
+				<a class="btn btn-lg btn-indigo btn-block mb-xl" href="<?=bs('extras/email_compose') ?>">Compose</a>
 		
 		<div class="list-group inbox-menu list-group-alternate">
 			<a href="#" class="list-group-item active"><i class="ti ti-email"></i>Inbox <span class="badge badge-primary">3</span></a>

@@ -105,7 +105,7 @@
 						<li class="media notification-message">
 							<a href="#">
 								<div class="media-left">
-									<img class="img-circle avatar" src="<?php bs('public/assets/img/profile2.jpg') ?>" alt="" />
+									<img class="img-circle avatar" src="<?=bs('public/assets/img/profile2.jpg') ?>" alt="" />
 								</div>
 								<div class="media-body">
 									<h4 class="notification-heading"><strong>Vincent Keller</strong> <span class="text-gray">‒ Design should be ...</span></h4>
@@ -116,7 +116,7 @@
 						<li class="media notification-message">
 							<a href="#">
 								<div class="media-left">
-									<img class="img-circle avatar" src="<?php bs('public/assets/img/profile3.jpg') ?>" alt="" />
+									<img class="img-circle avatar" src="<?=bs('public/assets/img/profile3.jpg') ?>" alt="" />
 								</div>
 								<div class="media-body">
 									<h4 class="notification-heading"><strong>Frend Pratt</strong> <span class="text-gray">‒ I will start with the ...</span></h4>
@@ -127,7 +127,7 @@
 						<li class="media notification-message">
 							<a href="#">
 								<div class="media-left">
-									<img class="img-circle avatar" src="<?php bs('public/assets/img/profile4.jpg') ?>" alt="" />
+									<img class="img-circle avatar" src="<?=bs('public/assets/img/profile4.jpg') ?>" alt="" />
 								</div>
 								<div class="media-body">
 									<h4 class="notification-heading"><strong>Cynthia Hines</strong> <span class="text-gray">‒ Interior bits are ...</span></h4>
@@ -138,7 +138,7 @@
 						<li class="media notification-message">
 							<a href="#">
 								<div class="media-left">
-									<img class="img-circle avatar" src="<?php bs('public/assets/img/profile3.jpg') ?>" alt="" />
+									<img class="img-circle avatar" src="<?=bs('public/assets/img/profile3.jpg') ?>" alt="" />
 								</div>
 								<div class="media-body">
 									<h4 class="notification-heading"><strong>Robin Horton</strong> <span class="text-gray">‒ Are you even ...</span></h4>
@@ -149,7 +149,7 @@
 						<li class="media notification-message">
 							<a href="#">
 								<div class="media-left">
-									<img class="img-circle avatar" src="<?php bs('public/assets/img/profile2.jpg') ?>" alt="" />
+									<img class="img-circle avatar" src="<?=bs('public/assets/img/profile2.jpg') ?>" alt="" />
 								</div>
 								<div class="media-body">
 									<h4 class="notification-heading"><strong>Amanda Torrez</strong> <span class="text-gray">‒ The message is ...</span></h4>
@@ -160,7 +160,7 @@
 						<li class="media notification-message">
 							<a href="#">
 								<div class="media-left">
-									<img class="img-circle avatar" src="<?php bs('public/assets/img/profile4.jpg') ?>" alt="" />
+									<img class="img-circle avatar" src="<?=bs('public/assets/img/profile4.jpg') ?>" alt="" />
 								</div>
 								<div class="media-body">
 									<h4 class="notification-heading"><strong>Khan Farhan</strong> <span class="text-gray">‒ Expected the stuff ...</span></h4>
@@ -171,7 +171,7 @@
 						<li class="media notification-message">
 							<a href="#">
 								<div class="media-left">
-									<img class="img-circle avatar" src="<?php bs('public/assets/img/profile3.jpg') ?>" alt="" />
+									<img class="img-circle avatar" src="<?=bs('public/assets/img/profile3.jpg') ?>" alt="" />
 								</div>
 								<div class="media-body">
 									<h4 class="notification-heading"><strong>Will Whedon</strong> <span class="text-gray">‒ The movie of this ...</span></h4>
@@ -412,11 +412,11 @@
 		<li class="nav-separator"><span>Extras</span></li>
 		<li><a href="javascript:;"><i class="ti ti-layout"></i><span>Layout</span></a>
 			<ul class="acc-menu">
-				<li><a href="<?php bs('Extras/layout_grids') ?>">Grid Scaffolding</a></li>
-				<li><a href="<?php bs('Extras/layout_static_leftbar') ?>">Static Sidebar</a></li>
-				<!-- <li><a href="<?php bs('Extras/layout_sidebar_scroll') ?>">Scroll Sidebar</a></li> -->
-				<!-- <li><a href="<?php bs('Extras/layout_horizontal') ?>">Horizontal Nav</a></li> -->
-				<li><a href="<?php bs('Extras/layout_boxed') ?>">Boxed</a></li>	
+				<li><a href="<?=bs('Extras/layout_grids') ?>">Grid Scaffolding</a></li>
+				<li><a href="<?=bs('Extras/layout_static_leftbar') ?>">Static Sidebar</a></li>
+				<!-- <li><a href="<?=bs('Extras/layout_sidebar_scroll') ?>">Scroll Sidebar</a></li> -->
+				<!-- <li><a href="<?=bs('Extras/layout_horizontal') ?>">Horizontal Nav</a></li> -->
+				<li><a href="<?=bs('Extras/layout_boxed') ?>">Boxed</a></li>	
 			</ul>
 		</li>
 		<!-- <li><a href="javascript:;"><i class="ti ti-file"></i><span>Pages</span></a>
@@ -442,24 +442,24 @@
 		</li> -->
 		<li><a href="javascript:;"><i class="ti ti-pencil"></i><span>Forms</span></a>
 			<ul class="acc-menu">
-				<li><a href="<?php bs('Extras/ui_forms') ?>">Form Layout</a></li>
-				<li><a href="<?php bs('Extras/form_components') ?>">Form Components</a></li>
-				<li><a href="<?php bs('Extras/form_pickers') ?>">Pickers</a></li>
-				<li><a href="<?php bs('Extras/form_wizard') ?>">Form Wizard</a></li>
-				<li><a href="<?php bs('Extras/form_validation') ?>">Form Validation</a></li>
-				<li><a href="<?php bs('Extras/form_masks') ?>">Form Masks</a></li>
-				<li><a href="<?php bs('Extras/form_dropzone') ?>">Dropzone Uploader</a></li>
-				<li><a href="<?php bs('Extras/form_summernote') ?>">Summernote</a></li>
-				<li><a href="<?php bs('Extras/form_markdown') ?>">Markdown Editor</a></li>
-				<li><a href="<?php bs('Extras/form_xeditable') ?>">Inline Editor</a></li>
-				<li><a href="<?php bs('Extras/form_gridforms') ?>">Grid Forms</a></li>
+				<li><a href="<?=bs('Extras/ui_forms') ?>">Form Layout</a></li>
+				<li><a href="<?=bs('Extras/form_components') ?>">Form Components</a></li>
+				<li><a href="<?=bs('Extras/form_pickers') ?>">Pickers</a></li>
+				<li><a href="<?=bs('Extras/form_wizard') ?>">Form Wizard</a></li>
+				<li><a href="<?=bs('Extras/form_validation') ?>">Form Validation</a></li>
+				<li><a href="<?=bs('Extras/form_masks') ?>">Form Masks</a></li>
+				<li><a href="<?=bs('Extras/form_dropzone') ?>">Dropzone Uploader</a></li>
+				<li><a href="<?=bs('Extras/form_summernote') ?>">Summernote</a></li>
+				<li><a href="<?=bs('Extras/form_markdown') ?>">Markdown Editor</a></li>
+				<li><a href="<?=bs('Extras/form_xeditable') ?>">Inline Editor</a></li>
+				<li><a href="<?=bs('Extras/form_gridforms') ?>">Grid Forms</a></li>
 			</ul>
 		</li>
 		<li>
-			<a href="<?php bs('Extras/buttons') ?>"><i class="fa fa-plus-circle"></i>
+			<a href="<?=bs('Extras/buttons') ?>"><i class="fa fa-plus-circle"></i>
 				<span>buttons</span></a>
 		</li>
-		<li><a href="<?php bs('Extras/app_inbox') ?>"><i class="ti ti-email"></i><span>Inbox</span><span class="badge badge-danger">3</span></a></li>
+		<li><a href="<?=bs('Extras/app_inbox') ?>"><i class="ti ti-email"></i><span>Inbox</span><span class="badge badge-danger">3</span></a></li>
 	</ul>
 </nav>
     </div>
@@ -602,11 +602,11 @@
 		<li class="nav-separator"><span>Extras</span></li>
 		<li><a href="javascript:;"><i class="ti ti-layout"></i><span>Layout</span></a>
 			<ul class="acc-menu">
-				<li><a href="<?php bs('Extras/layout_grids') ?>">Grid Scaffolding</a></li>
-				<li><a href="<?php bs('Extras/layout_static_leftbar') ?>">Static Sidebar</a></li>
-				<!-- <li><a href="<?php bs('Extras/layout_sidebar_scroll') ?>">Scroll Sidebar</a></li> -->
-				<!-- <li><a href="<?php bs('Extras/layout_horizontal') ?>">Horizontal Nav</a></li> -->
-				<li><a href="<?php bs('Extras/layout_boxed') ?>">Boxed</a></li>	
+				<li><a href="<?=bs('Extras/layout_grids') ?>">Grid Scaffolding</a></li>
+				<li><a href="<?=bs('Extras/layout_static_leftbar') ?>">Static Sidebar</a></li>
+				<!-- <li><a href="<?=bs('Extras/layout_sidebar_scroll') ?>">Scroll Sidebar</a></li> -->
+				<!-- <li><a href="<?=bs('Extras/layout_horizontal') ?>">Horizontal Nav</a></li> -->
+				<li><a href="<?=bs('Extras/layout_boxed') ?>">Boxed</a></li>	
 			</ul>
 		</li>
 		<!-- <li><a href="javascript:;"><i class="ti ti-file"></i><span>Pages</span></a>
@@ -632,24 +632,24 @@
 		</li> -->
 		<li><a href="javascript:;"><i class="ti ti-pencil"></i><span>Forms</span></a>
 			<ul class="acc-menu">
-				<li><a href="<?php bs('Extras/ui_forms') ?>">Form Layout</a></li>
-				<li><a href="<?php bs('Extras/form_components') ?>">Form Components</a></li>
-				<li><a href="<?php bs('Extras/form_pickers') ?>">Pickers</a></li>
-				<li><a href="<?php bs('Extras/form_wizard') ?>">Form Wizard</a></li>
-				<li><a href="<?php bs('Extras/form_validation') ?>">Form Validation</a></li>
-				<li><a href="<?php bs('Extras/form_masks') ?>">Form Masks</a></li>
-				<li><a href="<?php bs('Extras/form_dropzone') ?>">Dropzone Uploader</a></li>
-				<li><a href="<?php bs('Extras/form_summernote') ?>">Summernote</a></li>
-				<li><a href="<?php bs('Extras/form_markdown') ?>">Markdown Editor</a></li>
-				<li><a href="<?php bs('Extras/form_xeditable') ?>">Inline Editor</a></li>
-				<li><a href="<?php bs('Extras/form_gridforms') ?>">Grid Forms</a></li>
+				<li><a href="<?=bs('Extras/ui_forms') ?>">Form Layout</a></li>
+				<li><a href="<?=bs('Extras/form_components') ?>">Form Components</a></li>
+				<li><a href="<?=bs('Extras/form_pickers') ?>">Pickers</a></li>
+				<li><a href="<?=bs('Extras/form_wizard') ?>">Form Wizard</a></li>
+				<li><a href="<?=bs('Extras/form_validation') ?>">Form Validation</a></li>
+				<li><a href="<?=bs('Extras/form_masks') ?>">Form Masks</a></li>
+				<li><a href="<?=bs('Extras/form_dropzone') ?>">Dropzone Uploader</a></li>
+				<li><a href="<?=bs('Extras/form_summernote') ?>">Summernote</a></li>
+				<li><a href="<?=bs('Extras/form_markdown') ?>">Markdown Editor</a></li>
+				<li><a href="<?=bs('Extras/form_xeditable') ?>">Inline Editor</a></li>
+				<li><a href="<?=bs('Extras/form_gridforms') ?>">Grid Forms</a></li>
 			</ul>
 		</li>
 		<li>
-			<a href="<?php bs('Extras/buttons') ?>"><i class="fa fa-plus-circle"></i>
+			<a href="<?=bs('Extras/buttons') ?>"><i class="fa fa-plus-circle"></i>
 				<span>buttons</span></a>
 		</li>
-		<li><a href="<?php bs('Extras/app_inbox') ?>"><i class="ti ti-email"></i><span>Inbox</span><span class="badge badge-danger">3</span></a></li>
+		<li><a href="<?=bs('Extras/app_inbox') ?>"><i class="ti ti-email"></i><span>Inbox</span><span class="badge badge-danger">3</span></a></li>
 	</ul>
 </nav>
     </div>
@@ -808,7 +808,7 @@
 				<div class="panel-heading">
 					<h2>New Users</h2>
 					<div class="panel-ctrls"></div>
-					<!-- <a href="<?= bs('Users/print_users') ?>">
+					<!-- <a href="<?=bs('Users/print_users') ?>">
 						<i class="fa fa-print" style="padding-left: 1%;color: black"></i>
 					</a> -->
 				</div>
@@ -1252,49 +1252,49 @@
 <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script> -->
 
-<script type="text/javascript" src="<?php bs('public/assets/js/jquery-1.10.2.min.js')?>"></script>              <!-- Load jQuery -->
-<script type="text/javascript" src="<?php bs('public/assets/js/jqueryui-1.10.3.min.js')?>"></script>              <!-- Load jQueryUI -->
-<script type="text/javascript" src="<?php bs('public/assets/js/bootstrap.min.js')?>"></script>                <!-- Load Bootstrap -->
-<script type="text/javascript" src="<?php bs('public/assets/js/enquire.min.js')?>"></script>                  <!-- Load Enquire -->
+<script type="text/javascript" src="<?=bs('public/assets/js/jquery-1.10.2.min.js')?>"></script>              <!-- Load jQuery -->
+<script type="text/javascript" src="<?=bs('public/assets/js/jqueryui-1.10.3.min.js')?>"></script>              <!-- Load jQueryUI -->
+<script type="text/javascript" src="<?=bs('public/assets/js/bootstrap.min.js')?>"></script>                <!-- Load Bootstrap -->
+<script type="text/javascript" src="<?=bs('public/assets/js/enquire.min.js')?>"></script>                  <!-- Load Enquire -->
 
-<script type="text/javascript" src="<?php bs('public/assets/plugins/velocityjs/velocity.min.js')?>"></script>         <!-- Load Velocity for Animated Content -->
-<script type="text/javascript" src="<?php bs('public/assets/plugins/velocityjs/velocity.ui.min.js')?>"></script>
+<script type="text/javascript" src="<?=bs('public/assets/plugins/velocityjs/velocity.min.js')?>"></script>         <!-- Load Velocity for Animated Content -->
+<script type="text/javascript" src="<?=bs('public/assets/plugins/velocityjs/velocity.ui.min.js')?>"></script>
 
-<script type="text/javascript" src="<?php bs('public/assets/plugins/wijets/wijets.js')?>"></script>                 <!-- Wijet -->
+<script type="text/javascript" src="<?=bs('public/assets/plugins/wijets/wijets.js')?>"></script>                 <!-- Wijet -->
 
-<script type="text/javascript" src="<?php bs('public/assets/plugins/codeprettifier/prettify.js')?>"></script>         <!-- Code Prettifier  -->
-<script type="text/javascript" src="<?php bs('public/assets/plugins/bootstrap-switch/bootstrap-switch.js')?>"></script>     <!-- Swith/Toggle Button -->
+<script type="text/javascript" src="<?=bs('public/assets/plugins/codeprettifier/prettify.js')?>"></script>         <!-- Code Prettifier  -->
+<script type="text/javascript" src="<?=bs('public/assets/plugins/bootstrap-switch/bootstrap-switch.js')?>"></script>     <!-- Swith/Toggle Button -->
 
-<script type="text/javascript" src="<?php bs('public/assets/plugins/bootstrap-tabdrop/js/bootstrap-tabdrop.js')?>"></script>  <!-- Bootstrap Tabdrop -->
+<script type="text/javascript" src="<?=bs('public/assets/plugins/bootstrap-tabdrop/js/bootstrap-tabdrop.js')?>"></script>  <!-- Bootstrap Tabdrop -->
 
-<script type="text/javascript" src="<?php bs('public/assets/plugins/iCheck/icheck.min.js')?>"></script>               <!-- iCheck -->
+<script type="text/javascript" src="<?=bs('public/assets/plugins/iCheck/icheck.min.js')?>"></script>               <!-- iCheck -->
 
-<script type="text/javascript" src="<?php bs('public/assets/plugins/nanoScroller/js/jquery.nanoscroller.min.js')?>"></script> <!-- nano scroller -->
+<script type="text/javascript" src="<?=bs('public/assets/plugins/nanoScroller/js/jquery.nanoscroller.min.js')?>"></script> <!-- nano scroller -->
 
-<script type="text/javascript" src="<?php bs('public/assets/js/application.js')?>"></script>
-<script type="text/javascript" src="<?php bs('public/assets/demo/demo.js')?>"></script>
-<script type="text/javascript" src="<?php bs('public/assets/demo/demo-switcher.js')?>"></script>
+<script type="text/javascript" src="<?=bs('public/assets/js/application.js')?>"></script>
+<script type="text/javascript" src="<?=bs('public/assets/demo/demo.js')?>"></script>
+<script type="text/javascript" src="<?=bs('public/assets/demo/demo-switcher.js')?>"></script>
 
 <!-- Charts -->
-<script type="text/javascript" src="<?php bs('public/assets/plugins/charts-flot/jquery.flot.min.js')?>"></script>               <!-- Flot Main File -->
-<script type="text/javascript" src="<?php bs('public/assets/plugins/charts-flot/jquery.flot.pie.min.js')?>"></script>             <!-- Flot Pie Chart Plugin -->
-<script type="text/javascript" src="<?php bs('public/assets/plugins/charts-flot/jquery.flot.stack.min.js')?>"></script>         <!-- Flot Stacked Charts Plugin -->
-<script type="text/javascript" src="<?php bs('public/assets/plugins/charts-flot/jquery.flot.orderBars.min.js')?>"></script>     <!-- Flot Ordered Bars Plugin-->
-<script type="text/javascript" src="<?php bs('public/assets/plugins/charts-flot/jquery.flot.resize.min.js')?>"></script>          <!-- Flot Responsive -->
-<script type="text/javascript" src="<?php bs('public/assets/plugins/charts-flot/jquery.flot.tooltip.min.js')?>"></script>     <!-- Flot Tooltips -->
-<script type="text/javascript" src="<?php bs('public/assets/plugins/charts-flot/jquery.flot.spline.js')?>"></script>        <!-- Flot Curved Lines -->
+<script type="text/javascript" src="<?=bs('public/assets/plugins/charts-flot/jquery.flot.min.js')?>"></script>               <!-- Flot Main File -->
+<script type="text/javascript" src="<?=bs('public/assets/plugins/charts-flot/jquery.flot.pie.min.js')?>"></script>             <!-- Flot Pie Chart Plugin -->
+<script type="text/javascript" src="<?=bs('public/assets/plugins/charts-flot/jquery.flot.stack.min.js')?>"></script>         <!-- Flot Stacked Charts Plugin -->
+<script type="text/javascript" src="<?=bs('public/assets/plugins/charts-flot/jquery.flot.orderBars.min.js')?>"></script>     <!-- Flot Ordered Bars Plugin-->
+<script type="text/javascript" src="<?=bs('public/assets/plugins/charts-flot/jquery.flot.resize.min.js')?>"></script>          <!-- Flot Responsive -->
+<script type="text/javascript" src="<?=bs('public/assets/plugins/charts-flot/jquery.flot.tooltip.min.js')?>"></script>     <!-- Flot Tooltips -->
+<script type="text/javascript" src="<?=bs('public/assets/plugins/charts-flot/jquery.flot.spline.js')?>"></script>        <!-- Flot Curved Lines -->
 
-<script type="text/javascript" src="<?php bs('public/assets/plugins/sparklines/jquery.sparklines.min.js')?>"></script>       <!-- Sparkline -->
+<script type="text/javascript" src="<?=bs('public/assets/plugins/sparklines/jquery.sparklines.min.js')?>"></script>       <!-- Sparkline -->
 
-<script type="text/javascript" src="<?php bs('public/assets/plugins/jvectormap/jquery-jvectormap-2.0.2.min.js')?>"></script>       <!-- jVectorMap -->
-<script type="text/javascript" src="<?php bs('public/assets/plugins/jvectormap/jquery-jvectormap-world-mill-en.js')?>"></script>   <!-- jVectorMap -->
+<script type="text/javascript" src="<?=bs('public/assets/plugins/jvectormap/jquery-jvectormap-2.0.2.min.js')?>"></script>       <!-- jVectorMap -->
+<script type="text/javascript" src="<?=bs('public/assets/plugins/jvectormap/jquery-jvectormap-world-mill-en.js')?>"></script>   <!-- jVectorMap -->
 
-<script type="text/javascript" src="<?php bs('public/assets/plugins/switchery/switchery.js')?>"></script>               <!-- Switchery -->
-<script type="text/javascript" src="<?php bs('public/assets/plugins/easypiechart/jquery.easypiechart.js')?>"></script>
-<script type="text/javascript" src="<?php bs('public/assets/plugins/fullcalendar/moment.min.js')?>"></script>           <!-- Moment.js Dependency -->
-<script type="text/javascript" src="<?php bs('public/assets/plugins/fullcalendar/fullcalendar.min.js')?>"></script>         <!-- Calendar Plugin -->
+<script type="text/javascript" src="<?=bs('public/assets/plugins/switchery/switchery.js')?>"></script>               <!-- Switchery -->
+<script type="text/javascript" src="<?=bs('public/assets/plugins/easypiechart/jquery.easypiechart.js')?>"></script>
+<script type="text/javascript" src="<?=bs('public/assets/plugins/fullcalendar/moment.min.js')?>"></script>           <!-- Moment.js Dependency -->
+<script type="text/javascript" src="<?=bs('public/assets/plugins/fullcalendar/fullcalendar.min.js')?>"></script>         <!-- Calendar Plugin -->
 
-<script type="text/javascript" src="<?php bs('public/assets/demo/demo-index.js')?>"></script>
+<script type="text/javascript" src="<?=bs('public/assets/demo/demo-index.js')?>"></script>
 
 
 <!-- End loading site level scripts -->

@@ -13,7 +13,7 @@
    <div class="row">
 		<div class="col-md-4" style="margin-left: 3%">
    			<a href="index.html" class="login-logo">
-   				<img src="<?php bs('public/assets/img/logo.png ')?>" class="login-logo">
+   				<img src="<?=bs('public/assets/img/logo.png ')?>" class="login-logo">
    			</a>	
 			<div class="panel panel-default">
 				<div class="panel-heading">
@@ -73,7 +73,7 @@
 
 		<div class="col-md-6 col-md-offset-1">
 			<a href="index.html" class="login-logo">
-   				<img src="<?php bs('public/assets/img/logo.png ')?>" style="padding: 0px 0px 7% 20%">
+   				<img src="<?=bs('public/assets/img/logo.png ')?>" style="padding: 0px 0px 7% 20%">
    			</a>
 			<div class="panel panel-default">
 				<div class="panel-heading">

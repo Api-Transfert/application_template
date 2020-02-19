@@ -13,7 +13,7 @@
                     <div class="row">
 
                         <div class="col-md-12">
-                            <form action="<?= bs('todo/search_tasks/search_tasks') ?>" method="get">
+                            <form action="<?=bs('todo/search_tasks/search_tasks') ?>" method="get">
                                 <div class="input-group"><input type="text" placeholder="Search Here" name="task" class="input-sm form-control"> <span class="input-group-btn">
                                     <button type="submit" class="btn btn-sm btn-success"> Go!</button> </span>
                                 </div>

@@ -12,16 +12,16 @@
 
     <link type='text/css' href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400italic,600' rel='stylesheet'>
 
-    <link type="text/css" href="<?= bs('public/assets/fonts/font-awesome/css/font-awesome.min.css')?>" rel="stylesheet">        
+    <link type="text/css" href="<?=bs('public/assets/fonts/font-awesome/css/font-awesome.min.css')?>" rel="stylesheet">
     <!-- Font Awesome -->
-    <link type="text/css" href="<?= bs('public/assets/fonts/themify-icons/themify-icons.css')?>" rel="stylesheet">              
+    <link type="text/css" href="<?=bs('public/assets/fonts/themify-icons/themify-icons.css')?>" rel="stylesheet">
     <!-- Themify Icons -->
-    <link type="text/css" href="<?= bs('public/assets/css/styles.css')?>" rel="stylesheet">                                     
+    <link type="text/css" href="<?=bs('public/assets/css/styles.css')?>" rel="stylesheet">
     <!-- Core CSS with all styles -->
 
-    <link type="text/css" href="<?= bs('public/assets/plugins/codeprettifier/prettify.css')?>" rel="stylesheet">                
+    <link type="text/css" href="<?=bs('public/assets/plugins/codeprettifier/prettify.css')?>" rel="stylesheet">
     <!-- Code Prettifier -->
-    <link type="text/css" href="<?= bs('public/assets/plugins/iCheck/skins/minimal/blue.css')?>" rel="stylesheet">              
+    <link type="text/css" href="<?=bs('public/assets/plugins/iCheck/skins/minimal/blue.css')?>" rel="stylesheet">
     <!-- iCheck -->
 
     <!--[if lt IE 10]>
@@ -31,19 +31,19 @@
     <![endif]-->
     <!-- The following CSS are included as plugins and can be removed if unused-->
     
-<link type="text/css" href="<?= bs('public/assets/plugins/form-select2/select2.css')?>" rel="stylesheet">                        <!-- Select2 -->
-<link type="text/css" href="<?= bs('public/assets/plugins/form-multiselect/css/multi-select.css')?>" rel="stylesheet">           <!-- Multiselect -->
-<link type="text/css" href="<?= bs('public/assets/plugins/form-fseditor/fseditor.css')?>" rel="stylesheet">                      <!-- FullScreen Editor -->
-<link type="text/css" href="<?= bs('public/assets/plugins/bootstrap-tokenfield/css/bootstrap-tokenfield.css')?>" rel="stylesheet">   <!-- Tokenfield -->
+<link type="text/css" href="<?=bs('public/assets/plugins/form-select2/select2.css')?>" rel="stylesheet">                        <!-- Select2 -->
+<link type="text/css" href="<?=bs('public/assets/plugins/form-multiselect/css/multi-select.css')?>" rel="stylesheet">           <!-- Multiselect -->
+<link type="text/css" href="<?=bs('public/assets/plugins/form-fseditor/fseditor.css')?>" rel="stylesheet">                      <!-- FullScreen Editor -->
+<link type="text/css" href="<?=bs('public/assets/plugins/bootstrap-tokenfield/css/bootstrap-tokenfield.css')?>" rel="stylesheet">   <!-- Tokenfield -->
 
-<link type="text/css" href="<?= bs('public/assets/plugins/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.min.css')?>" rel="stylesheet"> <!-- Touchspin -->
+<link type="text/css" href="<?=bs('public/assets/plugins/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.min.css')?>" rel="stylesheet"> <!-- Touchspin -->
 
-<link type="text/css" href="<?= bs('public/assets/plugins/iCheck/skins/minimal/_all.css')?>" rel="stylesheet">                   <!-- Custom Checkboxes / iCheck -->
-<link type="text/css" href="<?= bs('public/assets/plugins/iCheck/skins/flat/_all.css')?>" rel="stylesheet">
-<link type="text/css" href="<?= bs('public/assets/plugins/iCheck/skins/square/_all.css')?>" rel="stylesheet">
+<link type="text/css" href="<?=bs('public/assets/plugins/iCheck/skins/minimal/_all.css')?>" rel="stylesheet">                   <!-- Custom Checkboxes / iCheck -->
+<link type="text/css" href="<?=bs('public/assets/plugins/iCheck/skins/flat/_all.css')?>" rel="stylesheet">
+<link type="text/css" href="<?=bs('public/assets/plugins/iCheck/skins/square/_all.css')?>" rel="stylesheet">
 
-<link type="text/css" href="<?= bs('public/assets/plugins/card/lib/css/card.css')?> " rel="stylesheet"> 						 <!-- Card -->
-<link type="text/css" href="<?= bs('public/assets/plugins/switchery/switchery.css')?> " rel="stylesheet">                     <!-- Switchery -->
+<link type="text/css" href="<?=bs('public/assets/plugins/card/lib/css/card.css')?> " rel="stylesheet"> 						 <!-- Card -->
+<link type="text/css" href="<?=bs('public/assets/plugins/switchery/switchery.css')?> " rel="stylesheet">                     <!-- Switchery -->
 
     </head>
 
@@ -542,11 +542,11 @@
 						</li>
 						<li><a href="javascript:;"><i class="ti ti-layout"></i><span>Layout</span></a>
 							<ul class="acc-menu">
-								<li><a href="<?php bs('extras/layout_grids') ?>">Grid Scaffolding</a></li>
-								<li><a href="<?php bs('extras/layout_static_leftbar') ?>">Static Sidebar</a></li>
-								<!-- <li><a href="<?php bs('extras/layout_sidebar_scroll') ?>">Scroll Sidebar</a></li> -->
-								<!-- <li><a href="<?php bs('extras/layout_horizontal') ?>">Horizontal Nav</a></li> -->
-								<li><a href="<?php bs('extras/layout_boxed') ?>">Boxed</a></li>	
+								<li><a href="<?=bs('extras/layout_grids') ?>">Grid Scaffolding</a></li>
+								<li><a href="<?=bs('extras/layout_static_leftbar') ?>">Static Sidebar</a></li>
+								<!-- <li><a href="<?=bs('extras/layout_sidebar_scroll') ?>">Scroll Sidebar</a></li> -->
+								<!-- <li><a href="<?=bs('extras/layout_horizontal') ?>">Horizontal Nav</a></li> -->
+								<li><a href="<?=bs('extras/layout_boxed') ?>">Boxed</a></li>
 							</ul>
 						</li>
 						<!-- <li><a href="javascript:;"><i class="ti ti-file"></i><span>Pages</span></a>
@@ -572,38 +572,38 @@
 						</li> -->
 						<li><a href="javascript:;"><i class="ti ti-pencil"></i><span>Forms</span></a>
 							<ul class="acc-menu">
-								<li><a href="<?php bs('extras/ui_forms') ?>">Form Layout</a></li>
-								<li><a href="<?php bs('extras/form_components') ?>">Form Components</a></li>
-								<li><a href="<?php bs('extras/form_pickers') ?>">Pickers</a></li>
-								<li><a href="<?php bs('extras/form_wizard') ?>">Form Wizard</a></li>
-								<li><a href="<?php bs('extras/form_validation') ?>">Form Validation</a></li>
-								<li><a href="<?php bs('extras/form_masks') ?>">Form Masks</a></li>
-								<li><a href="<?php bs('extras/form_dropzone') ?>">Dropzone Uploader</a></li>
-								<li><a href="<?php bs('extras/form_summernote') ?>">Summernote</a></li>
-								<li><a href="<?php bs('extras/form_markdown') ?>">Markdown Editor</a></li>
-								<li><a href="<?php bs('extras/form_xeditable') ?>">Inline Editor</a></li>
-								<li><a href="<?php bs('extras/form_gridforms') ?>">Grid Forms</a></li>
+								<li><a href="<?=bs('extras/ui_forms') ?>">Form Layout</a></li>
+								<li><a href="<?=bs('extras/form_components') ?>">Form Components</a></li>
+								<li><a href="<?=bs('extras/form_pickers') ?>">Pickers</a></li>
+								<li><a href="<?=bs('extras/form_wizard') ?>">Form Wizard</a></li>
+								<li><a href="<?=bs('extras/form_validation') ?>">Form Validation</a></li>
+								<li><a href="<?=bs('extras/form_masks') ?>">Form Masks</a></li>
+								<li><a href="<?=bs('extras/form_dropzone') ?>">Dropzone Uploader</a></li>
+								<li><a href="<?=bs('extras/form_summernote') ?>">Summernote</a></li>
+								<li><a href="<?=bs('extras/form_markdown') ?>">Markdown Editor</a></li>
+								<li><a href="<?=bs('extras/form_xeditable') ?>">Inline Editor</a></li>
+								<li><a href="<?=bs('extras/form_gridforms') ?>">Grid Forms</a></li>
 							</ul>
 						</li>
 						<li>
-							<a href="<?php bs('extras/buttons') ?>"><i class="fa fa-plus-circle"></i>
+							<a href="<?=bs('extras/buttons') ?>"><i class="fa fa-plus-circle"></i>
 								<span>buttons</span></a>
 						</li>
 						<li>
-							<a href="<?php bs('extras/app_inbox') ?>">
+							<a href="<?=bs('extras/app_inbox') ?>">
 								<i class="ti ti-email"></i>
 									<span>Inbox</span>
 										<span class="badge badge-danger">3</span>
 							</a>
 						</li>
 						<li>
-							<a href="<?php bs('extras/login_and_signup') ?>">
+							<a href="<?=bs('extras/login_and_signup') ?>">
 								<i class="ti ti-lock"></i>
 									<span>Login & SignUp Form</span>
 							</a>
 						</li>
 						<li>
-							<a href="<?php bs('LoginRegistrationForm') ?>">
+							<a href="<?=bs('LoginRegistrationForm') ?>">
 								<i class="ti ti-lock"></i>
 									<span>Login & SignUp Form</span>
 							</a>
@@ -1739,56 +1739,56 @@
 <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script> -->
 
-<script type="text/javascript" src="<?= bs('public/assets/js/jquery-1.10.2.min.js ') ?>"></script> 							<!-- Load jQuery -->
-<script type="text/javascript" src="<?= bs('public/assets/js/jqueryui-1.10.3.min.js') ?>"></script> 							<!-- Load jQueryUI -->
-<script type="text/javascript" src="<?= bs('public/assets/js/bootstrap.min.js') ?>"></script> 								<!-- Load Bootstrap -->
-<script type="text/javascript" src="<?= bs('public/assets/js/enquire.min.js') ?>"></script> 									<!-- Load Enquire -->
+<script type="text/javascript" src="<?=bs('public/assets/js/jquery-1.10.2.min.js ') ?>"></script> 							<!-- Load jQuery -->
+<script type="text/javascript" src="<?=bs('public/assets/js/jqueryui-1.10.3.min.js') ?>"></script> 							<!-- Load jQueryUI -->
+<script type="text/javascript" src="<?=bs('public/assets/js/bootstrap.min.js') ?>"></script> 								<!-- Load Bootstrap -->
+<script type="text/javascript" src="<?=bs('public/assets/js/enquire.min.js') ?>"></script> 									<!-- Load Enquire -->
 
-<script type="text/javascript" src="<?= bs('public/assets/plugins/velocityjs/velocity.min.js') ?>"></script>					<!-- Load Velocity for Animated Content -->
-<script type="text/javascript" src="<?= bs('public/assets/plugins/velocityjs/velocity.ui.min.js') ?>"></script>
+<script type="text/javascript" src="<?=bs('public/assets/plugins/velocityjs/velocity.min.js') ?>"></script>					<!-- Load Velocity for Animated Content -->
+<script type="text/javascript" src="<?=bs('public/assets/plugins/velocityjs/velocity.ui.min.js') ?>"></script>
 
-<script type="text/javascript" src="<?= bs('public/assets/plugins/wijets/wijets.js') ?>"></script>     						<!-- Wijet -->
+<script type="text/javascript" src="<?=bs('public/assets/plugins/wijets/wijets.js') ?>"></script>     						<!-- Wijet -->
 
-<script type="text/javascript" src="<?= bs('public/assets/plugins/codeprettifier/prettify.js') ?>"></script> 				<!-- Code Prettifier  -->
-<script type="text/javascript" src="<?= bs('public/assets/plugins/bootstrap-switch/bootstrap-switch.js') ?>"></script> 		<!-- Swith/Toggle Button -->
+<script type="text/javascript" src="<?=bs('public/assets/plugins/codeprettifier/prettify.js') ?>"></script> 				<!-- Code Prettifier  -->
+<script type="text/javascript" src="<?=bs('public/assets/plugins/bootstrap-switch/bootstrap-switch.js') ?>"></script> 		<!-- Swith/Toggle Button -->
 
-<script type="text/javascript" src="<?= bs('public/assets/plugins/bootstrap-tabdrop/js/bootstrap-tabdrop.js') ?>"></script>  <!-- Bootstrap Tabdrop -->
+<script type="text/javascript" src="<?=bs('public/assets/plugins/bootstrap-tabdrop/js/bootstrap-tabdrop.js') ?>"></script>  <!-- Bootstrap Tabdrop -->
 
-<script type="text/javascript" src="<?= bs('public/assets/plugins/iCheck/icheck.min.js') ?>"></script>     					<!-- iCheck -->
+<script type="text/javascript" src="<?=bs('public/assets/plugins/iCheck/icheck.min.js') ?>"></script>     					<!-- iCheck -->
 
-<script type="text/javascript" src="<?= bs('public/assets/plugins/nanoScroller/js/jquery.nanoscroller.min.js') ?>"></script> <!-- nano scroller -->
+<script type="text/javascript" src="<?=bs('public/assets/plugins/nanoScroller/js/jquery.nanoscroller.min.js') ?>"></script> <!-- nano scroller -->
 
-<script type="text/javascript" src="<?= bs('public/assets/js/application.js') ?>"></script>
-<script type="text/javascript" src="<?= bs('public/assets/demo/demo.js') ?>"></script>
-<script type="text/javascript" src="<?= bs('public/assets/demo/demo-switcher.js') ?>"></script>
+<script type="text/javascript" src="<?=bs('public/assets/js/application.js') ?>"></script>
+<script type="text/javascript" src="<?=bs('public/assets/demo/demo.js') ?>"></script>
+<script type="text/javascript" src="<?=bs('public/assets/demo/demo-switcher.js') ?>"></script>
 
 <!-- End loading site level scripts -->
     
     <!-- Load page level scripts-->
     
-<script type="text/javascript" src="<?= bs('public/assets/plugins/form-multiselect/js/jquery.multi-select.min.js') ?>"></script>  			<!-- Multiselect Plugin -->
-<script type="text/javascript" src="<?= bs('public/assets/plugins/quicksearch/jquery.quicksearch.min.js') ?>"></script>           			<!-- Quicksearch to go with Multisearch Plugin -->
-<script type="text/javascript" src="<?= bs('public/assets/plugins/form-typeahead/typeahead.bundle.min.js') ?>"></script>                 	<!-- Typeahead for Autocomplete -->
-<script type="text/javascript" src="<?= bs('public/assets/plugins/form-select2/select2.min.js') ?>"></script>                     			<!-- Advanced Select Boxes -->
-<script type="text/javascript" src="<?= bs('public/assets/plugins/form-autosize/jquery.autosize-min.js') ?>"></script>            			<!-- Autogrow Text Area -->
-<script type="text/javascript" src="<?= bs('public/assets/plugins/form-colorpicker/js/bootstrap-colorpicker.min.js') ?>"></script> 			<!-- Color Picker -->
+<script type="text/javascript" src="<?=bs('public/assets/plugins/form-multiselect/js/jquery.multi-select.min.js') ?>"></script>  			<!-- Multiselect Plugin -->
+<script type="text/javascript" src="<?=bs('public/assets/plugins/quicksearch/jquery.quicksearch.min.js') ?>"></script>           			<!-- Quicksearch to go with Multisearch Plugin -->
+<script type="text/javascript" src="<?=bs('public/assets/plugins/form-typeahead/typeahead.bundle.min.js') ?>"></script>                 	<!-- Typeahead for Autocomplete -->
+<script type="text/javascript" src="<?=bs('public/assets/plugins/form-select2/select2.min.js') ?>"></script>                     			<!-- Advanced Select Boxes -->
+<script type="text/javascript" src="<?=bs('public/assets/plugins/form-autosize/jquery.autosize-min.js') ?>"></script>            			<!-- Autogrow Text Area -->
+<script type="text/javascript" src="<?=bs('public/assets/plugins/form-colorpicker/js/bootstrap-colorpicker.min.js') ?>"></script> 			<!-- Color Picker -->
 
-<script type="text/javascript" src="<?= bs('public/assets/plugins/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.js') ?>"></script>      <!-- Touchspin -->
+<script type="text/javascript" src="<?=bs('public/assets/plugins/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.js') ?>"></script>      <!-- Touchspin -->
 
-<script type="text/javascript" src="<?= bs('public/assets/plugins/form-fseditor/jquery.fseditor-min.js') ?>"></script>            			<!-- Fullscreen Editor -->
-<script type="text/javascript" src="<?= bs('public/assets/plugins/form-jasnyupload/fileinput.min.js') ?>"></script>               			<!-- File Input -->
-<script type="text/javascript" src="<?= bs('public/assets/plugins/bootstrap-tokenfield/bootstrap-tokenfield.min.js') ?>"></script>     		<!-- Tokenfield -->
+<script type="text/javascript" src="<?=bs('public/assets/plugins/form-fseditor/jquery.fseditor-min.js') ?>"></script>            			<!-- Fullscreen Editor -->
+<script type="text/javascript" src="<?=bs('public/assets/plugins/form-jasnyupload/fileinput.min.js') ?>"></script>               			<!-- File Input -->
+<script type="text/javascript" src="<?=bs('public/assets/plugins/bootstrap-tokenfield/bootstrap-tokenfield.min.js') ?>"></script>     		<!-- Tokenfield -->
 
-<script type="text/javascript" src="<?= bs('public/assets/plugins/card/lib/js/card.js') ?>"></script> 										<!-- Card -->
+<script type="text/javascript" src="<?=bs('public/assets/plugins/card/lib/js/card.js') ?>"></script> 										<!-- Card -->
 
-<!-- <script type="text/javascript" src="<?= bs('public/assets/plugins/iCheck/icheck.min.js') ?>"></script>  -->    							<!-- iCheck // already included on site-level -->
-<script type="text/javascript" src="<?= bs('public/assets/plugins/switchery/switchery.js') ?>"></script>     								<!-- Switchery -->
-<script type="text/javascript" src="<?= bs('public/assets/plugins/jquery-chained/jquery.chained.min.js') ?>"></script> 						<!-- Chained Select Boxes -->
+<!-- <script type="text/javascript" src="<?=bs('public/assets/plugins/iCheck/icheck.min.js') ?>"></script>  -->    							<!-- iCheck // already included on site-level -->
+<script type="text/javascript" src="<?=bs('public/assets/plugins/switchery/switchery.js') ?>"></script>     								<!-- Switchery -->
+<script type="text/javascript" src="<?=bs('public/assets/plugins/jquery-chained/jquery.chained.min.js') ?>"></script> 						<!-- Chained Select Boxes -->
 
-<script type="text/javascript" src="<?= bs('public/assets/plugins/jquery-mousewheel/jquery.mousewheel.min.js') ?>"></script> 
+<script type="text/javascript" src="<?=bs('public/assets/plugins/jquery-mousewheel/jquery.mousewheel.min.js') ?>"></script>
 <!-- MouseWheel Support -->
 
-<script type="text/javascript" src="<?= bs('public/assets/demo/demo-formcomponents.js') ?>"></script>
+<script type="text/javascript" src="<?=bs('public/assets/demo/demo-formcomponents.js') ?>"></script>
 
     <!-- End loading page level scripts-->
 

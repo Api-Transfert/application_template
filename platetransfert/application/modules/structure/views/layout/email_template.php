@@ -371,7 +371,7 @@
                                     <table class="date" border="0" cellpadding="0" cellspacing="0">
                                         <tbody><tr>
                                             <td>
-                                                <img  style="display: block;" src="<?php bs() ?>public/img/email-img/icon-cal.png" alt="icon 1" width="13">
+                                                <img  style="display: block;" src="<?=bs()?>public/img/email-img/icon-cal.png" alt="icon 1" width="13">
                                             </td>
                                             <td>&nbsp;&nbsp;</td>
                                             <td style="color: #fefefe; font-size: 11px; font-weight: normal; font-family: Helvetica, Arial, sans-serif;">
@@ -396,7 +396,7 @@
                                     <table class="tel" align="center" border="0" cellpadding="0" cellspacing="0">
                                         <tbody><tr>
                                             <td>
-                                                <img  style="display: block;" src="<?php bs() ?>public/img/email-img/icon-tel.png" alt="icon 2" width="17">
+                                                <img  style="display: block;" src="<?=bs()?>public/img/email-img/icon-tel.png" alt="icon 2" width="17">
                                             </td>
                                             <td>&nbsp;&nbsp;</td>
                                             <td style="color: #fefefe; font-size: 11px; font-weight: normal; font-family: Helvetica, Arial, sans-serif;">
@@ -438,7 +438,7 @@
                     <table class="logo" align="center" border="0" cellpadding="0" cellspacing="0">
                         <tbody><tr>
                             <td align="center">
-                                <a href="" style="display: block;"><img  style="display: block;" src="<?php bs() ?>public/img/email-img/vector-lab.jpg" alt="logo" width="155"></a>
+                                <a href="" style="display: block;"><img  style="display: block;" src="<?=bs()?>public/img/email-img/vector-lab.jpg" alt="logo" width="155"></a>
                             </td>
                         </tr>
                         </tbody></table>
@@ -461,7 +461,7 @@
 
             <tr ><td height="7"></td></tr>
 
-            <tr ><td align="center"><img style="display: block;" class="main-image" src="<?php bs() ?>public/img/email-img/main-img.png" alt="large image" height="auto" width="538"></td></tr>
+            <tr ><td align="center"><img style="display: block;" class="main-image" src="<?=bs()?>public/img/email-img/main-img.png" alt="large image" height="auto" width="538"></td></tr>
 
             <tr ><td height="20"></td></tr>
 
@@ -513,7 +513,7 @@
                                 <table class="section-item" align="left" border="0" cellpadding="0" cellspacing="0">
                                     <tbody><tr><td height="6"></td></tr>
                                     <tr>
-                                        <td><a href="" style="width: 128px; display: block;"><img style="display: block;" src="<?php bs() ?>public/img/email-img/image3.png" alt="image1" class="section-img" height="auto" width="128"></a></td>
+                                        <td><a href="" style="width: 128px; display: block;"><img style="display: block;" src="<?=bs()?>public/img/email-img/image3.png" alt="image1" class="section-img" height="auto" width="128"></a></td>
                                     </tr>
                                     <tr><td height="10"></td></tr>
                                     </tbody></table>
@@ -617,7 +617,7 @@
                                 <table class="section-item" align="left" border="0" cellpadding="0" cellspacing="0">
                                     <tbody><tr><td height="6"></td></tr>
                                     <tr>
-                                        <td><a href="" style="width: 128px; display: block;"><img  style="display: block;" src="<?php bs() ?>public/img/email-img/image4.png" alt="image2" class="section-img" height="auto" width="128"></a></td>
+                                        <td><a href="" style="width: 128px; display: block;"><img  style="display: block;" src="<?=bs()?>public/img/email-img/image4.png" alt="image2" class="section-img" height="auto" width="128"></a></td>
                                     </tr>
                                     <tr><td height="10"></td></tr>
                                     </tbody>
@@ -653,7 +653,7 @@
 
             <tr >
                 <td align="center">
-                    <img class="banner"  style="display: block;" src="<?php bs() ?>public/img/email-img/banner.jpg" alt="banner" height="auto" width="536">
+                    <img class="banner"  style="display: block;" src="<?=bs()?>public/img/email-img/banner.jpg" alt="banner" height="auto" width="536">
                 </td>
             </tr>
 
@@ -681,7 +681,7 @@
                                 <table class="section-item" align="left" border="0" cellpadding="0" cellspacing="0">
                                     <tbody><tr><td height="6"></td></tr>
                                     <tr>
-                                        <td><a href="" style="width: 128px; display: block;"><img  style="display: block;" src="<?php bs() ?>public/img/email-img/image2.png" alt="image3" class="section-img" height="auto" width="128"></a></td>
+                                        <td><a href="" style="width: 128px; display: block;"><img  style="display: block;" src="<?=bs()?>public/img/email-img/image2.png" alt="image3" class="section-img" height="auto" width="128"></a></td>
                                     </tr>
                                     <tr><td height="10"></td></tr>
                                     </tbody>
@@ -785,7 +785,7 @@
                                 <table class="section-item" align="left" border="0" cellpadding="0" cellspacing="0">
                                     <tbody><tr><td height="6"></td></tr>
                                     <tr>
-                                        <td><a href="" style="width: 128px; display: block;"><img  style="display: block;" src="<?php bs() ?>public/img/email-img/image1.png" alt="image4" class="section-img" height="auto" width="128"></a></td>
+                                        <td><a href="" style="width: 128px; display: block;"><img  style="display: block;" src="<?=bs()?>public/img/email-img/image1.png" alt="image4" class="section-img" height="auto" width="128"></a></td>
                                     </tr>
                                     <tr><td height="10"></td></tr>
                                     </tbody>
@@ -826,23 +826,23 @@
                                 <table align="center" border="0" cellpadding="0" cellspacing="0">
                                     <tbody><tr>
                                         <td>
-                                            <a style="display: block; width: 16px;" href="#"><img  style="display: block;" src="<?php bs() ?>public/img/email-img/social-google.png" alt="google plus" width="16"></a>
+                                            <a style="display: block; width: 16px;" href="#"><img  style="display: block;" src="<?=bs()?>public/img/email-img/social-google.png" alt="google plus" width="16"></a>
                                         </td>
                                         <td>&nbsp;&nbsp;&nbsp;</td>
                                         <td>
-                                            <a style="display: block; width: 16px;" href="#"><img  style="display: block;" src="<?php bs() ?>public/img/email-img/social-youtube.png" alt="youtube" width="16"></a>
+                                            <a style="display: block; width: 16px;" href="#"><img  style="display: block;" src="<?=bs()?>public/img/email-img/social-youtube.png" alt="youtube" width="16"></a>
                                         </td>
                                         <td>&nbsp;&nbsp;&nbsp;</td>
                                         <td>
-                                            <a style="display: block; width: 16px;" href="#"><img style="display: block;" src="<?php bs() ?>public/img/email-img/social-facebook.png" alt="facebook" width="16"></a>
+                                            <a style="display: block; width: 16px;" href="#"><img style="display: block;" src="<?=bs()?>public/img/email-img/social-facebook.png" alt="facebook" width="16"></a>
                                         </td>
                                         <td>&nbsp;&nbsp;&nbsp;</td>
                                         <td>
-                                            <a style="display: block; width: 16px;" href="#"><img  style="display: block;" src="<?php bs() ?>public/img/email-img/social-twitter.png" alt="twitter" width="16"></a>
+                                            <a style="display: block; width: 16px;" href="#"><img  style="display: block;" src="<?=bs()?>public/img/email-img/social-twitter.png" alt="twitter" width="16"></a>
                                         </td>
                                         <td>&nbsp;&nbsp;&nbsp;</td>
                                         <td>
-                                            <a style="display: block; width: 16px;" href="#"><img  style="display: block;" src="<?php bs() ?>public/img/email-img/social-linkedin.png" alt="linkedin" width="16"></a>
+                                            <a style="display: block; width: 16px;" href="#"><img  style="display: block;" src="<?=bs()?>public/img/email-img/social-linkedin.png" alt="linkedin" width="16"></a>
                                         </td>
                                     </tr>
                                     </tbody></table>

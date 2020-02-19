@@ -27,7 +27,7 @@
                                     <li class="unread status-available">
                                         <a href="javascript:;">
                                             <div class="user-img">
-                                                <img src="<?php bs() ?>assets/data/profile/avatar-1.png" alt="user-image" class="img-circle img-inline">
+                                                <img src="<?=bs()?>assets/data/profile/avatar-1.png" alt="user-image" class="img-circle img-inline">
                                             </div>
                                             <div>
                                                 <span class="name">
@@ -44,7 +44,7 @@
                                     <li class=" status-away">
                                         <a href="javascript:;">
                                             <div class="user-img">
-                                                <img src="<?php bs() ?>assets/data/profile/avatar-2.png" alt="user-image" class="img-circle img-inline">
+                                                <img src="<?=bs()?>assets/data/profile/avatar-2.png" alt="user-image" class="img-circle img-inline">
                                             </div>
                                             <div>
                                                 <span class="name">
@@ -61,7 +61,7 @@
                                     <li class=" status-busy">
                                         <a href="javascript:;">
                                             <div class="user-img">
-                                                <img src="<?php bs() ?>assets/data/profile/avatar-3.png" alt="user-image" class="img-circle img-inline">
+                                                <img src="<?=bs()?>assets/data/profile/avatar-3.png" alt="user-image" class="img-circle img-inline">
                                             </div>
                                             <div>
                                                 <span class="name">
@@ -78,7 +78,7 @@
                                     <li class=" status-offline">
                                         <a href="javascript:;">
                                             <div class="user-img">
-                                                <img src="<?php bs() ?>assets/data/profile/avatar-4.png" alt="user-image" class="img-circle img-inline">
+                                                <img src="<?=bs()?>assets/data/profile/avatar-4.png" alt="user-image" class="img-circle img-inline">
                                             </div>
                                             <div>
                                                 <span class="name">
@@ -95,7 +95,7 @@
                                     <li class=" status-offline">
                                         <a href="javascript:;">
                                             <div class="user-img">
-                                                <img src="<?php bs() ?>assets/data/profile/avatar-5.png" alt="user-image" class="img-circle img-inline">
+                                                <img src="<?=bs()?>assets/data/profile/avatar-5.png" alt="user-image" class="img-circle img-inline">
                                             </div>
                                             <div>
                                                 <span class="name">
@@ -112,7 +112,7 @@
                                     <li class=" status-available">
                                         <a href="javascript:;">
                                             <div class="user-img">
-                                                <img src="<?php bs() ?>assets/data/profile/avatar-1.png" alt="user-image" class="img-circle img-inline">
+                                                <img src="<?=bs()?>assets/data/profile/avatar-1.png" alt="user-image" class="img-circle img-inline">
                                             </div>
                                             <div>
                                                 <span class="name">
@@ -129,7 +129,7 @@
                                     <li class=" status-busy">
                                         <a href="javascript:;">
                                             <div class="user-img">
-                                                <img src="<?php bs() ?>assets/data/profile/avatar-2.png" alt="user-image" class="img-circle img-inline">
+                                                <img src="<?=bs()?>assets/data/profile/avatar-2.png" alt="user-image" class="img-circle img-inline">
                                             </div>
                                             <div>
                                                 <span class="name">
@@ -146,7 +146,7 @@
                                     <li class=" status-away">
                                         <a href="javascript:;">
                                             <div class="user-img">
-                                                <img src="<?php bs() ?>assets/data/profile/avatar-3.png" alt="user-image" class="img-circle img-inline">
+                                                <img src="<?=bs()?>assets/data/profile/avatar-3.png" alt="user-image" class="img-circle img-inline">
                                             </div>
                                             <div>
                                                 <span class="name">
@@ -274,7 +274,7 @@
                 <ul class="info-menu right-links list-inline list-unstyled">
                     <li class="profile">
                         <a href="#" data-toggle="dropdown" class="toggle">
-                            <img src="<?php bs() ?>assets/data/profile/profile.jpg" alt="user-image" class="img-circle img-inline">
+                            <img src="<?=bs()?>assets/data/profile/profile.jpg" alt="user-image" class="img-circle img-inline">
                             <span>Coulibaly Tiorna <i class="fa fa-angle-down"></i></span>
                         </a>
                         <ul class="dropdown-menu profile animated fadeIn">
@@ -294,7 +294,7 @@
                                 </a>
                             </li>
                             <li class="last">
-                                <a href="<?php bs() ?>users/Auth/logout">
+                                <a href="<?=bs()?>users/Auth/logout">
                                     <i class="fa fa-lock"></i> Deconnexion
                                 </a>
                             </li>

@@ -124,10 +124,10 @@
                     <span>Layouts</span>
                 </a>
                 <ul class="sub">
-                    <li class="active"><a href="<?php bs() ?>extras/layout_boxed">Boxed Page</a></li>
-                    <li><a href="<?php bs() ?>extras/layout_horizontal">Horizontal Menu</a></li>
-                    <li><a href="<?php bs() ?>extras/mega_menu">Mega Menu</a></li>
-                    <li><a href="<?php bs() ?>extras/app_inbox" target="_blank">Email Template</a></li>
+                    <li class="active"><a href="<?=bs()?>extras/layout_boxed">Boxed Page</a></li>
+                    <li><a href="<?=bs()?>extras/layout_horizontal">Horizontal Menu</a></li>
+                    <li><a href="<?=bs()?>extras/mega_menu">Mega Menu</a></li>
+                    <li><a href="<?=bs()?>extras/app_inbox" target="_blank">Email Template</a></li>
                 </ul>
             </li>
         </ul> -->

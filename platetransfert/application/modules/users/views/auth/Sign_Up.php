@@ -13,16 +13,16 @@
     <title>Sign Up</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="<?php bs() ?>public/css/bootstrap.min.css" rel="stylesheet">
-    <link href="<?php bs() ?>public/css/bootstrap-reset.css" rel="stylesheet">
+    <link href="<?=bs()?>public/css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?=bs()?>public/css/bootstrap-reset.css" rel="stylesheet">
 
     <!--external css-->
-    <link href="<?php bs() ?>public/assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link href="<?=bs()?>public/assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
     
 
     <!-- Custom styles for this template -->
-    <link href="<?php bs() ?>public/css/style.css" rel="stylesheet">
-    <link href="<?php bs() ?>public/css/style-responsive.css" rel="stylesheet" />
+    <link href="<?=bs()?>public/css/style.css" rel="stylesheet">
+    <link href="<?=bs()?>public/css/style-responsive.css" rel="stylesheet" />
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 tooltipss and media queries -->
     <!--[if lt IE 9]>
@@ -54,7 +54,7 @@
 
     <div class="container">
 
-      <form class="form-signin" action="<?php bs() ?>users/Register/sign_up" id = 'myform' method="post">
+      <form class="form-signin" action="<?=bs()?>users/Register/sign_up" id = 'myform' method="post">
         <h2 class="form-signin-heading">registration now</h2>
         <div class="login-wrap">
             <p>Enter your personal details below</p>
@@ -79,7 +79,7 @@
 
             <div class="registration">
                 Already Registered.
-                <a class="" href="<?php bs('users') ?>">
+                <a class="" href="<?=bs('users') ?>">
                     Login
                 </a>
             </div>
@@ -96,7 +96,7 @@
 
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="<?php bs() ?>public/js/jquery.js"></script>
+  <script src="<?=bs()?>public/js/jquery.js"></script>
     
   <!-- Include all compiled plugins (below), or include individual files as needed -->    
   <script src="<?= base_url('public/js/bootstrap.min.js') ?>"></script> 

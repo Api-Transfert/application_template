@@ -1,4 +1,4 @@
-<link rel="stylesheet" type="text/css" href="<?= bs('public/assets/nestable/jquery.nestable.css') ?>" />
+<link rel="stylesheet" type="text/css" href="<?=bs('public/assets/nestable/jquery.nestable.css') ?>" />
 <style>
     #nestable_list_1{
         max-width: none;

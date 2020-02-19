@@ -11,7 +11,7 @@
                       Create Group
                   </header>
                   <div class="panel-body">
-                      <form id="wizard-validation-form" class="insert_data" action="<?php bs() ?>users/User_groups/create_group" method="post">
+                      <form id="wizard-validation-form" class="insert_data" action="<?=bs()?>users/User_groups/create_group" method="post">
                           <div>
                               <h3>Step 1</h3>
                               <section>

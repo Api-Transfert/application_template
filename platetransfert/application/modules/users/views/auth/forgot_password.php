@@ -4,7 +4,7 @@
   <title>Reset Password</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <!-- Bootstrap core CSS -->
-    <link href="<?php bs() ?>public/css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?=bs()?>public/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
       .form-gap {
@@ -33,7 +33,7 @@
               <p>You can reset your password here.</p>
               <div class="panel-body">
 
-                <form id="register-form" action="<?php bs() ?>users/auth/forgot_password" role="form" autocomplete="off" class="form" method="post">
+                <form id="register-form" action="<?=bs()?>users/auth/forgot_password" role="form" autocomplete="off" class="form" method="post">
                   <div class="form-group">
                     <div class="input-group">
                       <span class="input-group-addon"><i class="glyphicon glyphicon-envelope color-blue"></i></span>
@@ -61,7 +61,7 @@
 </html>
 
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="<?php bs() ?>public/js/jquery.js"></script>
+  <script src="<?=bs()?>public/js/jquery.js"></script>
     
   <script src="<?= base_url('public/js/bootstrap-notify.js') ?>"></script>
 

@@ -65,7 +65,7 @@
 					<div class="panel-heading">
 						<h2><i class="fa fa-user" aria-hidden="true"></i>Users</h2>
 						<div class="panel-ctrls"></div>
-						<a href="<?= bs('Users/print_users') ?>">
+						<a href="<?=bs('Users/print_users') ?>">
 							<i class="fa fa-print" style="padding-left: 90%;color: black"></i>
 						</a>
 					</div>

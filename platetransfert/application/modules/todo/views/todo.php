@@ -6,14 +6,14 @@
             <header class="panel-heading">
                 All Task List
                 <span class="pull-right">
-                    <a href="<?= bs('todo/completed_tasks/') ?>" id="loading-btn" class="btn btn-warning btn-xs"><i class="fa fa-refresh"></i> Completed Tasks</a>
+                    <a href="<?=bs('todo/completed_tasks/') ?>" id="loading-btn" class="btn btn-warning btn-xs"><i class="fa fa-refresh"></i> Completed Tasks</a>
                     <a class=" btn btn-success btn-xs" data-toggle="modal" href="#myModal"> Create New Task</a>
                 </span>
                 <div class="panel-body">
                     <div class="row">
 
                         <div class="col-md-12">
-                            <form action="<?= bs('todo/search_tasks/search_tasks') ?>" method="get">
+                            <form action="<?=bs('todo/search_tasks/search_tasks') ?>" method="get">
                                 <div class="input-group"><input type="text" placeholder="Search Here" name="task" class="input-sm form-control"> <span class="input-group-btn">
                                 <button type="submit" class="btn btn-sm btn-success"> Go!</button> </span></div>
                             </form>    
@@ -62,9 +62,9 @@
                                         <?= date('d-m-Y', strtotime($task->created_at)) ?>
                                     </td>
                                     <td>
-                                        <a href="<?= bs('todo/mark_completed/' . $task->id . '') ?>" class="btn btn-primary btn-xs"><i class="fa fa-check-circle" aria-hidden="true"></i> Mark Completed </a>
+                                        <a href="<?=bs('todo/mark_completed/' . $task->id . '') ?>" class="btn btn-primary btn-xs"><i class="fa fa-check-circle" aria-hidden="true"></i> Mark Completed </a>
                                         <a href="#update" data-toggle="modal" edit="<?= $task->id ?>" class="btn btn-info btn-xs update"><i class="fa fa-pencil"></i> Edit </a>
-                                        <a href="<?= bs('todo/delete/' . $task->id . '') ?>" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i> Delete </a>
+                                        <a href="<?=bs('todo/delete/' . $task->id . '') ?>" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i> Delete </a>
                                     </td>
                                 </tr>
 
@@ -103,7 +103,7 @@
                     <div class="col-lg-12">
                         <section class="panel">
                             <div class="panel-body">
-                                <form role="form" method="post" action="<?= bs('todo/store') ?>" enctype="multipart/form-data">
+                                <form role="form" method="post" action="<?=bs('todo/store') ?>" enctype="multipart/form-data">
                                     <div class="form-group">
                                         <label>Task Title</label>
                                         <input type="text" class="form-control" name="task_title" placeholder="Enter Task Title">
@@ -147,7 +147,7 @@
                     <div class="col-lg-12">
                         <section class="panel">
                             <div class="panel-body">
-                                <form role="form" method="post" action="<?= bs('todo/update') ?>" enctype="multipart/form-data">
+                                <form role="form" method="post" action="<?=bs('todo/update') ?>" enctype="multipart/form-data">
                                     <div class="form-group">
                                         <label>Task Title</label>
                                         <input type="text" class="form-control" name="task_title" id="title" value="" placeholder="Enter Task Title">
@@ -188,7 +188,7 @@
 
             $.ajax({
 
-                url: "<?php bs('todo/edit') ?>/" + id,
+                url: "<?=bs('todo/edit') ?>/" + id,
 
                 success: function(success) {
                     var obj = $.parseJSON(success);

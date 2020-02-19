@@ -86,7 +86,7 @@
                                     </td>
                                     <td>
                                         <div class="btn-group">
-                                            <button class="btn btn-primary dropdown-toggle p-r-10" data-toggle="dropdown" aria-expanded="false"><span class="m-r-10">Actions</span> <span class="caret m-l-10"></span></button>
+                                            <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span>Actions</span> <span class="caret m-l-10"></span></button>
                                             <ul class="dropdown-menu" role="menu">
                                                 <li><a href="<?=base_url('users/edit_user/'.$user->id);?>"><i class="fa fa-edit"></i> Modifier</a></li>
                                                 <li><a class="delete_user" data-row="#row_<?php echo $user->id?>" href="##" data-id="<?=$user->id;?>" <?=(($user->id == $this->session->userdata('user_id')) or $user->id == '1')?"disabled":null?>><i class="fa fa-trash"></i> Supprimer</a></li>

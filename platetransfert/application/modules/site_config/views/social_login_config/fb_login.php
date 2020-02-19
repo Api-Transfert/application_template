@@ -13,7 +13,7 @@
                   <div class="panel-body">
                     <div class="row">
 				 		<div class="col-md-9">
-				 		   <form action="<?= bs('site_config/fb_config') ?>" id="social_config" method="post" class="form-horizontal row-border">
+				 		   <form action="<?=bs('site_config/fb_config') ?>" id="social_config" method="post" class="form-horizontal row-border">
 				 		    <fieldset>
 				 		      <legend><i class="fa fa-facebook-square"></i> Facebook</legend>
 								<div class="form-group">

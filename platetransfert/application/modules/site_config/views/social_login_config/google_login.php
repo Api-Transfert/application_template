@@ -12,7 +12,7 @@
                   <div class="panel-body">
                     <div class="row">
 				 		<div class="col-md-9">
-				 		   <form action="<?= bs('site_config/google_config') ?>" method="post" class="form-horizontal row-border" id="social_config">
+				 		   <form action="<?=bs('site_config/google_config') ?>" method="post" class="form-horizontal row-border" id="social_config">
 				 		    <fieldset>
 				 		      <legend><i class="fa fa-google-plus"></i> Google</legend>
 								<div class="form-group">

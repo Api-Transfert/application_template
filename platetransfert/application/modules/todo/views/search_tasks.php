@@ -6,14 +6,14 @@
             <header class="panel-heading">
                 All Searched Task List
                 <span class="pull-right">
-                    <a href="<?= bs('todo/completed_tasks/') ?>" id="loading-btn" class="btn btn-warning btn-xs"><i class="fa fa-refresh"></i> Completed Tasks</a>
+                    <a href="<?=bs('todo/completed_tasks/') ?>" id="loading-btn" class="btn btn-warning btn-xs"><i class="fa fa-refresh"></i> Completed Tasks</a>
                     <a class=" btn btn-success btn-xs" href="<?= base_url('todo') ?>"> All Task</a>
                 </span>
                 <div class="panel-body">
                     <div class="row">
 
                         <div class="col-md-12">
-                            <form action="<?= bs('todo/search_tasks/search_tasks') ?>" method="get">
+                            <form action="<?=bs('todo/search_tasks/search_tasks') ?>" method="get">
                                 <div class="input-group"><input type="text" placeholder="Search Here" name="task" class="input-sm form-control"> <span class="input-group-btn">
                                         <button type="submit" class="btn btn-sm btn-success"> Go!</button> </span>
                                 </div>

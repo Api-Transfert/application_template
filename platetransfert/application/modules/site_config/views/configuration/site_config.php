@@ -172,7 +172,7 @@ $(document).ready(function()
 	  var enable = $('.status_enable').val();
 
 	  $.ajax({
-	    url : "<?php bs('site_config/reg_status')?>",
+	    url : "<?=bs('site_config/reg_status')?>",
 	    method :'POST',
 	    data : {status:enable},
 	    dataType : 'text',
@@ -192,7 +192,7 @@ $(document).ready(function()
 	  var disable = $('.status_disable').val();
 
 	  $.ajax({
-	    url : "<?php bs('site_config/reg_status')?>",
+	    url : "<?=bs('site_config/reg_status')?>",
 	    method :'POST',
 	    data : {status:disable},
 	    dataType : 'text',

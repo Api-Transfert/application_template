@@ -11,17 +11,17 @@
     <title>Mega Menu</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="<?php bs() ?>public/css/bootstrap.min.css" rel="stylesheet">
-    <link href="<?php bs() ?>public/css/bootstrap-reset.css" rel="stylesheet">
+    <link href="<?=bs()?>public/css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?=bs()?>public/css/bootstrap-reset.css" rel="stylesheet">
     <!--external css-->
-    <link href="<?php bs() ?>public/assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link href="<?=bs()?>public/assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
 
     <!-- Yamm styles-->
-    <link href="<?php bs() ?>public/css/yamm.css" rel="stylesheet">
+    <link href="<?=bs()?>public/css/yamm.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="<?php bs() ?>public/css/style.css" rel="stylesheet">
-    <link href="<?php bs() ?>public/css/style-responsive.css" rel="stylesheet" />
+    <link href="<?=bs()?>public/css/style.css" rel="stylesheet">
+    <link href="<?=bs()?>public/css/style-responsive.css" rel="stylesheet" />
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 tooltipss and media queries -->
     <!--[if lt IE 9]>
@@ -260,19 +260,19 @@
   </section>
 
     <!-- js placed at the end of the document so the pages load faster -->
-    <script src="<?php bs() ?>public/js/jquery.js"></script>
-    <script src="<?php bs() ?>public/js/bootstrap.min.js"></script>
-    <script class="include" type="text/javascript" src="<?php bs() ?>public/js/jquery.dcjqaccordion.2.7.js"></script>
-    <script type="text/javascript" src="<?php bs() ?>public/js/hover-dropdown.js"></script>
-    <script src="<?php bs() ?>public/js/jquery.scrollTo.min.js"></script>
-    <script src="<?php bs() ?>public/js/jquery.nicescroll.js" type="text/javascript"></script>
-    <script src="<?php bs() ?>public/js/respond.min.js" ></script>
+    <script src="<?=bs()?>public/js/jquery.js"></script>
+    <script src="<?=bs()?>public/js/bootstrap.min.js"></script>
+    <script class="include" type="text/javascript" src="<?=bs()?>public/js/jquery.dcjqaccordion.2.7.js"></script>
+    <script type="text/javascript" src="<?=bs()?>public/js/hover-dropdown.js"></script>
+    <script src="<?=bs()?>public/js/jquery.scrollTo.min.js"></script>
+    <script src="<?=bs()?>public/js/jquery.nicescroll.js" type="text/javascript"></script>
+    <script src="<?=bs()?>public/js/respond.min.js" ></script>
 
   <!--right slidebar-->
-  <script src="<?php bs() ?>public/js/slidebars.min.js"></script>
+  <script src="<?=bs()?>public/js/slidebars.min.js"></script>
 
     <!--common script for all pages-->
-    <script src="<?php bs() ?>public/js/common-scripts.js"></script>
+    <script src="<?=bs()?>public/js/common-scripts.js"></script>
 
   <script>
       $(document).on('click', '.yamm .dropdown-menu', function(e) {

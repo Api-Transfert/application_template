@@ -11,7 +11,7 @@
 
             <li class="user-row " id='chat_user_1' data-user-id='1'>
                 <div class="user-img">
-                    <a href="#"><img src="<?php bs()?>assets/data/profile/avatar-1.png" alt=""></a>
+                    <a href="#"><img src="<?=bs()?>assets/data/profile/avatar-1.png" alt=""></a>
                 </div>
                 <div class="user-info">
                     <h4><a href="#">Joge Lucky</a></h4>
@@ -23,7 +23,7 @@
             </li>
             <li class="user-row " id='chat_user_2' data-user-id='2'>
                 <div class="user-img">
-                    <a href="#"><img src="<?php bs()?>assets/data/profile/avatar-2.png" alt=""></a>
+                    <a href="#"><img src="<?=bs()?>assets/data/profile/avatar-2.png" alt=""></a>
                 </div>
                 <div class="user-info">
                     <h4><a href="#">Folisise Chosiel</a></h4>
@@ -35,7 +35,7 @@
             </li>
             <li class="user-row " id='chat_user_3' data-user-id='3'>
                 <div class="user-img">
-                    <a href="#"><img src="<?php bs()?>assets/data/profile/avatar-3.png" alt=""></a>
+                    <a href="#"><img src="<?=bs()?>assets/data/profile/avatar-3.png" alt=""></a>
                 </div>
                 <div class="user-info">
                     <h4><a href="#">Aron Gonzalez</a></h4>
@@ -53,7 +53,7 @@
 
             <li class="user-row " id='chat_user_4' data-user-id='4'>
                 <div class="user-img">
-                    <a href="#"><img src="<?php bs()?>assets/data/profile/avatar-4.png" alt=""></a>
+                    <a href="#"><img src="<?=bs()?>assets/data/profile/avatar-4.png" alt=""></a>
                 </div>
                 <div class="user-info">
                     <h4><a href="#">Chris Fox</a></h4>
@@ -65,7 +65,7 @@
             </li>
             <li class="user-row " id='chat_user_5' data-user-id='5'>
                 <div class="user-img">
-                    <a href="#"><img src="<?php bs()?>assets/data/profile/avatar-5.png" alt=""></a>
+                    <a href="#"><img src="<?=bs()?>assets/data/profile/avatar-5.png" alt=""></a>
                 </div>
                 <div class="user-info">
                     <h4><a href="#">Mogen Polish</a></h4>
@@ -77,7 +77,7 @@
             </li>
             <li class="user-row " id='chat_user_6' data-user-id='6'>
                 <div class="user-img">
-                    <a href="#"><img src="<?php bs()?>assets/data/profile/avatar-1.png" alt=""></a>
+                    <a href="#"><img src="<?=bs()?>assets/data/profile/avatar-1.png" alt=""></a>
                 </div>
                 <div class="user-info">
                     <h4><a href="#">Smith Carter</a></h4>
@@ -89,7 +89,7 @@
             </li>
             <li class="user-row " id='chat_user_7' data-user-id='7'>
                 <div class="user-img">
-                    <a href="#"><img src="<?php bs()?>assets/data/profile/avatar-2.png" alt=""></a>
+                    <a href="#"><img src="<?=bs()?>assets/data/profile/avatar-2.png" alt=""></a>
                 </div>
                 <div class="user-info">
                     <h4><a href="#">Amilia Gozenal</a></h4>
@@ -101,7 +101,7 @@
             </li>
             <li class="user-row " id='chat_user_8' data-user-id='8'>
                 <div class="user-img">
-                    <a href="#"><img src="<?php bs()?>assets/data/profile/avatar-3.png" alt=""></a>
+                    <a href="#"><img src="<?=bs()?>assets/data/profile/avatar-3.png" alt=""></a>
                 </div>
                 <div class="user-info">
                     <h4><a href="#">Tahir Jemyship</a></h4>
@@ -113,7 +113,7 @@
             </li>
             <li class="user-row " id='chat_user_9' data-user-id='9'>
                 <div class="user-img">
-                    <a href="#"><img src="<?php bs()?>assets/data/profile/avatar-4.png" alt=""></a>
+                    <a href="#"><img src="<?=bs()?>assets/data/profile/avatar-4.png" alt=""></a>
                 </div>
                 <div class="user-info">
                     <h4><a href="#">Johanson Wright</a></h4>
@@ -125,7 +125,7 @@
             </li>
             <li class="user-row " id='chat_user_10' data-user-id='10'>
                 <div class="user-img">
-                    <a href="#"><img src="<?php bs()?>assets/data/profile/avatar-5.png" alt=""></a>
+                    <a href="#"><img src="<?=bs()?>assets/data/profile/avatar-5.png" alt=""></a>
                 </div>
                 <div class="user-info">
                     <h4><a href="#">Loni Tindall</a></h4>
@@ -137,7 +137,7 @@
             </li>
             <li class="user-row " id='chat_user_11' data-user-id='11'>
                 <div class="user-img">
-                    <a href="#"><img src="<?php bs()?>assets/data/profile/avatar-1.png" alt=""></a>
+                    <a href="#"><img src="<?=bs()?>assets/data/profile/avatar-1.png" alt=""></a>
                 </div>
                 <div class="user-info">
                     <h4><a href="#">Natcho Herlaey</a></h4>
@@ -149,7 +149,7 @@
             </li>
             <li class="user-row " id='chat_user_12' data-user-id='12'>
                 <div class="user-img">
-                    <a href="#"><img src="<?php bs()?>assets/data/profile/avatar-2.png" alt=""></a>
+                    <a href="#"><img src="<?=bs()?>assets/data/profile/avatar-2.png" alt=""></a>
                 </div>
                 <div class="user-info">
                     <h4><a href="#">Shakira Swedan</a></h4>

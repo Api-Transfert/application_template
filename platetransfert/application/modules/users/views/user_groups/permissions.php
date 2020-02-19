@@ -1,6 +1,6 @@
 <!-- Main content start -->
 
-<link rel="stylesheet" type="text/css" href="<?= bs('public/assets/nestable/jquery.nestable.css') ?>" />
+<link rel="stylesheet" type="text/css" href="<?=bs('public/assets/nestable/jquery.nestable.css') ?>" />
 
 <section id="main-content">
     <section class="wrapper">
@@ -25,7 +25,7 @@
                                         <li class="dd-item" data-id="<?= $head_perm->perm_id ?>">
                                             <div class="dd-handle">
                                                 <?= $head_perm->icon ?> <?= $head_perm->perm_name ?>
-                                                <a href="<?= bs() ?>users/Permissions/delete_perm/<?= $head_perm->perm_id ?>" class="pull-right" style="padding-left:5px">
+                                                <a href="<?=bs() ?>users/Permissions/delete_perm/<?= $head_perm->perm_id ?>" class="pull-right" style="padding-left:5px">
                                                     <i class="fa fa-trash" aria-hidden="true"></i>
                                                 </a>
                                                 <a href="" data-level="<?= $head_perm->level ?>" data-id="<?= $head_perm->perm_id ?>" class="pull-right update">
@@ -42,7 +42,7 @@
                                                             <div class="dd-handle">
                                                                 <?= $sub_perm->icon ?> <?= $sub_perm->perm_name ?>
 
-                                                                <a href="<?= bs() ?>users/Permissions/delete_perm/<?= $sub_perm->perm_id ?>" class="pull-right" style="padding-left:5px">
+                                                                <a href="<?=bs() ?>users/Permissions/delete_perm/<?= $sub_perm->perm_id ?>" class="pull-right" style="padding-left:5px">
                                                                     <i class="fa fa-trash" aria-hidden="true"></i>
                                                                 </a>
                                                                 <a href="" data-level="<?= $sub_perm->level ?>" data-id="<?= $sub_perm->perm_id ?>" class="pull-right update">
@@ -302,7 +302,7 @@
 
             $.ajax({
 
-                url: "<?php bs('users/permissions/get_perm') ?>/" + id,
+                url: "<?=bs('users/permissions/get_perm') ?>/" + id,
                 type: 'POST',
                 data: {
                     id: id,

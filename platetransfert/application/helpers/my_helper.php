@@ -14,7 +14,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	function bs($value = '')
 	{
 		// public $url = ""
-		echo base_url($value);
+		return base_url($value);
 	}
 	// function fa($name='',$attr='')
 	// {

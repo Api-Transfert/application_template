@@ -11,31 +11,31 @@
     <title>Login System</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="<?= bs('public/css/bootstrap.min.css') ?>" rel="stylesheet">
-    <link href="<?= bs('public/css/bootstrap-reset.css') ?>" rel="stylesheet">
+    <link href="<?=bs('public/css/bootstrap.min.css') ?>" rel="stylesheet">
+    <link href="<?=bs('public/css/bootstrap-reset.css') ?>" rel="stylesheet">
     <!--external css-->
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <link href="<?= bs('public/assets/jquery-easy-pie-chart/jquery.easy-pie-chart.css') ?>" rel="stylesheet" type="text/css" media="screen"/>
-    <link rel="stylesheet" href="<?= bs('public/css/owl.carousel.css') ?>" type="text/css">
+    <link href="<?=bs('public/assets/jquery-easy-pie-chart/jquery.easy-pie-chart.css') ?>" rel="stylesheet" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="<?=bs('public/css/owl.carousel.css') ?>" type="text/css">
 
     <!--right slidebar-->
-    <link href="<?= bs('public/css/slidebars.css') ?>" rel="stylesheet">
+    <link href="<?=bs('public/css/slidebars.css') ?>" rel="stylesheet">
 
     <!--Form Wizard-->
-    <link rel="stylesheet" type="text/css" href="<?php bs() ?>public/css/jquery.steps.css" />
+    <link rel="stylesheet" type="text/css" href="<?=bs()?>public/css/jquery.steps.css" />
 
     <!-- Custom styles for this template -->
-    <link href="<?= bs('public/css/style.css') ?>" rel="stylesheet">
-    <link href="<?= bs('public/css/style-responsive.css') ?>" rel="stylesheet" />
+    <link href="<?=bs('public/css/style.css') ?>" rel="stylesheet">
+    <link href="<?=bs('public/css/style-responsive.css') ?>" rel="stylesheet" />
 
     <!--dynamic table-->
-    <link href="<?php bs() ?>public/assets/advanced-datatable/media/css/demo_page.css" rel="stylesheet" />
-    <link href="<?php bs() ?>public/assets/advanced-datatable/media/css/demo_table.css" rel="stylesheet" />
-    <link rel="stylesheet" href="<?php bs() ?>public/assets/data-tables/DT_bootstrap.css" />
+    <link href="<?=bs()?>public/assets/advanced-datatable/media/css/demo_page.css" rel="stylesheet" />
+    <link href="<?=bs()?>public/assets/advanced-datatable/media/css/demo_table.css" rel="stylesheet" />
+    <link rel="stylesheet" href="<?=bs()?>public/assets/data-tables/DT_bootstrap.css" />
 
-    <script src="<?= bs('public/js/jquery.js') ?>"></script>
+    <script src="<?=bs('public/js/jquery.js') ?>"></script>
     
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 tooltipss and media queries -->
@@ -82,7 +82,7 @@
           <i class="fa fa-bars"></i>
       </div>
         <!--logo start-->
-        <a href="<?php bs() ?>users/Auth" class="logo">Code<span> Master</span></a>
+        <a href="<?=bs()?>users/Auth" class="logo">Code<span> Master</span></a>
         <!--logo end-->
         <div class="nav notify-row" id="top_menu">
             <!--  notification start -->
@@ -183,7 +183,7 @@
                     </li>
                     <li>
                         <a href="#">
-                            <span class="photo"><img alt="avatar" src="<?= bs('public/img/avatar-mini.jpg') ?>"></span>
+                            <span class="photo"><img alt="avatar" src="<?=bs('public/img/avatar-mini.jpg') ?>"></span>
                             <span class="subject">
                             <span class="from">Jonathan Smith</span>
                             <span class="time">Just now</span>
@@ -195,7 +195,7 @@
                     </li>
                     <li>
                         <a href="#">
-                            <span class="photo"><img alt="avatar" src="<?= bs('public/img/avatar-mini2.jpg') ?>"></span>
+                            <span class="photo"><img alt="avatar" src="<?=bs('public/img/avatar-mini2.jpg') ?>"></span>
                             <span class="subject">
                             <span class="from">Jhon Doe</span>
                             <span class="time">10 mins</span>
@@ -207,7 +207,7 @@
                     </li>
                     <li>
                         <a href="#">
-                            <span class="photo"><img alt="avatar" src="<?= bs('public/img/avatar-mini3.jpg') ?>"></span>
+                            <span class="photo"><img alt="avatar" src="<?=bs('public/img/avatar-mini3.jpg') ?>"></span>
                             <span class="subject">
                             <span class="from">Jason Stathum</span>
                             <span class="time">3 hrs</span>
@@ -219,7 +219,7 @@
                     </li>
                     <li>
                         <a href="#">
-                            <span class="photo"><img alt="avatar" src="<?= bs('public/img/avatar-mini4.jpg') ?>"></span>
+                            <span class="photo"><img alt="avatar" src="<?=bs('public/img/avatar-mini4.jpg') ?>"></span>
                             <span class="subject">
                             <span class="from">Jondi Rose</span>
                             <span class="time">Just now</span>
@@ -300,19 +300,19 @@
             <!-- user login dropdown start-->
             <li class="dropdown">
                 <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                    <img alt="" src="<?= bs('public/img/avatar1_small.jpg') ?>">
+                    <img alt="" src="<?=bs('public/img/avatar1_small.jpg') ?>">
                     <span class="username">Jhon Doue</span>
                     <b class="caret"></b>
                 </a>
                 <ul class="dropdown-menu extended logout">
                     <div class="log-arrow-up"></div>
                     <li>
-                        <a href="<?php bs() ?>users/profile">
+                        <a href="<?=bs()?>users/profile">
                             <i class=" fa fa-suitcase"></i>Profile
                         </a>
                     </li>
                     <li>
-                        <a href="<?php bs() ?>users/Auth/logout"><i class="fa fa-key"></i> Log Out</a>
+                        <a href="<?=bs()?>users/Auth/logout"><i class="fa fa-key"></i> Log Out</a>
                     </li>
                     <li><a href="#"></a></li>
                 </ul>
