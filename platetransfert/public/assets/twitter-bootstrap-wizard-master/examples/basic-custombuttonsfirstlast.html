@@ -3,8 +3,8 @@
   <head>
     <title>Wizard With Custom Next/Previous Buttons & First and Last buttons</title>
     <!-- Bootstrap -->
-    <link href="<?php bs() ?>bootstrap/css/bootstrap.min.css" rel="stylesheet">
-	<link href="<?php bs() ?>prettify.css" rel="stylesheet">
+    <link href="<?=bs()?>bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="<?=bs()?>prettify.css" rel="stylesheet">
   </head>
   <body>
     <div class='container'>
@@ -127,9 +127,9 @@ $(document).ready(function() {
  		</div>
 	</div>
     <script src="http://code.jquery.com/jquery-latest.js"></script>
-    <script src="<?php bs() ?>bootstrap/js/bootstrap.min.js"></script>
-	<script src="<?php bs() ?>jquery.bootstrap.wizard.js"></script>
-	<script src="<?php bs() ?>prettify.js"></script>
+    <script src="<?=bs()?>bootstrap/js/bootstrap.min.js"></script>
+	<script src="<?=bs()?>jquery.bootstrap.wizard.js"></script>
+	<script src="<?=bs()?>prettify.js"></script>
 	<script>
 	$(document).ready(function() {
 	  	$('#rootwizard').bootstrapWizard({'nextSelector': '.button-next', 'previousSelector': '.button-previous', 'firstSelector': '.button-first', 'lastSelector': '.button-last'});	

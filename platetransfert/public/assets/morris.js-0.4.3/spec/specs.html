@@ -3,7 +3,7 @@
   <meta charset="utf-8">
   <title>morris.js tests</title>
   <link rel="stylesheet" href="vendor/mocha-1.6.0.css" type="text/css" media="screen" />
-  <link rel="stylesheet" href="<?php bs() ?>morris.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="<?=bs()?>morris.css" type="text/css" media="screen" />
   <script src="vendor/jquery-1.8.2.min.js"></script>
   <script type="text/javascript" src="vendor/raphael-2.1.0.min.js"></script>
 </head>
@@ -23,8 +23,8 @@
     should = chai.should();
   </script>
 
-  <script type="text/javascript" src="<?php bs() ?>morris.js"></script>
-  <script type="text/javascript" src="<?php bs() ?>build/spec.js"></script>
+  <script type="text/javascript" src="<?=bs()?>morris.js"></script>
+  <script type="text/javascript" src="<?=bs()?>build/spec.js"></script>
   <div id="test" style="width: 400px; height: 200px;"></div>
   <script>
     if (navigator.userAgent.indexOf('PhantomJS') < 0) {

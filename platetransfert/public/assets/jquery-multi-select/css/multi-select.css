@@ -1,5 +1,5 @@
 .ms-container{
-  background: transparent url('<?php bs() ?>img/switch.png') no-repeat 50% 50%;
+  background: transparent url('<?=bs()?>img/switch.png') no-repeat 50% 50%;
   width: 370px;
 }
 

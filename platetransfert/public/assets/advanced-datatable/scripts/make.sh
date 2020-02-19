@@ -1,14 +1,14 @@
 #!/bin/sh
 
-cd <?php bs() ?>media/src
+cd <?=bs()?>media/src
 
 # DEFAULTS
 CLOSURE="/usr/local/closure_compiler/compiler.jar"
 JSDOC="/usr/local/jsdoc/jsdoc"
 CMD=$1
 
-MAIN_FILE="<?php bs() ?>js/jquery.dataTables.js"
-MIN_FILE="<?php bs() ?>js/jquery.dataTables.min.js"
+MAIN_FILE="<?=bs()?>js/jquery.dataTables.js"
+MIN_FILE="<?=bs()?>js/jquery.dataTables.min.js"
 VERSION=$(grep " * @version     " DataTables.js | awk -F" " '{ print $3 }')
 
 echo ""
@@ -45,7 +45,7 @@ mv DataTables.js.build $MAIN_FILE
 if [ "$CMD" != "debug" ]; then
 	if [ "$CMD" = "jshint" -o "$CMD" = "" -o "$CMD" = "cdn" ]; then
 		echo "  JSHint"
-		jshint $MAIN_FILE --config <?php bs() ?><?php bs() ?>scripts/jshint.config
+		jshint $MAIN_FILE --config <?=bs()?>scripts/jshint.config
 		if [ $? -ne 0 ]; then
 			echo "    Errors occured - exiting"
 			exit 1
@@ -80,28 +80,28 @@ if [ "$CMD" != "debug" ]; then
 
 	if [ "$CMD" = "docs" -o "$CMD" = "" ]; then
 		echo "  Documentation"
-		$JSDOC -d <?php bs() ?><?php bs() ?>docs -t JSDoc-DataTables $MAIN_FILE
+		$JSDOC -d <?=bs()?>docs -t JSDoc-DataTables $MAIN_FILE
 	fi
 
 	if [ "$CMD" = "cdn" ]; then
 		echo "  CDN"
-		if [ -d <?php bs() ?><?php bs() ?>cdn ]; then
-			rm -Rf <?php bs() ?><?php bs() ?>cdn
+		if [ -d <?=bs()?>cdn ]; then
+			rm -Rf <?=bs()?>cdn
 		fi
-		mkdir <?php bs() ?><?php bs() ?>cdn
-		mkdir <?php bs() ?><?php bs() ?>cdn/css
-		cp $MAIN_FILE <?php bs() ?><?php bs() ?>cdn
-		cp $MIN_FILE <?php bs() ?><?php bs() ?>cdn
-		cp <?php bs() ?>css/jquery.dataTables.css <?php bs() ?><?php bs() ?>cdn/css
-		cp <?php bs() ?>css/jquery.dataTables_themeroller.css <?php bs() ?><?php bs() ?>cdn/css
-		cp -r <?php bs() ?>images <?php bs() ?><?php bs() ?>cdn/
-		rm <?php bs() ?><?php bs() ?>cdn/images/Sorting\ icons.psd
+		mkdir <?=bs()?>cdn
+		mkdir <?=bs()?>cdn/css
+		cp $MAIN_FILE <?=bs()?>cdn
+		cp $MIN_FILE <?=bs()?>cdn
+		cp <?=bs()?>css/jquery.dataTables.css <?=bs()?>cdn/css
+		cp <?=bs()?>css/jquery.dataTables_themeroller.css <?=bs()?>cdn/css
+		cp -r <?=bs()?>images <?=bs()?>cdn/
+		rm <?=bs()?>cdn/images/Sorting\ icons.psd
 	fi
 fi
 
 
 # Back to DataTables root dir
-cd <?php bs() ?>..
+cd <?=bs()?>..
 
 #
 # Packaging files

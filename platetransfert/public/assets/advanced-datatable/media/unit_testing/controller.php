@@ -40,7 +40,7 @@
 			}
 		</style>
 		
-		<script type="text/javascript" language="javascript" src="<?php bs() ?>js/jquery.js"></script>
+		<script type="text/javascript" language="javascript" src="<?=bs()?>js/jquery.js"></script>
 		<script type="text/javascript" charset="utf-8">
 			var gaoTest = [
 			<?php

@@ -784,7 +784,7 @@ var sinon = (function (buster) {
     return sinon;
 }(typeof buster == "object" && buster));
 
-/* @depend <?php bs() ?>sinon.js */
+/* @depend <?=bs()?>sinon.js */
 /*jslint eqeqeq: false, onevar: false, plusplus: false*/
 /*global module, require, sinon*/
 /**
@@ -800,7 +800,7 @@ var sinon = (function (buster) {
     var commonJSModule = typeof module == "object" && typeof require == "function";
 
     if (!sinon && commonJSModule) {
-        sinon = require("<?php bs() ?>sinon");
+        sinon = require("<?=bs()?>sinon");
     }
 
     if (!sinon) {
@@ -1024,7 +1024,7 @@ var sinon = (function (buster) {
 }(typeof sinon == "object" && sinon || null));
 
 /**
- * @depend <?php bs() ?>sinon.js
+ * @depend <?=bs()?>sinon.js
  * @depend match.js
  */
 /*jslint eqeqeq: false, onevar: false, plusplus: false*/
@@ -1046,7 +1046,7 @@ var sinon = (function (buster) {
     var slice = Array.prototype.slice;
 
     if (!sinon && commonJSModule) {
-        sinon = require("<?php bs() ?>sinon");
+        sinon = require("<?=bs()?>sinon");
     }
 
     if (!sinon) {
@@ -1557,7 +1557,7 @@ var sinon = (function (buster) {
 }(typeof sinon == "object" && sinon || null));
 
 /**
- * @depend <?php bs() ?>sinon.js
+ * @depend <?=bs()?>sinon.js
  * @depend spy.js
  */
 /*jslint eqeqeq: false, onevar: false*/
@@ -1575,7 +1575,7 @@ var sinon = (function (buster) {
     var commonJSModule = typeof module == "object" && typeof require == "function";
 
     if (!sinon && commonJSModule) {
-        sinon = require("<?php bs() ?>sinon");
+        sinon = require("<?=bs()?>sinon");
     }
 
     if (!sinon) {
@@ -1912,7 +1912,7 @@ var sinon = (function (buster) {
 }(typeof sinon == "object" && sinon || null));
 
 /**
- * @depend <?php bs() ?>sinon.js
+ * @depend <?=bs()?>sinon.js
  * @depend stub.js
  */
 /*jslint eqeqeq: false, onevar: false, nomen: false*/
@@ -1931,7 +1931,7 @@ var sinon = (function (buster) {
     var push = [].push;
 
     if (!sinon && commonJSModule) {
-        sinon = require("<?php bs() ?>sinon");
+        sinon = require("<?=bs()?>sinon");
     }
 
     if (!sinon) {
@@ -2335,7 +2335,7 @@ var sinon = (function (buster) {
 }(typeof sinon == "object" && sinon || null));
 
 /**
- * @depend <?php bs() ?>sinon.js
+ * @depend <?=bs()?>sinon.js
  * @depend stub.js
  * @depend mock.js
  */
@@ -2356,7 +2356,7 @@ var sinon = (function (buster) {
     var hasOwnProperty = Object.prototype.hasOwnProperty;
 
     if (!sinon && commonJSModule) {
-        sinon = require("<?php bs() ?>sinon");
+        sinon = require("<?=bs()?>sinon");
     }
 
     if (!sinon) {
@@ -2911,7 +2911,7 @@ if (typeof sinon == "undefined") {
 }());
 
 /**
- * @depend <?php bs() ?><?php bs() ?>sinon.js
+ * @depend <?=bs()?>sinon.js
  * @depend event.js
  */
 /*jslint eqeqeq: false, onevar: false*/
@@ -3667,7 +3667,7 @@ if (typeof module == "object" && typeof require == "function") {
 }());
 
 /**
- * @depend <?php bs() ?>sinon.js
+ * @depend <?=bs()?>sinon.js
  * @depend collection.js
  * @depend util/fake_timers.js
  * @depend util/fake_server_with_clock.js
@@ -3685,7 +3685,7 @@ if (typeof module == "object" && typeof require == "function") {
  */
 
 if (typeof module == "object" && typeof require == "function") {
-    var sinon = require("<?php bs() ?>sinon");
+    var sinon = require("<?=bs()?>sinon");
     sinon.extend(sinon, require("./util/fake_timers"));
 }
 
@@ -3792,7 +3792,7 @@ if (typeof module == "object" && typeof require == "function") {
 }());
 
 /**
- * @depend <?php bs() ?>sinon.js
+ * @depend <?=bs()?>sinon.js
  * @depend stub.js
  * @depend mock.js
  * @depend sandbox.js
@@ -3812,7 +3812,7 @@ if (typeof module == "object" && typeof require == "function") {
     var commonJSModule = typeof module == "object" && typeof require == "function";
 
     if (!sinon && commonJSModule) {
-        sinon = require("<?php bs() ?>sinon");
+        sinon = require("<?=bs()?>sinon");
     }
 
     if (!sinon) {
@@ -3867,7 +3867,7 @@ if (typeof module == "object" && typeof require == "function") {
 }(typeof sinon == "object" && sinon || null));
 
 /**
- * @depend <?php bs() ?>sinon.js
+ * @depend <?=bs()?>sinon.js
  * @depend test.js
  */
 /*jslint eqeqeq: false, onevar: false, eqeqeq: false*/
@@ -3885,7 +3885,7 @@ if (typeof module == "object" && typeof require == "function") {
     var commonJSModule = typeof module == "object" && typeof require == "function";
 
     if (!sinon && commonJSModule) {
-        sinon = require("<?php bs() ?>sinon");
+        sinon = require("<?=bs()?>sinon");
     }
 
     if (!sinon || !Object.prototype.hasOwnProperty) {
@@ -3964,7 +3964,7 @@ if (typeof module == "object" && typeof require == "function") {
 }(typeof sinon == "object" && sinon || null));
 
 /**
- * @depend <?php bs() ?>sinon.js
+ * @depend <?=bs()?>sinon.js
  * @depend stub.js
  */
 /*jslint eqeqeq: false, onevar: false, nomen: false, plusplus: false*/
@@ -3984,7 +3984,7 @@ if (typeof module == "object" && typeof require == "function") {
     var assert;
 
     if (!sinon && commonJSModule) {
-        sinon = require("<?php bs() ?>sinon");
+        sinon = require("<?=bs()?>sinon");
     }
 
     if (!sinon) {

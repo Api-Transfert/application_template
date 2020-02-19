@@ -56,8 +56,8 @@ page.onError = function (msg, trace) {
 
 var _openPath = phantom.args[0].replace(/^.*(\\|\/)/, '');
 var openPath = _openPath;
-var origdir = '<?php bs() ?>js/';
-var basedir = '<?php bs() ?>instrumented/';
+var origdir = '<?=bs()?>js/';
+var basedir = '<?=bs()?>instrumented/';
 var coverageBase = fs.read('_coverage.html');
 
 if (fs.exists(basedir)){

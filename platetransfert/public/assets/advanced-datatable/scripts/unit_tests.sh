@@ -14,7 +14,7 @@ if [ ! "$ENABLE" = "Enable" -a ! "$ENABLE" = "Disable" -o "ENABLE" = "-h" ]; the
 	exit 1
 fi
 
-cd <?php bs() ?>media/unit_testing
+cd <?=bs()?>media/unit_testing
 
 if [ "$ENABLE" = "Enable" ]; then
 	if [ ! -d tests ]; then

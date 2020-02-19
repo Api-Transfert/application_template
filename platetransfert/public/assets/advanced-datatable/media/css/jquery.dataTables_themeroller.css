@@ -147,13 +147,13 @@ table.dataTable tr.even td.sorting_3 { background-color: #F9F9FF; }
 	margin-left: 10px;
 }
 
-.paginate_enabled_previous { background: url('<?php bs() ?>images/back_enabled.png') no-repeat top left; }
-.paginate_enabled_previous:hover { background: url('<?php bs() ?>images/back_enabled_hover.png') no-repeat top left; }
-.paginate_disabled_previous { background: url('<?php bs() ?>images/back_disabled.png') no-repeat top left; }
+.paginate_enabled_previous { background: url('<?=bs()?>images/back_enabled.png') no-repeat top left; }
+.paginate_enabled_previous:hover { background: url('<?=bs()?>images/back_enabled_hover.png') no-repeat top left; }
+.paginate_disabled_previous { background: url('<?=bs()?>images/back_disabled.png') no-repeat top left; }
 
-.paginate_enabled_next { background: url('<?php bs() ?>images/forward_enabled.png') no-repeat top right; }
-.paginate_enabled_next:hover { background: url('<?php bs() ?>images/forward_enabled_hover.png') no-repeat top right; }
-.paginate_disabled_next { background: url('<?php bs() ?>images/forward_disabled.png') no-repeat top right; }
+.paginate_enabled_next { background: url('<?=bs()?>images/forward_enabled.png') no-repeat top right; }
+.paginate_enabled_next:hover { background: url('<?=bs()?>images/forward_enabled_hover.png') no-repeat top right; }
+.paginate_disabled_next { background: url('<?=bs()?>images/forward_disabled.png') no-repeat top right; }
 
 /* Full number pagination */
 .paging_full_numbers a:active {

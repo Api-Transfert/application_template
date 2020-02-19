@@ -33,11 +33,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
 <head>
   <title>Live Cropping Demo</title>
   <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
-  <script src="<?php bs() ?>js/jquery.min.js"></script>
-  <script src="<?php bs() ?>js/jquery.Jcrop.js"></script>
+  <script src="<?=bs()?>js/jquery.min.js"></script>
+  <script src="<?=bs()?>js/jquery.Jcrop.js"></script>
   <link rel="stylesheet" href="demo_files/main.css" type="text/css" />
   <link rel="stylesheet" href="demo_files/demos.css" type="text/css" />
-  <link rel="stylesheet" href="<?php bs() ?>css/jquery.Jcrop.css" type="text/css" />
+  <link rel="stylesheet" href="<?=bs()?>css/jquery.Jcrop.css" type="text/css" />
 
 <script type="text/javascript">
 
@@ -88,8 +88,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
 
 <div class="page-header">
 <ul class="breadcrumb first">
-  <li><a href="<?php bs() ?>index.html">Jcrop</a> <span class="divider">/</span></li>
-  <li><a href="<?php bs() ?>index.html">Demos</a> <span class="divider">/</span></li>
+  <li><a href="<?=bs()?>index.html">Jcrop</a> <span class="divider">/</span></li>
+  <li><a href="<?=bs()?>index.html">Demos</a> <span class="divider">/</span></li>
   <li class="active">Live Demo (Requires PHP)</li>
 </ul>
 <h1>Server-based Cropping Behavior</h1>

@@ -2308,8 +2308,8 @@ fieldset[disabled] .note-editor .btn-link:focus {
 }
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url('<?php bs() ?>fonts/glyphicons-halflings-regular.eot');
-  src: url('<?php bs() ?>fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('<?php bs() ?>fonts/glyphicons-halflings-regular.woff') format('woff'), url('<?php bs() ?>fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('<?php bs() ?>fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+  src: url('<?=bs()?>fonts/glyphicons-halflings-regular.eot');
+  src: url('<?=bs()?>fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('<?=bs()?>fonts/glyphicons-halflings-regular.woff') format('woff'), url('<?=bs()?>fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('<?=bs()?>fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
 }
 .note-editor .glyphicon {
   position: relative;

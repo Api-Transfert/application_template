@@ -6,13 +6,13 @@
 		
 		<title>AutoFill example</title>
 		<style type="text/css" title="currentStyle">
-			@import "<?php bs() ?><?php bs() ?>media/css/demo_page.css";
-			@import "<?php bs() ?><?php bs() ?>media/css/demo_table.css";
+			@import "<?=bs()?>media/css/demo_page.css";
+			@import "<?=bs()?>media/css/demo_table.css";
 			@import "media/css/AutoFill.css";
 			td input { width: 90% }
 		</style>
-		<script type="text/javascript" charset="utf-8" src="<?php bs() ?><?php bs() ?>media/js/jquery.js"></script>
-		<script type="text/javascript" charset="utf-8" src="<?php bs() ?><?php bs() ?>media/js/jquery.dataTables.js"></script>
+		<script type="text/javascript" charset="utf-8" src="<?=bs()?>media/js/jquery.js"></script>
+		<script type="text/javascript" charset="utf-8" src="<?=bs()?>media/js/jquery.dataTables.js"></script>
 		<script type="text/javascript" charset="utf-8" src="media/js/AutoFill.js"></script>
 		<script type="text/javascript" charset="utf-8">
 			$.fn.dataTableExt.afnSortData['dom-text'] = function  ( oSettings, iColumn )

@@ -169,7 +169,6 @@
 	width: 10px;
 	height: 11px;
 	outline: 0;
-	background: url(images/controls.png) -86px -11px no-repeat;
 	margin: 0 3px;
 }
 
@@ -184,7 +183,7 @@
 	width: 9px;
 	height: 11px;
 	outline: 0;
-	background: url(images/controls.png) -86px -44px no-repeat;
+	/*background: url(images/controls.png) -86px -44px no-repeat;*/
 	margin: 0 3px;
 }
 
@@ -274,7 +273,7 @@
 	position: absolute;
 	margin-top: -1.5em;
 	border-radius: 50%;
-	background: url(<?php bs() ?><?php bs() ?>img/black-opacity.png) repeat !important;
+	/*background: url(<?=bs()?>img/black-opacity.png) repeat !important;*/
 }
 
 .recent-work ul.bxslider li i.icon-hover-1:hover,

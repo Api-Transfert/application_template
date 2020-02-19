@@ -12,12 +12,12 @@
 		
 		<title>DataTables unit testing</title>
 		<style type="text/css" title="currentStyle">
-			@import "<?php bs() ?><?php bs() ?>css/demo_page.css";
-			@import "<?php bs() ?><?php bs() ?>css/demo_table.css";
+			@import "<?=bs()?>css/demo_page.css";
+			@import "<?=bs()?>css/demo_table.css";
 		</style>
-		<script type="text/javascript" language="javascript" src="<?php bs() ?><?php bs() ?>js/jquery.js"></script>
-		<script type="text/javascript" language="javascript" src="<?php bs() ?><?php bs() ?>js/jquery.dataTables.js"></script>
-		<script type="text/javascript" language="javascript" src="<?php bs() ?>unit_test.js"></script>
+		<script type="text/javascript" language="javascript" src="<?=bs()?>js/jquery.js"></script>
+		<script type="text/javascript" language="javascript" src="<?=bs()?>js/jquery.dataTables.js"></script>
+		<script type="text/javascript" language="javascript" src="<?=bs()?>unit_test.js"></script>
 		<?php
 			$aScripts = explode( ":", $_GET['scripts'] );
 			for ( $i=0 ; $i<count($aScripts) ; $i++ )

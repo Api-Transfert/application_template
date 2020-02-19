@@ -33,7 +33,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 html {
 	overflow-x:hidden;
 	padding: 0 !important;
-	background-image:url(<?php bs() ?>images/tiles/bgtile.png);
+	background-image:url(<?=bs()?>images/tiles/bgtile.png);
 	margin:0px !important;
 }
 
@@ -59,9 +59,9 @@ a			{	text-decoration:none;}
 .header .left 	{	float:left; }
 .header .right	{	float:right;}
 
-.header .logo	{	margin-top:20px; margin-bottom:15px; width:360px; height:100px; background:url(<?php bs() ?>images/tiles/logo.png) no-repeat;}
+.header .logo	{	margin-top:20px; margin-bottom:15px; width:360px; height:100px; background:url(<?=bs()?>images/tiles/logo.png) no-repeat;}
 
-.divider	{	max-width:960px; margin:auto;height:10px; background:url(<?php bs() ?>images/tiles/divider.png) repeat;}
+.divider	{	max-width:960px; margin:auto;height:10px; background:url(<?=bs()?>images/tiles/divider.png) repeat;}
 
 .menupoint, .menupoint:visited		{	color:#000; font-weight:800; font-family: 'Open Sans', sans-serif; font-size:13px; line-height:52px; padding:0px 20px; border-right:1px solid #cdc;}
 .menupoint:hover, .menupoint.red 	{	color:#D31E00; }
@@ -100,8 +100,8 @@ a			{	text-decoration:none;}
 .config_title.small						{		font-size:18px; white-space:nowrap; }
 
 .configurator table td:first-child		{	padding-right:10px;}
-.configurator table td.divider			{		width:100%; height:10px; background:url(<?php bs() ?>images/tiles/divider.png) repeat-x left 24px;}
-.configurator table td.divider.small	{		width:100%; height:10px; background:url(<?php bs() ?>images/tiles/divider.png) repeat-x left 18px;}
+.configurator table td.divider			{		width:100%; height:10px; background:url(<?=bs()?>images/tiles/divider.png) repeat-x left 24px;}
+.configurator table td.divider.small	{		width:100%; height:10px; background:url(<?=bs()?>images/tiles/divider.png) repeat-x left 18px;}
 
 .configurator .conftitle		{	color:#000; font-weight:800; font-family: 'Open Sans', sans-serif; font-size:12px;}
 .configurator .conftitle span	{	font-size:10px; font-weight:500; color:#999;}
@@ -123,13 +123,13 @@ a			{	text-decoration:none;}
 									float:left;
 								}
 
-.configurator .dropbutton		{	width:23px;height:23px; background:url(<?php bs() ?>images/tiles/dropdown.png) no-repeat;
+.configurator .dropbutton		{	width:23px;height:23px; background:url(<?=bs()?>images/tiles/dropdown.png) no-repeat;
 									float:right;margin-right:2px;
 									margin-top:2px;
 								}
 .configurator .selecter:hover .dropbutton	{ background-position:bottom;}
 
-.configurator .inputfield			{	width:154px;height:30px; background:url(<?php bs() ?>images/tiles/inputfield.png) no-repeat -2px 0px;
+.configurator .inputfield			{	width:154px;height:30px; background:url(<?=bs()?>images/tiles/inputfield.png) no-repeat -2px 0px;
 										font-family: 'Open Sans', sans-serif;font-size:12px; line-height:30px;padding-left:20px;color:#404040;
 										margin-top:5px;
 									}
@@ -142,8 +142,8 @@ a			{	text-decoration:none;}
 .configurator table.features tr td:first-child	{	width:100px;}
 
 .slogan								{	text-align:center; color:#4e5b6c; font-weight:900; font-family: 'Open Sans', sans-serif; font-size:28px;}
-.plus								{	background:url(<?php bs() ?>images/tiles/plus.png) no-repeat; width:23px; height:23px; float:left; margin-right:5px; cursor:pointer;}
-.minus								{	background:url(<?php bs() ?>images/tiles/minus.png) no-repeat; width:23px; height:23px; float:left; cursor:pointer;}
+.plus								{	background:url(<?=bs()?>images/tiles/plus.png) no-repeat; width:23px; height:23px; float:left; margin-right:5px; cursor:pointer;}
+.minus								{	background:url(<?=bs()?>images/tiles/minus.png) no-repeat; width:23px; height:23px; float:left; cursor:pointer;}
 
 .plus.slot, .minus.slot				{	margin-top:10px;}
 
@@ -155,9 +155,9 @@ a			{	text-decoration:none;}
 /******************************
 	-	ROTATOR	-
 *******************************/
-.configurator .rotator				{	background:url(<?php bs() ?>images/tiles/rotator.png) no-repeat; width:75px; height:75px; margin-top:-10px;margin-right:10px; position:relative; cursor:pointer;}
+.configurator .rotator				{	background:url(<?=bs()?>images/tiles/rotator.png) no-repeat; width:75px; height:75px; margin-top:-10px;margin-right:10px; position:relative; cursor:pointer;}
 
-.configurator .rotator-line			{ 	background:url(<?php bs() ?>images/tiles/rotator-line.png) no-repeat; width:75px; height:75px; position:absolute; top:0px; left:0px;}
+.configurator .rotator-line			{ 	background:url(<?=bs()?>images/tiles/rotator-line.png) no-repeat; width:75px; height:75px; position:absolute; top:0px; left:0px;}
 .configurator .rotator:hover .rotator-line	{ background-position: bottom;}
 
 .configurator .rotbutcont			{	 min-width:260px; max-width:260px; margin:0px auto 0px;  }
@@ -167,7 +167,7 @@ a			{	text-decoration:none;}
 /***********************************
 	-	THE LIST OF FUNCTIONS	-
 ************************************/
-.configurator ul li					{			background:url(<?php bs() ?>images/tiles/ok.png) no-repeat 0px 4px; padding-left:45px;
+.configurator ul li					{			background:url(<?=bs()?>images/tiles/ok.png) no-repeat 0px 4px; padding-left:45px;
 												font-family: 'Open Sans', sans-serif;font-size:12px; line-height:15px;padding-left:20px;color:#404040;margin-bottom:10px;
 									}
 .configurator ul li	span			{ 			font-size:13px;font-weight:bold; line-height:15px;}
@@ -186,8 +186,8 @@ a			{	text-decoration:none;}
 
 .configurator table.features tr.titles	{	color:#999; font-size:10px;  font-weight:500; text-align:center;}
 
-.yo									{	background:url(<?php bs() ?>images/tiles/ok.png) no-repeat; width:11px;height:8px; margin:auto;}
-.nop								{	background:url(<?php bs() ?>images/tiles/no.png) no-repeat; width:11px;height:8px; margin:auto;}
+.yo									{	background:url(<?=bs()?>images/tiles/ok.png) no-repeat; width:11px;height:8px; margin:auto;}
+.nop								{	background:url(<?=bs()?>images/tiles/no.png) no-repeat; width:11px;height:8px; margin:auto;}
 
 
 

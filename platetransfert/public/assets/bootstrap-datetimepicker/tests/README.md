@@ -20,7 +20,7 @@ To generate coverage statistics, use [JSCoverage](http://siliconforks.com/jscove
 to instrument the js files:
 
     $ cd tests/
-    $ jscoverage <?php bs() ?>js/ <?php bs() ?>instrumented/
+    $ jscoverage <?=bs()?>js/ <?=bs()?>instrumented/
     $ phantomjs run-qunit.js tests.html
 
 Coverage percentage will be included in the output summary, and a highlighted

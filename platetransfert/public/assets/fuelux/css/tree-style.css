@@ -188,7 +188,7 @@
     line-height: 16px;
     vertical-align: middle;
     display: inline-block;
-    background: url("<?php bs() ?>img/tree-icons.png") no-repeat;
+    background: url("<?=bs()?>img/tree-icons.png") no-repeat;
     background-position: 0 -23px;
     content: "";
 }
@@ -199,7 +199,7 @@
     line-height: 16px;
     vertical-align: middle;
     display: inline-block;
-    background: url("<?php bs() ?>img/tree-icons.png") no-repeat;
+    background: url("<?=bs()?>img/tree-icons.png") no-repeat;
     background-position: 0 0px;
     content: "";
 }
