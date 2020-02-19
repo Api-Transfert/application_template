@@ -290,7 +290,7 @@ class CI_URI {
 	// --------------------------------------------------------------------
 
 	/**
-	 * Remove relative directory (<?php bs() ?>) and multi slashes (///)
+	 * Remove relative directory (<?=bs()?>) and multi slashes (///)
 	 *
 	 * Do some final cleaning of the URI and return it, currently only used in self::_parse_request_uri()
 	 *
