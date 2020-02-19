@@ -4,7 +4,7 @@
 //Company Parexons
 //Date 11/25/2016
 
-$db_config = "<?php bs() ?>application/config/database.php";
+$db_config = "<?=bs()?>application/config/database.php";
 
 if (isset($_POST)) 
 {
@@ -95,7 +95,7 @@ if (isset($_POST))
 
             // Config path
             $install_path    = 'config/database.php';
-            $output_path   = '<?php bs() ?>application/config/database.php';
+            $output_path   = '<?=bs()?>application/config/database.php';
 
             // Open the file
             $database_file = file_get_contents($install_path);
@@ -137,7 +137,7 @@ if (isset($_POST))
 
             //config path
             $local_path   = "config/config.php";
-            $replace_path = "<?php bs() ?>application/config/config.php";
+            $replace_path = "<?=bs()?>application/config/config.php";
 
             //geting content of local config file
             $config_file  = file_get_contents($local_path);
@@ -157,7 +157,7 @@ if (isset($_POST))
                if (fwrite($write,$new))
                {
                   echo  '<script type="text/javascript">
-                      window.location = "<?php bs() ?>users/Auth/login/?success_msg= Configuration Completed Successfully, Please Login To System."
+                      window.location = "<?=bs()?>users/Auth/login/?success_msg= Configuration Completed Successfully, Please Login To System."
                      </script>';
                   
                    

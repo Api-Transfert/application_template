@@ -1,7 +1,7 @@
 <?php 
 error_reporting(0);
 
-$db_config = "<?php bs() ?>application/config/database.php";
+$db_config = "<?=bs()?>application/config/database.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -16,15 +16,15 @@ $db_config = "<?php bs() ?>application/config/database.php";
     <meta name="author" content="KaijuThemes">
 
     <!-- Bootstrap core CSS -->
-    <link href="<?php bs() ?>public/css/bootstrap.min.css" rel="stylesheet">
-    <link href="<?php bs() ?>public/css/bootstrap-reset.css" rel="stylesheet">
+    <link href="<?=bs()?>public/css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?=bs()?>public/css/bootstrap-reset.css" rel="stylesheet">
     <!--external css-->
-    <link href="<?php bs() ?>public/assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link href="<?=bs()?>public/assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
       <!--right slidebar-->
-      <link href="<?php bs() ?>public/css/slidebars.css" rel="stylesheet">
+      <link href="<?=bs()?>public/css/slidebars.css" rel="stylesheet">
     <!-- Custom styles for this template -->
-    <link href="<?php bs() ?>public/css/style.css" rel="stylesheet">
-    <link href="<?php bs() ?>public/css/style-responsive.css" rel="stylesheet" />
+    <link href="<?=bs()?>public/css/style.css" rel="stylesheet">
+    <link href="<?=bs()?>public/css/style-responsive.css" rel="stylesheet" />
 
     <!--[if lt IE 10]>
         <script type="text/javascript" src="assets/js/media.match.min.js"></script>
@@ -139,20 +139,20 @@ $db_config = "<?php bs() ?>application/config/database.php";
     
     <!-- Load site level scripts -->
  <!-- js placed at the end of the document so the pages load faster -->
-    <script src="<?php bs() ?>public/js/jquery.js"></script>
-    <script src="<?php bs() ?>public/assets/jquery-ui/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>
-    <script src="<?php bs() ?>public/js/bootstrap.min.js"></script>
-    <script class="include" type="text/javascript" src="<?php bs() ?>public/js/jquery.dcjqaccordion.2.7.js"></script>
-    <script src="<?php bs() ?>public/js/jquery.scrollTo.min.js"></script>
-    <script src="<?php bs() ?>public/js/jquery.nicescroll.js" type="text/javascript"></script>
-    <script src="<?php bs() ?>public/js/respond.min.js" ></script>
-    <script src="<?php bs() ?>public/js/draggable-portlet.js"></script>
+    <script src="<?=bs()?>public/js/jquery.js"></script>
+    <script src="<?=bs()?>public/assets/jquery-ui/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>
+    <script src="<?=bs()?>public/js/bootstrap.min.js"></script>
+    <script class="include" type="text/javascript" src="<?=bs()?>public/js/jquery.dcjqaccordion.2.7.js"></script>
+    <script src="<?=bs()?>public/js/jquery.scrollTo.min.js"></script>
+    <script src="<?=bs()?>public/js/jquery.nicescroll.js" type="text/javascript"></script>
+    <script src="<?=bs()?>public/js/respond.min.js" ></script>
+    <script src="<?=bs()?>public/js/draggable-portlet.js"></script>
 
   <!--right slidebar-->
-  <script src="<?php bs() ?>public/js/slidebars.min.js"></script>
+  <script src="<?=bs()?>public/js/slidebars.min.js"></script>
 
     <!--common script for all pages-->
-    <script src="<?php bs() ?>public/js/common-scripts.js"></script>
+    <script src="<?=bs()?>public/js/common-scripts.js"></script>
     
       <script script src="bootstrap-notify.js"></script>
 
