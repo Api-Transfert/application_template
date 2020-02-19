@@ -1,5 +1,9 @@
 <!-- Main content start -->
-
+<style>
+    .sub{
+        width: 90%;
+    }
+</style>
 <section id="main-content">
   <section class="wrapper">
       <!-- page start-->
@@ -14,52 +18,38 @@
                </span>
             </header>
           <div class="panel-body">
-            <div class="col-md-5">
-              <p><?php echo lang('edit_group_subheading');?></p>
-
               <?php echo form_open(current_url());?>
-
-                      <p>
-                          <?php echo lang('edit_group_name_label', 'group_name');?> <br />
-                          <?php echo form_input($group_name);?>
-                          <span id="err_msg" style="color:red"></span>
-                      </p>
-
-                      <p>
-                          <?php echo lang('edit_group_desc_label', 'description');?> <br />
-                          <?php echo form_input($group_description);?>
-                      </p>
-
-                      <p><?php echo form_submit('submit', lang('edit_group_submit_btn'),'class="btn btn-success"');?></p>
-
-              </div>
-              <div class="col-md-3 col-md-offset-1">
+            <div class="col-md-9">
               <h4>Privileges</h4>
 
               <?php if ($this->ion_auth->is_admin()): ?>
 
                 <?php foreach ($privileges as $privilege):?>
-                  <div>
-                    <label class="btn btn-success btn-sm" style="margin-top: 5px">
+                      <div>
+                          <label class="btn btn-default btn-block text-left no-pb <?=($privilege->menu_name == 'sub')?'sub pull-right':null;?>" style="margin-top: 5px;text-align: left">
 
-                        <?php
-                            $pID = $privilege->perm_id;
-                            $checked = null;
-                            $item = null;
-                            foreach($crtPrivilege as $pri) 
-                            {
-                                if ($pID == $pri->perm_id) 
-                                {
-                                    $checked= ' checked="checked"';
-                                    break;
-                                }
-                            }
-                        ?>
-                        <input type="checkbox" name="privlg[]" value="<?php echo $privilege->perm_id;?>"<?php echo $checked;?>>
-                        <?php echo htmlspecialchars($privilege->perm_name,ENT_QUOTES,'UTF-8');?> 
+                              <?php
+                              $pID = $privilege->perm_id;
+                              $checked = null;
+                              $item = null;
+                              foreach($crtPrivilege as $pri)
+                              {
+                                  if ($pID == $pri->perm_id)
+                                  {
+                                      $checked= ' checked="checked"';
+                                      break;
+                                  }
+                              }
+                              ?>
+                              <div class="custom-switch custom-switch custom-switch-xs pl-0 dis-inline-block v-align-top">
+                                  <input class="custom-switch-input" name="privlg[]" value="<?php echo $privilege->perm_id;?>" id="perm_<?php echo $privilege->perm_id;?>_switch" type="checkbox" <?=$checked?>>
+                                  <label class="custom-switch-btn" for="perm_<?php echo $privilege->perm_id;?>_switch"></label>
+                              </div>
+                              <span class="dis-inline-block"><?=$privilege->perm_name;?></span>
 
-                      </label>  
-                    </div>  
+                          </label>
+                      </div>
+                      <div class="clearfix"></div>
                 <?php endforeach?>
                      
 
@@ -67,9 +57,23 @@
 
               </div>
 
-              
-              <?php echo form_close();?>
+              <div class="col-md-3">
+                  <p><?php echo lang('edit_group_subheading');?></p>
+                  <p>
+                      <?php echo lang('edit_group_name_label', 'group_name');?> <br />
+                      <?php echo form_input($group_name);?>
+                      <span id="err_msg" style="color:red"></span>
+                  </p>
 
+                  <p>
+                      <?php echo lang('edit_group_desc_label', 'description');?> <br />
+                      <?php echo form_input($group_description);?>
+                  </p>
+
+                  <p><?php echo form_submit('submit', 'Enregistrer','class="btn btn-success"');?></p>
+
+              </div>
+              <?php echo form_close();?>
             </div>
           </div>
         </section>

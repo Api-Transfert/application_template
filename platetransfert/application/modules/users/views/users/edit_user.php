@@ -126,6 +126,8 @@
   </section>
 </section>
 
+<script src="<?=assets_url('libs/pwstrength/pwstrength.min.js'); ?>"></script>
+
 <!-- Main Content Ends -->
 
 

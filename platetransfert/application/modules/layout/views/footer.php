@@ -55,8 +55,10 @@
         if(!empty($this->session->flashdata('message'))) { ?> show_message('success' , '<?=$this->session->flashdata('message')?>'); <?php }
 
         if(!empty($this->session->flashdata('success_message'))) { ?> show_message('success' , '<?=$this->session->flashdata('success_message')?>'); <?php }
+        if(!empty($this->session->flashdata('success'))) { ?> show_message('success' , '<?=$this->session->flashdata('success')?>'); <?php }
 
         if(!empty($this->session->flashdata('error_message'))) { ?> show_message('error' , '<?=$this->session->flashdata('error_message')?>'); <?php }
+        if(!empty($this->session->flashdata('error'))) { ?> show_message('error' , '<?=$this->session->flashdata('error')?>'); <?php }
 
         if(!empty($this->session->flashdata('info_message'))) { ?>  show_message('info' , '<?=$this->session->flashdata('info_message')?>'); <?php }
 

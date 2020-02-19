@@ -1,4 +1,3 @@
-<body>
 <div class="page-container row-fluid container-fluid">
     <section id="main-content" class=" ">
         <div class="wrapper main-wrapper row" style=''>

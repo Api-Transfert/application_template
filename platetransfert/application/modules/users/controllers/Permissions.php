@@ -8,26 +8,15 @@ class Permissions extends MY_Controller
 		parent::__construct();
 		//Do your magic here
 
-		$this->load->library(array('form_validation'));
-		$this->load->helper(array('html', 'language'));
-
-		$this->form_validation->set_error_delimiters($this->config->item('error_start_delimiter', 'ion_auth'), $this->config->item('error_end_delimiter', 'ion_auth'));
-
-		$this->lang->load('auth');
-		$this->load->model(array('Ion_auth_model', 'common_model'));
-
-		$this->load->module('template');
-
-		if (!$this->ion_auth->logged_in()) {
-			redirect('users/auth', 'refresh');
-		}
-
-		// $users = group_priviliges();
-		// pr($users);
-		// die;
+        $this->load->module('layout');
+        if (!$this->ion_auth->logged_in())
+        {
+            redirect('users/auth/login', 'refresh');
+        }
+        $this->ion_auth->get_user_group();
 	}
 
-	public function index()
+	public function indexs()
 	{
 		if (!$this->ion_auth->is_admin()) {
 			return show_error("You Must Be An Administrator To View This Page");
@@ -61,8 +50,7 @@ class Permissions extends MY_Controller
 			$data['sub_permissions'] = $this->common_model->getAllData('permissions', '*', '', array('level' => 1));
 			// pr($data);
 			$data['page'] = 'users/user_groups/permissions';
-			$this->template->template_view($data);
-			// $this->_render_page("dashboard", $data);
+            $this->layout->template_view($data);
 
 		}
 	}

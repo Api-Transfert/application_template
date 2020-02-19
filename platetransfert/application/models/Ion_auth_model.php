@@ -1518,18 +1518,18 @@ class Ion_auth_model extends CI_Model
 	 * @return CI_DB_result
 	 * @author Ben Edmunds
 	 */
-	public function get_users_groups($id = FALSE)
-	{
-		$this->trigger_events('get_users_group');
+    public function get_users_groups($id = FALSE)
+    {
+        $this->trigger_events('get_users_group');
 
-		// if no id was passed use the current users id
-		$id || $id = $this->session->userdata('user_id');
+        // if no id was passed use the current users id
+        $id || $id = $this->session->userdata('user_id');
 
-		return $this->db->select($this->tables['users_groups'].'.'.$this->join['groups'].' as id, '.$this->tables['groups'].'.name, '.$this->tables['groups'].'.description')
-		                ->where($this->tables['users_groups'].'.'.$this->join['users'], $id)
-		                ->join($this->tables['groups'], $this->tables['users_groups'].'.'.$this->join['groups'].'='.$this->tables['groups'].'.id')
-		                ->get($this->tables['users_groups']);
-	}
+        return $this->db->select($this->tables['users_groups'].'.'.$this->join['groups'].' as id, '.$this->tables['groups'].'.name, '.$this->tables['groups'].'.description , '.$this->tables['groups'].'.bgcolor')
+            ->where($this->tables['users_groups'].'.'.$this->join['users'], $id)
+            ->join($this->tables['groups'], $this->tables['users_groups'].'.'.$this->join['groups'].'='.$this->tables['groups'].'.id')
+            ->get($this->tables['users_groups']);
+    }
 
 	/**
 	 * @param int|string|array $check_group group(s) to check

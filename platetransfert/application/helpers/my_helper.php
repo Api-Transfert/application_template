@@ -50,56 +50,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		$CI =& get_instance();
 		return $CI->db->last_query();
 	}
-
-	/**
-	 * get_user_group
-	 *
-	 * @param get the current user group id
-	 *
-	 * @author Salman Iqbal
-	 **/
-	// function get_user_group($value='')
-	// {
-
-	// 	$CI =& get_instance();
-
-	// 	$chk = $CI->session->userdata('group_id');
-
-	// 	if(!isset($chk))
-
-	// 	{
-	// 		$id = $CI->session->userdata('user_id');
-
-	// 		$result = $CI->ion_auth_model->user_group_id($id);
-
-	// 		if ($result)  
-	// 		{	
-	// 			$group_id = array('group_id'   => $result->id,'group_name' => $result->name);
-
-	// 			$CI->session->set_userdata($group_id);
-	// 		}
-	// 	}
-
-	// 	$chk = $CI->session->userdata('group_id');
-	// 	return $chk;
-	// }
-
-	function group_priviliges($value='')
-	{
-		$CI =& get_instance();
-
-		$gp_id = $CI->session->userdata("group_id");
-
-		$gp_result = $CI->ion_auth_model->user_head_privilege($gp_id);
-
-		foreach($gp_result as $key => $head_pre)
-		{
-			$gp_result[$key]->sub = $CI->ion_auth_model->user_sub_privilege($gp_id,$head_pre->perm_id);
-		}
-
-	    return $gp_result;
-	}
-
 	/**
 	 * Slugify Helper
 	 *

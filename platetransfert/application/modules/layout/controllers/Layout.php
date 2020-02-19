@@ -20,9 +20,3 @@ class Layout extends MY_Controller
 	}
 
 }
-
-/* End of file Template.php */
-/* Location: ./application/modules/template/controllers/Template.php */
-
-/* End of file Template.php */
-/* Location: ./application/modules/template/controllers/Template.php */

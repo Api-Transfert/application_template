@@ -12,15 +12,13 @@ class Users extends MY_Controller {
 	public function __construct()
 	{
 		parent::__construct();
-        $this->load->library(array('form_validation'));
 		$this->lang->load('auth');
 		$this->form_validation->set_error_delimiters($this->config->item('error_start_delimiter', 'ion_auth'), $this->config->item('error_end_delimiter', 'ion_auth'));
 
-        $this->load->module('template');
+        $this->load->module('layout');
 
 		$this->load->helper(array('html','language','form','country'));
         $this->load->model('Users_modal');
-		$this->load->model('common_model');
 
 		if (!$this->ion_auth->logged_in())
         {
@@ -31,7 +29,6 @@ class Users extends MY_Controller {
 
 	public function index()
 	{
-
         // set the flash data error message if there is one
         $data['message'] = (validation_errors()) ? validation_errors() : $this->session->flashdata('message');
 
@@ -45,7 +42,7 @@ class Users extends MY_Controller {
         $this->session->set_flashdata('message', $this->ion_auth->messages());
 
         $data['page'] = "users/users/view_users";
-		$this->template->template_view($data);		
+		$this->layout->template_view($data);
 	}
 
 	public function create_user()
@@ -62,7 +59,7 @@ class Users extends MY_Controller {
         $data['groups'] = $this->ion_auth->groups()->result();
 
         $data['page'] = "users/users/create_user";
-        $this->template->template_view($data);
+        $this->layout->template_view($data);
 	}
 
 	// create a new user
@@ -328,7 +325,7 @@ class Users extends MY_Controller {
         );
 
         $data['page'] = "users/users/edit_user";
-        $this->template->template_view($data);
+        $this->layout->template_view($data);
         // $this->_render_page('dashboard', $data);
     }
 
@@ -527,7 +524,7 @@ class Users extends MY_Controller {
         $data['user_profile'] = $this->common_model->update_data($user_id,'users');
 
         $data['page'] = "users/users/user_profile";
-        $this->template->template_view($data);  
+        $this->layout->template_view($data);  
      }
 
      public function edit_profile()
@@ -569,7 +566,7 @@ class Users extends MY_Controller {
             $data['user_profile'] = $this->common_model->update_data($user_id,'users');
 
             $data['page'] = "users/users/edit_user_profile";
-            $this->template->template_view($data);  
+            $this->layout->template_view($data);  
         }
         
      }
@@ -582,7 +579,7 @@ class Users extends MY_Controller {
         $data['user_profile'] = $this->common_model->update_data($user_id,'users');
 
         $data['page'] = "users/users/change_avatar";
-        $this->template->template_view($data); 
+        $this->layout->template_view($data); 
      }
      public function update_avatar($value='')
      {

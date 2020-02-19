@@ -10,39 +10,30 @@ class User_groups extends MY_Controller
 	public function __construct()
 	{
 		parent::__construct();
-		//Do your magic here
-		$this->load->library(array('form_validation'));
-		$this->load->helper(array('html','language'));
-
-		$this->form_validation->set_error_delimiters($this->config->item('error_start_delimiter', 'ion_auth'), $this->config->item('error_end_delimiter', 'ion_auth'));
-
-		$this->lang->load('auth');
-		$this->load->model(array('common_model','Users_modal','Users_groups'));
-
-		$this->load->module('template');
-
+        $this->load->module('layout');
+        if (!$this->ion_auth->logged_in())
+        {
+            redirect('users/auth/login', 'refresh');
+        }
+        $this->ion_auth->get_user_group();
 		if (!$this->ion_auth->logged_in())
 		{
 			redirect('users/auth', 'refresh');
 		}
-
+		$this->form_validation->set_error_delimiters($this->config->item('error_start_delimiter', 'ion_auth'), $this->config->item('error_end_delimiter', 'ion_auth'));
 		$sess_data = $this->session->all_userdata();
-
-			// pr($sess_data);
-			// die(); 	
 	}
-	public function index()
-	{
-		// set the flash data error message if there is one
+    public function index(){
+        // set the flash data error message if there is one
         $data['message'] = (validation_errors()) ? validation_errors() : $this->session->flashdata('message');
 
-		// list the groups
-		$data['groups'] = $this->ion_auth->groups()->result();
-		
+        // list the groups
+        $data['groups'] = $this->ion_auth->groups()->result();
+
         $this->session->set_flashdata('message', $this->ion_auth->messages());
-        $data['page'] = 'users/user_groups/view_group'; 
-        $this->template->template_view($data);
-	}
+        $data['page'] = 'users/user_groups/view_group';
+        $this->layout->template_view($data);
+    }
 	// create a new group
 	public function create_group()
 	{
@@ -113,7 +104,7 @@ class User_groups extends MY_Controller
 			$data['perm'] = $this->common_model->select('permissions');
 
 			$data['page'] = 'users/user_groups/create_group';
-			$this->template->template_view($data);
+			$this->layout->template_view($data);
 			// $this->_render_page('dashboard', $data);
 		}
 	}
@@ -135,9 +126,9 @@ class User_groups extends MY_Controller
 
 		$group     = $this->ion_auth->group($id)->row();
 		
-		$privilege = $this->common_model->select('permissions');
 
-		$currentPrivilege = $this->Users_modal->get_user_privileges($id);
+        $privilege = $this->common_model->getAllData('permissions', '*', '', [],'order ASC');
+        $currentPrivilege = $this->common_model->get_user_privileges($id);
 
 		// validate form input
 		$this->form_validation->set_rules('group_name', $this->lang->line('edit_group_validation_name_label'), 'trim|required');
@@ -163,7 +154,7 @@ class User_groups extends MY_Controller
                     if (isset($privilegeData) && !empty($privilegeData)) 
                     {
 
-                        $query = $this->Users_modal->remove_from_privileges($privilegeData,$id);
+                        $query = $this->common_model->remove_from_privileges($privilegeData,$id);
 
                         // print_r($query);die();
                         foreach ($privilegeData as $key => $value) 
@@ -172,6 +163,8 @@ class User_groups extends MY_Controller
 
 							$result = $this->common_model->add('group_perm',$data);
 						}
+						
+						$this->session->set_flashdata('success','Privilège mis à jour avec succès');
                     }
 
                 }
@@ -221,7 +214,7 @@ class User_groups extends MY_Controller
 
 
 		$data['page'] = 'users/user_groups/edit_group';
-		$this->template->template_view($data); 
+		$this->layout->template_view($data); 
 		// $this->_render_page("dashboard", $data);
 	}
 
