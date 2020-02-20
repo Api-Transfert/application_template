@@ -14,7 +14,12 @@
         <div class="col-xs-8">
             <select name="structurePaysId" id="structurePaysId" class="form-control" required>
                 <?php foreach($pays as $p):
-                    $selected = ($p->paysId == $struct->paysId)?'selected' : '';
+                    if(!empty($struct)){
+                        $selected = ($p->paysId == $struct->paysId)?'selected' : '';
+                    }
+                    else{
+                        $selected = '';
+                    }
                     ?>
                     <option value="<?=$p->paysId?>" <?=$selected;?>><?=$p->paysName?></option>
                 <?php endforeach;?>
@@ -27,7 +32,11 @@
         <div class="col-xs-8">
             <select name="structureType" id="type" class="form-control" required>
                 <?php foreach($type as $t):
-                    $selected = ($t->idtypeStructure == $struct->structureType)?'selected' : '';
+                    if(!empty($struct)){
+                        $selected = ($t->idtypeStructure == $struct->structureType)?'selected' : '';
+                    }else{
+                        $selected = '';
+                    }
                     ?>
                     <option value="<?=$t->idtypeStructure?>" <?=$selected;?>><?=$t->typeName?></option>
                 <?php endforeach;?>
@@ -46,13 +55,13 @@
     </div>
 
     <div class="col-sm-6">
-        <div class="col-xs-4 text-right"><label class="form-label fs-14" for="structurePhone" data-toggle="tooltip" data-placement="top" title="(numéros séparés par une virgule)">Téléphone:</label></div>
-        <div class="col-xs-8"><input type="text" name="structurePhone" value="<?=(!empty($struct->structurePhone))?$struct->structurePhone:'';?>" id="structurePhone" class="form-control" required></div>
+        <div class="col-xs-4 text-right"><label class="form-label fs-14" for="structurePhone">Téléphone:</label></div>
+        <div class="col-xs-8"><input type="text" name="structurePhone" value="<?=(!empty($struct->structurePhone))?$struct->structurePhone:'';?>" id="structurePhone" class="form-control" required data-toggle="tooltip" data-placement="top" title="(numéros séparés par une virgule)"></div>
     </div>
 
     <div class="col-sm-6">
-        <div class="col-xs-4 text-right"><label class="form-label fs-14" for="structureEmail" data-toggle="tooltip" data-placement="top" title="(adresses séparées par une virgule)">E-mail:</label></div>
-        <div class="col-xs-8"><input type="email" name="structureEmail" value="<?=(!empty($struct->structureEmail))?$struct->structureEmail:'';?>" id="structureEmail" class="form-control" required></div>
+        <div class="col-xs-4 text-right"><label class="form-label fs-14" for="structureEmail">E-mail:</label></div>
+        <div class="col-xs-8"><input type="email" name="structureEmail" value="<?=(!empty($struct->structureEmail))?$struct->structureEmail:'';?>" id="structureEmail" class="form-control" required data-toggle="tooltip" data-placement="top" title="(adresses séparées par une virgule)"></div>
     </div>
 
     <div class="col-sm-6">

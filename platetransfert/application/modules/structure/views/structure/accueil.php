@@ -141,164 +141,22 @@
       show_loader();
       $.post(base_url+'structure/edit_structure',{'structure_id':structure_id},function (edit_str_form) {
           sweetDialog(edit_str_form,{size:'90%' , showCancelButton:false});
+          enable_tooltip();
       })
   });
   
   $(document).on('click','#save_structure_data',{passive:true},function () {
+      if(validate_form('structure_form')){
           $('#structure_form').submit();
-//      if(validate_form('structure_form')){
-//      }
+      }
   });
   
   $(document).on('click','#create_structure',{passive:true},function () {
       show_loader();
       $.post(base_url+'structure/create_structure',{},function (create_str_form) {
           sweetDialog(create_str_form,{size:'90%' , showCancelButton:false});
+          enable_tooltip();
       });
   });
-
-  function sweetAlertTwo(params){
-
-      $('#sweetAlertTow').remove();
-
-      params = params || {};
-
-      var defaultParams = {
-          title: params.title || '',
-          titleText: '',
-          text: '',
-          html: params.html || '',
-          footer: '',
-          icon: params.icon || undefined,
-          iconHtml: undefined,
-          toast: false,
-          animation: true,
-          showClass: {
-              popup: 'swal2-show',
-              backdrop: 'swal2-backdrop-show',
-              icon: 'swal2-icon-show'
-          },
-          hideClass: {
-              popup: 'swal2-hide',
-              backdrop: 'swal2-backdrop-hide',
-              icon: 'swal2-icon-hide'
-          },
-          customClass: undefined,
-          target:params.target || 'body',
-          backdrop:(params.backdrop !== undefined)?params.backdrop:true,
-          heightAuto:(params.heightAuto !== undefined)?params.heightAuto:true,
-          allowOutsideClick:(params.allowOutsideClick !== undefined)?params.allowOutsideClick:true,
-          allowEscapeKey:(params.allowEscapeKey !== undefined)?params.allowEscapeKey:true,
-          allowEnterKey:(params.allowEnterKey !== undefined)?params.allowEnterKey:true,
-          stopKeydownPropagation:(params.stopKeydownPropagation !== undefined)?params.stopKeydownPropagation:true,
-          keydownListenerCapture:(params.keydownListenerCapture !== undefined)?params.keydownListenerCapture:false,
-          showConfirmButton:(params.showConfirmButton !== undefined)?params.showConfirmButton : true,
-          showCancelButton:(params.showCancelButton !== undefined)?params.showCancelButton:false,
-          preConfirm:params.preConfirm || undefined,
-          confirmButtonText:params.confirmButtonText || params.confirmButtonText ||'OK',
-          confirmButtonAriaLabel:params.confirmButtonAriaLabel || '',
-          confirmButtonColor:params.confirmButtonColor || undefined,
-          cancelButtonText:params.cancelButtonText || 'Cancel',
-          cancelButtonAriaLabel:params.cancelButtonAriaLabel || '',
-          cancelButtonColor:params.cancelButtonColor || undefined,
-          buttonsStyling:(params.buttonsStyling !== undefined)?params.buttonsStyling:true,
-          reverseButtons:(params.reverseButtons !== undefined)?params.reverseButtons:false,
-          focusConfirm:(params.focusConfirm !== undefined)?params.focusConfirm:true,
-          focusCancel:(params.focusCancel !== undefined)?params.focusCancel:false,
-          showCloseButton:(params.showCloseButton !== undefined)?params.showCloseButton:false,
-          closeButtonHtml:params.closeButtonHtml || '&times;',
-          closeButtonAriaLabel:params.closeButtonAriaLabel || 'Close this dialog',
-          showLoaderOnConfirm:(params.showLoaderOnConfirm !== undefined)?params.showLoaderOnConfirm:false,
-          imageUrl:params.imageUrl || undefined,
-          imageWidth:params.imageWidth || undefined,
-          imageHeight:params.imageHeight || undefined,
-          imageAlt:params.imageAlt || '',
-          timer:params.timer || undefined,
-          timerProgressBar:(params.timerProgressBar !== undefined)?params.timerProgressBar:false,
-          width:params.width || undefined,
-          padding:params.padding || undefined,
-          background:params.background || undefined,
-          input:params.input || undefined,
-          inputPlaceholder:params.inputPlaceholder || '',
-          inputValue:params.inputValue || '',
-          inputOptions:params.inputOptions || {},
-          inputAutoTrim:(params.inputAutoTrim !== undefined)?params.inputAutoTrim:true,
-          inputAttributes:params.inputAttributes || {},
-          inputValidator:params.inputValidator || undefined,
-          validationMessage:params.validationMessage || undefined,
-          grow:(params.grow !== undefined)?params.grow:false,
-          position:params.position || 'center',
-          progressSteps:params.progressSteps || [],
-          currentProgressStep:params.currentProgressStep || undefined,
-          progressStepsDistance:params.progressStepsDistance || undefined,
-          onBeforeOpen:params.onBeforeOpen || undefined,
-          onOpen:params.onOpen || undefined,
-          onRender:params.onRender || undefined,
-          onClose:params.onClose || undefined,
-          onAfterClose:params.onAfterClose || undefined,
-          onDestroy:params.onDestroy || undefined,
-          scrollbarPadding:(params.scrollbarPadding !== undefined)?params.scrollbarPadding:true
-      };
-
-      var show_icon = {
-          error:'display:none',
-          info:'display:none',
-          question:'display:none',
-          warning:'display:none',
-          success:'display:none',
-      };
-
-      switch(defaultParams.icon){
-          case 'error':show_icon.error = 'display:flex';break;
-          case 'info':show_icon.info = 'display:flex';break;
-          case 'question':show_icon.question = 'display:flex';break;
-          case 'success':show_icon.success = 'display:flex';break;
-      }
-
-      var show = {
-          html: 'display:block',
-          title: ((defaultParams.title.length > 0)?'display:flex':'display:none')
-      };
-
-
-      
-        var html = '<div class="swal2-container swal2-center swal2-backdrop-show" id="sweetAlertTow" style="overflow-y: auto;">'+
-            '<div aria-labelledby="swal2-title" aria-describedby="swal2-content" class="swal2-popup swal2-modal swal2-show" tabindex="-1" role="dialog" aria-live="assertive" aria-modal="true" style="display: flex;">'+
-            '<div class="swal2-header">'+
-            '<ul class="swal2-progress-steps" style="display: none;"></ul>'+
-            '<div class="swal2-icon swal2-error" style="'+show_icon.error+'"><span class="swal2-x-mark"> <span class="swal2-x-mark-line-left"></span> <span class="swal2-x-mark-line-right"></span> </span></div>'+
-            '<div class="swal2-icon swal2-question" style="'+show_icon.question+'"></div>'+
-            '<div class="swal2-icon swal2-warning" style="'+show_icon.warning+'"></div>'+
-            '<div class="swal2-icon swal2-info" style="'+show_icon.info+'"><div class="swal2-icon-content">i</div></div>'+
-            '<div class="swal2-icon swal2-success" style="'+show_icon.success+'"></div>'+
-            '<img class="swal2-image" style="display: none;">'+
-            '<h2 class="swal2-title" id="swal2-title" style="'+show.title+'">'+defaultParams.title+'</h2>'+
-            '<button type="button" class="swal2-close" onclick="closeSwallTwo();" aria-label="Close this dialog" style="display: flex;">×</button>'+
-            '</div>'+
-            '<div class="swal2-content">'+
-            '<div id="swal2-content" class="swal2-html-container" style="'+show.html+'">'+defaultParams.html+'</div>'+
-            '<input class="swal2-input" style="display: none;"><input type="file" class="swal2-file" style="display: none;">'+
-            '<div class="swal2-range" style="display: none;"><input type="range">'+
-            '<output></output>'+
-            '</div>'+
-            '<select class="swal2-select" style="display: none;"></select>'+
-            '<div class="swal2-radio" style="display: none;"></div>'+
-            '<label for="swal2-checkbox" class="swal2-checkbox" style="display: none;"><input type="checkbox"><span class="swal2-label"></span></label><textarea class="swal2-textarea" style="display: none;"></textarea>'+
-            '<div class="swal2-validation-message" id="swal2-validation-message"></div>'+
-            '</div>'+
-            '<div class="swal2-actions">'+
-            '<button onclick="closeSwallTwo();" type="button" class="swal2-confirm swal2-styled" aria-label="" style="display: '+((defaultParams.showConfirmButton === true )?'inlinr-block':'none')+'; border-left-color: rgb(48, 133, 214); border-right-color: rgb(48, 133, 214);">'+
-            'OK'+
-            '</button>'+
-            '<button type="button" class="swal2-cancel swal2-styled" aria-label="" style="display: none;">Cancel</button>'+
-            '</div>'+
-            '<div class="swal2-footer" style="display: none;"></div>'+
-            '<div class="swal2-timer-progress-bar" style="display: none;"></div>'+
-            '</div>'+
-            '</div>';
-      $('body').after(html);
-      $('body').addClass('pace-done swal2-shown swal2-height-auto');
-      $('#swall_two').show('slow');
-  }
 
 </script>
