@@ -83,10 +83,31 @@
         }
     });
 
+    //fix pour bouton switch
+   $(document).on('submit','form',{passive:true},function (e) {
+       const form = $(this);
+       if(!has_attr(form,'let_it_go')){
+           e.preventDefault();
+           $(form).attr('let_it_go' , 'submiting');
+           //retirer l'id pour s'assurer que la valeur ne sera pas modifier lor de l'envois
+           $('.custom-switch-input').removeAttr('id');
+           setTimeout(function () {
+               $('.custom-switch-input').prop('checked',true);
+               setTimeout(function () {
+                   $(form).submit();
+               },50)
+           },50)
+       }
+
+   });
+
     function sweetDialog(html, params){
         params = params || {};
-
         var prm = {};
+
+        if(typeof params.showCancelButton !== 'undefined'){
+            prm.showCancelButton = params.showCancelButton;
+        }
         prm.title = params.title || '';
         prm.size  = params.size  || 600;
         prm.cancelButtonText = params.cancelButtonText || 'Fermer';
@@ -95,14 +116,19 @@
             title: prm.title,
             html : html,
             width: prm.size,
+            showCancelButton: prm.showCancelButton,
             showConfirmButton:false,
-            showCancelButton: true,
             cancelButtonText: prm.cancelButtonText,
             reverseButtons: true,
             padding: '3em',
-            backdrop: 'rgba(0,0,123,0.4)'
+            backdrop: 'rgba(0,0,123,0.4)',
+            showCloseButton:true
         })
     }
+    
+    $(document).on('click','.close_swal2',{passive:true},function () {
+        swal.close();
+    });
 </script>
 </body>
 

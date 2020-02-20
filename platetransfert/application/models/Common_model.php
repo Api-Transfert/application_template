@@ -113,8 +113,11 @@ class Common_model extends CI_Model
 
     }
 
-
-
+    public function do_update($table='',$where=[],$data=[]){
+	    if(!empty($where) && !empty($data)){
+	        $this->db->where($where)->update($table,$data);
+        }
+    }
 
     public function INSERT($table = NULL, $data = array())
     {

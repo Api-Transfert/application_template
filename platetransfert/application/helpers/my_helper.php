@@ -77,7 +77,26 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			return $clean;
 		}
 	}
-	
+
+	if(!function_exists('remove_empty')){
+	    function remove_empty($data = []){
+	        $result = $data;
+	       foreach($result as $k=>$v){
+	           if(empty($v) && $v != '0'){
+	               unset($result[$k]);
+               }
+           }
+
+           return $result;
+        }
+    }
+
+    if(!function_exists('show_if_exit')){
+	    function show_if_exit($variable){
+	      return (!empty($variable) || $variable == 0)?$variable:'';
+        }
+    }
+
 
 
 /* End of file custom_helpers.php */

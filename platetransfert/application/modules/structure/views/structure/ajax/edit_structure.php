@@ -1,153 +1,180 @@
+<style>
+    #structure_form .custom-switch-btn{padding-top:3px}
+</style>
+<form id="structure_form" method="post" action="<?=base_url($form_action);?>">
 
-<div class="">
 
-   <div class="row m-b-20 bg-accent">
-       <div class="col-sm-4">
-           <div class="col-xs-4 text-right"><label for="nom">Nom</label></div>
-           <div class="col-xs-8"><input type="text" value="<?=$struct->structureName;?>" name="structureName" id="nom" class="form-control" required></div>
-       </div>
+    <div class="col-sm-6">
+        <div class="col-xs-4 text-right"><label class="form-label fs-14" for="nom">Nom</label></div>
+        <div class="col-xs-8"><input type="text" value="<?=(!empty($struct->structureName))?$struct->structureName:'';?>" name="structureName" id="nom" class="form-control" required></div>
+    </div>
 
-       <div class="col-sm-4">
-           <div class="col-xs-4 text-right"><label for="structurePaysId">Pays : </label></div>
-           <div class="col-xs-8">
-               <select name="structurePaysId" id="structurePaysId" class="form-control" required>
-                   <?php foreach($pays as $p):?>
-                       <option value="<?=$p->paysId?>"><?=$p->paysName?></option>
-                   <?php endforeach;?>
-               </select>
-           </div>
-       </div>
+    <div class="col-sm-6">
+        <div class="col-xs-4 text-right"><label class="form-label fs-14" for="structurePaysId">Pays : </label></div>
+        <div class="col-xs-8">
+            <select name="structurePaysId" id="structurePaysId" class="form-control" required>
+                <?php foreach($pays as $p):
+                    $selected = ($p->paysId == $struct->paysId)?'selected' : '';
+                    ?>
+                    <option value="<?=$p->paysId?>" <?=$selected;?>><?=$p->paysName?></option>
+                <?php endforeach;?>
+            </select>
+        </div>
+    </div>
 
-       <div class="col-sm-4">
-           <div class="col-xs-4 text-right"><label for="structureType">Type : </label></div>
-           <div class="col-xs-8">
-               <select name="structureType" id="type" class="form-control" required>
-                   <?php foreach($type as $t):?>
-                       <option value="<?=$t->idtypeStructure?>"><?=$t->typeName?></option>
-                   <?php endforeach;?>
-               </select>
-           </div>
-       </div>
-   </div>
+    <div class="col-sm-6">
+        <div class="col-xs-4 text-right"><label class="form-label fs-14" for="structureType">Type : </label></div>
+        <div class="col-xs-8">
+            <select name="structureType" id="type" class="form-control" required>
+                <?php foreach($type as $t):
+                    $selected = ($t->idtypeStructure == $struct->structureType)?'selected' : '';
+                    ?>
+                    <option value="<?=$t->idtypeStructure?>" <?=$selected;?>><?=$t->typeName?></option>
+                <?php endforeach;?>
+            </select>
+        </div>
+    </div>
 
-    <div class="row m-b-20">
+    <div class="col-sm-6">
+        <div class="col-xs-4 text-right"><label class="form-label fs-14" for="structureCodeBanque">Code banque : </label></div>
+        <div class="col-xs-8"><input type="text" name="structureCodeBanque" value="<?=(!empty($struct->structureCodeBanque))?$struct->structureCodeBanque:'';?>" id="structureCodeBanque" class="form-control"></div>
+    </div>
+
+    <div class="col-sm-6">
+        <div class="col-xs-4 text-right"><label class="form-label fs-14" for="structureAdresse">Adresse : </label></div>
+        <div class="col-xs-8"><input type="text" name="structureAdresse" id="structureAdresse" value="<?=(!empty($struct->structureAdresse))?$struct->structureAdresse:'';?>" class="form-control" required></div>
+    </div>
+
+    <div class="col-sm-6">
+        <div class="col-xs-4 text-right"><label class="form-label fs-14" for="structurePhone" data-toggle="tooltip" data-placement="top" title="(numéros séparés par une virgule)">Téléphone:</label></div>
+        <div class="col-xs-8"><input type="text" name="structurePhone" value="<?=(!empty($struct->structurePhone))?$struct->structurePhone:'';?>" id="structurePhone" class="form-control" required></div>
+    </div>
+
+    <div class="col-sm-6">
+        <div class="col-xs-4 text-right"><label class="form-label fs-14" for="structureEmail" data-toggle="tooltip" data-placement="top" title="(adresses séparées par une virgule)">E-mail:</label></div>
+        <div class="col-xs-8"><input type="email" name="structureEmail" value="<?=(!empty($struct->structureEmail))?$struct->structureEmail:'';?>" id="structureEmail" class="form-control" required></div>
+    </div>
+
+    <div class="col-sm-6">
+        <div class="col-xs-4 text-right"><label class="form-label fs-14" for="structureActionRights">Actions autorisées : </label></div>
+        <div class="col-xs-8">
+            <select name="structureActionRights" id="structureActionRights" class="form-control">
+                <option <?=(!empty($struct->structureActionRights) && $struct->structureActionRights == '1')?'selected':'';?> value="1">Tous</option>
+                <option <?=(!empty($struct->structureActionRights) && $struct->structureActionRights == '2')?'selected':'';?> value="2">Emission</option>
+                <option <?=(!empty($struct->structureActionRights) && $struct->structureActionRights == '3')?'selected':'';?> value="3">Paiement</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="col-sm-6">
+        <div class="col-xs-4 text-right"><label class="form-label fs-14" for="structurePartReseauTiersEmis">Part Réseau Tiers</label></div>
+        <div class="col-xs-8"><input type="number" name="structurePartReseauTiersEmis" value="<?=(!empty($struct->structurePartReseauTiersEmis))?$struct->structurePartReseauTiersEmis:'';?>" id="structurePartReseauTiersEmis" class="form-control" required></div>
+    </div>
+
+    <div class="col-sm-6">
+        <div class="col-xs-4 text-right"><label class="form-label fs-14" for="structureTaxe">Taxe</label></div>
+        <div class="col-xs-8"><input type="number" value="<?=(!empty($struct->structureTaxe))?$struct->structureTaxe:'';?>" name="structureTaxe" id="structureTaxe" class="form-control" required></div>
+    </div>
+
+    <div class="col-sm-6">
+        <div class="col-xs-4 text-right"><label class="form-label fs-14" for="structureDistributeurId">Distributeur</label></div>
+        <div class="col-xs-8"><input type="text" name="structureDistributeurId" value="<?=(!empty($struct->structureDistributeurId))?$struct->structureDistributeurId:'';?>" id="structureDistributeurId" class="form-control" required></div>
+    </div>
+
+    <?php if(!empty($do_create)):;?>
         <div class="col-sm-6">
-            <div class="col-xs-6 text-right"><label for="structureCodeBanque">Code banque : </label></div>
-            <div class="col-xs-6"><input type="text" name="structureCodeBanque" id="structureCodeBanque" class="form-control"></div>
+            <div class="col-xs-4 text-right"><label class="form-label fs-14" for="">Structure de tutelle :</label></div>
+            <div class="col-xs-8">
+                <select name="" id="" class="form-control">
+                    <option value=""></option>
+                    <?php foreach($structure_tutelle as $st):?>
+                        <option value="<?=$st->structureId;?>"><?=$st->structureName;?></option>
+                    <?php endforeach;?>
+                </select>
+            </div>
         </div>
-
         <div class="col-sm-6">
-            <div class="col-xs-6 text-right"><label for="structurePrefinanced">Préfinancement : </label></div>
-            <div class="col-xs-6 text-left">
-                <div class="custom-switch custom-switch-xs">
-                    <input class="custom-switch-input" id="prefinancement" value="<?=$struct->structurePrefinanced;?>" name="structurePrefinanced" type="checkbox" <?=($struct->structurePrefinanced == '1')?'checked':'';?>>
-                    <label class="custom-switch-btn" for="prefinancement" data-target="#prefinancement"></label>
-                </div>
-            </div>
+            <div class="col-xs-4 text-right"><label class="form-label fs-14" for="structureTutelleId">Commercial Freelance : </label></div>
+            <div class="col-xs-8"><input type="text" name="structureTutelleId" value="<?=(!empty($struct->structureEmail))?$struct->structureEmail:'';?>" id="structureTutelleId" class="form-control" required></div>
         </div>
-    </div>
+    <?php endif;?>
 
-    <div class="row m-b-20 bg-accent">
-        <div class="col-sm-4">
-            <div class="col-xs-4 text-right"><label for="structureAdresse">Adresse : </label></div>
-            <div class="col-xs-8"><input type="text" name="structureAdresse" id="structureAdresse" value="<?=$struct->structureAdresse;?>" class="form-control" required></div>
-        </div>
+    <div class="clearfix"></div>
+        <hr>
 
-        <div class="col-sm-4">
-            <div class="col-xs-8 text-right"><label for="structureSendSMSAlert">Alerte SMS : </label></div>
-            <div class="col-xs-4 text-left">
-                <div class="custom-switch custom-switch-xs pull-left">
-                    <input class="custom-switch-input" id="sw_structureSendSMSAlert" value="<?=$struct->structureSendSMSAlert;?>" name="structureSendSMSAlert" <?=($struct->structureSendSMSAlert == '1')?'checked':'';?> type="checkbox">
-                    <label class="custom-switch-btn" for="sw_structureSendSMSAlert" data-target="#sw_structureSendSMSAlert"></label>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-sm-4">
-            <div class="col-xs-8 text-right"><label for="St_structureSendEmailAlert">Alerte E-mail : </label></div>
-            <div class="col-xs-4 text-left">
-                <div class="custom-switch custom-switch-xs pull-left">
-                    <input class="custom-switch-input" id="structureSendEmailAlert" value="<?=$struct->structureSendEmailAlert;?>" name="structureSendEmailAlert" type="checkbox">
-                    <label class="custom-switch-btn" for="structureSendEmailAlert" data-target="#structureSendEmailAlert"></label>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="row mb-15">
-        <div class="col-xs-4 text-right"><label for="structurePhone">Téléphone: <small class="fs-11">(numéros séparés par une virgule)</small></label></div>
-        <div class="col-xs-8"><input type="text" name="structurePhone" value="<?=$struct->structurePhone;?>" id="structurePhone" class="form-control" required></div>
-    </div>
-
-    <div class="row mb-15 bg-accent">
-        <div class="col-xs-4 text-right"><label for="structureEmail">E-mail <small class="fs-11">(adresses séparées par une virgule)</small> </label></div>
-        <div class="col-xs-8"><input type="text" name="structureEmail" value="<?=$struct->structureEmail;?>" id="structureEmail" class="form-control" required></div>
-    </div>
-
-    <div class="row mb-15">
-        <div class="col-xs-4 text-right"><label for="str_structureTaxInJournal">Traitement de la taxe</label></div>
-        <div class="col-xs-8 text-left">
-            <small class="fs-11">Intégrer la taxe dans le compte de compensation ?</small>
+    <div class="col-sm-6">
+        <div class="col-xs-9 text-right"><label class="form-label fs-14" for="structurePrefinanced">Préfinancement : </label></div>
+        <div class="col-xs-3 text-right">
             <div class="custom-switch custom-switch-xs">
-                <input class="custom-switch-input" value="<?=$struct->structureTaxInJournal;?>" id="structureTaxInJournal" type="checkbox" <?=($struct->structureTaxInJournal == '1')?'checked':'';?>>
-                <label class="custom-switch-btn" for="structureTaxInJournal" data-target="#structureTaxInJournal"></label>
+                <input name="structurePrefinanced" class="custom-switch-input" id="structurePrefinanced" value="<?=(!empty($struct->structurePrefinanced))?$struct->structurePrefinanced:'0';?>" type="checkbox" <?=(!empty($struct->structurePrefinanced) && $struct->structurePrefinanced == '1')?'checked':'';?>>
+                <label class="custom-switch-btn" for="structurePrefinanced" data-target="#structurePrefinanced"></label>
             </div>
         </div>
     </div>
 
-    <div class="row mb-15 bg-accent">
-        <div class="col-xs-9 "><label for="structureRestrictPayment">Paiements limités à la zone géographique</label></div>
-        <div class="col-xs-2 text-left">
+    <div class="col-sm-6">
+        <div class="col-xs-9 text-right"><label class="form-label fs-14" for="structureSendSMSAlert">Alerte SMS : </label></div>
+        <div class="col-xs-3 text-right">
+            <div class="custom-switch custom-switch-xs">
+                <input name="structureSendSMSAlert" class="custom-switch-input" id="sw_structureSendSMSAlert" value="<?=(!empty($struct->structureSendSMSAlert))?$struct->structureSendSMSAlert:'0';?>" <?=(!empty($struct->structureSendSMSAlert) && $struct->structureSendSMSAlert == '1')?'checked':'';?> type="checkbox">
+                <label class="custom-switch-btn" for="sw_structureSendSMSAlert" data-target="#sw_structureSendSMSAlert"></label>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-6">
+        <div class="col-xs-9 text-right"><label class="form-label fs-14" for="St_structureSendEmailAlert">Alerte E-mail : </label></div>
+        <div class="col-xs-3 text-right">
+            <div class="custom-switch custom-switch-xs">
+                <input name="structureSendEmailAlert" class="custom-switch-input" id="structureSendEmailAlert" value="<?=(!empty($struct->structureSendEmailAlert))?$struct->structureSendEmailAlert:'0';?>" <?=(!empty($struct->structureSendSMSAlert) && $struct->structureSendSMSAlert == '1')?'checked':'';?> type="checkbox">
+                <label class="custom-switch-btn" for="structureSendEmailAlert" data-target="#structureSendEmailAlert"></label>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-6">
+        <div class="col-xs-9 text-right"><label class="form-label fs-14" for="structureRestrictPayment" class="fs-14">Paiements limités à la zone géographique</label></div>
+        <div class="col-xs-3 text-right">
             <div class="custom-switch custom-switch-xs pl-0">
-                <input class="custom-switch-input" id="structureRestrictPayment" value="<?=$struct->structureRestrictPayment;?>" type="checkbox" <?=($struct->structureRestrictPayment == '1')?'checked':'';?>>
+                <input class="custom-switch-input" name="structureRestrictPayment" id="structureRestrictPayment" value="<?=(!empty($struct->structureRestrictPayment))?$struct->structureRestrictPayment:'0';?>" type="checkbox" <?=(!empty($struct->structureRestrictPayment) && $struct->structureRestrictPayment == '1')?'checked':'';?>>
                 <label class="custom-switch-btn" for="structureRestrictPayment" data-target="#structureRestrictPayment"></label>
             </div>
         </div>
     </div>
 
-
-    <div class="row m-b-20">
-        <div class="col-sm-6">
-            <div class="col-xs-6 text-right"><label for="structureActionRights">Actions autorisées</label></div>
-            <div class="col-xs-6">
-                <select name="structureActionRights" id="structureActionRights" class="form-control">
-                    <option <?=($struct->structureActionRights == '1')?'selected':'';?> value="1">Tous</option>
-                    <option <?=($struct->structureActionRights == '2')?'selected':'';?> value="2">Emission</option>
-                    <option <?=($struct->structureActionRights == '3')?'selected':'';?> value="3">Paiement</option>
-                </select>
+    <div class="col-sm-6">
+        <div class="col-xs-9 text-right">
+            <label class="form-label fs-14" for="str_structureTaxInJournal" class="fs-14">Traitement de la taxe</label>
+            <small class="fs-11">Intégrer la taxe dans le compte de compensation ?</small>
+        </div>
+        <div class="col-xs-3 text-right">
+            <div class="custom-switch custom-switch-xs">
+                <input class="custom-switch-input" name="structureTaxInJournal" value="<?=(!empty($struct->structureTaxInJournal))?$struct->structureTaxInJournal:'';?>" id="structureTaxInJournal" type="checkbox" <?=(!empty($struct->structureTaxInJournal) && $struct->structureTaxInJournal == '1')?'checked':'';?>>
+                <label class="custom-switch-btn" for="structureTaxInJournal" data-target="#structureTaxInJournal"></label>
             </div>
         </div>
-
-        <div class="col-sm-6">
-            <div class="col-xs-7 text-right"><label for="structurePartReseauTiersEmis">Part Réseau Tiers</label></div>
-            <div class="col-xs-5"><input type="text" name="structurePartReseauTiersEmis" value="<?=$struct->structurePartReseauTiersEmis;?>" id="structurePartReseauTiersEmis" class="form-control" required></div>
-        </div>
     </div>
 
-    <div class="row">
-        <div class="col-sm-4">
-            <div class="col-xs-4 text-right"><label for="structureTaxe">Taxe</label></div>
-            <div class="col-xs-8"><input type="text" value="<?=$struct->structureTaxe;?>" name="structureTaxe" id="structureTaxe" class="form-control" required></div>
-        </div>
-
-        <div class="col-sm-4 mb-15">
-            <div class="col-xs-7 text-right"><label for="structureDistributeurId">Distributeur</label></div>
-            <div class="col-xs-5"><input type="text" name="structureDistributeurId" <?=$struct->structureDistributeurId;?> id="structureDistributeurId" class="form-control" required></div>
-        </div>
-    </div>
-
-
-
-    <div class="row mb-15">
-        <div class="col-xs-8 text-right"><label for="">Autoriser paiements lorsque solde négatif:</label></div>
-        <div class="col-xs-4">
-            <div class="custom-switch custom-switch-xs text-left">
-                <input class="custom-switch-input" id="structureAllowPaymentWithNegativeQuota" value="<?=$struct->structureAllowPaymentWithNegativeQuota;?>" type="checkbox" <?=($struct->structureAllowPaymentWithNegativeQuota == '1')?'checked':'';?>>
+    <div class="col-sm-6">
+        <div class="col-xs-8 text-right"><label class="form-label fs-14" for="">Autoriser paiements lorsque solde négatif:</label></div>
+        <div class="col-xs-4 text-right">
+            <div class="custom-switch custom-switch-xs">
+                <input class="custom-switch-input" id="structureAllowPaymentWithNegativeQuota" name="structureAllowPaymentWithNegativeQuota" value="<?=(!empty($struct->structureAllowPaymentWithNegativeQuota))?$struct->structureAllowPaymentWithNegativeQuota:'';?>" type="checkbox" <?=(!empty($struct->structureAllowPaymentWithNegativeQuota) && $struct->structureAllowPaymentWithNegativeQuota == '1')?'checked':'';?>>
                 <label class="custom-switch-btn" for="structureAllowPaymentWithNegativeQuota" data-target="#structureAllowPaymentWithNegativeQuota"></label>
             </div>
         </div>
     </div>
 
+    <?php if(empty($do_create)):;?>
+        <input type="hidden" name="structure_id" value="<?=(!empty($struct->structureId))?$struct->structureId:'';?>">
+        <input type="hidden" name="do_modification" value="yes do it">
+    <?php endif;?>
 
 
-</div>
+<div class="clearfix"></div>
+    <hr>
+    <div class="text-center">
+        <button type="button" id="save_structure_data" class="btn btn-success btn-corner right15"><i class="fa fa-check"></i> Enregistrer</button>
+        <button type="button" class="btn btn-primary btn-corner right15 close_swal2"><i class="fa fa-times"></i> Annuler</button>
+    </div>
+</form>
