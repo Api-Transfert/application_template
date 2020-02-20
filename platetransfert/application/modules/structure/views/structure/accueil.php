@@ -57,7 +57,7 @@
                     </thead>
                     <tbody>
                     <?php foreach($stucture_data as $stuc):?>
-                        <tr>
+                        <tr id="row_<?=$stuc->structureId;?>">
                             <td><?=$stuc->structureName?></td>
                             <td><?=$stuc->typeName?></td>
                             <td><?=$stuc->structureSoldeQuota?></td>
@@ -75,7 +75,7 @@
                                    <ul class="dropdown-menu" role="menu">
                                        <li><a class="strc_view" data-id="<?=$stuc->structureId?>" href="##"><i class="fa fa-eye"></i> Voir</a></li>
                                        <li><a class="strc_edit" data-id="<?=$stuc->structureId?>" href="##"><i class="fa fa-edit"></i> Modifier</a></li>
-                                       <li><a class="strc_delete" data-id="<?=$stuc->structureId?>" href="##"><i class="fa fa-trash"></i> Supprimer</a></li>
+                                       <li><a class="strc_delete" data-row="#row_<?=$stuc->structureId;?>" data-id="<?=$stuc->structureId?>" href="##"><i class="fa fa-trash"></i> Supprimer</a></li>
                                        <li class="divider"></li>
                                        <li>
                                            <div class="p-t-3 p-b-3 p-l-20 p-r-20">
@@ -158,5 +158,18 @@
           enable_tooltip();
       });
   });
+  
+    $(document).on('click','.strc_delete',{passive:true},function () {
+        const st_id = $(this).attr('data-id');
+        const row_tag = $($(this).attr('data-row'));
+        function delete_structure(){
+            $.post(base_url+'structure/delete_structure',{'structure_id':st_id},function () {
+                show_message('success','Structure supprimé avec succès')
+            })
+        }
+        swal_confirm('Attention !','Etre vous certain de vouloir suprimer cette Structure ?',{yes:delete_structure},);
+
+
+    });
 
 </script>

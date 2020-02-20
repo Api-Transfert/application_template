@@ -9,7 +9,7 @@
             <div>
                 <div class="page-title">
                     <div class="pull-left">
-                        <h1 class="title">Menu Builder</h1>
+                        <h1 class="title">Utilisateurs</h1>
                     </div>
                 </div>
             </div>

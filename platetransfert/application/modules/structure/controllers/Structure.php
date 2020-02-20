@@ -76,6 +76,12 @@ class Structure extends MY_Controller
 
     }
 
+    public function delete_structure(){
+        if(!empty($_POST['structure_id'])){
+            $this->common_model->delete(['structureId'=>$_POST['structure_id']] , $this->structure_table);
+        }
+    }
+
 	public function create(){
 	    $data['pays'] = $this->common_model->select('pays');
 	    $this->load->view('structure/ajax/create',$data);
