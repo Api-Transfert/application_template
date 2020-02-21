@@ -1,5 +1,9 @@
 <style>
     #structure_form .custom-switch-btn{padding-top:3px}
+    <?php if(!empty($voir_structure)):;?>
+        .form-control{border:none !important;background-color: transparent !important;}
+        label{font-weight: bold !important;}
+    <?php endif;?>
 </style>
 <form id="structure_form" method="post" action="<?=base_url($form_action);?>">
 
@@ -14,7 +18,7 @@
         <div class="col-xs-8">
             <select name="structurePaysId" id="structurePaysId" class="form-control" required>
                 <?php foreach($pays as $p):
-                    if(!empty($struct)){
+                    if(!empty($struc)){
                         $selected = ($p->paysId == $struct->paysId)?'selected' : '';
                     }
                     else{
@@ -181,9 +185,11 @@
 
 
 <div class="clearfix"></div>
-    <hr>
-    <div class="text-center">
-        <button type="button" id="save_structure_data" class="btn btn-success btn-corner right15"><i class="fa fa-check"></i> Enregistrer</button>
-        <button type="button" class="btn btn-primary btn-corner right15 close_swal2"><i class="fa fa-times"></i> Annuler</button>
-    </div>
+    <?php if(empty($voir_structure)):;?>
+        <hr>
+        <div class="text-center">
+            <button type="button" id="save_structure_data" class="btn btn-success btn-corner right15"><i class="fa fa-check"></i> Enregistrer</button>
+            <button type="button" class="btn btn-primary btn-corner right15 close_swal2"><i class="fa fa-times"></i> Annuler</button>
+        </div>
+    <?php endif;?>
 </form>

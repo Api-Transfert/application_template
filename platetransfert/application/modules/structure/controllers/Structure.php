@@ -31,6 +31,12 @@ class Structure extends MY_Controller
 		$this->layout->template_view($data);
 	}
 
+	public function update_stucture_status(){
+	    if(!empty($_POST)){
+	        $this->structure_model->update_structure_status();
+        }
+    }
+
 	public function edit_structure(){
 	    if(!empty($_POST['structure_id'])){
 	        if(empty($_POST['do_modification'])){
@@ -39,6 +45,9 @@ class Structure extends MY_Controller
                 $data['type'] = $this->common_model->select("type_structure");
 	            $data['structure_tutelle'] = $this->common_model->getAllData($this->structure_table,'structureId , structureName');
                 $data['form_action'] = 'structure/edit_structure';
+                if(!empty($_POST['voir_structure'])){
+                    $data['voir_structure'] = 'voir structure';
+                }
                 $this->load->view('structure/structure/ajax/edit_structure',$data);
             }
 

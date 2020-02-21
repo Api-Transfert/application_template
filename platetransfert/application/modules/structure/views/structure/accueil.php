@@ -159,17 +159,29 @@
       });
   });
   
-    $(document).on('click','.strc_delete',{passive:true},function () {
+  $(document).on('click','.strc_delete',{passive:true},function () {
         const st_id = $(this).attr('data-id');
         const row_tag = $($(this).attr('data-row'));
         function delete_structure(){
             $.post(base_url+'structure/delete_structure',{'structure_id':st_id},function () {
-                show_message('success','Structure supprimé avec succès')
+                show_message('success','Structure supprimé avec succès');
+                $(row_tag).remove();
+
             })
         }
         swal_confirm('Attention !','Etre vous certain de vouloir suprimer cette Structure ?',{yes:delete_structure},);
 
 
+    });
+
+  $(document).on('click','.strc_view',{passive:true},function () {
+        const structure_id = $(this).attr('data-id');
+        show_loader();
+        $.post(base_url+'structure/edit_structure',{'voir_structure':'voir_structure','structure_id':structure_id},function (view_structure) {
+            sweetDialog(view_structure,{size:'90%' , showCancelButton:false});
+            enable_tooltip();
+            $('#structure_form *').prop('disabled',true);
+        });
     });
 
   //fix pour bouton switch
