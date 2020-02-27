@@ -43,6 +43,7 @@ class Agence extends MY_Controller
                 $data['agence'] = $this->agence_model->get_agence_for_edition(['agenceId'=>$_POST['agence_id']] , 'row');
                 $data['pays'] = $this->common_model->select("pays");
                 $data['structure'] = $this->common_model->getAllData('structure','structureId , structureName');
+                $data['zones'] = $this->common_model->getAllData('reseau','reseauId , reseauName',null , ['resauStatus'=>'1']);
                 $data['form_action'] = 'structure/agence/edit_agence';
                 if(!empty($_POST['voir_agence'])){
                     $data['voir_agence'] = 'voir agence';
@@ -77,6 +78,7 @@ class Agence extends MY_Controller
         }
         else{
             $data['structure'] = $this->common_model->getAllData('structure','structureId , structureName');
+            $data['zones'] = $this->common_model->getAllData('reseau','reseauId , reseauName',null , ['resauStatus'=>'1']);
             $data['pays'] = $this->common_model->select("pays");
             $data['form_action'] = 'structure/agence/create_agence';
             $data['do_create'] = 'yes create';

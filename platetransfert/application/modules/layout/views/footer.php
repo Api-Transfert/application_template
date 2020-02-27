@@ -107,7 +107,8 @@
             showCloseButton:true
         })
     }
-    
+
+
     $(document).on('click','.close_swal2',{passive:true},function () {
         swal.close();
     });

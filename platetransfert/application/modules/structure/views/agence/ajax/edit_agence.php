@@ -64,6 +64,25 @@
         </div>
     </div>
 
+    <div class="col-sm-6">
+        <div class="col-xs-4 text-right"><label class="form-label fs-14" for="structurePaysId">Pays : </label></div>
+        <div class="col-xs-8">
+            <select name="agenceReseauId" id="agenceReseauId" class="form-control" required>
+                <option value="">Selectionnez une zone</option>
+                <?php foreach($zones as $zone):
+                    if(!empty($agence)){
+                        $selected = ($zone->reseauId == $agence->agenceReseauId)?'selected' : '';
+                    }
+                    else{
+                        $selected = '';
+                    }
+                    ?>
+                    <option value="<?=$zone->reseauId?>" <?=$selected;?>><?=$zone->reseauName;?></option>
+                <?php endforeach;?>
+            </select>
+        </div>
+    </div>
+
     <div class="clearfix"></div>
 
     <?php if(empty($do_create)):;?>
