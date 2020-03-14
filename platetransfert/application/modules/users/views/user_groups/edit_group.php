@@ -1,9 +1,4 @@
 <!-- Main content start -->
-<style>
-    .sub{
-        width: 90%;
-    }
-</style>
 <section id="main-content">
   <section class="wrapper">
       <!-- page start-->
@@ -26,8 +21,7 @@
 
                 <?php foreach ($privileges as $privilege):?>
                       <div>
-                          <label class="btn btn-default btn-block text-left no-pb <?=($privilege->menu_name == 'sub')?'sub pull-right':null;?>" style="margin-top: 5px;text-align: left">
-
+                          <label class="btn btn-white btn-block text-left no-pb <?=($privilege->menu_name == 'sub')?'sub pull-right':null;?>" style="margin-top: 5px;text-align: left"
                               <?php
                               $pID = $privilege->perm_id;
                               $checked = null;

@@ -7,8 +7,9 @@ Created on 20/1/2017
 Company Parexons
 */
 
-class Zone extends MY_Controller 
+class Zone extends MY_Controller
 {
+    private $reseau_table = 'reseau';
 	public function __construct()
 	{
 		parent::__construct();
@@ -26,79 +27,40 @@ class Zone extends MY_Controller
 
 	public function index($value='')
 	{
-		$this->dashboard();
-		
+        $data['zones']=$this->zone_model->get_reseau();
+        $data['page'] = "zone/accueil";
+        $this->layout->template_view($data);
+
 	}
 
+    public function update_reseau_status(){
+        if(!empty($_POST)){
+            $this->zone_model->update_reseau_status();
+        }
+    }
 
-	public function dashboard($value='')
-	{
+    public function edit_zone(){
+        if(!empty($_POST['reseauId'])){
+            if(empty($_POST['do_modification'])){
+                $data['reseau'] = $this->zone_model->get_reseau($_POST['reseauId']);
+                $data['form_action'] = 'zone/edit_zone';
+                if(!empty($_POST['see_data'])){
+                    $data['see_data'] = 'see data';
+                }
+                $this->load->view('zone/ajax/edit_zone',$data);
+            }
 
-		$data['zones']=$this->zone_model->get_all_pays();
-		$data['page'] = "zone/zone/accueil";
-		$this->layout->template_view($data);
-	}
+            else{
+                $reseau_id = $_POST['reseauId'];
+                unset($_POST['reseauId']);
+                unset($_POST['do_modification']);
+                $reseau_data = remove_empty($_POST);
+                $this->common_model->do_update($this->reseau_table,['reseauId'=>$reseau_id] , $reseau_data);
+                $this->session->set_flashdata('success','Zone mis à jour avec succès');
+                redirect('zone');
+            }
 
-	public function layout_boxed()
-	{
-		// $data['sidebar'] = $this->template->load_sidebar();
-		view('transfert/layout/layout-boxed');
-	}
+        }
 
-	public function mega_menu($value='')
-	{
-		view("transfert/layout/mega_menu");
-	}
-
-	public function layout_horizontal($value='')
-	{
-		view("transfert/layout/layout-horizontal");
-	}
-
-	public function layout_sidebar_scroll($value='')
-	{
-		$data['page'] = "extras/layout/layout-sidebar-scroll";
-		$this->template->template_view($data);
-	}
-
-
-
-
-	public function structure($value='')
-	{
-		$data['page'] = "transfert/structure/accueil";
-		$this->layout->template_view($data);
-	}
-
-
-	public function agence($value='')
-	{
-		$data['page'] = "transfert/agence/accueil";
-		$this->layout->template_view($data);
-	}
-
-	public function layout_static_leftbar($value='')
-	{
-		$data['page'] = "transfert/layout/layout-static-leftbar";
-		$this->template->template_view($data);
-	}
-
-	public function app_inbox()
-	{
-		view("transfert/layout/email_template");
-	}
-
-	public function email_compose()
-	{
-		$data['page'] = "transfert/extra/inbox_compose";
-		$this->template->template_view($data);
-	}
-
-	public function userguide()
-	{
-		view('userguide/index');
-	}
+    }
 }
-
-/* End of file Extras.php */
-/* Location: ./application/controllers/Extras.php */

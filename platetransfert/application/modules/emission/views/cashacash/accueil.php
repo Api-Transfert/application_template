@@ -9,8 +9,7 @@
                 </div>
             </div>
 
-
-            <div class="col-lg-12">
+            <div class="col-xs-12">
                 <section class="box has-border-left-3">
                     <header class="panel_header">
                         <h2 class="text-center bg-accent">Informations Expéditeur</h2>
@@ -18,7 +17,7 @@
                     <div class="content-body">
                         <div class="row">
                             <div class="form-container">
-                                <form id="cashacash_form" method="post" action="<?=base_url('emission/cashacash/create');?>">
+                                <form id="cashacash_form" class="ajax-form" method="post" action="<?=base_url('emission/cashacash/create');?>">
 
                                     <div class="row">
                                         <div class="col-xs-12">
@@ -59,7 +58,7 @@
                                                 <div class="form-group">
                                                     <label class="form-label">Nature de la pièce d'identité*:	</label>
                                                     <div class="controls">
-                                                        <input type="text" class="form-control" name="pid_nature" required>
+                                                        <input type="text" class="form-control" name="exp_pid_nature" required>
                                                     </div>
                                                 </div>
                                             </div>
@@ -67,7 +66,7 @@
                                                 <div class="form-group">
                                                     <label class="form-label">Numéro de la pièce d'identité*:</label>
                                                     <div class="controls">
-                                                        <input type="text" class="form-control" name="pid_numero" required>
+                                                        <input type="text" class="form-control" name="exp_pid_numero" required>
                                                     </div>
                                                 </div>
                                             </div>
@@ -75,7 +74,7 @@
                                                 <div class="form-group">
                                                     <label class="form-label">Etablie à*:</label>
                                                     <div class="controls">
-                                                        <input type="text" class="form-control" name="etablie_a" required>
+                                                        <input type="text" class="form-control" name="exp_etablie_a" required>
                                                     </div>
                                                 </div>
                                             </div>
@@ -83,7 +82,7 @@
                                                 <div class="form-group">
                                                     <label class="form-label">Etablie le*:	</label>
                                                     <div class="controls">
-                                                        <input type="date" class="form-control" name="etablie_le" required>
+                                                        <input type="date" class="form-control" name="exp_etablie_le" required>
                                                     </div>
                                                 </div>
                                             </div>
@@ -92,7 +91,7 @@
                                                     <label class="form-label">Pays d'émission de la pièce*:
                                                     </label>
                                                     <div class="controls">
-                                                        <input type="text" class="form-control" name="pay_emission_piece" required>
+                                                        <input type="text" class="form-control" name="exp_pay_emission_piece" required>
                                                     </div>
                                                 </div>
                                             </div>
@@ -119,7 +118,7 @@
                                                     <label class="form-label">Email:
                                                     </label>
                                                     <div class="controls">
-                                                        <input type="email" class="form-control" name="email">
+                                                        <input type="email" class="form-control" name="exp_email">
                                                     </div>
                                                 </div>
                                             </div>
@@ -128,9 +127,9 @@
                                                     <label class="form-label">Alerte SMS / E-mail:
                                                     </label>
                                                     <div class="controls">
-                                                        <input name="alert_email_sms" value="1" tabindex="5" type="radio" id="minimal-checkbox-1" class="icheck-minimal-green" checked>
+                                                        <input name="exp_alert_email_sms" value="1" tabindex="5" type="radio" id="minimal-checkbox-1" class="icheck-minimal-green" checked>
                                                         <label class="icheck-label form-label" for="minimal-checkbox-1">Oui</label>
-                                                        <input name="alert_email_sms" value="0" tabindex="5" type="radio" id="minimal-checkbox-2" class="icheck-minimal-red">
+                                                        <input name="exp_alert_email_sms" value="0" tabindex="5" type="radio" id="minimal-checkbox-2" class="icheck-minimal-red">
                                                         <label class="icheck-label form-label" for="minimal-checkbox-2">Non</label>
                                                     </div>
                                                 </div>
@@ -139,7 +138,7 @@
                                                 <div class="form-group">
                                                     <label class="form-label">Bénéficiaires habituels: </label>
                                                     <div class="controls">
-                                                        <input type="text" class="form-control" name="bene_habituel">
+                                                        <input type="text" class="form-control" name="exp_bene_habituel">
                                                     </div>
                                                 </div>
                                             </div>
@@ -200,7 +199,7 @@
                                                 <div class="form-group">
                                                     <label class="form-label">Montant en lettres: </label>
                                                     <div class="controls">
-                                                        <input type="text" class="form-control" name="montant_letre">
+                                                        <input type="text" class="form-control" name="ifm_montant_letre">
                                                     </div>
                                                 </div>
                                             </div>
@@ -208,42 +207,45 @@
                                                 <div class="form-group">
                                                     <label class="form-label">Montant en chiffres*: </label>
                                                     <div class="controls">
-                                                        <input type="number" class="form-control" name="montant_chiffre" required>
+                                                        <input type="number" class="form-control" name="ifm_montant_chiffre" required>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="col-lg-6 no-pl">
                                                 <div class="form-group">
-                                                    <label class="form-label"> Frais d'envoi HT: <strong>0</strong> </label>
+                                                    <label class="form-label"> Frais d'envoi HT:
+                                                    <input type="number" value="0" class="no-border" name="ifm_frai_envoi_ht" readonly></label>
                                                 </div>
                                             </div>
                                             <div class="col-lg-6 no-pl">
                                                 <div class="form-group">
-                                                    <label class="form-label"> Taxe: <strong>0</strong> </label>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-6 no-pl">
-                                                <div class="form-group">
-                                                    <label class="form-label">
-                                                        CTHU: <strong>0</strong>
+                                                    <label class="form-label"> Taxe:
+                                                        <input type="number" class="no-border" name="ifm_taxe" value="0" readonly>
                                                     </label>
                                                 </div>
                                             </div>
                                             <div class="col-lg-6 no-pl">
                                                 <div class="form-group">
                                                     <label class="form-label">
-                                                        Frais d'envoi TTC: <strong>0</strong>
+                                                        CTHU: <input type="number" value="0" name="ifm_cthu" class="no-border" readonly>
                                                     </label>
                                                 </div>
                                             </div>
                                             <div class="col-lg-6 no-pl">
                                                 <div class="form-group">
                                                     <label class="form-label">
-                                                        Montant en devise: <strong>0</strong>
+                                                        Frais d'envoi TTC: <input type="number" name="ifm_frai_envoi_ttc" value="0" class="no-border" readonly>
                                                     </label>
                                                 </div>
                                             </div>
-                                            <div class="col-lg-12 no-pl">
+                                            <div class="col-lg-6 no-pl">
+                                                <div class="form-group">
+                                                    <label class="form-label">
+                                                        Montant en devise: <input type="number" class="no-border" value="0" readonly name="ifm_montant_en_devise">
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12 no-pl">
                                                 <div class="form-group" style="font-size: 2rem; text-align: center">
                                                     <label class="form-label"> <strong>Montant à payer:</strong> </label>
                                                     <div style="margin-top: 1rem">

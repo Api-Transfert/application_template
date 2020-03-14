@@ -56,6 +56,9 @@
         const router_class = 'admin/<?=$this->router->fetch_class();?>';
         const router_method = '<?=$this->router->fetch_method();?>';
     </script>
+    <style>
+        .no-border{border:none !important;}
+    </style>
     <!-- LIBS CSS TEMPLATE - END -->
 </head>
 <body>

@@ -1,5 +1,5 @@
 <style>
-    #structure_form .custom-switch-btn{padding-top:3px}
+    #agence_form .custom-switch-btn{padding-top:3px}
     <?php if(!empty($voir_agence)):;?>
         .form-control{border:none !important;background-color: transparent !important;}
         label{font-weight: bold !important;}
@@ -65,7 +65,7 @@
     </div>
 
     <div class="col-sm-6">
-        <div class="col-xs-4 text-right"><label class="form-label fs-14" for="structurePaysId">Pays : </label></div>
+        <div class="col-xs-4 text-right"><label class="form-label fs-14" for="structurePaysId">Zone : </label></div>
         <div class="col-xs-8">
             <select name="agenceReseauId" id="agenceReseauId" class="form-control" required>
                 <option value="">Selectionnez une zone</option>
@@ -80,6 +80,16 @@
                     <option value="<?=$zone->reseauId?>" <?=$selected;?>><?=$zone->reseauName;?></option>
                 <?php endforeach;?>
             </select>
+        </div>
+    </div>
+    
+    <div class="col-sm-6 m-t-10">
+        <div class="col-xs-4 text-right"><label class="fs-14" for="agenceActives">Status</label></div>
+        <div class="col-xs-8 text-left">
+            <div class="custom-switch custom-switch-xs pl-0">
+                <input class="custom-switch-input" name="agenceActive" value="<?=(!empty($agence->agenceActive))?$agence->agenceActive:'';?>" id="agenceActive" type="checkbox" <?=(!empty($agence->agenceActive) && $agence->agenceActive == '1')?'checked':'';?>>
+                <label class="custom-switch-btn" data-target="#agenceActive" for="agenceActive"></label>
+            </div>
         </div>
     </div>
 

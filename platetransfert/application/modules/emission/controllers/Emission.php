@@ -29,16 +29,41 @@ class Emission extends MY_Controller
 	    if(!empty($action)){
 	        if($action == 'create'){
 	            if(!empty($_POST)){
-	                $this->emission_model->create_cashacash($_POST);
-	                $this->session->set_flashdata('success_message','Données enregistrer avec succès');
-	                redirect('emission/cashacash');
+	                $transfert_id = $this->emission_model->create_transfert($_POST);
+	                if($transfert_id != false){
+                        if(!empty($transfert_id)){
+                            $result = $this->emission_model->create_cashacash($transfert_id , $_POST);
+                            if($result){
+                                $response = [
+                                    'status'=>true,
+                                    'message'=>'Transfert Cree avec success'
+                                ];
+                            }
+                            else{
+                                $response = [
+                                  'status'=>false,
+                                  'message','Une erreur est survenue.. Veillez reesayer',
+                                ];
+                            }
+                        }
+                    }
+                    else{
+                        $response = [
+                            'status'=>false,
+                            'message','imposible de cree le transfert',
+                        ];
+                    }
+                    display(json_encode($response));
                 }
             }
         }
+        else{
 
-        $data['page'] = "emission/cashacash/accueil";
-        $data['pays'] = $this->common_model->select("pays");
-        $this->layout->template_view($data);
+            $data['page'] = "emission/cashacash/accueil";
+            $data['pays'] = $this->common_model->select("pays");
+            $this->layout->template_view($data);
+        }
+
 
 		
 	}

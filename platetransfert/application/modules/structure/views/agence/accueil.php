@@ -178,4 +178,22 @@
       });
   });
 
+  //fix pour bouton switch
+  $(document).on('submit','form',{passive:true},function (e) {
+      const form = $(this);
+      if(!has_attr(form,'let_it_go')){
+          e.preventDefault();
+          $(form).attr('let_it_go' , 'submiting');
+          //retirer l'id pour s'assurer que la valeur ne sera pas modifier lor de l'envois
+          $('.custom-switch-input').removeAttr('id');
+          setTimeout(function () {
+              $('.custom-switch-input').prop('checked',true);
+              setTimeout(function () {
+                  $(form).submit();
+              },50)
+          },50)
+      }
+
+  });
+
 </script>
