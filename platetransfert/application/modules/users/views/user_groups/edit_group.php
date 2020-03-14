@@ -1,3 +1,8 @@
+<style>
+    .sub{
+        width: 90%;
+    }
+</style>
 <!-- Main content start -->
 <section id="main-content">
   <section class="wrapper">
@@ -21,7 +26,7 @@
 
                 <?php foreach ($privileges as $privilege):?>
                       <div>
-                          <label class="btn btn-white btn-block text-left no-pb <?=($privilege->menu_name == 'sub')?'sub pull-right':null;?>" style="margin-top: 5px;text-align: left"
+                          <label class="btn btn-white btn-block text-left no-pb <?=($privilege->menu_name == 'sub')?'sub pull-right':null;?>" style="margin-top: 5px;text-align: left">
                               <?php
                               $pID = $privilege->perm_id;
                               $checked = null;
@@ -45,7 +50,7 @@
                       </div>
                       <div class="clearfix"></div>
                 <?php endforeach?>
-                     
+
 
             <?php endif ?>
 
@@ -87,7 +92,7 @@ $(document).ready(function() {
    {
       var group_name = $("#group_name").val();
 
-      if (group_name.length === 0) 
+      if (group_name.length === 0)
       {
         $('#err_msg').text('Group Name is required');
         return false;
@@ -98,7 +103,7 @@ $(document).ready(function() {
         method: 'POST',
         dataType: 'TEXT',
         data: {group_name: group_name},
-        success: function(result) 
+        success: function(result)
         {
           var msg = result.split("::");
 
@@ -106,7 +111,7 @@ $(document).ready(function() {
           {
             $("#err_msg").fadeIn();
             $("#err_msg").text("Group name already taken.");
-          }  
+          }
           else
           {
             console.log('Success');
@@ -115,7 +120,7 @@ $(document).ready(function() {
             $("#err_msg").delay(3000).fadeOut();
           }
         },
-        error:function(result) 
+        error:function(result)
         {
           // body...
           console.log(result);
