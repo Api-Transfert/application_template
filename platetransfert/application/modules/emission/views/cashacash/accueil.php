@@ -207,7 +207,7 @@
                                                 <div class="form-group">
                                                     <label class="form-label">Montant en chiffres*: </label>
                                                     <div class="controls">
-                                                        <input type="number" class="form-control" name="ifm_montant_chiffre" required>
+                                                        <input type="number" id="structure_montant" min="1" class="form-control" name="ifm_montant_chiffre" required>
                                                     </div>
                                                 </div>
                                             </div>
@@ -255,7 +255,7 @@
                                             </div>
 
                                             <div class="pull-right">
-                                                <button type="button" id="submit_form" class="btn btn-primary btn-corner right15"><i class="fa fa-check"></i> Enrégistrer</button>
+                                                <button type="button" id="submit_form" class="btn btn-primary btn-corner right15" disabled><i class="fa fa-check"></i> Enrégistrer</button>
                                             </div>
                                         </div>
                                     </div>
@@ -274,9 +274,25 @@
     <!-- END CONTENT -->
 </div>
 <script>
+    const submit_btn = '#submit_form';
     $(document).on('click','#submit_form',{passive:true},function () {
         if(validate_form('cashacash_form')){
             $('#cashacash_form').submit();
         }
+    });
+    
+    $(document).on('blur','#structure_montant , [name="ifm_montant_chiffre"]',{passive:true},function () {
+        const value = $(this).val();
+        $.post(base_url+'emission/check_structure_quota_sold',{montant:value},function (response) {
+            response = $.parseJSON(response);
+            if(response.status === true){
+                show_message('success',response.message);
+                $(submit_btn).prop('disabled',false);
+            }
+            else{
+                show_message('error',response.message);
+                $(submit_btn).prop('disabled',true);
+            }
+        })
     });
 </script>

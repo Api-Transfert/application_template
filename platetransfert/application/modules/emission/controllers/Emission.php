@@ -29,30 +29,43 @@ class Emission extends MY_Controller
 	    if(!empty($action)){
 	        if($action == 'create'){
 	            if(!empty($_POST)){
-	                $transfert_id = $this->emission_model->create_transfert($_POST);
-	                if($transfert_id != false){
-                        if(!empty($transfert_id)){
-                            $result = $this->emission_model->create_cashacash($transfert_id , $_POST);
-                            if($result){
-                                $response = [
-                                    'status'=>true,
-                                    'message'=>'Transfert Cree avec success'
-                                ];
+
+	                if($this->check_structure_quota_sold($_POST['ifm_montant_chiffre'])){
+                        $transfert_id = $this->emission_model->create_transfert($_POST);
+                        if($transfert_id != false){
+                            if(!empty($transfert_id)){
+                                $result = $this->emission_model->create_cashacash($transfert_id , $_POST);
+                                if($result){
+                                    $response = [
+                                        'status'=>true,
+                                        'message'=>'Le transfert a été créé avec succès'
+                                    ];
+                                }
+                                else{
+                                    $response = [
+                                        'status'=>false,
+                                        'message','Une erreur est survenue. Veillez réessayer',
+                                    ];
+                                }
                             }
-                            else{
-                                $response = [
-                                  'status'=>false,
-                                  'message','Une erreur est survenue.. Veillez reesayer',
-                                ];
-                            }
+                        }
+                        else{
+                            $response = [
+                                'status'=>false,
+                                'message','Impossible de créer le transfert.',
+                            ];
                         }
                     }
                     else{
                         $response = [
                             'status'=>false,
-                            'message','imposible de cree le transfert',
+                            'message'=>'Désoler Votre structure n’a pas assez de fond pour transférer ce montant !',
                         ];
                     }
+
+
+
+
                     display(json_encode($response));
                 }
             }
@@ -106,5 +119,43 @@ class Emission extends MY_Controller
 		$data['page'] = "transfert/agence/accueil";
 		$this->layout->template_view($data);
 	}
+
+	public function check_structure_quota_sold($amount = ''){
+
+	    if(!empty($_POST['montant'])){
+	        $montant =(int) $_POST['montant'];
+	        $structure_data = $this->common_model->get_users_strc_data();
+	        $solde = (float) $structure_data->structureSoldeQuota;
+
+	        if($montant <= $solde){
+	            $response = [
+	                'status'=>true,
+                    'message'=>'Montant valide',
+                ];
+            }
+            else{
+	            $response = [
+	                'status'=>false,
+                    'message'=>'Désoler Votre structure n’a pas assez de fond pour transférer ce montant !',
+                ];
+            }
+
+            display(json_encode($response));
+        }
+
+        if(!empty($montant)){
+            $montant =(int) $_POST['montant'];
+            $structure_data = $this->common_model->get_users_strc_data();
+            $solde = (float) $structure_data->structureSoldeQuota;
+
+            if($montant <= $solde){
+                return true;
+            }
+            else{
+                return false;
+            }
+
+        }
+    }
 
 }

@@ -327,4 +327,18 @@ class Common_model extends CI_Model
         return $query->result();
     }
 
+    public function get_users_strc_data($where = [] , $return_type = 'row')
+    {
+        if(empty($where)){
+            $where = ['users.id'=>$this->session->userdata('user_id')];
+        }
+
+        return $this->db->select('*')
+            ->join('agence', "agence.agenceStructureId = users.agenceId")
+            ->join('structure', "agence.agenceStructureId = structure.structureId")
+            ->where($where)
+            ->get('users')->$return_type();
+
+    }
+
 }
