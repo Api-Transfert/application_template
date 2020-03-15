@@ -2,50 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2874ce28-c258-4896-aadf-63073e9dd720" name="Default Changelist" comment="Default Changelist">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platetransfert/uploads/avatar/unknow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra/platetransfert.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platetransfert/application/helpers/mix_helper.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platetransfert/application/modules/ajax/controllers/Ajax.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platetransfert/application/modules/ajax/models/Menu_model.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platetransfert/application/modules/ajax/views/index.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platetransfert/application/modules/menu/controllers/Menu.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platetransfert/application/modules/menu/models/Menu_model.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platetransfert/application/modules/menu/views/index.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platetransfert/assets/libs/pwstrength/pwstrength.min.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platetransfert/application/models/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platetransfert/application/modules/extras/models/Ion_auth_model.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platetransfert/application/modules/master/models/Ion_auth_model.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platetransfert/application/modules/menu/models/Ion_auth_model.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platetransfert/application/modules/pays/models/Ion_auth_model.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platetransfert/application/modules/site_config/models/Common_model.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platetransfert/application/modules/site_config/models/Ion_auth_model.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platetransfert/application/modules/structure/models/Ion_auth_model.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platetransfert/application/modules/tarification/models/Ion_auth_model.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platetransfert/application/modules/todo/models/Common_model.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platetransfert/application/modules/todo/models/Ion_auth_model.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platetransfert/application/modules/transfert/models/Ion_auth_model.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platetransfert/application/modules/users/models/Common_model.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platetransfert/application/modules/users/models/Ion_auth_model.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platetransfert/application/modules/zone/models/Ion_auth_model.php" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/platetransfert/application/modules/commission/models/Ion_auth_model.php" afterPath="$PROJECT_DIR$/platetransfert/application/models/Ion_auth_model.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platetransfert/application/config/autoload.php" afterPath="$PROJECT_DIR$/platetransfert/application/config/autoload.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platetransfert/application/helpers/my_helper.php" afterPath="$PROJECT_DIR$/platetransfert/application/helpers/my_helper.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platetransfert/application/models/Common_model.php" afterPath="$PROJECT_DIR$/platetransfert/application/models/Common_model.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platetransfert/application/modules/emission/views/cashacash/accueil.php" afterPath="$PROJECT_DIR$/platetransfert/application/modules/emission/views/cashacash/accueil.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platetransfert/application/modules/layout/controllers/Layout.php" afterPath="$PROJECT_DIR$/platetransfert/application/modules/layout/controllers/Layout.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platetransfert/application/modules/layout/views/footer.php" afterPath="$PROJECT_DIR$/platetransfert/application/modules/layout/views/footer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platetransfert/application/modules/layout/views/head.php" afterPath="$PROJECT_DIR$/platetransfert/application/modules/layout/views/head.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platetransfert/application/modules/layout/views/sidebar.php" afterPath="$PROJECT_DIR$/platetransfert/application/modules/layout/views/sidebar.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platetransfert/application/modules/users/controllers/Auth.php" afterPath="$PROJECT_DIR$/platetransfert/application/modules/users/controllers/Auth.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platetransfert/application/modules/users/controllers/Permissions.php" afterPath="$PROJECT_DIR$/platetransfert/application/modules/users/controllers/Permissions.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platetransfert/application/modules/users/controllers/User_groups.php" afterPath="$PROJECT_DIR$/platetransfert/application/modules/users/controllers/User_groups.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platetransfert/application/modules/users/controllers/Users.php" afterPath="$PROJECT_DIR$/platetransfert/application/modules/users/controllers/Users.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platetransfert/application/modules/users/views/user_groups/edit_group.php" afterPath="$PROJECT_DIR$/platetransfert/application/modules/users/views/user_groups/edit_group.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platetransfert/application/modules/users/views/users/edit_user.php" afterPath="$PROJECT_DIR$/platetransfert/application/modules/users/views/users/edit_user.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platetransfert/application/modules/users/views/users/view_users.php" afterPath="$PROJECT_DIR$/platetransfert/application/modules/users/views/users/view_users.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platetransfert/application/third_party/MX/Controller.php" afterPath="$PROJECT_DIR$/platetransfert/application/third_party/MX/Controller.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platetransfert/application/third_party/dompdf/lib/fonts/log.htm" afterPath="$PROJECT_DIR$/platetransfert/application/third_party/dompdf/lib/fonts/log.htm" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platetransfert/assets/libs/custom/dp.min.js" afterPath="$PROJECT_DIR$/platetransfert/assets/libs/custom/dp.min.js" />
     </list>
     <ignored path=".idea/" />
@@ -74,7 +31,7 @@
         <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
       </PATH_ELEMENT>
       <PATH_ELEMENT>
-        <option name="myItemId" value="@localhost" />
+        <option name="myItemId" value="platetransfert@localhost" />
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
     </PATH>
@@ -84,7 +41,7 @@
         <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
       </PATH_ELEMENT>
       <PATH_ELEMENT>
-        <option name="myItemId" value="@localhost" />
+        <option name="myItemId" value="platetransfert@localhost" />
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
       <PATH_ELEMENT>
@@ -98,7 +55,7 @@
         <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
       </PATH_ELEMENT>
       <PATH_ELEMENT>
-        <option name="myItemId" value="@localhost" />
+        <option name="myItemId" value="platetransfert@localhost" />
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
       <PATH_ELEMENT>
@@ -106,7 +63,7 @@
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
       <PATH_ELEMENT>
-        <option name="myItemId" value="permissions" />
+        <option name="myItemId" value="agence" />
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
     </PATH>
@@ -117,116 +74,91 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="footer.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/layout/views/footer.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="57" column="125" lean-forward="false" selection-start-line="57" selection-start-column="125" selection-end-line="57" selection-end-column="125" />
-              <folding>
-                <element signature="e#3899#4591#0#HTML" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Users.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/users/controllers/Users.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="49" column="31" lean-forward="false" selection-start-line="49" selection-start-column="30" selection-end-line="49" selection-end-column="31" />
-              <folding>
-                <element signature="e#168#675#0#PHP" expanded="true" />
-                <element signature="e#678#1262#0#PHP" expanded="true" />
-                <element signature="e#1817#4231#0#PHP" expanded="true" />
-                <element signature="e#4257#5203#0#PHP" expanded="true" />
-                <element signature="e#5228#12785#0#PHP" expanded="true" />
-                <element signature="e#12791#13137#0#PHP" expanded="true" />
-                <element signature="e#13143#13447#0#PHP" expanded="true" />
-                <element signature="e#13453#13781#0#PHP" expanded="true" />
-                <element signature="e#13814#15552#0#PHP" expanded="true" />
-                <element signature="e#15583#16305#0#PHP" expanded="true" />
-                <element signature="e#16311#17465#0#PHP" expanded="true" />
-                <element signature="e#17472#18023#0#PHP" expanded="true" />
-                <element signature="e#18029#18357#0#PHP" expanded="true" />
-                <element signature="e#18364#19805#0#PHP" expanded="true" />
-                <element signature="e#19811#20163#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="scratch_2.php" pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_2.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="173">
-              <caret line="45" column="24" lean-forward="true" selection-start-line="45" selection-start-column="24" selection-end-line="46" selection-end-column="61" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="edit_group.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/users/views/user_groups/edit_group.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="75" column="40" lean-forward="false" selection-start-line="75" selection-start-column="40" selection-end-line="75" selection-end-column="40" />
-              <folding>
-                <element signature="n#style#0;n#label#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#0;n#div#0;n#section#0;n#section#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#p#1;n#div#1;n#div#0;n#section#0;n#div#0;n#div#0;n#section#0;n#section#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="User_groups.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/users/controllers/User_groups.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="166" column="100" lean-forward="false" selection-start-line="166" selection-start-column="100" selection-end-line="166" selection-end-column="100" />
+            <state relative-caret-position="288">
+              <caret line="18" column="21" lean-forward="false" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="view_users.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/users/views/users/view_users.php">
+      <file leaf-file-name="head.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/layout/views/head.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="491">
-              <caret line="126" column="37" lean-forward="true" selection-start-line="126" selection-start-column="37" selection-end-line="126" selection-end-column="37" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#header#0;n#section#0;n#div#1;n#div#0;n#section#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="e#8233#8559#0#HTML" expanded="true" />
-                <element signature="e#8310#8548#0#HTML" expanded="true" />
-                <element signature="e#8472#8528#0#HTML" expanded="true" />
-                <element signature="e#8759#10388#0#HTML" expanded="true" />
-                <element signature="e#9252#9638#0#HTML" expanded="true" />
-                <element signature="e#9386#9619#0#HTML" expanded="true" />
-                <element signature="e#9842#10232#0#HTML" expanded="true" />
-                <element signature="e#9976#10213#0#HTML" expanded="true" />
-                <element signature="e#10459#10610#0#HTML" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="edit_user.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/users/views/users/edit_user.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="317">
-              <caret line="127" column="0" lean-forward="true" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
+            <state relative-caret-position="752">
+              <caret line="47" column="50" lean-forward="false" selection-start-line="47" selection-start-column="37" selection-end-line="47" selection-end-column="50" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Ajax.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/ajax/controllers/Ajax.php">
+      <file leaf-file-name="Grille.php" pinned="false" current-in-tab="false">
+        <entry file="file://E:/Grille.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-695">
+              <caret line="27" column="49" lean-forward="true" selection-start-line="27" selection-start-column="49" selection-end-line="27" selection-end-column="49" />
+              <folding>
+                <element signature="n#__construct#0;n#Grille#0;n#!!top" expanded="true" />
+                <element signature="n#index#0;n#Grille#0;n#!!top" expanded="true" />
+                <element signature="n#getFrais#0;n#Grille#0;n#!!top" expanded="true" />
+                <element signature="n#cashacash#0;n#Grille#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="accueil.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/structure/views/structure/accueil.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-199">
+              <caret line="88" column="43" lean-forward="true" selection-start-line="88" selection-start-column="43" selection-end-line="88" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Emission.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/emission/controllers/Emission.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="39" column="11" lean-forward="false" selection-start-line="39" selection-start-column="11" selection-end-line="39" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dp.min.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/platetransfert/assets/libs/custom/dp.min.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="303">
-              <caret line="34" column="54" lean-forward="false" selection-start-line="34" selection-start-column="54" selection-end-line="34" selection-end-column="54" />
+              <caret line="880" column="25" lean-forward="false" selection-start-line="880" selection-start-column="25" selection-end-line="880" selection-end-column="25" />
               <folding>
-                <element signature="n#__construct#0;n#Ajax#0;n#!!top" expanded="true" />
-                <element signature="n#run_query#0;n#Ajax#0;n#!!top" expanded="true" />
+                <element signature="n#!!block;n#validate_form#0" expanded="true" />
+                <element signature="n#!!block;n#show_error_message#0" expanded="true" />
+                <element signature="e#31355#31459#0" expanded="true" />
+                <element signature="n#!!block;n#closeSwallTwo#0" expanded="true" />
+                <element signature="e#36127#37043#0" expanded="true" />
+                <element signature="n#!!block;n#get_form_data#0" expanded="true" />
+                <marker date="1584282129552" expanded="true" signature="25498:25515" ph="..." />
+                <marker date="1584282129552" expanded="true" signature="25715:25729" ph="..." />
+                <marker date="1584282129552" expanded="true" signature="25821:25835" ph="..." />
+                <marker date="1584282129552" expanded="true" signature="26473:26487" ph="..." />
+                <marker date="1584282129552" expanded="true" signature="26712:26726" ph="..." />
+                <marker date="1584282129552" expanded="true" signature="26956:26970" ph="..." />
+                <marker date="1584282129552" expanded="true" signature="27017:27031" ph="..." />
+                <marker date="1584282129552" expanded="true" signature="27077:27091" ph="..." />
+                <marker date="1584282129552" expanded="true" signature="27208:27222" ph="..." />
+                <marker date="1584282129552" expanded="true" signature="27277:27291" ph="..." />
+                <marker date="1584282129552" expanded="true" signature="27369:27383" ph="..." />
+                <marker date="1584282129552" expanded="true" signature="27489:27503" ph="..." />
+                <marker date="1584282129552" expanded="true" signature="27776:27934" ph="..." />
+                <marker date="1584282129552" expanded="true" signature="28060:28074" ph="..." />
+                <marker date="1584282129552" expanded="true" signature="28154:28168" ph="..." />
+                <marker date="1584282129552" expanded="true" signature="28233:28247" ph="..." />
+                <marker date="1584282129552" expanded="true" signature="35206:35220" ph="..." />
+                <marker date="1584282129552" expanded="true" signature="35457:35471" ph="..." />
               </folding>
             </state>
           </provider>
@@ -244,40 +176,38 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>text-danger</find>
-      <find>form_id</find>
-      <find>err_msg</find>
-      <find>invalid email</find>
-      <find>phone</find>
-      <find>mon</find>
-      <find>validate_form</find>
-      <find>submit_form</find>
-      <find>cashacash_form</find>
-      <find>cashawalet</find>
-      <find>\&lt;div class\=\&quot;page\-chatapi hideit\&quot;\&gt;\n\n        \&lt;div class\=\&quot;search\-bar\&quot;\&gt;\n            \&lt;input type\=\&quot;text\&quot; placeholder\=\&quot;Search\&quot; class\=\&quot;form\-control\&quot;\&gt;\n        \&lt;\/div\&gt;\n\n        \&lt;div class\=\&quot;chat\-wrapper\&quot;\&gt;\n\n            \&lt;h4 class\=\&quot;group\-head\&quot;\&gt;Favourites\&lt;\/h4\&gt;\n            \&lt;ul class\=\&quot;contact\-list\&quot;\&gt;\n\n                \&lt;li class\=\&quot;user\-row \&quot; id\=\'chat_user_1\' data\-user\-id\=\'1\'\&gt;\n                    \&lt;div class\=\&quot;user\-img\&quot;\&gt;\n                        \&lt;a href\=\&quot;\#\&quot;\&gt;\&lt;img src\=\&quot;\&lt;\?php bs\(\)\?\&gt;assets\/data\/profile\/avatar\-1\.png\&quot; alt\=\&quot;\&quot;\&gt;\&lt;\/a\&gt;\n                    \&lt;\/div\&gt;\n                    \&lt;div class\=\&quot;user\-info\&quot;\&gt;\n                        \&lt;h4\&gt;\&lt;a href\=\&quot;\#\&quot;\&gt;Joge Lucky\&lt;\/a\&gt;\&lt;\/h4\&gt;\n                        \&lt;span class\=\&quot;status available\&quot; data\-status\=\&quot;available\&quot;\&gt; Available\&lt;\/span\&gt;\n                    \&lt;\/div\&gt;\n                    \&lt;div class\=\&quot;user\-status available\&quot;\&gt;\n                        \&lt;i class\=\&quot;fa fa\-circle\&quot;\&gt;\&lt;\/i\&gt;\n                    \&lt;\/div\&gt;\n                \&lt;\/li\&gt;\n                \&lt;li class\=\&quot;user\-row \&quot; id\=\'chat_user_2\' data\-user\-id\=\'2\'\&gt;\n                    \&lt;div class\=\&quot;user\-img\&quot;\&gt;\n                        \&lt;a href\=\&quot;\#\&quot;\&gt;\&lt;img src\=\&quot;\&lt;\?php bs\(\)\?\&gt;assets\/data\/profile\/avatar\-2\.png\&quot; alt\=\&quot;\&quot;\&gt;\&lt;\/a\&gt;\n                    \&lt;\/div\&gt;\n                    \&lt;div class\=\&quot;user\-info\&quot;\&gt;\n                        \&lt;h4\&gt;\&lt;a href\=\&quot;\#\&quot;\&gt;Folisise Chosiel\&lt;\/a\&gt;\&lt;\/h4\&gt;\n                        \&lt;span class\=\&quot;status away\&quot; data\-status\=\&quot;away\&quot;\&gt; Away\&lt;\/span\&gt;\n                    \&lt;\/div\&gt;\n                    \&lt;div class\=\&quot;user\-status away\&quot;\&gt;\n                        \&lt;i class\=\&quot;fa fa\-circle\&quot;\&gt;\&lt;\/i\&gt;\n                    \&lt;\/div\&gt;\n                \&lt;\/li\&gt;\n                \&lt;li class\=\&quot;user\-row \&quot; id\=\'chat_user_3\' data\-user\-id\=\'3\'\&gt;\n                    \&lt;div class\=\&quot;user\-img\&quot;\&gt;\n                        \&lt;a href\=\&quot;\#\&quot;\&gt;\&lt;img src\=\&quot;\&lt;\?php bs\(\)\?\&gt;assets\/data\/profile\/avatar\-3\.png\&quot; alt\=\&quot;\&quot;\&gt;\&lt;\/a\&gt;\n                    \&lt;\/div\&gt;\n                    \&lt;div class\=\&quot;user\-info\&quot;\&gt;\n                        \&lt;h4\&gt;\&lt;a href\=\&quot;\#\&quot;\&gt;Aron Gonzalez\&lt;\/a\&gt;\&lt;\/h4\&gt;\n                        \&lt;span class\=\&quot;status busy\&quot; data\-status\=\&quot;busy\&quot;\&gt; Busy\&lt;\/span\&gt;\n                    \&lt;\/div\&gt;\n                    \&lt;div class\=\&quot;user\-status busy\&quot;\&gt;\n                        \&lt;i class\=\&quot;fa fa\-circle\&quot;\&gt;\&lt;\/i\&gt;\n                    \&lt;\/div\&gt;\n                \&lt;\/li\&gt;\n\n            \&lt;\/ul\&gt;\n\n            \&lt;h4 class\=\&quot;group\-head\&quot;\&gt;More Contacts\&lt;\/h4\&gt;\n            \&lt;ul class\=\&quot;contact\-list\&quot;\&gt;\n\n                \&lt;li class\=\&quot;user\-row \&quot; id\=\'chat_user_4\' data\-user\-id\=\'4\'\&gt;\n                    \&lt;div class\=\&quot;user\-img\&quot;\&gt;\n                        \&lt;a href\=\&quot;\#\&quot;\&gt;\&lt;img src\=\&quot;\&lt;\?php bs\(\)\?\&gt;assets\/data\/profile\/avatar\-4\.png\&quot; alt\=\&quot;\&quot;\&gt;\&lt;\/a\&gt;\n                    \&lt;\/div\&gt;\n                    \&lt;div class\=\&quot;user\-info\&quot;\&gt;\n                        \&lt;h4\&gt;\&lt;a href\=\&quot;\#\&quot;\&gt;Chris Fox\&lt;\/a\&gt;\&lt;\/h4\&gt;\n                        \&lt;span class\=\&quot;status offline\&quot; data\-status\=\&quot;offline\&quot;\&gt; Offline\&lt;\/span\&gt;\n                    \&lt;\/div\&gt;\n                    \&lt;div class\=\&quot;user\-status offline\&quot;\&gt;\n                        \&lt;i class\=\&quot;fa fa\-circle\&quot;\&gt;\&lt;\/i\&gt;\n                    \&lt;\/div\&gt;\n                \&lt;\/li\&gt;\n                \&lt;li class\=\&quot;user\-row \&quot; id\=\'chat_user_5\' data\-user\-id\=\'5\'\&gt;\n                    \&lt;div class\=\&quot;user\-img\&quot;\&gt;\n                        \&lt;a href\=\&quot;\#\&quot;\&gt;\&lt;img src\=\&quot;\&lt;\?php bs\(\)\?\&gt;assets\/data\/profile\/avatar\-5\.png\&quot; alt\=\&quot;\&quot;\&gt;\&lt;\/a\&gt;\n                    \&lt;\/div\&gt;\n                    \&lt;div class\=\&quot;user\-info\&quot;\&gt;\n                        \&lt;h4\&gt;\&lt;a href\=\&quot;\#\&quot;\&gt;Mogen Polish\&lt;\/a\&gt;\&lt;\/h4\&gt;\n                        \&lt;span class\=\&quot;status offline\&quot; data\-status\=\&quot;offline\&quot;\&gt; Offline\&lt;\/span\&gt;\n                    \&lt;\/div\&gt;\n                    \&lt;div class\=\&quot;user\-status offline\&quot;\&gt;\n                        \&lt;i class\=\&quot;fa fa\-circle\&quot;\&gt;\&lt;\/i\&gt;\n                    \&lt;\/div\&gt;\n                \&lt;\/li\&gt;\n                \&lt;li class\=\&quot;user\-row \&quot; id\=\'chat_user_6\' data\-user\-id\=\'6\'\&gt;\n                    \&lt;div class\=\&quot;user\-img\&quot;\&gt;\n                        \&lt;a href\=\&quot;\#\&quot;\&gt;\&lt;img src\=\&quot;\&lt;\?php bs\(\)\?\&gt;assets\/data\/profile\/avatar\-1\.png\&quot; alt\=\&quot;\&quot;\&gt;\&lt;\/a\&gt;\n                    \&lt;\/div\&gt;\n                    \&lt;div class\=\&quot;user\-info\&quot;\&gt;\n                        \&lt;h4\&gt;\&lt;a href\=\&quot;\#\&quot;\&gt;Smith Carter\&lt;\/a\&gt;\&lt;\/h4\&gt;\n                        \&lt;span class\=\&quot;status available\&quot; data\-status\=\&quot;available\&quot;\&gt; Available\&lt;\/span\&gt;\n                    \&lt;\/div\&gt;\n                    \&lt;div class\=\&quot;user\-status available\&quot;\&gt;\n                        \&lt;i class\=\&quot;fa fa\-circle\&quot;\&gt;\&lt;\/i\&gt;\n                    \&lt;\/div\&gt;\n                \&lt;\/li\&gt;\n                \&lt;li class\=\&quot;user\-row \&quot; id\=\'chat_user_7\' data\-user\-id\=\'7\'\&gt;\n                    \&lt;div class\=\&quot;user\-img\&quot;\&gt;\n                        \&lt;a href\=\&quot;\#\&quot;\&gt;\&lt;img src\=\&quot;\&lt;\?php bs\(\)\?\&gt;assets\/data\/profile\/avatar\-2\.png\&quot; alt\=\&quot;\&quot;\&gt;\&lt;\/a\&gt;\n                    \&lt;\/div\&gt;\n                    \&lt;div class\=\&quot;user\-info\&quot;\&gt;\n                        \&lt;h4\&gt;\&lt;a href\=\&quot;\#\&quot;\&gt;Amilia Gozenal\&lt;\/a\&gt;\&lt;\/h4\&gt;\n                        \&lt;span class\=\&quot;status busy\&quot; data\-status\=\&quot;busy\&quot;\&gt; Busy\&lt;\/span\&gt;\n                    \&lt;\/div\&gt;\n                    \&lt;div class\=\&quot;user\-status busy\&quot;\&gt;\n                        \&lt;i class\=\&quot;fa fa\-circle\&quot;\&gt;\&lt;\/i\&gt;\n                    \&lt;\/div\&gt;\n                \&lt;\/li\&gt;\n                \&lt;li class\=\&quot;user\-row \&quot; id\=\'chat_user_8\' data\-user\-id\=\'8\'\&gt;\n                    \&lt;div class\=\&quot;user\-img\&quot;\&gt;\n                        \&lt;a href\=\&quot;\#\&quot;\&gt;\&lt;img src\=\&quot;\&lt;\?php bs\(\)\?\&gt;assets\/data\/profile\/avatar\-3\.png\&quot; alt\=\&quot;\&quot;\&gt;\&lt;\/a\&gt;\n                    \&lt;\/div\&gt;\n                    \&lt;div class\=\&quot;user\-info\&quot;\&gt;\n                        \&lt;h4\&gt;\&lt;a href\=\&quot;\#\&quot;\&gt;Tahir Jemyship\&lt;\/a\&gt;\&lt;\/h4\&gt;\n                        \&lt;span class\=\&quot;status away\&quot; data\-status\=\&quot;away\&quot;\&gt; Away\&lt;\/span\&gt;\n                    \&lt;\/div\&gt;\n                    \&lt;div class\=\&quot;user\-status away\&quot;\&gt;\n                        \&lt;i class\=\&quot;fa fa\-circle\&quot;\&gt;\&lt;\/i\&gt;\n                    \&lt;\/div\&gt;\n                \&lt;\/li\&gt;\n                \&lt;li class\=\&quot;user\-row \&quot; id\=\'chat_user_9\' data\-user\-id\=\'9\'\&gt;\n                    \&lt;div class\=\&quot;user\-img\&quot;\&gt;\n                        \&lt;a href\=\&quot;\#\&quot;\&gt;\&lt;img src\=\&quot;\&lt;\?php bs\(\)\?\&gt;assets\/data\/profile\/avatar\-4\.png\&quot; alt\=\&quot;\&quot;\&gt;\&lt;\/a\&gt;\n                    \&lt;\/div\&gt;\n                    \&lt;div class\=\&quot;user\-info\&quot;\&gt;\n                        \&lt;h4\&gt;\&lt;a href\=\&quot;\#\&quot;\&gt;Johanson Wright\&lt;\/a\&gt;\&lt;\/h4\&gt;\n                        \&lt;span class\=\&quot;status busy\&quot; data\-status\=\&quot;busy\&quot;\&gt; Busy\&lt;\/span\&gt;\n                    \&lt;\/div\&gt;\n                    \&lt;div class\=\&quot;user\-status busy\&quot;\&gt;\n                        \&lt;i class\=\&quot;fa fa\-circle\&quot;\&gt;\&lt;\/i\&gt;\n                    \&lt;\/div\&gt;\n                \&lt;\/li\&gt;\n                \&lt;li class\=\&quot;user\-row \&quot; id\=\'chat_user_10\' data\-user\-id\=\'10\'\&gt;\n                    \&lt;div class\=\&quot;user\-img\&quot;\&gt;\n                        \&lt;a href\=\&quot;\#\&quot;\&gt;\&lt;img src\=\&quot;\&lt;\?php bs\(\)\?\&gt;assets\/data\/profile\/avatar\-5\.png\&quot; alt\=\&quot;\&quot;\&gt;\&lt;\/a\&gt;\n                    \&lt;\/div\&gt;\n                    \&lt;div class\=\&quot;user\-info\&quot;\&gt;\n                        \&lt;h4\&gt;\&lt;a href\=\&quot;\#\&quot;\&gt;Loni Tindall\&lt;\/a\&gt;\&lt;\/h4\&gt;\n                        \&lt;span class\=\&quot;status away\&quot; data\-status\=\&quot;away\&quot;\&gt; Away\&lt;\/span\&gt;\n                    \&lt;\/div\&gt;\n                    \&lt;div class\=\&quot;user\-status away\&quot;\&gt;\n                        \&lt;i class\=\&quot;fa fa\-circle\&quot;\&gt;\&lt;\/i\&gt;\n                    \&lt;\/div\&gt;\n                \&lt;\/li\&gt;\n                \&lt;li class\=\&quot;user\-row \&quot; id\=\'chat_user_11\' data\-user\-id\=\'11\'\&gt;\n                    \&lt;div class\=\&quot;user\-img\&quot;\&gt;\n                        \&lt;a href\=\&quot;\#\&quot;\&gt;\&lt;img src\=\&quot;\&lt;\?php bs\(\)\?\&gt;assets\/data\/profile\/avatar\-1\.png\&quot; alt\=\&quot;\&quot;\&gt;\&lt;\/a\&gt;\n                    \&lt;\/div\&gt;\n                    \&lt;div class\=\&quot;user\-info\&quot;\&gt;\n                        \&lt;h4\&gt;\&lt;a href\=\&quot;\#\&quot;\&gt;Natcho Herlaey\&lt;\/a\&gt;\&lt;\/h4\&gt;\n                        \&lt;span class\=\&quot;status idle\&quot; data\-status\=\&quot;idle\&quot;\&gt; Idle\&lt;\/span\&gt;\n                    \&lt;\/div\&gt;\n                    \&lt;div class\=\&quot;user\-status idle\&quot;\&gt;\n                        \&lt;i class\=\&quot;fa fa\-circle\&quot;\&gt;\&lt;\/i\&gt;\n                    \&lt;\/div\&gt;\n                \&lt;\/li\&gt;\n                \&lt;li class\=\&quot;user\-row \&quot; id\=\'chat_user_12\' data\-user\-id\=\'12\'\&gt;\n                    \&lt;div class\=\&quot;user\-img\&quot;\&gt;\n                        \&lt;a href\=\&quot;\#\&quot;\&gt;\&lt;img src\=\&quot;\&lt;\?php bs\(\)\?\&gt;assets\/data\/profile\/avatar\-2\.png\&quot; alt\=\&quot;\&quot;\&gt;\&lt;\/a\&gt;\n                    \&lt;\/div\&gt;\n                    \&lt;div class\=\&quot;user\-info\&quot;\&gt;\n                        \&lt;h4\&gt;\&lt;a href\=\&quot;\#\&quot;\&gt;Shakira Swedan\&lt;\/a\&gt;\&lt;\/h4\&gt;\n                        \&lt;span class\=\&quot;status idle\&quot; data\-status\=\&quot;idle\&quot;\&gt; Idle\&lt;\/span\&gt;\n                    \&lt;\/div\&gt;\n                    \&lt;div class\=\&quot;user\-status idle\&quot;\&gt;\n                        \&lt;i class\=\&quot;fa fa\-circle\&quot;\&gt;\&lt;\/i\&gt;\n                    \&lt;\/div\&gt;\n                \&lt;\/li\&gt;\n\n            \&lt;\/ul\&gt;\n        \&lt;\/div\&gt;\n\n    \&lt;\/div\&gt;\n\n    \&lt;div class\=\&quot;chatapi\-windows \&quot;\&gt;\n\n    \&lt;\/div\&gt;</find>
-      <find>question</find>
-      <find>&quot;&gt;&lt;/i&gt;</find>
-      <find />
-      <find>class Common_model</find>
-      <find>-&gt;icon</find>
-      <find>fs-24</find>
-      <find>$this-&gt;template-&gt;template_view($data);</find>
-      <find>flash</find>
-      <find>ion_auth</find>
-      <find>admin/menu</find>
-      <find>'error'</find>
-      <find>users_modal-&gt;</find>
-      <find>get_users_groups</find>
-      <find>fas</find>
-      <find>com_model</find>
-      <find>com_model-&gt;</find>
-      <find>upload</find>
-      <find>get_users</find>
-      <find>col-md-5</find>
+      <find>pays</find>
+      <find>data-st-tag</find>
+      <find>email</find>
+      <find>$zone-&gt;</find>
+      <find>agenceId</find>
+      <find>agence_</find>
+      <find>create_agence</find>
+      <find>$agence-&gt;</find>
+      <find>sweetAlertTwo</find>
+      <find>get_form_in</find>
+      <find>bene_habituel</find>
+      <find>pid</find>
+      <find>col-lg-12</find>
+      <find>agence</find>
+      <find>custom</find>
+      <find>cu</find>
+      <find>cus</find>
+      <find>custo</find>
+      <find>custom</find>
+      <find>customsw</find>
+      <find>customs</find>
+      <find>s</find>
+      <find>switch</find>
+      <find>l</find>
+      <find>li</find>
+      <find>lib</find>
+      <find>lib/</find>
+      <find>lib/cus</find>
+      <find>lib/cu</find>
+      <find>lib/c</find>
     </findStrings>
     <replaceStrings>
-      <replace>class=&quot;row mb-15&quot;</replace>
-      <replace>col-sm-6</replace>
       <replace>== '1')</replace>
       <replace>col-md</replace>
       <replace>Ce champ est obligatoire</replace>
@@ -288,9 +218,31 @@
       <replace>'success_message'</replace>
       <replace>'error_message'</replace>
       <replace>common_model-&gt;</replace>
+      <replace>&lt;?=bs(</replace>
+      <replace>&quot;&lt;?=bs()?&gt;</replace>
+      <replace>&lt;?=bs()?&gt;</replace>
+      <replace>&lt;label class=&quot;form-label&quot; for=&quot;</replace>
+      <replace>fs-14</replace>
+      <replace>(isset($struct-&gt;structureCodeBanque))</replace>
+      <replace>isset</replace>
+      <replace>structure/agence</replace>
+      <replace>structure/agence/</replace>
+      <replace>agence</replace>
+      <replace>agence_st_</replace>
+      <replace>$agence-&gt;</replace>
+      <replace>agence_</replace>
+      <replace>voir_agence</replace>
+      <replace>reseauId</replace>
+      <replace>zone</replace>
+      <replace>reseau_</replace>
+      <replace>create_reseau</replace>
+      <replace>$reseau-&gt;</replace>
+      <replace>col-xs-12</replace>
     </replaceStrings>
     <dirStrings>
       <dir>C:\wamp64\www\application_template\platetransfert\application\modules\todo</dir>
+      <dir>C:\wamp64\www\application_template\platetransfert\application\helpers</dir>
+      <dir>C:\wamp64\www\application_template\platetransfert\assets\libs\custom_switch</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -303,56 +255,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/platetransfert/application/config/database.php" />
-        <option value="$PROJECT_DIR$/platetransfert/assets/libs/custom/swal.js" />
-        <option value="$PROJECT_DIR$/platetransfert/application/modules/structure/models/Structure_model.php" />
-        <option value="$PROJECT_DIR$/platetransfert/application/modules/structure/views/structure/ajax/edit_structure.php" />
-        <option value="$PROJECT_DIR$/platetransfert/application/modules/users/views/user_groups/permissions.php" />
-        <option value="$PROJECT_DIR$/platetransfert/application/config/config.php" />
-        <option value="$PROJECT_DIR$/platetransfert/application/modules/emission/models/Structure_model.php" />
-        <option value="$PROJECT_DIR$/platetransfert/assets/libs/css/fix.css" />
-        <option value="$PROJECT_DIR$/platetransfert/public/assets/fullcalendar/fullcalendar/bootstrap-fullcalendar.css" />
-        <option value="$PROJECT_DIR$/assets/plugins/jquery-validation/js/jquery.validate.min.js" />
-        <option value="$PROJECT_DIR$/platetransfert/assets/assets/plugins/jquery-validation/js/jquery.validate.min.js" />
-        <option value="$PROJECT_DIR$/platetransfert/assets/plugins/jquery-validation/js/jquery.validate.min.js" />
-        <option value="$PROJECT_DIR$/platetransfert/public/js/jquery.validate.min.js" />
-        <option value="$PROJECT_DIR$/platetransfert/template/assets/plugins/jquery-validation/js/jquery.validate.min.js" />
-        <option value="$PROJECT_DIR$/platetransfert/assets/css/style.css" />
-        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.php" />
-        <option value="$PROJECT_DIR$/platetransfert/application/modules/layout/views/chat_api.php" />
-        <option value="$PROJECT_DIR$/platetransfert/application/modules/structure/views/structure/accueil.php" />
-        <option value="$PROJECT_DIR$/platetransfert/application/modules/structure/controllers/Structure.php" />
-        <option value="$PROJECT_DIR$/platetransfert/application/modules/emission/models/Emission_model.php" />
-        <option value="$PROJECT_DIR$/platetransfert/application/modules/emission/controllers/Emission.php" />
-        <option value="$PROJECT_DIR$/platetransfert/application/modules/emission/views/cashawallet/accueil.php" />
-        <option value="$PROJECT_DIR$/platetransfert/application/modules/menu/models/Menu_model.php" />
-        <option value="$PROJECT_DIR$/platetransfert/application/modules/layout/views/head.php" />
-        <option value="$PROJECT_DIR$/platetransfert/application/modules/emission/views/cashacash/accueil.php" />
-        <option value="$PROJECT_DIR$/platetransfert/application/helpers/my_helper.php" />
-        <option value="$PROJECT_DIR$/platetransfert/application/core/MY_Controller.php" />
-        <option value="$PROJECT_DIR$/platetransfert/application/third_party/MX/Controller.php" />
-        <option value="$PROJECT_DIR$/platetransfert/application/modules/layout/controllers/Layout.php" />
-        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_1.php" />
         <option value="$PROJECT_DIR$/platetransfert/application/modules/users/controllers/Auth.php" />
         <option value="$PROJECT_DIR$/platetransfert/application/modules/users/controllers/Permissions.php" />
         <option value="$PROJECT_DIR$/platetransfert/application/helpers/mix_helper.php" />
         <option value="$PROJECT_DIR$/platetransfert/application/modules/layout/views/sidebar.php" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/77d277cf-ed66-4591-8f0d-db4cef752674/console.sql" />
         <option value="$PROJECT_DIR$/platetransfert/application/modules/menu/views/index.php" />
-        <option value="$PROJECT_DIR$/platetransfert/application/modules/layout/views/footer.php" />
         <option value="$PROJECT_DIR$/platetransfert/application/modules/users/controllers/Users.php" />
         <option value="$PROJECT_DIR$/platetransfert/application/modules/menu/controllers/Menu.php" />
-        <option value="$PROJECT_DIR$/platetransfert/application/modules/layout/views/dashboard.php" />
         <option value="$PROJECT_DIR$/platetransfert/application/models/Ion_auth_model.php" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_2.php" />
-        <option value="$PROJECT_DIR$/platetransfert/assets/libs/custom/dp.min.js" />
-        <option value="$PROJECT_DIR$/platetransfert/application/models/Common_model.php" />
         <option value="$PROJECT_DIR$/platetransfert/application/modules/ajax/controllers/Ajax.php" />
         <option value="$PROJECT_DIR$/platetransfert/application/config/autoload.php" />
-        <option value="$PROJECT_DIR$/platetransfert/application/modules/users/views/users/view_users.php" />
         <option value="$PROJECT_DIR$/platetransfert/application/modules/users/views/users/edit_user.php" />
-        <option value="$PROJECT_DIR$/platetransfert/application/modules/users/views/user_groups/edit_group.php" />
         <option value="$PROJECT_DIR$/platetransfert/application/modules/users/controllers/User_groups.php" />
+        <option value="$PROJECT_DIR$/platetransfert/application/modules/users/views/users/view_users.php" />
+        <option value="$PROJECT_DIR$/platetransfert/application/modules/commission/views/layout/email_template.php" />
+        <option value="$PROJECT_DIR$/platetransfert/application/modules/commission/views/Forms/form-components.php" />
+        <option value="$PROJECT_DIR$/platetransfert/application/modules/ajax/views/index.php" />
+        <option value="$PROJECT_DIR$/platetransfert/application/modules/users/views/user_groups/view_group.php" />
+        <option value="$PROJECT_DIR$/platetransfert/public/assets/advanced-datatable/examples/advanced_init/column_render.html" />
+        <option value="$PROJECT_DIR$/platetransfert/public/assets/ckeditor/samples/api.html" />
+        <option value="$PROJECT_DIR$/platetransfert/frontend/frontend/assets/bxslider/jquery.bxslider.css" />
+        <option value="$PROJECT_DIR$/platetransfert/application/models/Common_model.php" />
+        <option value="$PROJECT_DIR$/platetransfert/assets/libs/sweetalert2/dist/sweetalert2.all.js" />
+        <option value="$PROJECT_DIR$/platetransfert/application/modules/layout/views/dashboard.php" />
+        <option value="$PROJECT_DIR$/platetransfert/application/modules/structure/models/Structure_model.php" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.php" />
+        <option value="$PROJECT_DIR$/platetransfert/application/helpers/my_helper.php" />
+        <option value="$PROJECT_DIR$/platetransfert/application/modules/agence/controllers/Agence.php" />
+        <option value="$PROJECT_DIR$/platetransfert/application/modules/agence/models/Agence_model.php" />
+        <option value="$PROJECT_DIR$/platetransfert/application/modules/structure/controllers/Structure.php" />
+        <option value="$PROJECT_DIR$/platetransfert/application/modules/structure/models/Agence_model.php" />
+        <option value="$PROJECT_DIR$/platetransfert/application/modules/structure/views/structure/ajax/edit_structure.php" />
+        <option value="$PROJECT_DIR$/platetransfert/application/modules/structure/views/structure/accueil.php" />
+        <option value="$PROJECT_DIR$/platetransfert/application/modules/layout/views/footer.php" />
+        <option value="$PROJECT_DIR$/platetransfert/application/modules/structure/controllers/Agence.php" />
+        <option value="$PROJECT_DIR$/platetransfert/application/modules/structure/views/agence/ajax/edit_agence.php" />
+        <option value="$PROJECT_DIR$/platetransfert/application/modules/structure/views/agence/accueil.php" />
+        <option value="$PROJECT_DIR$/platetransfert/application/modules/zone/models/Zone_model.php" />
+        <option value="$PROJECT_DIR$/platetransfert/application/modules/zone/controllers/Zone.php" />
+        <option value="$PROJECT_DIR$/platetransfert/application/modules/zone/views/accueil.php" />
+        <option value="$PROJECT_DIR$/platetransfert/application/modules/zone/views/ajax/edit_zone.php" />
+        <option value="$USER_HOME$/Documents/SQL Server Management Studio/Project_shop_here/A_Main_Code.sql" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/77d277cf-ed66-4591-8f0d-db4cef752674/console.sql" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/77d277cf-ed66-4591-8f0d-db4cef752674/console_1.sql" />
+        <option value="$PROJECT_DIR$/platetransfert/application/modules/layout/views/head.php" />
+        <option value="$PROJECT_DIR$/platetransfert/application/modules/emission/models/Emission_model.php" />
+        <option value="$PROJECT_DIR$/platetransfert/application/modules/emission/controllers/Emission.php" />
+        <option value="$PROJECT_DIR$/platetransfert/application/modules/emission/views/cashacash/accueil.php" />
+        <option value="$PROJECT_DIR$/platetransfert/application/modules/users/views/user_groups/permissions.php" />
+        <option value="$PROJECT_DIR$/platetransfert/application/modules/users/views/user_groups/edit_group.php" />
+        <option value="$PROJECT_DIR$/platetransfert/assets/libs/custom/dp.min.js" />
       </list>
     </option>
   </component>
@@ -411,6 +364,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -423,9 +377,88 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application_template" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application_template" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="platetransfert" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application_template" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application_template" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="platetransfert" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application_template" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application_template" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="platetransfert" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="libs" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application_template" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application_template" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="platetransfert" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="libs" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="custom" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -434,12 +467,12 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="ignore_missing_gitignore" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../2asof/qc_source" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/extra" />
     <property name="node.js.path.for.package.jscs" value="project" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="node.js.detected.package.jscs" value="true" />
     <property name="node.js.selected.package.jscs" value="" />
-    <property name="settings.editor.selected.configurable" value="editing.templates" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Font" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
@@ -448,16 +481,18 @@
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$2/Languages" value="PHP" />
+    <property name="full.screen.before.presentation.mode" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\wamp64\www\application_template\extra" />
-      <recent name="C:\wamp64\www\application_template\platetransfert\assets\libs" />
-      <recent name="C:\wamp64\www\application_template\platetransfert\application\modules" />
-      <recent name="C:\wamp64\www\application_template\platetransfert\uploads\avatar" />
-      <recent name="C:\wamp64\www\application_template\platetransfert\application\models" />
+      <recent name="C:\wamp64\www\application_template\platetransfert\database" />
+      <recent name="C:\wamp64\www\application_template\platetransfert\application\views" />
+      <recent name="C:\wamp64\www\application_template\platetransfert\application\modules\zone\views\ajax" />
+      <recent name="C:\wamp64\www\application_template\platetransfert\application\modules\structure\views\agence" />
+      <recent name="C:\wamp64\www\application_template\platetransfert\application\modules\structure\models" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\application_template\platetransfert\application\modules\zone\views" />
       <recent name="C:\wamp64\www\application_template\platetransfert\application\models" />
       <recent name="C:\xampp\htdocs\api_transfert_design" />
     </key>
@@ -565,7 +600,29 @@
       <workItem from="1581940476473" duration="21484000" />
       <workItem from="1582046567871" duration="3649000" />
       <workItem from="1582062085294" duration="437000" />
-      <workItem from="1582062588213" duration="14543000" />
+      <workItem from="1582062588213" duration="59003000" />
+      <workItem from="1582219305710" duration="13077000" />
+      <workItem from="1582583003448" duration="2173000" />
+      <workItem from="1582625885463" duration="1216000" />
+      <workItem from="1582666586101" duration="476000" />
+      <workItem from="1582839901296" duration="1858000" />
+      <workItem from="1582979483770" duration="6081000" />
+      <workItem from="1583053769164" duration="571000" />
+      <workItem from="1583098811119" duration="281000" />
+      <workItem from="1583149996309" duration="20000" />
+      <workItem from="1583230096697" duration="10456000" />
+      <workItem from="1583361784264" duration="112000" />
+      <workItem from="1583538180621" duration="707000" />
+      <workItem from="1583613954012" duration="145000" />
+      <workItem from="1583831820790" duration="137000" />
+      <workItem from="1583959491978" duration="4307000" />
+      <workItem from="1584027751280" duration="33000" />
+      <workItem from="1584052224138" duration="9302000" />
+      <workItem from="1584097083019" duration="1399000" />
+      <workItem from="1584107936498" duration="12000" />
+      <workItem from="1584146207368" duration="2639000" />
+      <workItem from="1584181335631" duration="2020000" />
+      <workItem from="1584275183796" duration="1414000" />
     </task>
     <task id="LOCAL-00001" summary="Default Changelist">
       <created>1581888602176</created>
@@ -616,11 +673,123 @@
       <option name="project" value="LOCAL" />
       <updated>1582044483697</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Default Changelist">
+      <created>1582077245632</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1582077245632</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Default Changelist">
+      <created>1582113516784</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1582113516784</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Default Changelist">
+      <created>1582113580438</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1582113580438</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Default Changelist">
+      <created>1582127463718</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1582127463718</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Default Changelist">
+      <created>1582127550127</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1582127550127</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Default Changelist">
+      <created>1582127916021</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1582127916021</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Default Changelist">
+      <created>1582129219215</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1582129219215</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Default Changelist">
+      <created>1582129272523</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1582129272523</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Default Changelist">
+      <created>1582161187037</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1582161187037</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Default Changelist">
+      <created>1582219438520</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1582219438520</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Default Changelist">
+      <created>1582222357200</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1582222357200</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Default Changelist">
+      <created>1582223113059</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1582223113059</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Default Changelist">
+      <created>1582265259511</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1582265259511</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Default Changelist">
+      <created>1582841633471</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1582841633471</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Default Changelist">
+      <created>1584146372848</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1584146372848</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Default Changelist">
+      <created>1584148517939</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1584148517939</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61809000" />
+    <option name="totallyTimeSpent" value="164705000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -632,52 +801,53 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2700454" sideWeight="0.4871795" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5030257" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21860817" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.51111114" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2700454" sideWeight="0.51282054" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5325265" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43418804" sideWeight="0.4969743" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5325265" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5030257" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.51111114" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2753404" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24054463" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5332829" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32991454" sideWeight="0.4969743" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20726173" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-    </layout>
-    <layout-to-restore>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5332829" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.51111114" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2677761" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24054463" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33585477" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -711,524 +881,445 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="4" />
+      <option name="time" value="5" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/platetransfert/assets/css/add_custom.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/platetransfert/assets/libs/css/fix.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="20" lean-forward="false" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/plugins/jquery-validation/js/jquery.validate.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="3" column="4004" lean-forward="false" selection-start-line="3" selection-start-column="4004" selection-end-line="3" selection-end-column="4004" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/platetransfert/assets/assets/plugins/jquery-validation/js/jquery.validate.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="3" column="4004" lean-forward="false" selection-start-line="3" selection-start-column="4004" selection-end-line="3" selection-end-column="4004" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/platetransfert/public/js/jquery.validate.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="1" column="3836" lean-forward="false" selection-start-line="1" selection-start-column="3836" selection-end-line="1" selection-end-column="3836" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/platetransfert/template/assets/plugins/jquery-validation/js/jquery.validate.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="3" column="4004" lean-forward="false" selection-start-line="3" selection-start-column="4004" selection-end-line="3" selection-end-column="4004" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/platetransfert/assets/plugins/jquery-validation/js/jquery.validate.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="3" column="4004" lean-forward="false" selection-start-line="3" selection-start-column="4004" selection-end-line="3" selection-end-column="4004" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/platetransfert/assets/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="4757" column="102" lean-forward="false" selection-start-line="4757" selection-start-column="102" selection-end-line="4757" selection-end-column="102" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="20" column="15" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="15" />
-          <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="13" />
-          <caret line="18" column="12" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="12" />
-          <caret line="17" column="10" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="10" />
-          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="13" />
-          <caret line="15" column="11" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="11" />
-          <caret line="14" column="8" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="8" />
-          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="13" />
-          <caret line="12" column="15" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="15" />
-          <caret line="11" column="5" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="5" />
-          <caret line="10" column="7" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="7" />
-          <caret line="9" column="15" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="15" />
-          <caret line="8" column="18" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="18" />
-          <caret line="7" column="10" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="10" />
-          <caret line="6" column="9" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="9" />
-          <caret line="5" column="10" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="10" />
-          <caret line="4" column="10" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="10" />
-          <caret line="3" column="9" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="9" />
-          <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="12" />
-          <caret line="1" column="10" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="10" />
-          <caret line="0" column="7" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/layout/views/chat_api.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="169" column="6" lean-forward="false" selection-start-line="169" selection-start-column="6" selection-end-line="169" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/structure/controllers/Structure.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="63" lean-forward="false" selection-start-line="1" selection-start-column="63" selection-end-line="1" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/21ca2d7a/77d277cf-ed66-4591-8f0d-db4cef752674/platetransfert.emission__cashacash">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/21ca2d7a/77d277cf-ed66-4591-8f0d-db4cef752674/platetransfert.transfert">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/21ca2d7a/77d277cf-ed66-4591-8f0d-db4cef752674/platetransfert.emission__cashawalet">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/emission/views/cashawallet/accueil.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="21" column="109" lean-forward="false" selection-start-line="21" selection-start-column="109" selection-end-line="21" selection-end-column="109" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/emission/views/cashacash/accueil.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="272" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/menu/models/Menu_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/platetransfert/application/helpers/my_helper.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="560">
+          <caret line="84" column="40" lean-forward="false" selection-start-line="84" selection-start-column="40" selection-end-line="84" selection-end-column="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/users/controllers/Auth.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="120" column="18" lean-forward="false" selection-start-line="120" selection-start-column="18" selection-end-line="120" selection-end-column="18" />
-          <folding />
+    <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/agence/controllers/Agence.php" />
+    <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/agence/views/agence/accueil.php" />
+    <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/agence/models/Agence_model.php" />
+    <entry file="dbDummy://dbtable:/21ca2d7a/77d277cf-ed66-4591-8f0d-db4cef752674/platetransfert.joinzonetarif">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_1.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2610">
-          <caret line="145" column="5" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="145" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/users/views/user_groups/permissions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding>
-            <element signature="n#div#0;n#div#0;n#section#0;n#section#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/platetransfert/application/helpers/mix_helper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="526" column="42" lean-forward="false" selection-start-line="526" selection-start-column="42" selection-end-line="526" selection-end-column="42" />
-          <folding>
-            <element signature="e#113#273#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/21ca2d7a/77d277cf-ed66-4591-8f0d-db4cef752674/platetransfert.groups">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
         </state>
       </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/structure/models/Structure_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="35" column="46" lean-forward="true" selection-start-line="35" selection-start-column="46" selection-end-line="35" selection-end-column="46" />
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/21ca2d7a/77d277cf-ed66-4591-8f0d-db4cef752674/platetransfert.group_perm">
+    <entry file="file://$PROJECT_DIR$/extra/platetransfert_group_perm.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="13" column="73" lean-forward="true" selection-start-line="13" selection-start-column="73" selection-end-line="13" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extra/platetransfert_permissions.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/21ca2d7a/77d277cf-ed66-4591-8f0d-db4cef752674/platetransfert.permissions">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/users/controllers/Permissions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="864">
-          <caret line="52" column="10" lean-forward="true" selection-start-line="52" selection-start-column="10" selection-end-line="52" selection-end-column="10" />
-          <folding>
-            <element signature="e#115#397#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/layout/views/sidebar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="29" lean-forward="true" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
-          <folding>
-            <element signature="e#917#1782#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/layout/views/head.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="60" column="6" lean-forward="true" selection-start-line="60" selection-start-column="6" selection-end-line="60" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/emission/models/Emission_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="33" column="36" lean-forward="false" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/emission/controllers/Emission.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="5" column="33" lean-forward="true" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
-          <folding>
-            <element signature="n#__construct#0;n#Emission#0;n#!!top" expanded="false" />
-            <element signature="n#cashawallet#0;n#Emission#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/menu/views/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1095">
-          <caret line="345" column="0" lean-forward="false" selection-start-line="337" selection-start-column="7" selection-end-line="345" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#!!top" expanded="false" />
-            <element signature="n#div#3;n#!!top" expanded="false" />
-            <element signature="n#div#4;n#!!top" expanded="false" />
-            <element signature="e#15230#16184#0#HTML" expanded="false" />
-            <element signature="e#17091#17127#0#HTML" expanded="false" />
-            <element signature="e#17208#17242#0#HTML" expanded="false" />
-            <element signature="e#17451#17758#0#HTML" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/commission/models/Ion_auth_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5328">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/77d277cf-ed66-4591-8f0d-db4cef752674/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="6" lean-forward="false" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/platetransfert/application/third_party/MX/Controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="57" column="33" lean-forward="true" selection-start-line="57" selection-start-column="33" selection-end-line="57" selection-end-column="33" />
-          <folding>
-            <element signature="n#__construct#0;n#MX_Controller#0;n#!!top" expanded="true" />
-            <element signature="n#__get#0;n#MX_Controller#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/platetransfert/application/core/MY_Controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="6" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-          <folding>
-            <element signature="e#118#201#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/menu/controllers/Menu.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="41" lean-forward="true" selection-start-line="7" selection-start-column="8" selection-end-line="16" selection-end-column="41" />
-          <folding>
-            <element signature="n#index#0;n#Menu#0;n#!!top" expanded="false" />
-            <element signature="n#sub_permission#0;n#Menu#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/layout/views/dashboard.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="19" lean-forward="false" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/platetransfert/application/models/Ion_auth_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="1531" column="5" lean-forward="false" selection-start-line="1531" selection-start-column="5" selection-end-line="1531" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/layout/views/footer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="57" column="125" lean-forward="false" selection-start-line="57" selection-start-column="125" selection-end-line="57" selection-end-column="125" />
-          <folding>
-            <element signature="e#3899#4591#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/platetransfert/assets/libs/custom/dp.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="544" column="84" lean-forward="false" selection-start-line="544" selection-start-column="84" selection-end-line="544" selection-end-column="84" />
-          <folding>
-            <element signature="n#!!block;n#sweetConfirm#0" expanded="true" />
-            <element signature="n#!!block;n#validate_form#0" expanded="true" />
-            <marker date="1582073501839" expanded="true" signature="29697:29711" ph="..." />
-            <marker date="1582073501839" expanded="true" signature="29948:29962" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_2.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="45" column="24" lean-forward="true" selection-start-line="45" selection-start-column="24" selection-end-line="46" selection-end-column="61" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/platetransfert/application/models/Common_model.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="215" column="5" lean-forward="false" selection-start-line="215" selection-start-column="5" selection-end-line="215" selection-end-column="5" />
-          <folding />
+        <state relative-caret-position="288">
+          <caret line="40" column="48" lean-forward="false" selection-start-line="40" selection-start-column="44" selection-end-line="40" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/structure/controllers/Structure.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="39" column="29" lean-forward="true" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/structure/views/structure/ajax/edit_structure.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2359">
+          <caret line="20" column="36" lean-forward="false" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/structure/views/agence/ajax/edit_agence.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-265">
+          <caret line="67" column="99" lean-forward="false" selection-start-line="67" selection-start-column="99" selection-end-line="67" selection-end-column="99" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/structure/models/Agence_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="31" column="4" lean-forward="false" selection-start-line="31" selection-start-column="4" selection-end-line="33" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/structure/views/agence/accueil.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1824">
+          <caret line="149" column="35" lean-forward="false" selection-start-line="149" selection-start-column="35" selection-end-line="149" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/structure/controllers/Agence.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="41" column="49" lean-forward="false" selection-start-line="41" selection-start-column="49" selection-end-line="41" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/zone/controllers/Zone.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="44" column="82" lean-forward="false" selection-start-line="44" selection-start-column="82" selection-end-line="44" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/zone/models/Zone_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="11" column="40" lean-forward="false" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/zone/views/accueil.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2144">
+          <caret line="194" column="0" lean-forward="false" selection-start-line="194" selection-start-column="0" selection-end-line="194" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/21ca2d7a/77d277cf-ed66-4591-8f0d-db4cef752674/platetransfert.reseau">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/zone/views/ajax/edit_zone.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="624">
+          <caret line="39" column="34" lean-forward="false" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Documents/SQL Server Management Studio/Project_shop_here/A_Main_Code.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="11" column="2" lean-forward="false" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/21ca2d7a/77d277cf-ed66-4591-8f0d-db4cef752674/first_db.table_name">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/21ca2d7a/77d277cf-ed66-4591-8f0d-db4cef752674/first_db.students">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/21ca2d7a/77d277cf-ed66-4591-8f0d-db4cef752674/first_db.score">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platetransfert/application/config/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-240">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/77d277cf-ed66-4591-8f0d-db4cef752674/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="40" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platetransfert/application/config/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="82" column="21" lean-forward="true" selection-start-line="82" selection-start-column="21" selection-end-line="82" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platetransfert/assets/libs/custom/swal.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="76" column="1" lean-forward="false" selection-start-line="76" selection-start-column="1" selection-end-line="76" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/21ca2d7a/77d277cf-ed66-4591-8f0d-db4cef752674/platetransfert.emission__cashacash">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/layout/controllers/Layout.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/layout/views/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="111" column="17" lean-forward="false" selection-start-line="111" selection-start-column="17" selection-end-line="111" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/77d277cf-ed66-4591-8f0d-db4cef752674/console_1.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="22" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/21ca2d7a/77d277cf-ed66-4591-8f0d-db4cef752674/platetransfert.transfert">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/ajax/controllers/Ajax.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="34" column="54" lean-forward="false" selection-start-line="34" selection-start-column="54" selection-end-line="34" selection-end-column="54" />
-          <folding>
-            <element signature="n#__construct#0;n#Ajax#0;n#!!top" expanded="true" />
-            <element signature="n#run_query#0;n#Ajax#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/users/controllers/Users.php">
+    <entry file="file://$PROJECT_DIR$/platetransfert/application/views/display.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="49" column="31" lean-forward="false" selection-start-line="49" selection-start-column="30" selection-end-line="49" selection-end-column="31" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platetransfert/application/helpers/mix_helper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="514" column="23" lean-forward="false" selection-start-line="514" selection-start-column="23" selection-end-line="514" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/emission/models/Emission_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="83" column="24" lean-forward="false" selection-start-line="83" selection-start-column="23" selection-end-line="83" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/emission/views/cashacash/accueil.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4112">
+          <caret line="257" column="68" lean-forward="false" selection-start-line="257" selection-start-column="68" selection-end-line="257" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/21ca2d7a/77d277cf-ed66-4591-8f0d-db4cef752674/platetransfert.transferts">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/21ca2d7a/77d277cf-ed66-4591-8f0d-db4cef752674/platetransfert.transferts__cashacash">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/layout/views/head.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="752">
+          <caret line="47" column="50" lean-forward="false" selection-start-line="47" selection-start-column="37" selection-end-line="47" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/transfert/controllers/Transfert.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-201">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/users/views/user_groups/permissions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/users/views/user_groups/edit_group.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="18" column="21" lean-forward="false" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/21ca2d7a/77d277cf-ed66-4591-8f0d-db4cef752674/platetransfert.agence">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/21ca2d7a/77d277cf-ed66-4591-8f0d-db4cef752674/platetransfert.structure">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/emission/controllers/Emission.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="39" column="11" lean-forward="false" selection-start-line="39" selection-start-column="11" selection-end-line="39" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/Grille.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-695">
+          <caret line="27" column="49" lean-forward="true" selection-start-line="27" selection-start-column="49" selection-end-line="27" selection-end-column="49" />
           <folding>
-            <element signature="e#168#675#0#PHP" expanded="true" />
-            <element signature="e#678#1262#0#PHP" expanded="true" />
-            <element signature="e#1817#4231#0#PHP" expanded="true" />
-            <element signature="e#4257#5203#0#PHP" expanded="true" />
-            <element signature="e#5228#12785#0#PHP" expanded="true" />
-            <element signature="e#12791#13137#0#PHP" expanded="true" />
-            <element signature="e#13143#13447#0#PHP" expanded="true" />
-            <element signature="e#13453#13781#0#PHP" expanded="true" />
-            <element signature="e#13814#15552#0#PHP" expanded="true" />
-            <element signature="e#15583#16305#0#PHP" expanded="true" />
-            <element signature="e#16311#17465#0#PHP" expanded="true" />
-            <element signature="e#17472#18023#0#PHP" expanded="true" />
-            <element signature="e#18029#18357#0#PHP" expanded="true" />
-            <element signature="e#18364#19805#0#PHP" expanded="true" />
-            <element signature="e#19811#20163#0#PHP" expanded="true" />
+            <element signature="n#__construct#0;n#Grille#0;n#!!top" expanded="true" />
+            <element signature="n#index#0;n#Grille#0;n#!!top" expanded="true" />
+            <element signature="n#getFrais#0;n#Grille#0;n#!!top" expanded="true" />
+            <element signature="n#cashacash#0;n#Grille#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/structure/views/structure/accueil.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="27" column="22" lean-forward="false" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
-          <folding>
-            <element signature="n#table#0;n#section#0;n#div#3;n#div#0;n#section#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/platetransfert/application/config/autoload.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="134" column="87" lean-forward="false" selection-start-line="134" selection-start-column="87" selection-end-line="134" selection-end-column="87" />
+        <state relative-caret-position="-199">
+          <caret line="88" column="43" lean-forward="true" selection-start-line="88" selection-start-column="43" selection-end-line="88" selection-end-column="43" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/layout/controllers/Layout.php">
+    <entry file="file://$PROJECT_DIR$/platetransfert/assets/libs/custom/dp.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="44" lean-forward="true" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="44" />
+        <state relative-caret-position="303">
+          <caret line="880" column="25" lean-forward="false" selection-start-line="880" selection-start-column="25" selection-end-line="880" selection-end-column="25" />
           <folding>
-            <element signature="n#__construct#0;n#Layout#0;n#!!top" expanded="true" />
-            <element signature="n#template_view#0;n#Layout#0;n#!!top" expanded="true" />
-            <element signature="n#load_sidebar#0;n#Layout#0;n#!!top" expanded="true" />
+            <element signature="n#!!block;n#validate_form#0" expanded="true" />
+            <element signature="n#!!block;n#show_error_message#0" expanded="true" />
+            <element signature="e#31355#31459#0" expanded="true" />
+            <element signature="n#!!block;n#closeSwallTwo#0" expanded="true" />
+            <element signature="e#36127#37043#0" expanded="true" />
+            <element signature="n#!!block;n#get_form_data#0" expanded="true" />
+            <marker date="1584282129552" expanded="true" signature="25498:25515" ph="..." />
+            <marker date="1584282129552" expanded="true" signature="25715:25729" ph="..." />
+            <marker date="1584282129552" expanded="true" signature="25821:25835" ph="..." />
+            <marker date="1584282129552" expanded="true" signature="26473:26487" ph="..." />
+            <marker date="1584282129552" expanded="true" signature="26712:26726" ph="..." />
+            <marker date="1584282129552" expanded="true" signature="26956:26970" ph="..." />
+            <marker date="1584282129552" expanded="true" signature="27017:27031" ph="..." />
+            <marker date="1584282129552" expanded="true" signature="27077:27091" ph="..." />
+            <marker date="1584282129552" expanded="true" signature="27208:27222" ph="..." />
+            <marker date="1584282129552" expanded="true" signature="27277:27291" ph="..." />
+            <marker date="1584282129552" expanded="true" signature="27369:27383" ph="..." />
+            <marker date="1584282129552" expanded="true" signature="27489:27503" ph="..." />
+            <marker date="1584282129552" expanded="true" signature="27776:27934" ph="..." />
+            <marker date="1584282129552" expanded="true" signature="28060:28074" ph="..." />
+            <marker date="1584282129552" expanded="true" signature="28154:28168" ph="..." />
+            <marker date="1584282129552" expanded="true" signature="28233:28247" ph="..." />
+            <marker date="1584282129552" expanded="true" signature="35206:35220" ph="..." />
+            <marker date="1584282129552" expanded="true" signature="35457:35471" ph="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/users/views/users/edit_user.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="127" column="0" lean-forward="true" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/users/views/users/view_users.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="491">
-          <caret line="126" column="37" lean-forward="true" selection-start-line="126" selection-start-column="37" selection-end-line="126" selection-end-column="37" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#header#0;n#section#0;n#div#1;n#div#0;n#section#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="e#8233#8559#0#HTML" expanded="true" />
-            <element signature="e#8310#8548#0#HTML" expanded="true" />
-            <element signature="e#8472#8528#0#HTML" expanded="true" />
-            <element signature="e#8759#10388#0#HTML" expanded="true" />
-            <element signature="e#9252#9638#0#HTML" expanded="true" />
-            <element signature="e#9386#9619#0#HTML" expanded="true" />
-            <element signature="e#9842#10232#0#HTML" expanded="true" />
-            <element signature="e#9976#10213#0#HTML" expanded="true" />
-            <element signature="e#10459#10610#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/21ca2d7a/77d277cf-ed66-4591-8f0d-db4cef752674/platetransfert.permissions">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/users/views/user_groups/edit_group.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="75" column="40" lean-forward="false" selection-start-line="75" selection-start-column="40" selection-end-line="75" selection-end-column="40" />
-          <folding>
-            <element signature="n#style#0;n#label#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#0;n#div#0;n#section#0;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#p#1;n#div#1;n#div#0;n#section#0;n#div#0;n#div#0;n#section#0;n#section#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/platetransfert/application/modules/users/controllers/User_groups.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="166" column="100" lean-forward="false" selection-start-line="166" selection-start-column="100" selection-end-line="166" selection-end-column="100" />
-          <folding />
         </state>
       </provider>
     </entry>
