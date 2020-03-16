@@ -28,7 +28,8 @@
                 <tr>
                     <th data-field="Nom" data-sortable="true" data-switchable="true">Nom</th>
                     <th data-field="Date" data-sortable="true" data-switchable="true">Date </th>
-                    <th data-field="Numero Pay" data-sortable="true" data-switchable="true">Numero Pay</th>
+                    <th data-field="Taille" data-sortable="true" data-switchable="true">Taille </th>
+                    <th data-field="Numero Pay" data-sortable="true" data-switchable="true">Numero Pays</th>
                     <th data-field="actions" data-sortable="true" data-switchable="true">Action</th>
                 </tr>
                 </thead>
@@ -36,8 +37,9 @@
                 <tbody>
                 <?php foreach($zones_emissions as $ze):?>
                     <tr>
-                        <td><?=$ze->paysName;?></td>
-                        <td><?=$ze->date;?></td>
+                        <td><?=$ze->name;?></td>
+                        <td><?=$ze->zone_date;?></td>
+                        <td><?=$ze->size;?></td>
                         <td><?=$ze->paysId;?></td>
                         <td>
                             <div class="btn-group">

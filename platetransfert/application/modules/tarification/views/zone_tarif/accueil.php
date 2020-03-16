@@ -4,7 +4,7 @@
             <div class='col-xs-12'>
                 <div class="page-title">
                     <div class="pull-left">
-                        <h1 class="title">Grille</h1>
+                        <h1 class="title">Tarif</h1>
                     </div>
                 </div>
             </div>
@@ -34,24 +34,30 @@
                         <thead>
                         <tr>
                             <th data-field="Nom" data-sortable="true" data-switchable="true">Nom</th>
-                            <th data-field="Date" data-sortable="true" data-switchable="true">Date</th>
-                            <th data-field="Devise" data-sortable="true" data-switchable="true">Devise</th>
+                            <th data-field="Date" data-sortable="true" data-switchable="true">Operation</th>
+                            <th data-field="zone_emission" data-sortable="true" data-switchable="true">Zone d’émission</th>
+                            <th data-field="zone_destination" data-sortable="true" data-switchable="true">Zone de destination</th>
+                            <th data-field="grille" data-sortable="true" data-switchable="true">Grille</th>
+                            <th data-field="type" data-sortable="true" data-switchable="true">Type</th>
                             <th data-field="Action" data-sortable="true" data-switchable="true">Action</th>
                         </tr>
                         </thead>
 
                         <tbody>
-                        <?php foreach($tarifs as $tarif):?>
+                        <?php foreach($zone_tarifs as $zt):?>
                             <tr>
-                                <td><?=$tarif->tarifName;?></td>
-                                <td><?=$tarif->tarifDate;?></td>
-                                <td><?=$tarif->currencyName;?></td>
+                                <td><?=$zt->zone_tarif_name;?></td>
+                                <td><?=$zt->operation_name;?></td>
+                                <td><?=$zt->zone_emission;?></td>
+                                <td><?=$zt->zone_destination;?></td>
+                                <td><?=$zt->grille;?></td>
+                                <td><?=$zt->tarif_type;?></td>
                                 <td>
                                     <div class="btn-group">
                                         <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span>Actions</span> <span class="caret m-l-10"></span></button>
                                         <ul class="dropdown-menu" role="menu">
-                                            <li><a href="## edit_tarif" data-id="<?=$tarif->id;?>"><i class="fa fa-edit"></i> Modifier</a></li>
-                                            <li><a href="## delete_tarif" data-id="<?=$tarif->id;?>"><i class="fa fa-trash"></i> Supprimer</a></li>
+                                            <li><a href="## edit_tarif" data-id="<?=$zt->id;?>"><i class="fa fa-edit"></i> Modifier</a></li>
+                                            <li><a href="## delete_tarif" data-id="<?=$zt->id;?>"><i class="fa fa-trash"></i> Supprimer</a></li>
                                         </ul>
                                     </div>
                                 </td>

@@ -89,8 +89,14 @@ class Tarification extends MY_Controller
 
     public function zone(){
         $data['page'] = 'tarification/zone/accueil';
-        $data['zones_emissions'] = $this->tarif_model->get_zone_emission();
-        $data['zones_destination'] = $this->tarif_model->get_zone_destination();
+        $data['zones_emissions'] = $this->tarif_model->get_zone(['zones.type'=>'emission']);
+        $data['zones_destination'] = $this->tarif_model->get_zone(['zones.type'=>'destination']);
+        $this->layout->template_view($data);
+    }
+
+    public function zone_tarif(){
+        $data['page'] = 'tarification/zone_tarif/accueil';
+        $data['zone_tarifs'] = $this->tarif_model->get_zone_tarif();
         $this->layout->template_view($data);
     }
 

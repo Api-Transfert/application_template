@@ -1,0 +1,5 @@
+1.	Les table « zoneemis » et « zonedest » ont été réduit à une seule table appelé « zones ». La différence entre les deux types de zone est faite par la présence d’une colonne ‘type’ de la table « zones ».
+
+2.	La table « zone_pays » est le remplaçant des tables « joinpayszonedest » et « joinpayszoneemis »
+
+3.	La table « zone_tarif » est le remplacant de la table « joinZoneTarif »

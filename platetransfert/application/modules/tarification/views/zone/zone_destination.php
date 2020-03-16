@@ -28,6 +28,7 @@
                 <tr>
                     <th data-field="Nom" data-sortable="true" data-switchable="true">Nom</th>
                     <th data-field="Date" data-sortable="true" data-switchable="true">Date </th>
+                    <th data-field="Taille" data-sortable="true" data-switchable="true">Taille </th>
                     <th data-field="Numero Pay" data-sortable="true" data-switchable="true">Numero Pay</th>
                     <th data-field="actions" data-sortable="true" data-switchable="true">Action</th>
                 </tr>
@@ -36,8 +37,9 @@
                 <tbody>
                 <?php foreach($zones_destination as $zd):?>
                     <tr>
-                        <td><?=$zd->paysName;?></td>
-                        <td><?=$zd->date;?></td>
+                        <td><?=$zd->name;?></td>
+                        <td><?=$zd->zone_date;?></td>
+                        <td><?=$zd->size;?></td>
                         <td><?=$zd->paysId;?></td>
                         <td>
                             <div class="btn-group">
