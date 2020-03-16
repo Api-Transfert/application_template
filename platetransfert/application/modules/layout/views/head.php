@@ -58,6 +58,7 @@
     </script>
     <style>
         .no-border{border:none !important;}
+        section.box{padding: 10px 20px}
     </style>
     <!-- LIBS CSS TEMPLATE - END -->
 </head>

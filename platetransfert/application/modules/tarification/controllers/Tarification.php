@@ -9,115 +9,89 @@ Company Parexons
 
 class Tarification extends MY_Controller 
 {
-	public function __construct()
-	{
-		parent::__construct();
-		//Do your magic here
+    public function __construct()
+    {
+        parent::__construct();
+        //Do your magic here
 
-		$this->load->module('layout');
+        $this->load->module('layout');
 
-		if (!$this->ion_auth->logged_in())
-		{
-			// redirect them to the login page
-			redirect('users/auth/login', 'refresh');
-		}
-		$this->ion_auth->get_user_group();
-		$this->load->model('tarif_model');
-		$this->load->model('joinzonetarif_model');
-	}
-
-	public function index($value='')
-	{
-		$this->dashboard();
-	}
-
-
-	public function tarif($value='')
-	{
-		$data['page'] = "tarification/tarif/accueil";
-		$data['tarif_data'] = $this->tarif_model->get_tarif();
-		$this->layout->template_view($data);
-	}
-
-
-	public function joinzonetarif($value='')
-	{
-		$data['page'] = "tarification/joinzonetarif/accueil";
-		$data['joinzonetarif_data'] = $this->joinzonetarif_model->get_tarif();
-		$this->layout->template_view($data);
-	}
-	
-
-    public function update_stucture_status(){
-	    if(!empty($_POST['structure_id'])){
-	        $this->structure_model->update_structure_status();
+        if (!$this->ion_auth->logged_in())
+        {
+            // redirect them to the login page
+            redirect('users/auth/login', 'refresh');
         }
+        $this->ion_auth->get_user_group();
+        $this->load->model('tarif_model');
     }
 
-    public function edit_structure(){
-        if(!empty($_POST['structure_id'])){
-            $id = $_POST['structure_id'];
-            $data['struct']  = $this->common_model->select('structure',['structureId'=>$id] , 'row');
-            $data['pays']           = $this->common_model->select('pays');
-            $data['type']     = $this->common_model->select('type_structure');
-            $this->load->view('structure/structure/ajax/edit_structure',$data);
-        }
+    public function index($value='')
+    {
+        redirect('users/auth/login');
     }
 
-//======================================================================================================================
-	public function layout_boxed()
-	{
-		// $data['sidebar'] = $this->template->load_sidebar();
-		view('transfert/layout/layout-boxed');
-	}
+    public function grille($action = '')
+    {
+        if(!empty($action)){
+            if($action == 'create'){
+                if(!empty($_POST)){
 
-	public function mega_menu($value='')
-	{
-		view("transfert/layout/mega_menu");
-	}
+                    if($this->check_structure_quota_sold($_POST['ifm_montant_chiffre'])){
+                        $transfert_id = $this->tarif_model->create_transfert($_POST);
+                        if($transfert_id != false){
+                            if(!empty($transfert_id)){
+                                $result = $this->tarif_model->create_cashacash($transfert_id , $_POST);
+                                if($result){
+                                    $response = [
+                                        'status'=>true,
+                                        'message'=>'Le transfert a été créé avec succès'
+                                    ];
+                                }
+                                else{
+                                    $response = [
+                                        'status'=>false,
+                                        'message','Une erreur est survenue. Veillez réessayer',
+                                    ];
+                                }
+                            }
+                        }
+                        else{
+                            $response = [
+                                'status'=>false,
+                                'message','Impossible de créer le transfert.',
+                            ];
+                        }
+                    }
+                    else{
+                        $response = [
+                            'status'=>false,
+                            'message'=>'Désoler Votre structure n’a pas assez de fond pour transférer ce montant !',
+                        ];
+                    }
 
-	public function layout_horizontal($value='')
-	{
-		view("transfert/layout/layout-horizontal");
-	}
-
-	public function layout_sidebar_scroll($value='')
-	{
-		$data['page'] = "extras/layout/layout-sidebar-scroll";
-		$this->template->template_view($data);
-	}
-
-	public function structure($value='')
-	{
-		$data['page'] = "transfert/structure/accueil";
-		$this->layout->template_view($data);
-	}
 
 
-	public function agence($value='')
-	{
-		$data['page'] = "transfert/agence/accueil";
-		$this->layout->template_view($data);
-	}
 
-	public function layout_static_leftbar($value='')
-	{
-		$data['page'] = "transfert/layout/layout-static-leftbar";
-		$this->template->template_view($data);
-	}
+                    display(json_encode($response));
+                }
+            }
+        }
+        else{
 
-	public function app_inbox()
-	{
-		view("transfert/layout/email_template");
-	}
+            $data['page'] = "tarification/grille/accueil";
+            $data['tarifs'] = $this->tarif_model->get_tarif();
+            $this->layout->template_view($data);
+        }
 
-	public function email_compose()
-	{
-		$data['page'] = "transfert/extra/inbox_compose";
-		$this->template->template_view($data);
-	}
+
+
+    }
+
+    public function zone(){
+        $data['page'] = 'tarification/zone/accueil';
+        $data['zones_emissions'] = $this->tarif_model->get_zone_emission();
+        $data['zones_destination'] = $this->tarif_model->get_zone_destination();
+        $this->layout->template_view($data);
+    }
 
 }
-
-/* End of file Extras.php */
-/* Location: ./application/controllers/Extras.php */

@@ -86,11 +86,20 @@ class Emission_model extends CI_Model
         return false;
     }
 
-   public function create_cashawalet($data = []){
+    public function create_cashawalet($data = []){
         if(!empty($data)){
             $this->db->insert($this->cashawalet_table , $data);
         }
     }
+
+    public function get_zone($where = []){
+
+    }
+
+    public function get_tarif($where = [] , $return_type = 'row'){
+        return $this->db->where($where)->get('joinzonetarif')->$return_type();
+    }
+
 
 
 }

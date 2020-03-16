@@ -40,10 +40,6 @@
                     <?php endif;?>
 
                 <?php endforeach; ?>
-
-
-
-
             </ul>
 
         </div>
