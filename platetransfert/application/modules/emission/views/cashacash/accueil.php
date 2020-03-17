@@ -183,7 +183,7 @@
                                                 <div class="form-group">
                                                     <label class="form-label">Pays*:</label>
                                                     <div class="controls">
-                                                        <select class="form-control" name="bene_pays_id" required=>
+                                                        <select class="form-control" name="bene_pays_id" id="bene_pays_id" required=>
                                                             <?php foreach($pays as $p):?>
                                                                 <option value="<?=$p->paysId;?>"><?=$p->paysName;?></option>
                                                             <?php endforeach;?>
@@ -275,6 +275,9 @@
 </div>
 <script>
     const submit_btn = '#submit_form';
+    const frais_envois_ht_tag = '[name="ifm_frai_envoi_ht"]';
+    const tax_tag = '[name="ifm_taxe"]';
+    const frais_envois_ttc_tag = '[name="ifm_frai_envoi_ttc"]';
     $(document).on('click','#submit_form',{passive:true},function () {
         if(validate_form('cashacash_form')){
             $('#cashacash_form').submit();
@@ -283,16 +286,55 @@
     
     $(document).on('blur','#structure_montant , [name="ifm_montant_chiffre"]',{passive:true},function () {
         const value = $(this).val();
+        const zone_dest = $('#bene_pays_id').val();
+
         $.post(base_url+'emission/check_structure_quota_sold',{montant:value},function (response) {
             response = $.parseJSON(response);
             if(response.status === true){
                 show_message('success',response.message);
-                $(submit_btn).prop('disabled',false);
+                check_grille(zone_dest , value);
             }
             else{
                 show_message('error',response.message);
+                reset_information_montant();
                 $(submit_btn).prop('disabled',true);
             }
         })
     });
+
+    $(document).on('change','#bene_pays_id',{passive:true},function () {
+        const zone_dest = $(this).val();
+        const montant   = $('#structure_montant').val();
+        if(zone_dest.length > 0 && montant.length > 0){
+            check_grille(zone_dest , montant);
+        }
+    });
+
+
+    function check_grille(zone_dest , montant){
+
+        if(zone_dest !== undefined && montant !== undefined){
+            $.post(base_url+'emission/get_frais',{'zone_dest':zone_dest, 'montant':montant,'operation_type':'1'},function (response) {
+                response = $.parseJSON(response);
+                if(response.status === true){
+                    show_message('success',response.message);
+                    $(frais_envois_ht_tag).val(response.frais);
+                    $(frais_envois_ttc_tag).val(response.frais_reseau);
+                    $(tax_tag).val(response.taxe);
+                    $(submit_btn).prop('disabled',false);
+                }
+                else{
+                    show_message('error',response.message);
+                    reset_information_montant();
+                    $(submit_btn).prop('disabled',true);
+                }
+            });
+        }
+    }
+
+    function reset_information_montant(){
+        $(frais_envois_ht_tag).val('0');
+        $(frais_envois_ttc_tag).val('0');
+        $(tax_tag).val('0');
+    }
 </script>

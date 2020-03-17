@@ -114,4 +114,12 @@ class Tarification extends MY_Controller
         $this->layout->template_view($data);
     }
 
+    public function get_frais($data = []){
+        if(!empty($data)){
+            $zone_emis_id   = $data['zone_emis_id'];
+            $zone_dest_id   = $data['zone_dest_id'];
+            $operation_type = $data['operation_type'];
+            $currency_id    = $data['currency_id'];
+        }
+    }
 }

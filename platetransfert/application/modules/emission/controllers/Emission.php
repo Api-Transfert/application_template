@@ -17,7 +17,7 @@ class Emission extends MY_Controller
 		}
 		$this->ion_auth->get_user_group();
 		$this->load->model('emission_model');
-	}
+    }
 
 	public function index($value='')
 	{
@@ -73,7 +73,7 @@ class Emission extends MY_Controller
         else{
 
             $data['page'] = "emission/cashacash/accueil";
-            $data['pays'] = $this->common_model->select("pays");
+            $data['pays'] = $this->common_model->get_zone(['zones.type'=>'destination']);
             $this->layout->template_view($data);
         }
 
@@ -158,108 +158,63 @@ class Emission extends MY_Controller
         }
     }
 
-    public function getFrais ($args = []) {
-        $operationType  = $args['operationType'];
-        $montant        = $args['montant'];
-        $taxe           = $args['taxe'];
-        $currency       = $args['currency'];
-        $paysEmis       = $args['paysEmis'];
-        $paysDest       = $args['paysDest'];
 
-        $where_tafif = [
-            'joinzonetarifZoneemisId'=>$paysEmis,
-            'joinzonetarifZonedestId'=>$paysDest,
-            'joinzonetarifOperationType'=>$operationType,
+    public function get_frais(){
+
+        $structure_data = $this->common_model->get_users_strc_data();
+        $data['zone_emis']          = $structure_data->structurePaysId;
+        $data['zone_dest']          = $_POST['zone_dest'];
+        $data['montant']            = $_POST['montant'];
+        $data['taxe']               = $structure_data->structureTaxe;
+        $data['operation_type']     = $_POST['operation_type'];
+
+        //verifier que la structure est une zone d'emission
+        $check_structure = $this->common_model->get_zone(['zones.type'=>'emission' , 'zone_pays.paysId'=>$structure_data->structurePaysId] , 'row');
+
+        if(!empty($check_structure)){
+            $this->process_frais_data($data);
+        }
+        else{
+            $response = [
+                'status'=>false,
+                'message'=>'Désoler votre structure n’est pas habiliter a emmètre ce Produit!'
+            ];
+            display(json_encode($response));
+        }
+	}
+
+    private function process_frais_data ($data = []) {
+        $operationType  = $data['operation_type'];
+        $montant        = $data['montant'];
+        $taxe           = $data['taxe'];
+        $zone_emis      = $data['zone_emis'];
+        $zones_dest     = $data['zone_dest'];
+
+        $where_zone_tarif = [
+            'opration_type_id'=>$operationType,
+            'tarif_zone_emis'=>$zone_emis,
+            'tarif_zone_dest'=>$zones_dest,
         ];
 
-        $tarifs_data = $this->emission_model->get_tarif($where_tafif);
-        $emisZones = $this->emission_model->get_zone([]);
-
-
-        $emisZones = $this->emission_model->get_zone(array ('paysId' => $args['paysEmis']));
-        $destZones = $this->model->zonedest->getZones (array ('paysId' => $args['paysDest']));
-
-        if ($emisZones and $destZones) {
-            foreach ($emisZones['zoneemisId'] as $e => $zoneemisId) {
-                foreach ($destZones['zonedestId'] as $d => $zonedestId) {
-                    $conds = [
-                        'where' => [
-                            'joinzonetarifZoneemisId' => $zoneemisId,
-                            'joinzonetarifZonedestId' => $zonedestId,
-                            'joinzonetarifOperationType' => $args['operationType'],
-                            'joinzonetarifType' => 2
-                        ]
-                    ];
-
-                    if ($tarifs = $this->model->joinzonetarif->search ($conds)) {
-                        foreach ($tarifs['joinzonetarifId'] as $key => $joinzonetarifId) {
-                            // Get tarif agences
-                            if ($agences = $this->model->jointarifagence->search (array ('where' => array ('jointarifagenceJoinzonetarifId' => $tarifs['joinzonetarifId'][$key])))) {
-                                foreach ($agences['jointarifagenceAgenceId'] as $jta => $agenceId) {
-                                    if ($this->model->user->extendedGet ('agenceId') != $agenceId) continue;
-                                    $this->model->jointarifagence->catchProperties ($agences, $jta);
-                                    $this->model->joinzonetarif->catchProperties ($agences, $jta);
-                                    break 2;
-                                }
-                            }
-                            // Get tarif structures
-                            if ($structures = $this->model->jointarifstructure->search (array ('where' => array ('jointarifstructureJoinzonetarifId' => $tarifs['joinzonetarifId'][$key])))) {
-                                foreach ($structures['jointarifstructureStructureId'] as $jts => $structureId) {
-                                    if ($this->model->user->extendedGet ('structureId') != $structureId) continue;
-                                    $this->model->jointarifstructure->catchProperties ($structures, $jts);
-                                    $this->model->joinzonetarif->catchProperties ($structures, $jts);
-                                    break 2;
-                                }
-                            }
-                        }
-                    }
-                    if (!$this->model->joinzonetarif->get ('Id')) {
-                        $conds['where']['joinzonetarifType'] = 1;
-                        $conds['options']['catch'] = true;
-                        $this->model->joinzonetarif->searchOne ($conds);
-                    }
-                    if ($this->model->joinzonetarif->get ('Id')) {
-                        $montant = $this->model->currency->convert (array ('amount' => $args['montant'], 'from' => $args['currency'], 'to' => $this->model->joinzonetarif->extendedGet ('currencyCode')));
-                        $exchangeRates = $this->model->currency->getConversionRates();
-                        // Get additionnal taxes
-                        if ($taxes = $this->model->jointaxetarif->search (array ('where' => array ('jointaxetarifJoinzonetarifId' => $this->model->joinzonetarif->get ('Id'))))) {
-                            foreach ($taxes['taxeValue'] as $t => $value) {
-                                if ($taxes['taxeFixed'][$t] == 1) {
-                                    $additionalTax += $taxAmount = $value;
-                                } else $additionalTax += $taxAmount = round ($montant * $value / 100, 2);
-                                $additionalTaxes[$taxes['taxeName'][$t]] = $taxAmount;
-                            }
-                        }
-                        // Get fees
-                        $conds = array ('fields' => array ('grilleFrais','grilleFraisReseau'), 'where' => array ('grilleMin|<=' => $montant, 'grilleMax|>=' => $montant, 'grilleTarifId' => $this->model->joinzonetarif->get ('TarifId')));
-                        $this->db->select ($conds);
-                        if ($this->db->numRows) {
-                            $this->row = $row = $this->db->fetchAssoc();
-                            $row['grilleFraisTaxe'] =  ceil ($row['grilleFrais'] * $args['taxe'] / 100);
-                            $row['grilleFraisTTC'] = $row['grilleFrais'] + $row['grilleFraisTaxe'];
-                            $row['grilleFraisReseauTaxe'] = $row['grilleFraisReseau'] * $args['taxe'] / 100;
-                            $row['grilleFraisReseauTTC'] = round ($row['grilleFraisReseau'] + $row['grilleFraisReseauTaxe']);
-                            $row['grilleTaxe'] = $row['grilleFraisTaxe'] + $row['grilleFraisReseauTaxe'];
-                            $row['grilleTotalFrais'] = round ($row['grilleFrais'] + $row['grilleFraisReseau'] + $row['grilleTaxe'] + $additionalTax);
-                            if ($args['montant'] > 5000) $row['grilleTotalFrais'] += $this->model->conf['frais']['timbre'];
-                            $row['additionalTaxes'] = $additionalTaxes;
-                            if (!$args['localCurrency']) {
-                                foreach ($row as $k => $val) if (substr_count ($k, 'grille')) $row[$k] = $row[$k] / $exchangeRates['exchangeRate'];
-                                if ($row['additionalTaxes']) {
-                                    foreach ($row['additionalTaxes'] as $k => $val) $$row['additionalTaxes'][$k] = $row['additionalTaxes'][$k] / $exchangeRates['exchangeRate'];
-                                }
-                            } elseif ($this->model->joinzonetarif->extendedGet('currencyCode') != $this->model->conf['exchangerate']['local']) {
-                                //$exchangeRates = $this->model->currency->getConversionRates(array ('from' => $this->model->joinzonetarif->extendedGet('currencyCode')));
-                                foreach ($row as $k => $val) if (substr_count ($k, 'grille')) $row[$k] = $row[$k] * $exchangeRates['fromExchangeRate'];
-                                if ($row['additionalTaxes']) {
-                                    foreach ($row['additionalTaxes'] as $k => $val) $row['additionalTaxes'][$k] = $row['additionalTaxes'][$k] * $exchangeRates['fromExchangeRate'];
-                                }
-                            }
-                            return $row;
-                        }
-                    }
-                }
-            }
+        $tarif_data  = $this->common_model->GET('zone_tarif',$where_zone_tarif , 'row');
+        if(!empty($tarif_data)){
+            $where_grille = [
+                'tarif_id'=>$tarif_data->tarif_id,
+                'min <='=>$montant,
+                'max >='=>$montant,
+            ];
+            $grille = $this->common_model->get_grille($where_grille , 'row_array');
+            $grille['taxe'] = $taxe;
+            $grille['status'] = true;
+            $grille['message']= 'Grille tarifaire chargé avec succès';
+            display(json_encode($grille));
+        }
+        else{
+            $response = [
+                'status'=>false,
+                'message'=>'Aucune grille tarifaire n’a été trouvé pour la zone de destination spécifié'
+            ];
+            display(json_encode($response));
         }
     }
 

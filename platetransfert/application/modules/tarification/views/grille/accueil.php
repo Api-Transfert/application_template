@@ -81,7 +81,7 @@
                     '</div>'+
                     '<div class="row">'+
                     '    <div class="col-sm-6"><label>Frais HT : '+grille.frais+'</label></div>'+
-                    '    <div class="col-sm-6"><label>Frais Réseau Ht : '+grille.frais_reseau+'</label></div>'+
+                    '    <div class="col-sm-6"><label>Frais Réseau HT : '+grille.frais_reseau+'</label></div>'+
                     '</div>';
 
                 sweetDialog(html);

@@ -15,6 +15,13 @@ class Common_model extends CI_Model
 		return $query->$output();
 	}
 
+	public function GET($table , $where = [] , $output = 'result')
+	{
+        if(!empty($where)) $this->db->where($where);
+        $query = $this->db->get($table);
+		return $query->$output();
+	}
+
 	public function update_data($id,$table)
 	{
 		$this->db->where($id);
@@ -258,8 +265,6 @@ class Common_model extends CI_Model
 
     }
 
-
-
     public function get_user_privileges($id)
     {
         $this->db->select('*')
@@ -340,5 +345,30 @@ class Common_model extends CI_Model
             ->get('users')->$return_type();
 
     }
+
+    //==================================================================================
+    public function get_zone($where = [], $return_type = 'result'){
+        if(empty($where)){
+            $where = ['type'=>'emission'];
+        }
+
+        return $this->db->select('zones.id ,zone_id , pays.paysId , zone_date , name , paysName, type , zones.size')
+            ->join('zone_pays','zone_pays.zone_id = zones.id')
+            ->join('pays','pays.paysId = zone_pays.paysId')
+            ->where($where)
+            ->get('zones')->$return_type();
+    }
+
+    public function get_grille($where = [] , $return_type = 'result'){
+        if(!empty($where)){
+            $this->db->where($where);
+        }
+
+        return $this->db->get('grille')->$return_type();
+    }
+
+
+
+
 
 }
