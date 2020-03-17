@@ -50,8 +50,9 @@
                                     <div class="btn-group">
                                         <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span>Actions</span> <span class="caret m-l-10"></span></button>
                                         <ul class="dropdown-menu" role="menu">
-                                            <li><a href="## edit_tarif" data-id="<?=$tarif->id;?>"><i class="fa fa-edit"></i> Modifier</a></li>
-                                            <li><a href="## delete_tarif" data-id="<?=$tarif->id;?>"><i class="fa fa-trash"></i> Supprimer</a></li>
+                                            <li><a href="##" class="view_montant" data-id="<?=$tarif->id;?>"><i class="fa fa-eye"></i> Montant</a></li>
+                                            <li><a href="##" class="edit_tarif" data-id="<?=$tarif->id;?>"><i class="fa fa-edit"></i> Modifier</a></li>
+                                            <li><a href="##" class="delete_tarif" data-id="<?=$tarif->id;?>"><i class="fa fa-trash"></i> Supprimer</a></li>
                                         </ul>
                                     </div>
                                 </td>
@@ -62,8 +63,32 @@
                     </table>
                 </section>
             </div>
-
         </div>
     </section>
 </div>
 
+<script>
+    $(document).on('click','.view_montant',{passive:true},function () {
+        show_loader();
+        const tarif_id =$(this).attr('data-id');
+        $.post(base_url+'tarification/grille/get_montant/',{tarif_id:tarif_id},function (grille) {
+            hide_loader();
+            grille = $.parseJSON(grille);
+            if(grille.status === true){
+                const html = '<div class="row">'+
+                    '    <div class="col-sm-6"><label>Montant Min : '+grille.min+'</label></div>'+
+                    '    <div class="col-sm-6"><label>Montant Max : '+grille.max+'</label></div>'+
+                    '</div>'+
+                    '<div class="row">'+
+                    '    <div class="col-sm-6"><label>Frais HT : '+grille.frais+'</label></div>'+
+                    '    <div class="col-sm-6"><label>Frais Réseau Ht : '+grille.frais_reseau+'</label></div>'+
+                    '</div>';
+
+                sweetDialog(html);
+            }
+            else{
+                show_message('error',status.message);
+            }
+        });
+    });
+</script>

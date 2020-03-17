@@ -75,6 +75,22 @@ class Tarification extends MY_Controller
                     display(json_encode($response));
                 }
             }
+
+            if($action == 'get_montant'){
+                if(!empty($_POST['tarif_id'])){
+                    $grille = $this->tarif_model->get_grille(['tarif_id'=>$_POST['tarif_id']] , 'row_array');
+                    if(!empty($grille)){
+                        $grille['status'] =true;
+                    }
+                    else{
+                        $grille = [
+                            'status'=>false,
+                            'message'=>'Aucun Montant trouvé'
+                        ];
+                    }
+                    display(json_encode($grille));
+                }
+            }
         }
         else{
 
@@ -82,8 +98,6 @@ class Tarification extends MY_Controller
             $data['tarifs'] = $this->tarif_model->get_tarif();
             $this->layout->template_view($data);
         }
-
-
 
     }
 
