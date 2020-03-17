@@ -49,9 +49,11 @@ class Emission_model extends CI_Model
             $transfert_data['agence_user_id']        = $this->session->userdata('user_id');
             $transfert_data['ifm_montant_letre']     = $data['ifm_montant_letre'];
             $transfert_data['ifm_montant_chiffre']   = $data['ifm_montant_chiffre'];
+            $transfert_data['ifm_frai_envoi_ht']     = $data['ifm_frai_envoi_ht'];
             $transfert_data['ifm_frai_envoi_ttc']    = $data['ifm_frai_envoi_ttc'];
             $transfert_data['ifm_taxe']              = $data['ifm_taxe'];
             $transfert_data['ifm_montant_en_devise'] = $data['ifm_montant_en_devise'];
+            $transfert_data['ifm_montant_a_payer']   = $data['ifm_montant_a_payer'];
             $transfert_data['ifm_cthu']              = $data['ifm_cthu'];
             $transfert_data['date ']                 = date('d-m-Y H:i:s');
             $transfert_data['time ']                 = $time;

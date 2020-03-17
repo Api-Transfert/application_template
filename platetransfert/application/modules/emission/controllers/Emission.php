@@ -63,9 +63,6 @@ class Emission extends MY_Controller
                         ];
                     }
 
-
-
-
                     display(json_encode($response));
                 }
             }
@@ -120,7 +117,7 @@ class Emission extends MY_Controller
 		$this->layout->template_view($data);
 	}
 
-	public function check_structure_quota_sold($amount = ''){
+	public function check_structure_quota_sold($montant = ''){
 
 	    if(!empty($_POST['montant'])){
 	        $montant =(int) $_POST['montant'];
@@ -144,7 +141,7 @@ class Emission extends MY_Controller
         }
 
         if(!empty($montant)){
-            $montant =(int) $_POST['montant'];
+            $montant =(float) $montant;
             $structure_data = $this->common_model->get_users_strc_data();
             $solde = (float) $structure_data->structureSoldeQuota;
 
@@ -204,9 +201,16 @@ class Emission extends MY_Controller
                 'max >='=>$montant,
             ];
             $grille = $this->common_model->get_grille($where_grille , 'row_array');
-            $grille['taxe'] = $taxe;
-            $grille['status'] = true;
-            $grille['message']= 'Grille tarifaire chargé avec succès';
+            if(!empty($grille)){
+                $grille['taxe'] = $taxe;
+                $grille['status'] = true;
+                $grille['message']= 'Grille tarifaire chargé avec succès';
+            }
+            else{
+                $grille['status'] = false;
+                $grille['message']= 'Aucune grille tarifaire n’a été trouver pour le montant spécifié';
+            }
+
             display(json_encode($grille));
         }
         else{

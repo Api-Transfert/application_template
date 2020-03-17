@@ -17,7 +17,7 @@
                     <div class="content-body">
                         <div class="row">
                             <div class="form-container">
-                                <form id="cashacash_form" class="ajax-form" method="post" action="<?=base_url('emission/cashacash/create');?>">
+                                <form id="cashacash_form" class="ajax-form" method="post" action="<?=base_url('emission/cashacash/create');?>" onsubmit="ajax_submit_form_callback = after_submit">
 
                                     <div class="row">
                                         <div class="col-xs-12">
@@ -184,9 +184,11 @@
                                                     <label class="form-label">Pays*:</label>
                                                     <div class="controls">
                                                         <select class="form-control" name="bene_pays_id" id="bene_pays_id" required=>
-                                                            <?php foreach($pays as $p):?>
-                                                                <option value="<?=$p->paysId;?>"><?=$p->paysName;?></option>
-                                                            <?php endforeach;?>
+                                                            <?php $displayed_pays = []; foreach($pays as $p):?>
+                                                                <?php if(!in_array($p->paysId ,$displayed_pays)):;?>
+                                                                    <option value="<?=$p->paysId;?>"><?=$p->paysName;?></option>
+                                                                <?php endif;?>
+                                                            <?php array_push($displayed_pays , $p->paysId); endforeach;?>
                                                         </select>
                                                     </div>
                                                 </div>
@@ -249,7 +251,8 @@
                                                 <div class="form-group" style="font-size: 2rem; text-align: center">
                                                     <label class="form-label"> <strong>Montant à payer:</strong> </label>
                                                     <div style="margin-top: 1rem">
-                                                        0 XOF
+                                                        <input type="text" ng-init="montant_a_payer='0'" ng-model="montant_a_payer"  name="ifm_montant_a_payer" class="dis-none">
+                                                        {{montant_a_payer}} XOF
                                                     </div>
                                                 </div>
                                             </div>
@@ -278,9 +281,14 @@
     const frais_envois_ht_tag = '[name="ifm_frai_envoi_ht"]';
     const tax_tag = '[name="ifm_taxe"]';
     const frais_envois_ttc_tag = '[name="ifm_frai_envoi_ttc"]';
+    const montan_a_payer_tag = '[name="ifm_montant_a_payer"]';
+
     $(document).on('click','#submit_form',{passive:true},function () {
         if(validate_form('cashacash_form')){
-            $('#cashacash_form').submit();
+            function submit_form(){
+                $('#cashacash_form').submit();
+            }
+            sweetConfirm('Etre vous sure de vouloir Effectuer ce transfert ?',{yes:submit_form},'Attention !')
         }
     });
     
@@ -317,11 +325,22 @@
             $.post(base_url+'emission/get_frais',{'zone_dest':zone_dest, 'montant':montant,'operation_type':'1'},function (response) {
                 response = $.parseJSON(response);
                 if(response.status === true){
-                    show_message('success',response.message);
-                    $(frais_envois_ht_tag).val(response.frais);
-                    $(frais_envois_ttc_tag).val(response.frais_reseau);
-                    $(tax_tag).val(response.taxe);
+                    const frais = Number(response.frais);
+                    const frais_reseau = Number(response.frais_reseau);
+                    const struc_tx = Number(response.taxe) / 100;
+                    const tx = (struc_tx * frais) + (struc_tx * frais_reseau);
+                    const frais_ttc = frais + tx;
+                    const montant_a_payer = Number(montant) + frais_ttc;
+
+                    $(frais_envois_ht_tag).val(''+frais+'');
+                    $(tax_tag).val(''+tx+'');
+                    $(frais_envois_ttc_tag).val(''+frais_ttc+'');
+                    $(montan_a_payer_tag).val(''+montant_a_payer+'');
+                    $(montan_a_payer_tag).change();
                     $(submit_btn).prop('disabled',false);
+
+
+                    show_message('success',response.message);
                 }
                 else{
                     show_message('error',response.message);
@@ -336,5 +355,15 @@
         $(frais_envois_ht_tag).val('0');
         $(frais_envois_ttc_tag).val('0');
         $(tax_tag).val('0');
+        $(montan_a_payer_tag).val('0');
+        $(montan_a_payer_tag).change();
+    }
+
+    function after_submit(){
+        show_message('success', 'Le transfert a été créé avec succès',4000);
+        show_loader();
+        setTimeout(function(){
+            refresh();
+        },4000);
     }
 </script>

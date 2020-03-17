@@ -1,7 +1,18 @@
 <!-- END CONTAINER -->
     <!-- LOAD FILES AT PAGE END FOR FASTER LOADING -->
 
+<script>
+    //init all ng variables into ng object
+    $(function () {
+        var app = angular.module('this' , []);
+        app.controller('admin', function ($scope) {
+            ng = $scope;
+        });
+    });
+</script>
+
     <!-- CORE JS FRAMEWORK - START -->
+    <script src="<?=bs()?>assets/libs/angular/angular.min.js"></script>
     <script src="<?=bs()?>assets/js/jquery.easing.min.js"></script>
     <script src="<?=bs()?>assets/plugins/bootstrap/js/bootstrap.min.js"></script>
     <script src="<?=bs()?>assets/plugins/pace/pace.min.js"></script>

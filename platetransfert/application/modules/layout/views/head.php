@@ -62,4 +62,4 @@
     </style>
     <!-- LIBS CSS TEMPLATE - END -->
 </head>
-<body>
+<body ng-app="this" ng-controller="admin">

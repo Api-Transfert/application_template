@@ -54,21 +54,22 @@ function swal_message(title , message , icon , timer){
     })
 }
 
-function show_message(notif_type , message) {
+function show_message(notif_type , message , timer) {
     message = message || 'message';
     notif_type = notif_type || 'success';
+    timer = timer || 3000;
 
     const Toast = Swal.mixin({
         toast: true,
         position: 'top-end',
         showConfirmButton: false,
-        timer: 3000,
+        timer: timer,
         timerProgressBar: true,
         onOpen: (toast) => {
-            toast.addEventListener('mouseenter', Swal.stopTimer)
-            toast.addEventListener('mouseleave', Swal.resumeTimer)
+            toast.addEventListener('mouseenter', Swal.stopTimer);
+            toast.addEventListener('mouseleave', Swal.resumeTimer);
         }
-    })
+    });
 
     Toast.fire({
         icon: notif_type,
