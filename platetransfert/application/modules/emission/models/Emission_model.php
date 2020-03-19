@@ -29,6 +29,11 @@ class Emission_model extends CI_Model
         if(!empty($data)){
             $time = time();
             $transfert_data =[];
+            $structure_data = $this->common_model->get_users_strc_data();
+            $agence_data    = $this->common_model->get_users_agence_data();
+
+            $structure_id   = $agence_data->agenceStructureId;
+            $agence_id      = $agence_data->agenceId;
 
 
             $transfert_data['exp_nom']               = $data['exp_nom'];
@@ -65,6 +70,12 @@ class Emission_model extends CI_Model
 
 
             if(!empty($transfert_id)){
+                //impact structure solde
+                $old_solde = $structure_data->structureSoldeQuota;
+                $new_solde = (float)$old_solde  - (float) $data['ifm_montant_a_payer'];
+
+                $this->db->where(['structureId'=>$structure_data->structureId])->update('structure',['structureOldSolde'=>$old_solde , 'structureSoldeQuota'=>$new_solde]);
+
 
                 //calculate compensation
 

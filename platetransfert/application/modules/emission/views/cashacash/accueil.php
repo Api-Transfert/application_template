@@ -370,7 +370,7 @@
         show_message('success', 'Le transfert a été créé avec succès',4000);
         show_loader();
         setTimeout(function(){
-            //refresh();
+            refresh();
         },4000);
     }
 </script>

@@ -346,6 +346,19 @@ class Common_model extends CI_Model
 
     }
 
+    public function get_users_agence_data($where = [] , $return_type = 'row')
+    {
+        if(empty($where)){
+            $where = ['users.id'=>$this->session->userdata('user_id')];
+        }
+
+        return $this->db->select('*')
+            ->join('agence', "agence.agenceId = users.agenceId")
+            ->where($where)
+            ->get('users')->$return_type();
+
+    }
+
     //==================================================================================
     public function get_zone($where = [], $return_type = 'result'){
         if(empty($where)){
