@@ -58,10 +58,38 @@ class Emission_model extends CI_Model
             $transfert_data['date ']                 = date('d-m-Y H:i:s');
             $transfert_data['time ']                 = $time;
             $transfert_data['status ']               = 0;
+            $transfert_data['code_retrait']          = random_id();
 
             $this->db->insert('transferts',$transfert_data);
             $transfert_id = $this->db->get_where('transferts',['time'=>$time])->row()->id;
+
+
             if(!empty($transfert_id)){
+
+                //calculate compensation
+
+                $frais = (float) $data['ifm_frai_envoi_ht'];
+                $taxe  = (float) $data['ifm_taxe'];
+
+                //part entreprise  = 25 pourcent des frais
+                $part_entreprise = percentage_of(25 , $frais);
+                //part nous = 25 pourcent des frais
+                $part_nous       = percentage_of(25 , $frais);
+                //part agent = 50 pourcent des frais
+                $part_agent      = percentage_of(50 , $frais);
+
+                $compensation_data =  [
+                    'transfert_id'      =>$transfert_id,
+                    'agence_user_id'    =>$this->session->userdata('user_id'),
+                    'frais'             =>$frais,
+                    'taxe'              =>$taxe,
+                    'part_entreprise'   =>$part_entreprise,
+                    'part_agent'        =>$part_agent,
+                    'part_nous'         =>$part_nous,
+                ];
+
+                $this->db->insert('compensations',$compensation_data);
+
                 return $transfert_id;
             }
             else{

@@ -296,18 +296,25 @@
         const value = $(this).val();
         const zone_dest = $('#bene_pays_id').val();
 
-        $.post(base_url+'emission/check_structure_quota_sold',{montant:value},function (response) {
-            response = $.parseJSON(response);
-            if(response.status === true){
-                show_message('success',response.message);
-                check_grille(zone_dest , value);
-            }
-            else{
-                show_message('error',response.message);
-                reset_information_montant();
-                $(submit_btn).prop('disabled',true);
-            }
-        })
+        if(value.length > 0){
+            $.post(base_url+'emission/check_structure_quota_sold',{montant:value},function (response) {
+                response = $.parseJSON(response);
+                if(response.status === true){
+                    show_message('success',response.message);
+                    check_grille(zone_dest , value);
+                }
+                else{
+                    show_message('error',response.message);
+                    reset_information_montant();
+                    $(submit_btn).prop('disabled',true);
+                }
+            })
+        }
+        else{
+            reset_information_montant();
+        }
+
+
     });
 
     $(document).on('change','#bene_pays_id',{passive:true},function () {
@@ -363,7 +370,7 @@
         show_message('success', 'Le transfert a été créé avec succès',4000);
         show_loader();
         setTimeout(function(){
-            refresh();
+            //refresh();
         },4000);
     }
 </script>

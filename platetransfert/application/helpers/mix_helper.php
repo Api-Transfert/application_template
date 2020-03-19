@@ -185,8 +185,15 @@ if(!function_exists('random_id'))
 {
     function random_id()
     {
-        $alphabets = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-       return NOW().rand(0,369).$alphabets[rand(0,25)].rand(11,99).$alphabets[rand(0,25)].rand(99,1000).rand(1001,1500).$alphabets[rand(0,25)];
+//        $alphabets = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+//       return time().rand(0,369).$alphabets[rand(0,25)].rand(11,99).$alphabets[rand(0,25)].rand(99,1000).rand(1001,1500).$alphabets[rand(0,25)];
+        return substr(time() . mt_rand(1000, 10000), 0, 12);
+    }
+}
+
+if(!function_exists('percentage_of')){
+    function percentage_of($percentage = '' , $amount){
+        return ((float)$percentage * (float)$amount) / 100;
     }
 }
 
@@ -534,8 +541,3 @@ function group_priviliges($value='')
     return $gp_result;
 }
 //===================================================================\\
-
-
-
-
-

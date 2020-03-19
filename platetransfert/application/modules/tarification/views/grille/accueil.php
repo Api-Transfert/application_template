@@ -87,7 +87,7 @@
                 sweetDialog(html);
             }
             else{
-                show_message('error',status.message);
+                show_message('error',grille.message);
             }
         });
     });
