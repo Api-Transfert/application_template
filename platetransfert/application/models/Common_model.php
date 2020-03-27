@@ -29,20 +29,23 @@ class Common_model extends CI_Model
 		return $query->row();
 	}
 
-	public function update($id,$data,$table)
+	public function update($where,$data,$table)
 	{
-		if (empty($id)) return FALSE;
-
-		$this->db->update($table, $data, $id);
-
-		return TRUE;
+	    if(!empty($where)){
+            $this->db->where($where)->update($table , $data);
+        }
 	}
 
-	public function delete($id,$table)
+	public function delete($where,$table)
 	{
-		$this->db->where($id);
-		$this->db->delete($table);
-		return TRUE;
+	    if(!empty($where)){
+            $this->db->where($where)->delete($table);
+            return TRUE;
+        }
+        else{
+	        return false;
+        }
+
 	}
 
 	function getAllData($table,$specific='',$row='',$Where='',$order='',$limit='',$groupBy='',$like = '')

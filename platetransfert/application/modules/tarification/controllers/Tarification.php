@@ -30,48 +30,16 @@ class Tarification extends MY_Controller
         redirect('users/auth/login');
     }
 
-    public function grille($action = '')
+    public function grille($action = '' , $id = '')
     {
         if(!empty($action)){
             if($action == 'create'){
                 if(!empty($_POST)){
-
-                    if($this->check_structure_quota_sold($_POST['ifm_montant_chiffre'])){
-                        $transfert_id = $this->tarif_model->create_transfert($_POST);
-                        if($transfert_id != false){
-                            if(!empty($transfert_id)){
-                                $result = $this->tarif_model->create_cashacash($transfert_id , $_POST);
-                                if($result){
-                                    $response = [
-                                        'status'=>true,
-                                        'message'=>'Le transfert a été créé avec succès'
-                                    ];
-                                }
-                                else{
-                                    $response = [
-                                        'status'=>false,
-                                        'message','Une erreur est survenue. Veillez réessayer',
-                                    ];
-                                }
-                            }
-                        }
-                        else{
-                            $response = [
-                                'status'=>false,
-                                'message','Impossible de créer le transfert.',
-                            ];
-                        }
-                    }
-                    else{
-                        $response = [
-                            'status'=>false,
-                            'message'=>'Désoler Votre structure n’a pas assez de fond pour transférer ce montant !',
-                        ];
-                    }
-
-
-
-
+                    $this->common_model->INSERT('tarif',$_POST);
+                    $response = [
+                        'status'=>true,
+                        'message'=>'grille crée avec success'
+                    ];
                     display(json_encode($response));
                 }
             }
@@ -91,27 +59,144 @@ class Tarification extends MY_Controller
                     display(json_encode($grille));
                 }
             }
+
+            if($action == 'delete'){
+                $this->common_model->delete($_POST , 'tarif');
+                $response = [
+                    'status'=>true,
+                    'message'=>'Grille supprimer avec succès'
+                ];
+                display(json_encode($response));
+            }
+
+            if($action == 'edit'){
+                if(!empty($_POST) and !empty($id)){
+                    $this->common_model->update(['id'=>$id],$_POST,'tarif');
+                    $response = [
+                        'status'=>true,
+                        'message'=>'Grille modifier avec succès.'
+                    ];
+                    display(json_encode($response));
+                }
+            }
         }
         else{
 
             $data['page'] = "tarification/grille/accueil";
             $data['tarifs'] = $this->tarif_model->get_tarif();
+            $data['currencies'] = $this->common_model->GET('currency');
             $this->layout->template_view($data);
         }
 
     }
 
-    public function zone(){
-        $data['page'] = 'tarification/zone/accueil';
-        $data['zones_emissions'] = $this->tarif_model->get_zone(['zones.type'=>'emission']);
-        $data['zones_destination'] = $this->tarif_model->get_zone(['zones.type'=>'destination']);
-        $this->layout->template_view($data);
+    public function zone($action = '' , $id = ''){
+        if(!empty($action)){
+            if(!empty($_POST)){
+                if($action == 'add'){
+                    $_POST['zone_date'] = date('Y-m-d H:i:s');
+                    $this->common_model->INSERT('zones',$_POST);
+                    $response = [
+                                    'status'=>true,
+                                    'message'=>'Zone '.$_POST['type'].' ajouter avec succès'
+                                ];
+                    display(json_encode($response));
+                }
+
+                if($action == 'get_zone_data'){
+                    if(!empty($_POST['id'])){
+                        $zone_data = $this->common_model->GET('zones',$_POST,'row_array');
+                        $zone_data['status'] = true;
+
+                        display(json_encode($zone_data));
+                    }
+                }
+
+                if($action == 'delete'){
+                    $this->common_model->delete($_POST , 'zones');
+                    $response = [
+                        'status'=>true,
+                        'message'=>'zone supprimer avec succès'
+                    ];
+                    display(json_encode($response));
+                }
+
+                if($action == 'edit'){
+                    if(!empty($_POST) and !empty($id)){
+                        $this->common_model->update(['id'=>$id],$_POST,'zones');
+                        $response = [
+                            'status'=>true,
+                            'message'=>'Zone modifier avec succès.'
+                        ];
+                        display(json_encode($response));
+                    }
+                }
+            }
+        }
+        else{
+            $data['page'] = 'tarification/zone/accueil';
+            $data['zones_emissions'] = $this->tarif_model->get_zone(['zones.type'=>'emission']);
+            $data['zones_destination'] = $this->tarif_model->get_zone(['zones.type'=>'destination']);
+            $this->layout->template_view($data);
+        }
+
     }
 
-    public function zone_tarif(){
-        $data['page'] = 'tarification/zone_tarif/accueil';
-        $data['zone_tarifs'] = $this->tarif_model->get_zone_tarif();
-        $this->layout->template_view($data);
+    public function zone_tarif($action = '' , $id = ''){
+        if(!empty($action)){
+         if(!empty($_POST)){
+             if($action == 'create'){
+                 $_POST['tarif_date'] = date('Y-m-d H:i:s');
+                 $this->common_model->INSERT('zone_tarif',$_POST);
+                 $response = [
+                                 'status'=>true,
+                                 'message'=>'Tarif avec succès'
+                             ];
+
+                 display(json_encode($response));
+             }
+
+             if($action == 'get_zone_data'){
+                 if(!empty($_POST['id'])){
+                     $zone_data = $this->common_model->GET('zone_tarif',$_POST,'row_array');
+                     $zone_data['status'] = true;
+
+                     display(json_encode($zone_data));
+                 }
+             }
+
+             if($action == 'edit'){
+                 if(!empty($_POST) and !empty($id)){
+                     $this->common_model->update(['id'=>$id],$_POST,'zone_tarif');
+                     $response = [
+                         'status'=>true,
+                         'message'=>'Tarif modifier avec succès.'
+                     ];
+                     display(json_encode($response));
+                 }
+             }
+
+             if($action == 'delete'){
+                 $this->common_model->delete($_POST , 'zone_tarif');
+                 $response = [
+                     'status'=>true,
+                     'message'=>'Tarif supprimer avec succès'
+                 ];
+                 display(json_encode($response));
+             }
+         }
+        }
+
+        else{
+            $data['page']               = 'tarification/zone_tarif/accueil';
+            $data['zone_tarifs']        = $this->tarif_model->get_zone_tarif();
+            $data['zones_emissions']    = $this->common_model->GET('zones',['type'=>'emission']);
+            $data['zones_destination']  = $this->common_model->GET('zones',['type'=>'destination']);
+            $data['operations']           = $this->common_model->GET('operation_type');
+            $data['grille']             = $this->common_model->GET('tarif');
+            $this->layout->template_view($data);
+        }
+
     }
 
     public function get_frais($data = []){

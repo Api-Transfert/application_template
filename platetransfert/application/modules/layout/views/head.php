@@ -50,6 +50,7 @@
     <link href="<?=bs()?>assets/plugins/messenger/css/messenger-theme-future.css" rel="stylesheet" type="text/css" media="screen" />
     <link href="<?=bs()?>assets/plugins/messenger/css/messenger-theme-flat.css" rel="stylesheet" type="text/css" media="screen" />
 	<link href="<?=bs()?>assets/plugins/icheck/skins/all.css" rel="stylesheet" type="text/css" media="screen" />
+	<link href="<?=bs()?>assets/plugins/select2/select2.css" rel="stylesheet" type="text/css" media="screen" />
     <script src="<?=bs()?>assets/js/jquery-1.11.2.min.js"></script>
     <script>
         var base_url = '<?=base_url()?>';
@@ -59,6 +60,18 @@
     <style>
         .no-border{border:none !important;}
         section.box{padding: 10px 20px}
+        .select2-container .select2-choice {
+            border: 1px solid #e1e1e1 !important;
+            background-color: white !important;
+        }
+        .select2-drop{z-index: 999999999}
+        .select2-drop-active {
+            border: 1px solid #e1e1e1 !important;
+        }
+        .select2-results .select2-highlighted {
+            background: #1197ff;
+            color: #fff;
+        }
     </style>
     <!-- LIBS CSS TEMPLATE - END -->
 </head>

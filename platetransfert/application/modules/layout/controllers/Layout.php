@@ -12,6 +12,9 @@ class Layout extends MY_Controller
 
 	public function template_view($data = NULL)
 	{
+	    $data['this_structure_data'] = $this->common_model->get_users_strc_data();
+	    $data['this_agence_data']    = $this->common_model->get_users_agence_data();
+
 		$this->load->view('dashboard',$data);
 	}
 	public function load_sidebar($data = '')

@@ -1,4 +1,5 @@
 <div class="tab-pane in active" id="emission">
+    <button class="btn btn-primary add_zone" data-type="emission"><i class="fa fa-plus"></i> Ajouter zone d’émission</button>
     <section class="box">
         <header class="panel-heading">
             <a href="##" class="pull-right"> <i class="fa fa-print text-black fs-20 m-t-10 m-r-10"></i> </a>
@@ -36,7 +37,7 @@
 
                 <tbody>
                 <?php foreach($zones_emissions as $ze):?>
-                    <tr>
+                    <tr id="row_<?=$ze->id;?>">
                         <td><?=$ze->name;?></td>
                         <td><?=$ze->zone_date;?></td>
                         <td><?=$ze->size;?></td>
@@ -45,8 +46,8 @@
                             <div class="btn-group">
                                 <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span>Actions</span> <span class="caret m-l-10"></span></button>
                                 <ul class="dropdown-menu" role="menu">
-                                    <li><a href="##" class="edit_dest_zone" data-id="<?=$ze->id;?>"><i class="fa fa-edit"></i> Modifier</a></li>
-                                    <li><a href="##" class="delete_dest_zone" data-id="<?=$ze->id;?>"><i class="fa fa-trash"></i> Supprimer</a></li>
+                                    <li><a href="##" class="edit_zone" data-id="<?=$ze->id;?>"><i class="fa fa-edit"></i> Modifier</a></li>
+                                    <li><a href="##" class="delete_zone" data-id="<?=$ze->id;?>" data-row="#row_<?=$ze->id;?>"><i class="fa fa-trash"></i> Supprimer</a></li>
                                 </ul>
                             </div>
                         </td>

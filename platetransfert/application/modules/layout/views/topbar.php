@@ -268,6 +268,13 @@
                             <input type='submit' value="">
                         </form>
                     </li>
+
+                    <?php if(!empty($this_structure_data->structureSoldeQuota)):;?>
+                        <li class="message-toggle-wrapper"><span style="color:white">Solde
+					    <i class="fa fa-money"></i> <?=$this_structure_data->structureSoldeQuota;?></span>
+                        </li>
+                    <?php endif;?>
+
                 </ul>
             </div>
             <div class='pull-right'>
@@ -275,7 +282,7 @@
                     <li class="profile">
                         <a href="#" data-toggle="dropdown" class="toggle">
                             <img src="<?=bs()?>assets/data/profile/profile.jpg" alt="user-image" class="img-circle img-inline">
-                            <span>Coulibaly Tiorna <i class="fa fa-angle-down"></i></span>
+                            <span> <?=$this->session->userdata['identity']." / ".$this->session->userdata['group_name']?> <i class="fa fa-angle-down"></i> </span>
                         </a>
                         <ul class="dropdown-menu profile animated fadeIn">
                             <li>
