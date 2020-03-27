@@ -150,7 +150,7 @@ class Tarification extends MY_Controller
                  $this->common_model->INSERT('zone_tarif',$_POST);
                  $response = [
                                  'status'=>true,
-                                 'message'=>'Tarif avec succès'
+                                 'message'=>'Tarif ajouter avec succès'
                              ];
 
                  display(json_encode($response));
